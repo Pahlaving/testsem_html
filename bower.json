@@ -1,0 +1,58 @@
+{
+  "name": "lesson11",
+  "description": "y",
+  "main": "index.js",
+  "license": "ISC",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "^3.2.1",
+    "bootstrap": "^3.3.7",
+    "font-awesome": "^4.7.0",
+    "animate.css": "^3.5.2",
+    "wow": "wow-mit#^1.3.0",
+    "css-hamburgers": "^0.8.1",
+    "slick-carousel": "^1.6.0",
+    "hover": "^2.1.1",
+    "html5shiv": "^3.7.3"
+  },
+  "overrides": {
+    "bootstrap": {
+      "main": [
+        "./dist/js/bootstrap.min.js",
+        "./dist/css/bootstrap.min.css"
+      ]
+    },
+    "font-awesome": {
+      "main": [
+        "./css/font-awesome.css"
+      ]
+    },
+    "css-hamburgers": {
+      "main": [
+        "./dist/hamburgers.min.css"
+      ]
+    },
+    "slick-carousel": {
+      "main": [
+        "./slick/slick-theme.css"
+      ]
+    },
+    "jquery": {
+      "main": [
+        "./dist/jquery.min.js"
+      ]
+    },
+    "html5shiv": {
+     "main": [
+          "./dist/html5shiv.min.js"
+      ]
+    }
+  }
+}
