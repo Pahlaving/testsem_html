@@ -1,1 +1,4 @@
-# testsem_html
+# Project start
+
+1. npm install
+2. bower install
