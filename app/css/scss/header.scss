@@ -1,61 +1,88 @@
-.wrapper .header {
-  height: 105px;
-  background-color: #022a3c;
-  color: #fff;
-  line-height: 105px;
-  font-family: 'MyriadPro-Regular';
-  font-size: 16px;
-}
-
-.wrapper .header .logo {
-  width: 120px;
-  height: 70px;
-  text-align: center;
-  line-height: 123px;
-  float: left;
-}
-
-.wrapper .header .nav {
-  float: right;
-  margin-right: 2%;
-  max-height: 105px;
-}
-
-.wrapper .header .nav ul {
-  float: left;
-}
-
-.wrapper .header .nav ul li {
-  float: left;
-  padding: 0 10px;
-}
-
-.wrapper .header .nav ul .tumbl{
-  position: relative;
-  padding-left: 65px;
-}
-
-.wrapper .header .nav ul .tumbl:after{
-  content: "";
-  position: absolute;
-  top: 40px;
-  left: 10px;
-  width: 40px;
-  height: 30px;
-  background: url(../images/tumbl.png);
-}
-
-.wrapper .header .nav ul .tumbl:hover{
-  background: #23282f;
-}
-
-
-.wrapper .header .nav ul li a:hover{
-
-  opacity: 0.5;
-
-}
-
-.wrapper .header .nav ul li a {
-  color: #fff;
+.wrapper {
+  .header {
+    height: 105px;
+    background-color: #022a3c;
+    color: #fff;
+    line-height: 105px;
+    font-family: 'MyriadPro-Regular';
+    font-size: 16px;
+    .logo {
+      width: 120px;
+      height: 70px;
+      text-align: center;
+      line-height: 123px;
+      float: left;
+    }
+    .nav {
+      float: right;
+      margin-right: 2%;
+      max-height: 105px;
+      ul {
+        float: left;
+        li {
+          float: left;
+          padding: 0 10px;
+        }
+        .tumbl {
+          position: relative;
+          padding-left: 65px;
+          &:after {
+            content: "";
+            position: absolute;
+            top: 40px;
+            left: 10px;
+            width: 40px;
+            height: 30px;
+            background: url(../images/tumbl.png);
+          }
+          &:hover {
+            background: #23282f;
+          }
+        }
+        a {
+          &:hover {
+            opacity: 0.5;
+          }
+        }
+        .icons {
+          padding-top: 15px;
+        }
+        ul .button {
+          padding-top: 20px;
+        }
+        .button .reg {
+          font-family: "Roboto";
+          font-size: 13px;
+          color: #fff;
+        }
+      }
+      .drop {
+        padding-right: 15px;
+        position: relative;
+        &:after {
+          width: 9px;
+          height: 5px;
+          content: "";
+          position: absolute;
+          top: 50px;
+          right: 3px;
+          background: url(../images/arrow-drop.png);
+        }
+        .drop-icon {
+          padding-right: 15px;
+          position: relative;
+          &:after {
+            top: 20px;
+            left: 20px;
+            display: none;
+          }
+          &:hover {
+            .child {
+              left: auto;
+            }
+          }
+        }
+      }
+    }
+  }
 }
