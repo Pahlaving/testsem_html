@@ -146,7 +146,6 @@ gulp.task('js:build', function () {
 gulp.task('css:build', function () {
     gulp.src(path.app.css) //Выберем наш main.css
         .pipe(changed(path.dist.css)) //Компилируем только измененные файлы
-        .pipe(rigger())
         //.pipe(sourcemaps.init()) //То же самое что и с js
         .pipe(plumber())
         .pipe(prefixer({
