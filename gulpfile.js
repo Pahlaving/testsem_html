@@ -152,7 +152,7 @@ gulp.task('css:build', function () {
                     browsers: ['last 10 versions', "> 1%", "ie 8", "ie 7"],
                     cascade: false
                 })) //Добавим вендорные префиксы
-        //.pipe(cleanCSS()) //Сожмем
+        .pipe(cleanCSS()) //Сожмем
         .pipe(gulp.dest(path.dist.css)) //И в build
         .pipe(reload({stream: true}));
 });

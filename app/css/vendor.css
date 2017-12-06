@@ -1,5 +1,5 @@
-@import "app/css/vendor/bootstrap.min.css";
-@import "app/css/vendor/font-awesome.css";
-@import "app/css/vendor/hamburgers.min.css";
-@import "app/css/vendor/slick.css";
-@import "app/css/vendor/slick-theme.css";
+@import "vendor/bootstrap.min.css";
+@import "vendor/font-awesome.css";
+@import "vendor/hamburgers.min.css";
+@import "vendor/slick.css";
+@import "vendor/slick-theme.css";
