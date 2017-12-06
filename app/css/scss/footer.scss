@@ -8,7 +8,7 @@
 
 .footer {
   .block-footer-top {
-    background: #a1152c;
+    background: $middle_red;
     height: 70px;
     width: 100%;
     .wrapper{
@@ -24,7 +24,6 @@
         float: left;
         margin-right: 10px;
         a{
-
           float: right;
           color: #bababa;
           &:hover{
@@ -49,7 +48,6 @@
       }
     }
   }
-
 }
 
 
