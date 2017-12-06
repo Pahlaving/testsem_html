@@ -146,13 +146,14 @@ gulp.task('js:build', function () {
 gulp.task('css:build', function () {
     gulp.src(path.app.css) //Выберем наш main.css
         .pipe(changed(path.dist.css)) //Компилируем только измененные файлы
+        .pipe(rigger())
         //.pipe(sourcemaps.init()) //То же самое что и с js
         .pipe(plumber())
         .pipe(prefixer({
                     browsers: ['last 10 versions', "> 1%", "ie 8", "ie 7"],
                     cascade: false
                 })) //Добавим вендорные префиксы
-        .pipe(cleanCSS()) //Сожмем
+        //.pipe(cleanCSS()) //Сожмем
         .pipe(gulp.dest(path.dist.css)) //И в build
         .pipe(reload({stream: true}));
 });
