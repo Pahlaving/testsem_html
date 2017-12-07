@@ -1,5 +1,6 @@
 .section-block {
   margin-bottom: 40px;
+  color: #022d41;
   &.gray {
     background-color: $section_block_gray_bg;
   }
@@ -31,6 +32,12 @@
         .inner {
           flex-grow: 1;
           width: 12%;
+        }
+        &.inline {
+          .inner {
+            flex-grow: 0;
+            width: auto;
+          }
         }
       }
       .inner {
