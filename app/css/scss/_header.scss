@@ -1,8 +1,12 @@
 .wrapper {
   .header {
+    @media screen and (max-width: 1030px) {
+      line-height: normal;
+    }
     .hover{
       display: none;
     }
+
     height: 105px;
     background-color: $dark_gray;
     color: #fff;
@@ -11,28 +15,65 @@
     font-weight: 400;
     font-size: 16px;
     .logo {
-      width: 120px;
+      padding-left: 10px;
+      //width: 120px;
       height: 70px;
       text-align: center;
       line-height: 100px;
       float: left;
+      @media screen and (max-width: 1030px) {
+        float: none;
+        line-height: normal;
+        img{
+          margin-top: 20px;
+        }
+      }
     }
     .nav {
       float: right;
       margin-right: 2%;
       max-height: 105px;
+      @media screen and (max-width: 1030px) {
+        float: none;
+        text-align: center;
+        margin-right: auto;
+      }
       ul {
         float: left;
+        @media screen and (max-width: 1030px) {
+          float: none;
+          display: flex;
+          justify-content: space-around;
+          align-items: center;
+          margin-bottom: 50px;
+        }
         li {
           float: left;
           padding: 0 10px;
           a {
+            @media screen and (max-width: 1200px) {
+              font-size: 11px;
+            }
+            @media screen and (max-width: 1030px) {
+              .not__hidden{
+                display: none;
+              }
+              .hidden__icons{
+                display: inline-block !important;
+              }
+            }
             color: #fff;
             &:hover {
               opacity: 0.5;
             }
           }
           .child {
+            @media screen and (max-width: 1030px) {
+              display: flex;
+              flex-direction: column;
+              justify-content: flex-start;
+              align-items: flex-start;
+            }
             width: 280px;
             background: #022a3c;
             padding: 5px;
@@ -91,11 +132,15 @@
           padding-right: 15px;
           position: relative;
           &:after {
+            @media screen and (max-width: 1030px) {
+              top:62%;
+            }
             width: 9px;
             height: 5px;
             content: "";
             position: absolute;
-            top: 50px;
+            top: 50%;
+            transform: translateY(-50%);
             right: 3px;
             background: url(../images/arrow-drop.png);
           }
@@ -140,6 +185,9 @@
               font-size: 11px;
               font-weight: 500;
               color: #ff2020;
+              @media screen and (max-width: 1030px) {
+                top: 9px;
+              }
             }
           }
         }
@@ -159,6 +207,9 @@
           align-items: center;
           padding: 0px 15px;
           .receive__guests__text{
+            @media screen and (max-width: 1200px) {
+              font-size: 11px;            
+            }
             margin-left: 14px;
             font-size: 14px;
             font-weight: 500;
@@ -201,7 +252,15 @@
           justify-content: space-around;
           align-items: center;
           padding: 0 10px;
+          .user__name{
+            @media screen and (max-width: 1200px) {
+              font-size: 11px;            
+            }
+          }
           .user__avatar{
+            @media screen and (max-width: 1030px) {
+              flex: 1 0 auto;
+            }
             position: relative;
             margin-right: 8px;
             overflow: hidden;
@@ -273,3 +332,6 @@
 .tab-pane {
   display: none;
 }
+// .hidden__icons{
+//   display: none !important;
+// }
