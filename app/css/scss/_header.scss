@@ -157,7 +157,7 @@
           display: flex;
           justify-content: space-around;
           align-items: center;
-          padding: 0px 25px;
+          padding: 0px 15px;
           .receive__guests__text{
             margin-left: 14px;
             font-size: 14px;
@@ -197,13 +197,51 @@
           }
         }
         .login{
-          padding: 0 15px;
+          display: flex;
+          justify-content: space-around;
+          align-items: center;
+          padding: 0 10px;
           .user__avatar{
-            width: 45px;
-            height: 45px;
+            position: relative;
+            margin-right: 8px;
+            overflow: hidden;
             img{
-              max-width: 100%;
               border-radius: 50%;
+              width: 45px;
+              height: 45px;
+              display: inline-block;
+              max-width: 100%;
+            }
+            &:after{
+              left: 50%;
+              width: 9px;
+              height: 5px;
+              content: "";
+              position: absolute;
+              top: 87px;
+              right: 3px;
+              transform: translateX(-50%);
+              background: url(../images/arrow-drop.png);
+            }
+          }
+          &.drop:after{
+            content: none;
+          }
+          &.drop:hover{
+            .child{
+              left: 0;
+            }
+          }
+        }
+        .drop{
+          &:hover{
+            .child.lang-cild{
+              left:-90px;
+              width: 160px;
+              &::after{
+                right: 20px;
+                left: auto;
+              }
             }
           }
         }
