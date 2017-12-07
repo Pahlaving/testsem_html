@@ -1,0 +1,12 @@
+.section-block {
+  .gray {
+    background-color: $section_block_gray_bg;
+  }
+  .block-title {
+    background-color: $section_block_gray_title_bg;
+
+  }
+  .block-content {
+    .inner {}
+  }
+}
