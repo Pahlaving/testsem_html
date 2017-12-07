@@ -260,8 +260,8 @@ gulp.task('cleanimg', function (cb) {
 //});
 
 gulp.task('build', [
-    'vendorCss:build',
-    'vendorJs:build',
+    //'vendorCss:build',
+    //'vendorJs:build',
     'php:build',
     'html:build',
     'css:build',
