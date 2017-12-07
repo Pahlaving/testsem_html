@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+<head>
+
+  //= template/head.html
+
+</head>
+<body>
+
+//= template/header.html
+
+//= template/breadcrumbs.html
+
+<div class="clearfix"></div>
+
+<div class="layout-prof">
+
+  <div class="content-prof">
+
+    <div class="section-block">
+      <div class="block-title">Required</div>
+      <div class="block-content">
+        <div class="block-row">
+          <div class="inner">
+            
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <div class="sidebar-left">
+    //= template/sidebar_notific.html
+  </div>
+
+</div>
+
+<div class="clearfix"></div>
+
+//= template/footer.html
+
+<script src="js/vendor.js"></script>
+<script src="js/main.js"></script>
+<script>
+  $('.registr').click(function (e) {
+    e.preventDefault();
+    $("#myModalBox").modal('show');
+  });
+  $('.login').click(function (e) {
+    e.preventDefault();
+    $("#myModal").modal('show');
+  });
+</script>
+</body>
+</html>
