@@ -45,4 +45,20 @@ select {
   .help-block {
     margin-top: 10px;
   }
+  &.birth-day {
+    select {
+      min-width: auto;
+      margin-right: 20px;
+    }
+    .form-control-static {
+      max-width: 400px;
+    }
+  }
+}
+
+.checked-lang {
+  padding: 0 0 15px;
+  .form-control-static {
+    max-width: 400px;
+  }
 }
