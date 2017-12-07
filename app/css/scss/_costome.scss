@@ -1,11 +1,9 @@
 @import "variables.scss";
-
-html{
+html {
   overflow-x: hidden;
   overflow-y: scroll;
 }
-
-body{
+body {
   background: #fff;
   color: #000;
   font-family: 'Roboto', Arial, Tahoma, sans-serif;
@@ -18,18 +16,15 @@ body{
   line-height: 1.5em;
   overflow-x: hidden;
 }
-
 div, p, input, button, form, a {
   box-sizing: border-box;
   outline: none;
 }
-
-h1, h2, h3, h4, h5, h6, p, img, div{
+h1, h2, h3, h4, h5, h6, p, img, div {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
-
 a, a:hover, a:active, a:focus,
 button, input, button:hover, button:active, button:focus,
 input:focus, input:active {
@@ -39,14 +34,12 @@ input:focus, input:active {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
 }
-
 ul, li {
   display: block;
   padding: 0px;
   margin: 0px;
 }
-
-h1{
+h1 {
   font-family: 'Roboto';
   font-size: 60px;
   font-weight: 700;
@@ -56,8 +49,7 @@ h1{
   letter-spacing: 0.05em;
   line-height: 1.5em;
 }
-
-h2{
+h2 {
   font-family: 'Roboto';
   color: #000;
   font-size: 40px;
@@ -67,8 +59,7 @@ h2{
   letter-spacing: 0.05em;
   line-height: 1.5em;
 }
-
-h3{
+h3 {
   font-family: 'Roboto';
   font-size: 18px;
   font-weight: 700;
@@ -78,9 +69,21 @@ h3{
   letter-spacing: 0.05em;
   line-height: 1.5em;
 }
-
-
-.btn__yellow{
+.btn {
+  padding: 10px 50px;
+  border-radius: 3px;
+  //margin: 20px 10px 0 0;
+  margin: 0 10px 0 0;
+  font-family: 'OpenSans', sans-serif;
+  font-size: 15px;
+  color: #fff;
+  background-color: #c0253d;
+  font-weight: 600;
+}
+.btn-dark {
+  background-color: #232b38;
+}
+.btn__yellow {
   display: inline-block;
   cursor: pointer;
   border-radius: 5px;
@@ -92,30 +95,28 @@ h3{
   font-size: 18px;
   text-transform: uppercase;
   color: #000;
-  font-weight: 700;
-  background: #F9EB24;
+  background: #f9eb24;
   outline: none;
   -moz-transition: all 0.25s ease;
   -webkit-transition-property: all;
   -webkit-transition-duration: 0.25s;
   -webkit-transition-timing-function: ease;
-  &:hover{
+  &:hover {
     outline: none;
     background: #e1d407;
     color: #000;
   }
-  &:focus, &:active, &:visited{
+  &:focus, &:active, &:visited {
     outline: none;
-    color:#000;
+    color: #000;
   }
-  &:active{
+  &:active {
     outline: none;
     -webkit-box-shadow: inset 0 3px 5px rgba(0, 0, 0, .7);
     box-shadow: inset 0 3px 5px rgba(0, 0, 0, .7);
   }
 }
-
-.btn_transperent{
+.btn_transperent {
   cursor: pointer;
   display: inline-block;
   border: none;
@@ -129,14 +130,14 @@ h3{
   -webkit-transition-property: all;
   -webkit-transition-duration: 0.25s;
   -webkit-transition-timing-function: ease;
-  span{
+  span {
     font-weight: 200;
     font-size: 12px;
   }
-  &:hover{
+  &:hover {
     color: #fff;
   }
-  &:active{
+  &:active {
     outline: none;
     -webkit-box-shadow: inset 0 3px 5px rgba(0, 0, 0, .7);
     box-shadow: inset 0 3px 5px rgba(0, 0, 0, .7);
