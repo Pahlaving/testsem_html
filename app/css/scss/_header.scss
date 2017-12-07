@@ -1,5 +1,8 @@
 .wrapper {
   .header {
+    .hover{
+      display: none;
+    }
     height: 105px;
     background-color: $dark_gray;
     color: #fff;
@@ -110,7 +113,25 @@
           }
         }
         .icons {
-          //padding-top: 15px;
+          &:hover, &:active, &:focus{
+            cursor: pointer;
+            img{
+              &.not__hover{
+                display: none;
+              }
+              &.hover{
+                display: block;
+              }
+            }
+            padding-top: 35px;
+          }
+          //padding-top: 35px;
+          &.button{
+            padding-top: 4px;
+            &:hover, &:active, &:focus{
+              padding-top: 4px;
+            }
+          }
         }
         .button {
           padding-top: 20px;
