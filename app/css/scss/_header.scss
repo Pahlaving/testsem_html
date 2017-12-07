@@ -180,6 +180,10 @@
           }
           &:hover .child {
             left: auto;
+            @media screen and (max-width: 1030px) {
+              left: 0;
+              top: 30px;
+            }
           }
         }
         .icons {
@@ -340,6 +344,12 @@
           }
           &.drop:hover{
             .child{
+              @media screen and (max-width: 767px) {
+                left: -60px;
+                &:after{
+                  left: 65px;
+                }
+              }
               left: 0;
             }
           }
