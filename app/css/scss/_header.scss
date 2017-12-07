@@ -40,13 +40,19 @@
         margin-right: auto;
       }
       ul {
+        @media screen and (max-width: 767px) {
+          &.hidden-md.hidden-sm.hidden-lg{
+            margin-top: 10px;
+            justify-content: center;
+            align-items: center;
+          }
+        }
         float: left;
         @media screen and (max-width: 1030px) {
           float: none;
           display: flex;
           justify-content: space-around;
           align-items: center;
-          margin-bottom: 50px;
         }
         li {
           float: left;
@@ -210,8 +216,14 @@
           justify-content: space-around;
           align-items: center;
           padding: 0px 15px;
+          span{
+            margin-left: 5px;
+          }
           @media screen and (max-width: 1030px) {
             padding: 22px 15px;
+          }
+          @media screen and (max-width: 775px) {
+            padding: 19px 15px;
           }
           .receive__guests__text{
             @media screen and (max-width: 1200px) {
