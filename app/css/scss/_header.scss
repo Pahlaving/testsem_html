@@ -2,10 +2,10 @@
   .header {
     height: 105px;
     background-color: $dark_gray;
-    //background-color: #022a3c;
     color: #fff;
     line-height: 105px;
-    font-family: 'MyriadPro-Regular', sans-serif;
+    font-family: 'MyriadPro', sans-serif;
+    font-weight: 400;
     font-size: 16px;
     .logo {
       width: 120px;
@@ -46,7 +46,13 @@
               border-bottom: 10px solid #232b38;
             }
             li {
+              line-height: 40px;
+              display: block;
+              float: none;
               a {
+                i{
+                  margin-right: 15px;
+                }
                 color: #788090;
               }
               .active {
