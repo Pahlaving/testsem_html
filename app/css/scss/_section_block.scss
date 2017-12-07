@@ -1,12 +1,14 @@
 .section-block {
-  .gray {
+  &.gray {
     background-color: $section_block_gray_bg;
   }
   .block-title {
     background-color: $section_block_gray_title_bg;
-
+    padding: 20px;
   }
   .block-content {
-    .inner {}
+    .inner {
+      padding: 35px 20px;
+    }
   }
 }
