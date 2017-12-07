@@ -179,8 +179,14 @@
         .icons {
           @media screen and (max-width: 1200px) {
             img{
-              width: 37px;
-              height: 37px;
+              width: 32px;
+              height: 32px;
+            }
+            &.button{
+              img{
+                width: auto;
+                height: auto;
+              }
             }
           }
           &:hover, &:active, &:focus{
@@ -192,6 +198,9 @@
               &.hover{
                 display: block;
               }
+            }
+            @media screen and (max-width: 1200px) {
+              padding-top: 39px;
             }
             @media screen and (max-width: 1030px) {
               padding-top: 0px;
