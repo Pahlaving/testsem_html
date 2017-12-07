@@ -1,13 +1,22 @@
 input[type=text]{
   background-color: #f4f4f4;
 }
-.form-group {
-  padding-right: 30px;
-  label {
-    display: block;
-  }
+select {
+  min-width: 182px;
 }
+.form-inline {
+  margin-bottom: 25px;
+  .form-group {
+    padding-right: 30px;
+    label {
+      display: block;
+    }
+    .form-control-static {
+      padding-top: 30px;
+    }
+  }
 
-.help-block {
-  margin-top: 10px;
+  .help-block {
+    margin-top: 10px;
+  }
 }
