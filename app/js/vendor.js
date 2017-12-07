@@ -4,3 +4,4 @@
 //= vendor/jquery-migrate-3.0.0.min.js
 //= vendor/slick.js
 //= vendor/wow.min.js
+//= vendor/bootstrap.file-input.js
