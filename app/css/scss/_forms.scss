@@ -4,18 +4,32 @@ input[type=text]{
 select {
   min-width: 182px;
 }
+
 .form-inline {
   margin-bottom: 25px;
   .form-group {
-    padding-right: 30px;
+    padding: 10px 30px 0 0;
     label {
       display: block;
     }
+    .success {
+      color: $success;
+      &:before {
+        content: "";
+        width: 21px;
+        height: 21px;
+        display: inline-block;
+        vertical-align: middle;
+        background: url(../images/greenok.png);
+      }
+    }
     .form-control-static {
       padding-top: 30px;
+      &.clear-static {
+        padding: 0;
+      }
     }
   }
-
   .help-block {
     margin-top: 10px;
   }
