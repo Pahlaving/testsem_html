@@ -10,21 +10,23 @@
     .hover{
       display: none;
     }
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 
     height: 105px;
     background-color: $dark_gray;
     color: #fff;
-    line-height: 105px;
+    //line-height: 105px;
     font-family: 'MyriadPro', sans-serif;
     font-weight: 400;
     font-size: 16px;
     .logo {
       padding-left: 10px;
-      //width: 120px;
-      height: 70px;
+      //height: 70px;
       text-align: center;
-      line-height: 100px;
-      float: left;
+      //line-height: 100px;
+      //float: left;
       @media screen and (max-width: 1030px) {
         float: none;
         line-height: normal;
@@ -43,6 +45,9 @@
         margin-right: auto;
       }
       ul {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
         @media screen and (max-width: 767px) {
           &.hidden-md.hidden-sm.hidden-lg{
             margin-top: 10px;
@@ -65,7 +70,7 @@
             }
           }
         }
-        float: left;
+        //float: left;
         @media screen and (max-width: 1030px) {
           float: none;
           display: flex;
@@ -199,7 +204,10 @@
               }
             }
           }
-          &:hover, &:active, &:focus{
+          // a{
+
+          // }
+          &:hover{
             cursor: pointer;
             img{
               &.not__hover{
@@ -215,7 +223,7 @@
             @media screen and (max-width: 1030px) {
               padding-top: 0px;
             }
-            padding-top: 35px;
+            //padding-top: 35px;
           }
           //padding-top: 35px;
           &.button{
@@ -226,7 +234,7 @@
             }
             .number__posts{
               position: absolute;
-              top: -7px;
+              top: 5px;
               left: 52px;
               font-family: "Roboto", sans-serif;
               font-size: 11px;
