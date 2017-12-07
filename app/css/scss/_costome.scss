@@ -82,6 +82,10 @@ h3 {
   color: #fff;
   background-color: #c0253d;
   font-weight: 600;
+  &:hover {
+    color: #fff;
+    background-color: #232b38;
+  }
 }
 .btn-dark {
   background-color: #232b38;
