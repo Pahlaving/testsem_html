@@ -4,6 +4,9 @@
       line-height: normal;
       height: 135px;
     }
+    @media screen and (max-width: 767px) {
+      height: 197px;
+    }
     .hover{
       display: none;
     }
@@ -45,6 +48,15 @@
             margin-top: 10px;
             justify-content: center;
             align-items: center;
+            .icons{
+              position: relative;
+              .number__posts{
+                color: #ff2020;
+                position: absolute;
+                top: 4px;
+                left: 67%;
+              }
+            }
           }
         }
         float: left;
