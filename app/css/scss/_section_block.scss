@@ -1,4 +1,5 @@
 .section-block {
+  margin-bottom: 40px;
   &.gray {
     background-color: $section_block_gray_bg;
   }
@@ -7,8 +8,31 @@
     padding: 20px;
   }
   .block-content {
-    .inner {
-      padding: 35px 20px;
+    padding: 25px 0;
+    font-size: 13px;
+    .label {
+      font-size: 16px;
+      color: #022d41;
+      padding: 0;
+    }
+    .block-row {
+
+      &.half {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+        align-items: center;
+        align-content: stretch;
+        .inner {
+          flex-grow: 1;
+          width: 12%;
+        }
+      }
+      .inner {
+        padding: 16px;
+
+      }
     }
   }
 }
