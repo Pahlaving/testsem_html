@@ -25,6 +25,9 @@ h1, h2, h3, h4, h5, h6, p, img, div {
   padding: 0;
   box-sizing: border-box;
 }
+a {
+  color: $middle_red;
+}
 a, a:hover, a:active, a:focus,
 button, input, button:hover, button:active, button:focus,
 input:focus, input:active {
