@@ -6,6 +6,10 @@
   .block-title {
     background-color: $section_block_gray_title_bg;
     padding: 20px;
+    img {
+      vertical-align: middle;
+      margin-right: 15px;
+    }
   }
   .block-content {
     padding: 25px 0;
