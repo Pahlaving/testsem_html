@@ -9,10 +9,20 @@
     width: 415px;
     margin: 0 auto;
     overflow: hidden;
+    @media screen and (max-width: 1030px) {
+      width: auto;
+    }
   }
   ul {
+    @media screen and (max-width: 1030px) {
+      text-align: center;
+    }
     li {
       float: left;
+      @media screen and (max-width: 1030px) {
+        float: none;
+        display: inline-block;
+      }
       padding: 0 20px 0 20px;
       position: relative;
       opacity: 0.7;
