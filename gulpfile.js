@@ -41,8 +41,8 @@ var path = {
         scss: 'dist/css/',
         //less: 'dist/css/',
         css: 'dist/css/',
-        img: 'dist/img/',
-        //img: 'dist/img/', было так
+        img: 'dist/images/',
+        //img: 'dist/images/', было так
         fonts: 'dist/fonts/'
     },
     app: { //Пути откуда брать исходники
@@ -53,7 +53,7 @@ var path = {
         scss: 'app/css/scss/*.scss',
         //less: 'app/css/less/*.less',
         css: 'app/css/*.css',
-        img: 'app/img/**/*.*', //Синтаксис img/**/*.* означает - взять все файлы всех расширений из папки и из вложенных каталогов
+        img: 'app/images/**/*.*', //Синтаксис images/**/*.* означает - взять все файлы всех расширений из папки и из вложенных каталогов
         fonts: 'app/fonts/**/*.*',
         template: 'app/template/*.html'
     },
@@ -65,14 +65,14 @@ var path = {
         scss: 'app/css/scss/*.scss',
         //less: 'app/css/less/*.less',
         css: 'app/css/*.css',
-        img: 'app/img/**/*.*',
+        img: 'app/images/**/*.*',
         fonts: 'app/fonts/**/*.*',
         template: 'app/template/*.html'
     },
     clean: {
         js: './dist/js',
         css: './dist/css',
-        img: './dist/img',
+        img: './dist/images',
     }
 };
 
@@ -194,8 +194,8 @@ gulp.task('scss:build', function () {
 //});
 
 gulp.task('imagemin:build', function() {
-    gulp.src('app/img/**/*.*')
-    .pipe(changed('dist/img/')) //Компилируем только измененные файлы
+    gulp.src('app/images/**/*.*')
+    .pipe(changed('dist/images/')) //Компилируем только измененные файлы
 //    .pipe(imagemin({
 //      progressive: true, //сжатие .jpg
 //        svgoPlugins: [{removeViewBox: false}], //сжатие .svg
@@ -203,7 +203,7 @@ gulp.task('imagemin:build', function() {
 //        interlaced: true, //сжатие .gif
 //        optimizationLevel: 7 //степень сжатия от 0 до 7
 //    }))
-    .pipe(gulp.dest('dist/img/'));
+    .pipe(gulp.dest('dist/images/'));
 });
 
 //gulp.task('imagemin:build', function () {
@@ -214,7 +214,7 @@ gulp.task('imagemin:build', function() {
 //            se: [pngquant()],
 //            interlaced: true
 //        }))
-//        .pipe(gulp.dest(path.dist.img))
+//        .pipe(gulp.dest(path.dist.images))
 //        .pipe(reload({stream: true}));//И бросим в build
 //});
 
@@ -251,7 +251,7 @@ gulp.task('cleanall', function(){
 });
 
 gulp.task('cleanimg', function (cb) {
-    return gulp.src('dist/img', {read: false})
+    return gulp.src('dist/images', {read: false})
     .pipe(clean());
 });
 
