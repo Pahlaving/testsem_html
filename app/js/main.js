@@ -21,4 +21,9 @@ $(document).ready(function(){
 	$('input[type=file]').bootstrapFileInput();
   $('.file-inputs').bootstrapFileInput();
 
+  $('.add-phone').on('click' ,function (e) {
+    e.preventDefault();
+    $('#add-phone-form').toggle();
+  })
+
 });
