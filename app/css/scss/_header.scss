@@ -170,6 +170,8 @@
           }
         }
         .drop {
+          padding-top: 20px;
+          padding-bottom: 20px;
           padding-right: 15px;
           position: relative;
           &:after {
@@ -197,7 +199,7 @@
           &:hover .child {
             left: auto;
             opacity: 1;
-            top: 30px;
+            top: 60px;
             @media screen and (max-width: 1030px) {
               //left: 0;
               top: 60px;
@@ -221,7 +223,7 @@
         .icons {
           &.button.hidden-xs.drop{
             &::after{
-              top: 115%;
+              top: 95%;
               left: 35%;
             }
             &:hover{
@@ -253,7 +255,7 @@
               }
             }
             @media screen and (max-width: 1200px) {
-              padding-top: 39px;
+              //padding-top: 39px;
             }
             @media screen and (max-width: 1030px) {
               padding-top: 0px;
@@ -263,13 +265,13 @@
           //padding-top: 35px;
           &.button{
             position: relative;
-            padding-top: 4px;
+            padding-top: 20px;
             &:hover, &:active, &:focus{
-              padding-top: 4px;
+              padding-top: 20px;
             }
             .number__posts{
               position: absolute;
-              top: 5px;
+              top: 23px;
               left: 52px;
               font-family: "Roboto", sans-serif;
               font-size: 11px;
