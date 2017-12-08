@@ -1,15 +1,5 @@
-.layout-prof {
-  width: 100%;
-  max-width: 1170px;
-  margin: 0 auto;
-  .content-prof {
-    max-width: 830px;
-    width: 100%;
-    float: right;
-    margin: 62px 0;
-  }
-  .sidebar-left {
-    width: 280px;
-    float: left;
+.page-wrapper {
+  .page-content {
+    padding-top: 60px;
   }
 }
