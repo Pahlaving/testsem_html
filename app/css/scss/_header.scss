@@ -1,5 +1,12 @@
 .wrapper {
+  /* @media screen and (max-width: 767px) {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: stretch;
+  } */
   .header {
+    //padding: 20px;
     @media screen and (max-width: 1030px) {
       line-height: normal;
       height: 135px;
@@ -8,10 +15,12 @@
       justify-content: flex-start;
       align-items: strech;
       flex-wrap: wrap;
-
     }
     @media screen and (max-width: 767px) {
       height: 182px;
+      //display: flex;
+      justify-content: center;
+      align-items: center;
     }
     .hover{
       display: none;
@@ -33,11 +42,15 @@
         float: none;
         line-height: normal;
         img{
+          @media screen and (max-width: 767px) {
+            margin-top: 0px;
+          }
           margin-top: 20px;
           margin-bottom: 15px;
         }
       }
     }
+    flex-wrap: wrap;
     .nav {
       float: right;
       margin-right: 2%;
@@ -51,7 +64,7 @@
         justify-content: space-between;
         align-items: center;
         @media screen and (max-width: 767px) {
-          &.hidden-md.hidden-sm.hidden-lg{
+          &.hed__login.hidden-md.hidden-sm.hidden-lg{
             margin-top: 10px;
             justify-content: center;
             align-items: center;
@@ -80,6 +93,11 @@
                 }
               }
             }
+          }
+          &.index.hidden-md.hidden-sm.hidden-lg{
+            margin-top: 10px;
+            justify-content: center;
+            align-items: center;
           }
         }
         @media screen and (max-width: 1030px) {
@@ -226,7 +244,7 @@
               opacity: 1;
             }
             @media screen and (max-width: 767px) {
-              top: 40px;
+              top: 30px;
             }
           }
         }
