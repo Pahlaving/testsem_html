@@ -98,6 +98,10 @@
             margin-top: 10px;
             justify-content: center;
             align-items: center;
+          }&.index__home.hidden-md.hidden-sm.hidden-lg{
+            margin-top: 10px;
+            justify-content: center;
+            align-items: center;
           }
         }
         @media screen and (max-width: 1030px) {
@@ -488,6 +492,17 @@
         .registr__login{
           a{
             text-transform: uppercase;
+          }
+        }
+        .button__red{
+          a{
+            display: inline-block;
+            padding: 15px 20px; 
+            background-color: #C82639;
+            border-radius: 5px;
+            @media screen and (max-width: 375px) {
+              padding: 12px; 
+            }
           }
         }
       }
