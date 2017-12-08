@@ -128,24 +128,25 @@
                 </div>
 
                 <div class="form-inline">
+
                   <div class="form-group">
                     <label for="phone">Phone Number:</label>
                     <input type="phone" class="form-control" id="phone" placeholder="+380 ** *** ** 63">
                   </div>
+
                   <div class="form-group">
                     <p class="form-control-static"><span class="success"> - Confirmed</span></p>
                   </div>
+
                   <div class="clearfix"></div>
+
                   //= template/add_phone_number_with_button.html
-                  <!--<div class="form-group">-->
-                    <!--<a class="btn">Add a phone number</a>-->
-                  <!--</div>-->
-                  
+
                   <div class="form-group">
                     <p class="form-control-static clear-static">This is only shared once you have a confirmed booking
-                      with
-                      another<br> Airbnb user. This is how we can all get in touch.</p>
+                      with another<br> Airbnb user. This is how we can all get in touch.</p>
                   </div>
+
                 </div>
 
                 <div class="form-inline">
@@ -250,7 +251,7 @@
                 <div class="form-inline">
                   <div class="form-group">
                     <label for="work">VAT number:</label>
-                    <a class="btn">Add Vat ID Number</a>
+                    <a class="btn" data-toggle="modal" data-target="#vat_id_number_verification">Add Vat ID Number</a>
                   </div>
                   <div class="form-group">
                     <p class="form-control-static">For European Union users or users in other countries for which VAT
@@ -298,6 +299,8 @@
 <div class="clearfix"></div>
 
 //= template/footer.html
+
+//= template/popups/vat_id_number_verification.html
 
 <script src="js/vendor.js"></script>
 <script src="js/main.js"></script>
