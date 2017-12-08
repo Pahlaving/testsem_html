@@ -31,7 +31,8 @@ $(document).ready(function(){
       $(target).toggle();
     });
   }
-
+  
+  $(".starrr").starrr();
 
   $('#login__popup #form .log .outline__chek').click(function (e) {
     $("#login__popup #form .log input").attr('checked','checked');
