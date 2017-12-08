@@ -196,9 +196,11 @@
           }
           &:hover .child {
             left: auto;
+            opacity: 1;
             @media screen and (max-width: 1030px) {
-              left: 0;
-              top: 30px;
+              //left: 0;
+              top: 60px;
+              opacity: 1;
             }
           }
         }
