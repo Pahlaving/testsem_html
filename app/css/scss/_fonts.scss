@@ -45,6 +45,18 @@
 }
 
 @font-face {
+  font-family: 'MyriadPro';
+  src: url("../fonts/MyriadProBold.eot");
+  src: url("../fonts/MyriadProBold.woff2") format("woff2"), 
+   url("../fonts/MyriadProBold.woff") format("woff"), 
+   url("../fonts/MyriadProBold.ttf") format("truetype"), 
+   url("../fonts/MyriadProBold.svg#Roboto-Regular") format("svg"), 
+   url("../fonts/MyriadProBold.eot?#iefix") format("embedded-opentype");
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
   font-family: 'BebasNeue';
   src: url("../fonts/BebasNeueRegular.eot");
   src: url("../fonts/BebasNeueRegular.woff2") format("woff2"), 
@@ -52,6 +64,18 @@
    url("../fonts/BebasNeueRegular.ttf") format("truetype"), 
    url("../fonts/BebasNeueRegular.svg#Roboto-Regular") format("svg"), 
    url("../fonts/BebasNeueRegular.eot?#iefix") format("embedded-opentype");
+  font-weight: 400;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Poppins';
+  src: url("../fonts/Poppins-Regular.eot");
+  src: url("../fonts/Poppins-Regular.woff2") format("woff2"), 
+   url("../fonts/Poppins-Regular.woff") format("woff"), 
+   url("../fonts/Poppins-Regular.ttf") format("truetype"), 
+   url("../fonts/Poppins-Regular.svg#Roboto-Regular") format("svg"), 
+   url("../fonts/Poppins-Regular.eot?#iefix") format("embedded-opentype");
   font-weight: 400;
   font-style: normal;
 }

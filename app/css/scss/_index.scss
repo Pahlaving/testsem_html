@@ -1,8 +1,29 @@
-.olp {
-	font-family: 'MyriadPro';
-	text-align: center;
-	font-weight: 400;
-	font-size: 30px;
-	padding-top: 8px;
-	margin-bottom: 60px;
+section#browse{
+	padding-top: 25px;
+	padding-bottom: 100px;
+	.olp {
+		font-family: 'MyriadPro', sans-serif;
+		text-align: center;
+		font-weight: 700;
+		font-size: 30px;
+		margin-bottom: 55px;
+		.bro{
+			text-decoration: underline;
+			color: #cf2800;
+		}
+	}
+	.car{
+		padding-bottom: 0;
+		.item{
+			text-align: center;
+			.neo{
+				display: block;
+				margin: 22.5px 0;
+				font-size: 42px;
+				color: #000;
+				text-align: center;
+			}
+		}
+	}
 }
+
