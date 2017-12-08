@@ -21,11 +21,6 @@ $(document).ready(function(){
 	$('input[type=file]').bootstrapFileInput();
   $('.file-inputs').bootstrapFileInput();
 
-  $('.add-phone').on('click' ,function (e) {
-    e.preventDefault();
-    $('#add-phone-form').toggle();
-  });
-  
   hiddenFormsToggl('.add-phone', '#add-phone-form');
   hiddenFormsToggl('.add-emergency-contact', '#emergency_contact_form');
   hiddenFormsToggl('.add-shipping-address', '#add_shipping_address_form');
