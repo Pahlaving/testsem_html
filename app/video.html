@@ -11,56 +11,59 @@
 
 //= template/breadcrumbs.html
 
-<div class="clearfix"></div>
+<div class="page-wrapper">
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-9 col-md-push-3 page-content">
 
-<div class="layout-prof">
-
-  <div class="content-prof">
-
-    <div class="section-block">
-      <div class="block-title">Photos &amp; Video</div>
-      <div class="block-content">
-        <div class="block-row half inline">
-          <div class="inner">
-            <div id="edit-profile-avatar">
-              <img src="images/edit_profile_avatar.png" alt="">
-            </div>
-          </div>
-          <div class="inner">
-            <div class="description">
-              <p>Clear frontal face photos are an important way for hosts and guests to learn about each other. It’s not
-                much fun to host a landscape! Be sure to use a photo that clearly shows your face and doesn’t include any
-                personal or sensitive info you’d rather not have hosts or guests see.</p>
-            </div>
-            <p><input type="file" title="Add Photo from PC"></p>
-          </div>
-        </div>
-
-        <div class="block-row">
-          <div class="inner">
-            <form action="">
-              <div class="form-inline">
-                <div class="form-group full-width">
-                  <label for="where_you_live">Youtube video URL:</label>
-                  <input type="text" class="form-control" id="where_you_live" placeholder="">
+        <div class="section-block">
+          <div class="block-title">Photos &amp; Video</div>
+          <div class="block-content">
+            <div class="block-row half inline">
+              <div class="inner">
+                <div id="edit-profile-avatar">
+                  <img src="images/edit_profile_avatar.png" alt="">
                 </div>
-                <div class="form-group full-width">
-                  <button class="btn">Add Video</button>
-                </div>
-
               </div>
-            </form>
+              <div class="inner">
+                <div class="description">
+                  <p>Clear frontal face photos are an important way for hosts and guests to learn about each other. It’s
+                    not much fun to host a landscape! Be sure to use a photo that clearly shows your face and doesn’t
+                    include any personal or sensitive info you’d rather not have hosts or guests see.</p>
+                </div>
+                <p><input type="file" title="Add Photo from PC"></p>
+              </div>
+            </div>
+
+            <div class="block-row">
+              <div class="inner">
+                <form action="">
+                  <div class="form-inline">
+                    <div class="form-group full-width">
+                      <label for="where_you_live">Youtube video URL:</label>
+                      <input type="text" class="form-control" id="where_you_live" placeholder="">
+                    </div>
+                    <div class="form-group full-width">
+                      <button class="btn">Add Video</button>
+                    </div>
+
+                  </div>
+                </form>
+              </div>
+            </div>
           </div>
         </div>
+
       </div>
+
+      <div class="col-sm-3 col-md-pull-9 sidebar">
+
+        //= template/sidebar_notific.html
+
+      </div>
+
     </div>
-
   </div>
-
-  <div class="sidebar-left">
-    //= template/sidebar_notific.html
-  </div>
-
 </div>
 
 <div class="clearfix"></div>
@@ -69,6 +72,7 @@
 
 <script src="js/vendor.js"></script>
 <script src="js/main.js"></script>
+
 <script>
   $('.registr').click(function (e) {
     e.preventDefault();
@@ -79,5 +83,6 @@
     $("#myModal").modal('show');
   });
 </script>
+
 </body>
 </html>

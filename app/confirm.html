@@ -11,79 +11,87 @@
 
 //= template/breadcrumbs.html
 
-<div class="clearfix"></div>
+<div class="page-wrapper">
+  <div class="container">
+    <div class="row">
 
-<div class="layout-prof">
+      <div class="col-sm-9 col-md-push-3 page-content">
 
-  <div class="content-prof">
-
-    <div class="section-block gray">
-      <div class="block-title">Be ready to book</div>
-      <div class="block-content">
-        <div class="block-row half">
-          <div class="inner">
-            <p>You’ll need to provide identification before you book, so get a head start by doing it now. <a href="#">Learn more</a></p>
+        <div class="section-block gray">
+          <div class="block-title">Be ready to book</div>
+          <div class="block-content">
+            <div class="block-row half">
+              <div class="inner">
+                <p>You’ll need to provide identification before you book, so get a head start by doing it now.
+                  <a href="#">Learn more</a></p>
+              </div>
+              <div class="inner"><a class="btn">Provide ID</a></div>
+            </div>
           </div>
-          <div class="inner"><a class="btn">Provide ID</a></div>
         </div>
+
+        <div class="section-block">
+          <div class="block-title"><img src="images/greenok.png" alt="">Your verified info:</div>
+          <div class="block-content">
+            <div class="block-row">
+              <div class="inner">
+                <div class="label">E-mail Address:</div>
+                <p>You have confirmed your email: arikandrew@gmail.com. A confirmed email is important to allow us to
+                  securely
+                  communicate with you.</p>
+              </div>
+              <div class="inner">
+                <div class="label">Phone Number:</div>
+                <p>Your number is only shared with another member once you have a confirmed booking.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="section-block">
+          <div class="block-title"><img src="images/rednot.png" alt="">Not yet verified</div>
+          <div class="block-content">
+
+            <div class="block-row half inline">
+              <div class="inner">
+                <div class="label">Facebook:</div>
+                <p>Sign in with Facebook and discover your trusted connections to hosts and guests all over the
+                  world.</p>
+              </div>
+              <div class="inner"><a class="btn">Connect</a></div>
+            </div>
+
+            <div class="block-row half inline">
+              <div class="inner">
+                <div class="label">Google:</div>
+                <p>Sign in with Facebook and discover your trusted connections to hosts and guests all over the
+                  world.</p>
+              </div>
+              <div class="inner"><a class="btn">Connect</a></div>
+            </div>
+
+            <div class="block-row half inline">
+              <div class="inner">
+                <div class="label">LinkedIn:</div>
+                <p>Sign in with Facebook and discover your trusted connections to hosts and guests all over the
+                  world.</p>
+              </div>
+              <div class="inner"><a class="btn">Connect</a></div>
+            </div>
+
+          </div>
+        </div>
+
       </div>
-    </div>
 
-    <div class="section-block">
-      <div class="block-title"><img src="images/greenok.png" alt="">Your verified info:</div>
-      <div class="block-content">
-        <div class="block-row">
-          <div class="inner">
-            <div class="label">E-mail Address:</div>
-            <p>You have confirmed your email: arikandrew@gmail.com. A confirmed email is important to allow us to securely
-              communicate with you.</p>
-          </div>
-          <div class="inner">
-            <div class="label">Phone Number:</div>
-            <p>Your number is only shared with another member once you have a confirmed booking.</p>
-          </div>
-        </div>
-      </div>
-    </div>
+      <div class="col-sm-3 col-md-pull-9 sidebar">
 
-    <div class="section-block">
-      <div class="block-title"><img src="images/rednot.png" alt="">Not yet verified</div>
-      <div class="block-content">
-        <div class="block-row half inline">
-
-          <div class="inner">
-            <div class="label">Facebook:</div>
-            <p>Sign in with Facebook and discover your trusted connections to hosts and guests all over the world.</p>
-          </div>
-          <div class="inner"><a class="btn">Connect</a></div>
-
-        </div>
-
-        <div class="block-row half inline">
-          <div class="inner">
-            <div class="label">Google:</div>
-            <p>Sign in with Facebook and discover your trusted connections to hosts and guests all over the world.</p>
-          </div>
-          <div class="inner"><a class="btn">Connect</a></div>
-        </div>
-
-        <div class="block-row half inline">
-          <div class="inner">
-            <div class="label">LinkedIn:</div>
-            <p>Sign in with Facebook and discover your trusted connections to hosts and guests all over the world.</p>
-          </div>
-          <div class="inner"><a class="btn">Connect</a></div>
-        </div>
+        //= template/sidebar_notific.html
 
       </div>
-    </div>
 
+    </div>
   </div>
-
-  <div class="sidebar-left">
-    //= template/sidebar_notific.html
-  </div>
-
 </div>
 
 <div class="clearfix"></div>
@@ -103,5 +111,6 @@
     $("#myModal").modal('show');
   });
 </script>
+
 </body>
 </html>
