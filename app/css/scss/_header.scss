@@ -3,9 +3,15 @@
     @media screen and (max-width: 1030px) {
       line-height: normal;
       height: 135px;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: strech;
+      flex-wrap: wrap;
+
     }
     @media screen and (max-width: 767px) {
-      height: 197px;
+      height: 182px;
     }
     .hover{
       display: none;
@@ -32,6 +38,7 @@
         line-height: normal;
         img{
           margin-top: 20px;
+          margin-bottom: 15px;
         }
       }
     }
@@ -42,7 +49,7 @@
       @media screen and (max-width: 1030px) {
         float: none;
         text-align: center;
-        margin-right: auto;
+        //margin-right: auto;
       }
       ul {
         display: flex;
