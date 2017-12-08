@@ -3,6 +3,9 @@
   display: none;
   label {
     line-height: 38px;
+    @media(max-width: 768px){
+      line-height: 24px;
+    }
   }
   .form-group {
     width: 100%;
@@ -10,5 +13,11 @@
   .form-control {
     max-width: 400px;
     width: 100%;
+  }
+  .text-right {
+    @media(max-width: 768px){
+      text-align: left;
+      padding-left: 25px;
+    }
   }
 }
