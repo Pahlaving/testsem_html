@@ -24,17 +24,7 @@ select {
       display: block;
       padding-left: 10px;
     }
-    .success {
-      color: $success;
-      &:before {
-        content: "";
-        width: 21px;
-        height: 21px;
-        display: inline-block;
-        vertical-align: middle;
-        background: url(../images/greenok.png);
-      }
-    }
+
     .form-control-static {
       padding-top: 30px;
       &.clear-static {
@@ -60,5 +50,15 @@ select {
   padding: 0 0 15px;
   .form-control-static {
     max-width: 400px;
+  }
+}
+
+.confirmed-phones {
+  padding: 20px 0;
+  .phone {
+    padding: 0 0 10px;
+  }
+  .number {
+    padding-right: 10px;
   }
 }
