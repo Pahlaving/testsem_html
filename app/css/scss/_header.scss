@@ -105,6 +105,10 @@
             }
           }
           .child {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: flex-start;
             @media screen and (max-width: 1030px) {
               display: flex;
               flex-direction: column;
@@ -115,7 +119,7 @@
             background: #022a3c;
             padding: 5px;
             position: absolute;
-            top: 106px;
+            top: 87px;
             left: -9999px;
             z-index: 3;
             border-radius: 5px;
@@ -199,6 +203,12 @@
           }
         }
         .icons {
+          &.button.hidden-xs.drop{
+            &::after{
+              top: 115%;
+              left: 35%;
+            }
+          }
           @media screen and (max-width: 1200px) {
             img{
               width: 32px;
@@ -211,9 +221,6 @@
               }
             }
           }
-          // a{
-
-          // }
           &:hover{
             cursor: pointer;
             img{
@@ -334,7 +341,7 @@
             }
             position: relative;
             margin-right: 8px;
-            overflow: hidden;
+            //overflow: hidden;
             img{
               border-radius: 50%;
               width: 45px;
@@ -343,12 +350,13 @@
               max-width: 100%;
             }
             &:after{
+              z-index: 100;
               left: 50%;
               width: 9px;
               height: 5px;
               content: "";
               position: absolute;
-              top: 87px;
+              top: 57px;
               right: 3px;
               transform: translateX(-50%);
               background: url(../images/arrow-drop.png);
@@ -359,6 +367,10 @@
           }
           &.drop:hover{
             .child{
+              display: flex;
+              flex-direction: column;
+              align-items: flex-start;
+              justify-content: space-between;
               @media screen and (max-width: 767px) {
                 left: -60px;
                 &:after{
