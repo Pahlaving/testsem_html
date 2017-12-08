@@ -7,6 +7,9 @@ textarea.form-control {
   padding: 12px;
   height: 40px;
 }
+textarea.form-control {
+  height: auto;
+}
 select {
   min-width: 182px;
 }

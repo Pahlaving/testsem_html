@@ -1,0 +1,28 @@
+.reviews-list {
+  .review-item {
+    position: relative;
+    padding-left: 135px;
+    min-height: 95px;
+    margin-bottom: 45px;
+    .author-avatar {
+      position: absolute;
+      left: 25px;
+      top: 3px;
+      overflow: hidden;
+      border-radius: 50%;
+      width: 90px;
+      height: 90px;
+    }
+    .author-name {
+      font-size: 18px;
+    }
+    .summary {
+      color: $middle_red;
+      padding-top: 3px;
+    }
+    .review-text {
+      color: #8d99ae;
+      padding-top: 5px;
+    }
+  }
+}
