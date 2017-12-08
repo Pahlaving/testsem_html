@@ -38,5 +38,24 @@ $(document).ready(function(){
     $("#login__popup #form .log input").attr('checked','checked');
   });
 
+  $('.car').owlCarousel({
+    loop:true,
+    autoplay: 3000,
+    margin:10,
+    nav:true,
+    navText : ["<img src='images/9.png' class='navlef' />","<img src='images/10.png' class='navrig' />"],
+    pagination: false,
+    responsive:{
+        0:{
+            items:1
+        },
+        600:{
+            items:3
+        },
+        1000:{
+            items:5
+        }
+    }
+  });
 
 });
