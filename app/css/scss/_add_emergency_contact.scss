@@ -1,6 +1,9 @@
 #emergency_contact_form {
-  padding: 50px 0 10px;
+  padding: 30px 0 10px;
   display: none;
+  label {
+    line-height: 38px;
+  }
   .form-group {
     width: 100%;
   }
