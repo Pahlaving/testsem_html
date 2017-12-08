@@ -16,15 +16,16 @@
   }
   .inbox-table-body {
     display: table-row-group;
-    background: url(../images/inbox_table_bg.png) repeat-x 50% 0;
+  }
+  .inbox-table-h-sep {
+    height: 17px;
   }
   .inbox-table-head-tr,
   .inbox-table-body-tr {
     display: table-row;
-    vertical-align: middle;
   }
   .inbox-table-head-tr {
-    background-color: #f5f5f5;
+    background: #f5f5f5 url(../images/inbox_table_bg.png) repeat-x 50% 100%;
   }
   .inbox-table-head-th {
     text-transform: uppercase;
@@ -33,7 +34,7 @@
   .inbox-table-head-th,
   .inbox-table-body-td {
     display: table-cell;
-    padding: 15px 25px;
+    vertical-align: middle;
     &.inbox-from {
       width: 170px;
     }
@@ -49,7 +50,11 @@
       text-align: center;
     }
   }
+  .inbox-table-head-th {
+    padding: 15px 25px 25px;
+  }
   .inbox-table-body-td {
+    padding: 15px 25px;
     &.inbox-last {
       font-size: 12px;
       text-transform: uppercase;
