@@ -67,7 +67,7 @@ var path = {
         css: 'app/css/*.css',
         img: 'app/images/**/*.*',
         fonts: 'app/fonts/**/*.*',
-        template: 'app/template/*.html'
+        template: 'app/template/**/*.html'
     },
     clean: {
         js: './dist/js',
