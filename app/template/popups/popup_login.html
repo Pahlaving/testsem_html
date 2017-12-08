@@ -2,17 +2,35 @@
 <div class="modal fade" id="login__popup" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
   <div class="modal-dialog" role="document">
     <div class="modal-content">
-      <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span></button>
-        <h4 class="modal-title" id="myModalLabel">Modal title</h4>
-      </div>
-      <div class="modal-body">
-        ...
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Save changes</button>
+        <div class="modal-body">
+          <a type="button" class="closes" data-dismiss="modal" aria-hidden="true">&#10006;</a>
+          <p class="h4">LOGIN</p>
+          <form id="form" method="POST">
+              <label for="username">Username or email address</label>
+              <p><input id="username" type="text" name="username" placeholder="Al"></p>
+              <label for="pass">Password</label>
+               <p><input id="pass" type="password" name="pass" placeholder="********"></p>
+             <div class="log">
+              <div class="outline__chek">
+                <div class="inline__chek"></div>
+              </div>
+              <input type="checkbox" value="1" class="checkbox" id="remember">
+              <label for="remember">Remember me</label>
+             </div>
+             <!-- <div class="log logto">
+              <a href="#">Lost your password</a>
+             </div> -->
+             <p><input id="but" type="submit" value="LOGIN"></p>
+          </form>
+          <!-- <div class="fix">
+            <div class="hr"><hr></div>
+            <div class="or">Or</div>
+            <div class="hr"><hr></div>
+            </div> -->
+         <!--  <div class="fixto">
+           <div class="leflo"><a style="color: #fff !important" class="fc" href="#"><img class="img" src="images/5.png" alt="5" title="5" /> Facebook connect</a></div>
+           <div class="leflo"><a style="color: #fff !important" class="tw" href="#"><img class="img" src="images/5.png" alt="5" title="5" /> Twitter connect</a></div>
+         </div> -->
       </div>
     </div>
   </div>

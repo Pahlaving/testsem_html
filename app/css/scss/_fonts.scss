@@ -44,4 +44,14 @@
   font-style: normal;
 }
 
-
+@font-face {
+  font-family: 'BebasNeue';
+  src: url("../fonts/BebasNeueRegular.eot");
+  src: url("../fonts/BebasNeueRegular.woff2") format("woff2"), 
+   url("../fonts/BebasNeueRegular.woff") format("woff"), 
+   url("../fonts/BebasNeueRegular.ttf") format("truetype"), 
+   url("../fonts/BebasNeueRegular.svg#Roboto-Regular") format("svg"), 
+   url("../fonts/BebasNeueRegular.eot?#iefix") format("embedded-opentype");
+  font-weight: 400;
+  font-style: normal;
+}
