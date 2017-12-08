@@ -92,6 +92,9 @@ h3 {
   border-width: 0;
   text-align: center;
   min-width: 200px;
+  &:focus {
+    color: #fff;
+  }
   &:hover {
     color: #fff;
     background-color: #232b38;
