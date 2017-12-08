@@ -5,3 +5,4 @@
 //= vendor/slick.js
 //= vendor/wow.min.js
 //= vendor/bootstrap.file-input.js
+//= vendor/starrr.js
