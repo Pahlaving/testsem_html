@@ -12,6 +12,12 @@
       &:hover {
         opacity: 1;
       }
+      &:last-child {
+        padding-right: 0;
+        &:after {
+          display: none;
+        }
+      }
       &:after {
         width: 4px;
         height: 8px;
