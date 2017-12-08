@@ -22,40 +22,103 @@
           <div class="block-content">
             <div class="block-row">
               <div class="inner">
-                <div class="btn-group big" role="group" aria-label="...">
-                  <button type="button" class="btn btn-default">Request References</button>
-                  <button type="button" class="btn btn-default accent">References About You</button>
-                  <button type="button" class="btn btn-default">References By You</button>
+                <ul id="page-tabs" class="nav nav-pills">
+                  <li role="presentation" class="active"><a href="#tab1" role="tab" class="btn btn-default">Request References</a></li>
+                  <li role="presentation"><a href="#tab2" role="tab" class="btn btn-default">References About You</a></li>
+                  <li role="presentation"><a href="#tab3" role="tab" class="btn btn-default">References By You</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="tab-content">
+          <div role="tabpanel" class="tab-pane active" id="tab1">
+
+            <div class="section-block">
+              <div class="block-content">
+                <div class="block-row">
+                  <div class="inner">
+                    <p>Our site is built on trust and reputation. You can request references from your personal network,
+                      and the references will appear publicly on your Airbnb profile to help other members get to know
+                      you.
+                      You should only request references from people who know you well.</p>
+                  </div>
                 </div>
               </div>
             </div>
+
+            <div class="section-block gray">
+              <div class="block-title">Friends on site</div>
+              <div class="block-content">
+                <div class="block-row half inline">
+                  <div class="inner"><a href="#"><img src="images/btn_facebook_connect.png" alt=""></a></div>
+                  <div class="inner">
+                    <p>Connect your Facebook account to see which of your friends are on Airbnb. You will be able to
+                      request references from them here.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+          <div role="tabpanel" class="tab-pane" id="tab2">
+
+            <div class="section-block gray">
+              <div class="block-title">Pending Approval</div>
+              <div class="block-content">
+                <div class="block-row">
+                  <div class="inner">
+                    <p>When you accept a reference it will appear on your public profile. If you ignore a reference it
+                      will not appear in your profile, and the other person will not be notified.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="section-block gray">
+              <div class="block-title">Past References Written About You</div>
+              <div class="block-content">
+                <div class="block-row">
+                  <div class="inner">
+                    <p>References require profile photos. A reference will only display in your public profile if the
+                      member who wrote it has a profile picture.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+          <div role="tabpanel" class="tab-pane" id="tab3">
+
+            <div class="section-block gray">
+              <div class="block-title">Reference Requests</div>
+              <div class="block-content">
+                <div class="block-row">
+                  <div class="inner">
+                    <p>Write references only for people you know well enough to recommend to the Airbnb Community. If
+                      you ignore a request the other person will not be notified.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="section-block gray">
+              <div class="block-title">Past References You've Written</div>
+              <div class="block-content">
+                <div class="block-row">
+                  <div class="inner">
+                    <p>You have not written a reference for anyone yet</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
           </div>
         </div>
 
-        <div class="section-block">
-          <div class="block-content">
-            <div class="block-row">
-              <div class="inner">
-                <p>Our site is built on trust and reputation. You can request references from your personal network, and
-                  the references will appear publicly on your Airbnb profile to help other members get to know you. You
-                  should only request references from people who know you well.</p>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="section-block gray">
-          <div class="block-title">Friends on site</div>
-          <div class="block-content">
-            <div class="block-row half inline">
-              <div class="inner"><a href="#"><img src="images/btn_facebook_connect.png" alt=""></a></div>
-              <div class="inner">
-                <p>Connect your Facebook account to see which of your friends are on Airbnb. You will be able to request
-                  references from them here.</p>
-              </div>
-            </div>
-          </div>
-        </div>
 
       </div>
 
@@ -75,6 +138,13 @@
 
 <script src="js/vendor.js"></script>
 <script src="js/main.js"></script>
+
+<script>
+  $('#page-tabs').find('a').click(function (e) {
+    e.preventDefault();
+    $(this).tab('show');
+  });
+</script>
 
 </body>
 </html>
