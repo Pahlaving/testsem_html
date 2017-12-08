@@ -21,17 +21,9 @@ $(document).ready(function(){
 	$('input[type=file]').bootstrapFileInput();
   $('.file-inputs').bootstrapFileInput();
 
-  // $('.add-phone').on('click' ,function (e) {
-  //   e.preventDefault();
-  //   $('#add-phone-form').toggle();
-  // });
-  // $('.add-emergency-contact').on('click' ,function (e) {
-  //   e.preventDefault();
-  //   $('#emergency_contact_form').toggle();
-  // });
-
   hiddenFormsToggl('.add-phone', '#add-phone-form');
   hiddenFormsToggl('.add-emergency-contact', '#emergency_contact_form');
+  hiddenFormsToggl('.add-shipping-address', '#add_shipping_address_form');
 
   function hiddenFormsToggl(trigger, target) {
     $(trigger).on('click' ,function (e) {
