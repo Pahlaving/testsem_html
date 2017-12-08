@@ -1,4 +1,14 @@
 $(document).ready(function(){
+
+	$('.registr').click(function (e) {
+    e.preventDefault();
+    $("#myModalBox").modal('show');
+  });
+  $('.login').click(function (e) {
+    e.preventDefault();
+    $("#myModal").modal('show');
+  });
+
 	$('.slider').click(function() {
 	  $(this).toggleClass('slider__toggle');
 	  $('.receive__guests__text').toggleClass('receive__guests__toggle');
