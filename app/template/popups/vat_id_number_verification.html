@@ -1,0 +1,107 @@
+<!-- Modal - VAT ID Number Verification -->
+
+<div class="modal fade" id="vat_id_number_verification" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">VAT ID Number Verification1</h4>
+      </div>
+      <div class="modal-body">
+        <form accept-charset="UTF-8" action="" class="vat-number-verification-form form-horizontal" method="post">
+          <div class="panel-body">
+            <input type="hidden" name="user_id" value="161810790">
+            <div class="control-group">
+              <label class="control-label" for="vat-member-state">Member State</label>
+              <div class="controls">
+                <select name="country_code" id="vat-member-state">
+                  <option value="" selected="selected"></option>
+                  <option value="AT" data-override="">Austria</option>
+                  <option value="BE" data-override="">Belgium</option>
+                  <option value="BG" data-override="">Bulgaria</option>
+                  <option value="HR" data-override="">Croatia</option>
+                  <option value="CY" data-override="">Cyprus</option>
+                  <option value="CZ" data-override="">Czech Republic</option>
+                  <option value="DK" data-override="">Denmark</option>
+                  <option value="EE" data-override="">Estonia</option>
+                  <option value="FI" data-override="">Finland</option>
+                  <option value="FR" data-override="">France</option>
+                  <option value="DE" data-override="">Germany</option>
+                  <option value="GR" data-override="EL">Greece</option>
+                  <option value="HU" data-override="">Hungary</option>
+                  <option value="IE" data-override="">Ireland</option>
+                  <option value="IT" data-override="">Italy</option>
+                  <option value="LV" data-override="">Latvia</option>
+                  <option value="LT" data-override="">Lithuania</option>
+                  <option value="LU" data-override="">Luxembourg</option>
+                  <option value="MT" data-override="">Malta</option>
+                  <option value="NL" data-override="">Netherlands</option>
+                  <option value="PL" data-override="">Poland</option>
+                  <option value="PT" data-override="">Portugal</option>
+                  <option value="RO" data-override="">Romania</option>
+                  <option value="SK" data-override="">Slovakia</option>
+                  <option value="SI" data-override="">Slovenia</option>
+                  <option value="ES" data-override="">Spain</option>
+                  <option value="SE" data-override="">Sweden</option>
+                  <option value="GB" data-override="">United Kingdom</option>
+                </select>
+              </div>
+            </div>
+            <div class="control-group">
+              <label class="control-label" for="vat_number">VAT Number</label>
+              <div class="controls">
+                <div class="input-prepend">
+                  <span class="add-on vat-id-prefix"></span>
+                  <input type="text" name="vat_number" id="vat_number">
+                </div>
+              </div>
+            </div>
+            <div class="control-group">
+              <label class="control-label" for="name">Name on Registration</label>
+              <div class="controls">
+                <input type="text" name="name" id="name">
+              </div>
+            </div>
+            <div class="control-group">
+              <label class="control-label" for="address1">Address Line 1</label>
+              <div class="controls">
+                <input type="text" name="address1" id="address1">
+              </div>
+            </div>
+            <div class="control-group">
+              <label class="control-label" for="address2">Address Line 2</label>
+              <div class="controls">
+                <input type="text" name="address2" id="address2">
+              </div>
+            </div>
+            <div class="control-group">
+              <label class="control-label" for="city">City</label>
+              <div class="controls">
+                <input type="text" name="city" id="city">
+              </div>
+            </div>
+            <div class="control-group">
+              <label class="control-label" for="state">Province / Region</label>
+              <div class="controls">
+                <input type="text" name="state" id="state">
+              </div>
+            </div>
+            <div class="control-group">
+              <label class="control-label" for="zip">Postal Code</label>
+              <div class="controls">
+                <input type="text" name="zip" id="zip">
+              </div>
+            </div>
+            <p class="vat-verification-msg">Verification may take up to 48 hours. You will receive an email to
+              confirm verification status.</p>
+          </div>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <input class="btn" type="submit" value="Verify">
+        <a href="#" class="btn gray" data-modal-close="true">Cancel</a>
+      </div>
+    </div>
+  </div>
+</div>
