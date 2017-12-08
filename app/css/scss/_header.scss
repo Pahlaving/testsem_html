@@ -189,7 +189,6 @@
           }
           .drop-icon {
             padding-right: 15px;
-            position: relative;
             &:after {
               top: 20px;
               left: 20px;
@@ -197,6 +196,8 @@
             }
           }
           &:hover .child {
+            position: absolute;
+            z-index: 999;
             left: auto;
             opacity: 1;
             top: 60px;
@@ -211,39 +212,70 @@
           }
         }
         .login.drop{
+          padding-top: 20px;
+          padding-bottom: 20px;
           &:hover{
             .child{
-              top: 70px;
+              top: 90px;
               @media screen and (max-width: 767px) {
                 top: 30px;
               }
             }
           }
         }
-        .icons {
-          &.button.hidden-xs.drop{
-            &::after{
-              top: 95%;
-              left: 35%;
-            }
-            &:hover{
-              .child{
-                top: 70px;
-              }
+        .button__icon.hidden-xs.drop{
+          &::after{
+            top: 95%;
+            left: 35%;
+          }
+          &:hover{
+            .child{
+              top: 90px;
             }
           }
-          @media screen and (max-width: 1200px) {
+        }
+        .button__icon{
+          cursor: pointer;
+          padding-top: 20px;
+          padding-bottom: 20px;
+          margin-right: 10px;
+          &:hover, &:active, &:focus{
+            padding-top: 20px;
+          }
+          .number__posts{
+            position: absolute;
+            top: 23px;
+            left: 52px;
+            font-family: "Roboto", sans-serif;
+            font-size: 11px;
+            font-weight: 500;
+            color: #ff2020;
+            @media screen and (max-width: 1030px) {
+              top: 9px;
+            }
+          }
+        }
+        /* .button {
+         
+          .reg {
+            font-family: "Roboto", sans-serif;
+            font-size: 13px;
+            color: #fff;
+          }
+        } */
+        /* @media screen and (max-width: 1200px) {
+          img{
+            width: 32px;
+            height: 32px;
+          }
+          &.button{
             img{
-              width: 32px;
-              height: 32px;
-            }
-            &.button{
-              img{
-                width: auto;
-                height: auto;
-              }
+              width: auto;
+              height: auto;
             }
           }
+        } */
+        .icons {
           &:hover{
             cursor: pointer;
             img{
@@ -263,34 +295,6 @@
             //padding-top: 35px;
           }
           //padding-top: 35px;
-          &.button{
-            position: relative;
-            padding-top: 20px;
-            &:hover, &:active, &:focus{
-              padding-top: 20px;
-            }
-            .number__posts{
-              position: absolute;
-              top: 23px;
-              left: 52px;
-              font-family: "Roboto", sans-serif;
-              font-size: 11px;
-              font-weight: 500;
-              color: #ff2020;
-              @media screen and (max-width: 1030px) {
-                top: 9px;
-              }
-            }
-          }
-        }
-        .button {
-          padding-top: 20px;
-          margin-right: 10px;
-          .reg {
-            font-family: "Roboto", sans-serif;
-            font-size: 13px;
-            color: #fff;
-          }
         }
         .receive__guests{
           background-color: #22272E;
