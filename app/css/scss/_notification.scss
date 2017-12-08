@@ -5,6 +5,9 @@
   background-color: #e5e5e5;
   margin: 0 0 40px;
   padding: 0 0 20px 180px;
+  @media(max-width: 480px) {
+    padding: 20px;
+  }
   position: relative;
   .br-close {
     float: right;
@@ -14,9 +17,15 @@
     position: absolute;
     left: 50px;
     top: 25px;
+    @media(max-width: 480px) {
+      position: static;
+    }
   }
   .brick-title {
     padding: 40px 0 15px 0;
+    @media(max-width: 480px) {
+      padding: 20px 0 15px;
+    }
   }
   .brick-text {
     padding: 0 0 20px 0;
