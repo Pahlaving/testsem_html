@@ -12,7 +12,7 @@
  		padding: 40px;
  		position: relative;
  	}
- 	a{
+ 	.closes{
  		right: -25px;
  		top: -25px;
  		position: absolute;
@@ -54,14 +54,21 @@
 			font-weight: 300;
 		}
 		.log{
+			line-height: 72px;
+			display: inline-block;
 			label{
+				margin-bottom: 0;
+				margin-top: 0;
+				margin-left: 20px;
+				line-height: 20px;
 				display: inline-block;
+				color: #8d99ae;
 			}
 			position: relative;
 			.outline__chek{
 				cursor: pointer;
 				position: absolute;
-				display: block;
+				display: none;
 				top: 0;
 				left: 0;
 				content: "";
@@ -71,10 +78,9 @@
 				background-color: #fff;
 			}
 			.inline__chek{
-				visibility: hidden;
 				cursor: pointer;
 				position: absolute;
-				display: block;
+				display: none;
 				top: 50%;
 				left: 50%;
 				transform: translate(-50%, -50%);
@@ -85,58 +91,30 @@
 			}
 			input{
 				top: 0;
-				left: 30px;
+				left: 0px;
 				display: inline-block;
-				position: absolute;
+				//position: absolute;
+				//margin-top: 20px;
 				height: 20px;
 				width: 20px;
-				//opacity: 0;
-				// &:before{
-				// 	//visibility: hidden;
-				// 	cursor: pointer;
-				// 	position: absolute;
-				// 	display: block;
-				// 	top: 0;
-				// 	left: 0;
-				// 	content: "";
-				// 	width: 20px;
-				// 	height: 20px;
-				// 	border: 2px solid #CBCBCB;
-				// 	background-color: #fff;
-				// }
-				// &:after{
-				// 	//visibility: hidden;
-				// 	//z-index: 100;
-				// 	cursor: pointer;
-				// 	position: absolute;
-				// 	display: block;
-				// 	top: 50%;
-				// 	left: 50%;
-				// 	transform: translate(-50%, -50%);
-				// 	content: "";
-				// 	width: 10px;
-				// 	height: 10px;
-				// 	background-color: #CBCBCB;
-				// }
+				outline: none;
 			}
-			/* input[checked="checked"]{
-				&:after{
-					visibility: visible;
-				}
-			} */
-			// #remember:checked ~ .inline__chek{
-			// 	visibility: visible;
-			// }
-			// input[type="checkbox"]:not(:checked) ~ .inline__chek{
-			// 	visibility: hidden;
-			// }
-			
+		}
+		.lost__password{
+			display: inline-block;
+			margin-right: 0;
+			margin-left: 39%;
+			a{
+				font-size: 16px;
+				color: #8d99ae;
+				font-weight: 300;
+				//position: relative;
+			}
 		}
 		#button{
-			margin-top: 30px;
 			width: 100%;
 			padding: 20px;
-			background-color:#D80628;
+			background-color:#8C98AD;
 			border: none;
 			border-radius: 5px;
 			font-family: 'BebasNeue';
@@ -144,6 +122,52 @@
 			font-size: 35px;
 			text-align: center;
 			color: #fff;
+		}
+	}
+	.line{
+		height: 90px;
+		display: flex;	
+		justify-content: space-between;
+		align-items: center;
+		color: #8C98AD;
+		.hr{
+			line-height: 90px;	
+			display: inline-block;
+			width: 45%;
+			//height: 3px;
+		}
+		.or{
+			font-size: 16px;
+			font-weight: 300;	
+			display: inline-block;
+		}
+	}
+	.fixto{
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		.button{
+			display: inline-block;
+			width: 48%;
+			padding: 20px;
+			background-color:#8C98AD;
+			border: none;
+			border-radius: 5px;
+			font-family: 'Roboto';
+			font-weight: 300;
+			font-size: 16px;
+			text-align: center;
+			color: #fff;
+			text-transform: none;
+			i{
+				margin-right: 15px;
+			}
+			&.facebook{
+				background-color: #3B5997;
+			}
+			&.twitter{
+				background-color: #21A1F0;
+			}
 		}
 	}
  }
