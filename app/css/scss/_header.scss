@@ -267,7 +267,7 @@
           display: flex;
           justify-content: space-around;
           align-items: center;
-          padding: 0px 15px;
+          padding: 40px 15px;
           span{
             margin-left: 5px;
           }
@@ -385,27 +385,27 @@
     }
   }
 }
-.mess-icon {
-  position: relative;
-  float: left;
-  padding-top: 20px;
-}
-.quant {
-  width: 10px;
-  height: 10px;
-  position: absolute;
-  top: -10px;
-  right: 21px;
-  font-size: 12px;
-  color: #c0253d;
-}
-.child-mess {
-  width: 175px;
-}
+// .mess-icon {
+//   position: relative;
+//   float: left;
+//   padding-top: 20px;
+// }
+// .quant {
+//   width: 10px;
+//   height: 10px;
+//   position: absolute;
+//   top: -10px;
+//   right: 21px;
+//   font-size: 12px;
+//   color: #c0253d;
+// }
+// .child-mess {
+//   width: 175px;
+// }
 
-.tab-content .active {
-  display: block !important;
-}
-.tab-pane {
-  display: none;
-}
+// .tab-content .active {
+//   display: block !important;
+// }
+// .tab-pane {
+//   display: none;
+// }
