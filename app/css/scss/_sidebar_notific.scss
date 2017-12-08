@@ -5,14 +5,14 @@
   margin: 60px 0;
   ul {
     li{
-      padding: 10px 10px;
-      margin: 10px;
+      margin: 10px 0;
       color: #022d41;
       .item-nav-notif{
         line-height: 20px;
         padding: 10px;
         color: #022d41;
         border: 2px transparent solid;
+        display: inline-block;
         &:hover{
           border: 2px #022d41 solid;
           color: #022d41;
