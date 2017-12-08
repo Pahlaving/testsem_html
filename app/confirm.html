@@ -41,6 +41,17 @@
                   <div class="label">Phone Number:</div>
                   <p>Your number is only shared with another member once you have a confirmed booking.</p>
                 </div>
+
+                <div class="form-inline">
+                  <div class="form-group">
+                    <label for="phone">Phone Number:</label>
+                    <input type="phone" class="form-control" id="phone" placeholder="+380 ** *** ** 63">
+                  </div>
+                  <div class="form-group">
+                    <p class="form-control-static"><span class="success"> - Confirmed</span></p>
+                  </div>
+                </div>
+                
               </div>
             </div>
           </div>
@@ -78,7 +89,7 @@
 
         </div>
 
-        <div class="col-sm-4 col-sm-pull-8 col-md-3 col-md-pull-9 sidebar">
+        <div class="col-sm-4 col-sm-pull-8 col-md-3 sidebar">
 
           //= template/sidebar_notific.html
 
@@ -94,6 +105,17 @@
 
   <script src="js/vendor.js"></script>
   <script src="js/main.js"></script>
+
+  <script>
+    $('.registr').click(function (e) {
+      e.preventDefault();
+      $("#myModalBox").modal('show');
+    });
+    $('.login').click(function (e) {
+      e.preventDefault();
+      $("#myModal").modal('show');
+    });
+  </script>
 
 </body>
 </html>
