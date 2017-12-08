@@ -1,13 +1,4 @@
- // .modal-open {
- //    overflow-y: hidden !important;
- //    overflow-x: hidden !important;
- // }
- // .modal-open .modal {
- //     overflow-x: hidden !important;
- //     overflow-y: hidden !important;
- // }
-
- #login__popup{
+#login__popup{
  	.modal-body{
  		padding: 40px;
  		position: relative;
@@ -18,7 +9,7 @@
  		position: absolute;
  		text-align: center;
  		display: block;
- 		background-color: #D80628;
+ 		background-color: #D80628;	
  		cursor: pointer;
  		line-height: 50px;
 		width: 50px;
