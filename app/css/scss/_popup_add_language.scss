@@ -1,0 +1,46 @@
+/* Add Spoken Languages Popup Styles */
+
+#add_language_popup {
+
+  .modal-header {
+    text-align: center;
+    h4 {
+      font-size: 20px;
+    }
+    .close {
+      margin-right: 10px;
+    }
+  }
+  .modal-dialog {
+    width: 500px;
+  }
+  .modal-content {
+    background-color: #ececec;
+  }
+  .panel-body {
+    padding-bottom: 0;
+    padding-top: 0;
+  }
+  .modal-body {
+    padding-top: 0;
+  }
+  .description {
+    font-size: 12px;
+    color: #606060;
+    text-align: center;
+    padding: 0 15px 20px;
+  }
+  label {
+    font-weight: 400;
+    line-height: 28px;
+    display: block;
+  }
+  .form-control {
+    height: 40px;
+    padding: 12px;
+  }
+  .btn {
+    margin: 0 5px 5px;
+    min-width: 120px;
+  }
+}

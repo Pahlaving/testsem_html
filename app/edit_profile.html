@@ -239,7 +239,7 @@
                     <div class="clearfix"></div>
 
                     <div class="form-group">
-                      <a class="btn">Add more</a>
+                      <a class="btn" data-toggle="modal" data-target="#add_language_popup">Add more</a>
                     </div>
                     <div class="form-group">
                       <p class="form-control-static clear-static">Add any languages that others can use to speak with
@@ -264,11 +264,17 @@
                 <div class="form-inline">
                   <div class="form-group">
                     <label for="work">Emergency contact:</label>
-                    <a class="btn">Add Contact</a>
+                    <a href="#" class="btn add-emergency-contact">Add contact</a>
+
                   </div>
                   <div class="form-group">
                     <p class="form-control-static">Give our Customer Experience team a trusted contact we can alert<br>in
                       an urgent situation.</p>
+                  </div>
+                  <div class="clearfix">
+
+                    //= template/add_emergency_contact.html
+
                   </div>
                 </div>
 
@@ -301,6 +307,7 @@
 //= template/footer.html
 
 //= template/popups/vat_id_number_verification.html
+//= template/popups/add_language.html
 
 <script src="js/vendor.js"></script>
 <script src="js/main.js"></script>

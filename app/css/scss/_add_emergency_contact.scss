@@ -1,0 +1,11 @@
+#emergency_contact_form {
+  padding: 50px 0 10px;
+  display: none;
+  .form-group {
+    width: 100%;
+  }
+  .form-control {
+    max-width: 400px;
+    width: 100%;
+  }
+}
