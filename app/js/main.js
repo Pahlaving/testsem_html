@@ -58,4 +58,17 @@ $(document).ready(function(){
     }
   });
 
+  $('.owls').owlCarousel({
+    items : 1, 
+    autoplay: 3000,
+    nav:false,
+    pagination: true,
+  });
+
+  $('.nav-tabs a').click(function(e){
+       e.preventDefault();
+       $('.nav-tabs a').removeClass('actives');
+     $(this).addClass('actives');
+  });
+
 });
