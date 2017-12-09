@@ -557,9 +557,13 @@ section#find{
 		margin-top: 27px;
 	}
 	.mob{
+		display: flex;
+		justify-content: center;	
+		align-items: center;	
 		overflow: hidden;
 		margin-top: 54px;
-		.mobleft{
+		.mobleft, .mobright{
+			display: inline-block;	
 			.bef{
 				position: relative;
 				height: 68px;
@@ -569,6 +573,50 @@ section#find{
 				padding-left: 78px;
 				border-radius: 4px;
 				background: #4d6c7b;
+				&:before{
+					content: '';
+					position: absolute;
+					left: 65px;
+					top: 0;
+					width: 1px;
+					height: 100%;
+					background: #8297A2;
+				}
+				&:after{
+					content: '';
+					position: absolute;
+					left: 19px;
+					top: 19px;
+					width: 28px;
+					height: 33px;
+					background: url(../images/18.png);
+				}
+				&>div{
+					color: #fff;
+					font-family: 'Poppins', sans-serif;
+					font-size: 13px;
+					padding-top: 13px;
+				}
+				.droid{
+					color: #fff;
+					font-family: 'Poppins', sans-serif;
+					font-size: 18px;
+					padding-top: 18px;
+				}
+			}
+		}
+		.mobright{
+			margin-left: 20px;
+			.bef{
+				&:after{
+					content: '';
+					position: absolute;
+					left: 19px;
+					top: 19px;
+					width: 28px;
+					height: 33px;
+					background: url(../images/19.png);
+				}
 			}
 		}
 	}
