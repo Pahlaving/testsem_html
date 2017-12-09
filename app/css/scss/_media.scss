@@ -1,9 +1,96 @@
 section#media{
+	min-height: 1000px;
 	.m_add {
 		font-size: 22px;
 		font-family: 'MyriadPro', sans-serif;
 		font-weight: 900;
 		text-transform: uppercase;
 		margin-top: 40px;
+		margin-bottom: 15px;
+	}
+	.m_sectright{
+		display: table;
+		width: 100%;
+		a{
+			display: table-cell;
+			background: #6f6f6f;
+			padding: 16px 0;
+			text-align: center;
+			color: #fff;
+			border-right: 1px solid #ccc;
+			&.actives{
+				background: #222a37 !important;
+				box-shadow: none;
+			}
+		}
+	}
+	.tab-content{
+		.tab-pane{
+			&.active {
+				background: #222a37;
+			}
+		}
+	}
+	.youtube {
+		margin-bottom: 20px;
+		background: #f0eeef;
+		margin-top: 20px;
+		display: block;
+		text-align: center;
+		.m_you{
+			font-size: 18px;
+			font-family: mpb;
+			color: #6f6f6f;
+			padding: 34px 36px;
+		}
+	}
+	.tabs {
+		background: #403c3e;
+		display: block;
+		padding: 40px 0;
+	}
+	.m_h4 {
+		font-size: 20px;
+		font-family: 'MyriadPro', sans-serif;
+		font-weight: 900;
+		padding: 0 36px;
+		color: #fff;
+		padding-top: 40px;
+		margin-bottom: 15px;
+		i{
+			color: yellow;
+		}
+		a{
+			color: yellow;
+			color: yellow;
+			font-size: 20px;
+			font-family: mpb;
+			font-weight: 900;
+		}
+	}
+	.m_div {
+		font-size: 19px;
+		font-family: 'MyriadPro', sans-serif;
+		color: #fff;
+		padding: 0 36px 40px;
+		.m_i {
+		   float: right;
+		   color: yellow;
+		}
+		.comp{
+			color: #fff;
+		}
+	}
+	.m_but{
+		cursor: pointer;
+		padding: 16px 42px;
+		margin-top: 16px;
+		background: #d6d606;
+		color: #fff;
+		font-size: 20px;
+		font-family: mpb;
+		font-weight: 900;
+		text-transform: uppercase;
+		border-radius: 4px;
 	}
 }
