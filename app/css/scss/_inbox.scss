@@ -13,12 +13,12 @@
   width: 100%;
   .inbox-table-head {
     display: table-header-group;
+    @media(max-width: 768px) {
+      display: none;
+    }
   }
   .inbox-table-body {
     display: table-row-group;
-  }
-  .inbox-table-h-sep {
-    height: 17px;
   }
   .inbox-table-head-tr,
   .inbox-table-body-tr {
@@ -26,10 +26,6 @@
   }
   .inbox-table-head-tr {
     background: #f5f5f5 url(../images/inbox_table_bg.png) repeat-x 50% 100%;
-  }
-  .inbox-table-head-th {
-    text-transform: uppercase;
-    font-weight: 600;
   }
   .inbox-table-head-th,
   .inbox-table-body-td {
@@ -48,13 +44,23 @@
     &.inbox-last {
       width: 130px;
       text-align: center;
+      .title {
+        text-transform: none;
+      }
     }
   }
+
   .inbox-table-head-th {
+    text-transform: uppercase;
+    font-weight: 600;
     padding: 15px 25px 25px;
   }
   .inbox-table-body-td {
     padding: 15px 25px;
+    @media(max-width: 992px) {
+      padding: 10px 15px;
+
+    }
     &.inbox-last {
       font-size: 12px;
       text-transform: uppercase;
