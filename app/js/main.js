@@ -68,7 +68,7 @@ $(document).ready(function(){
 
   $('.tov').owlCarousel({
     loop:true,
-    autoplay: 3000,
+    //autoplay: 3000,
     nav:true,
     navText : ["<img src='images/15.png' class='navlef' />","<img src='images/16.png' class='navrig hi' />"],
     pagination: false,
@@ -77,7 +77,10 @@ $(document).ready(function(){
             items:1
         },
         600:{
-            items:3
+            items:2
+        },
+        767:{
+          items:3
         },
         1000:{
             items:5
