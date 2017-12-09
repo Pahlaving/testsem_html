@@ -7,4 +7,4 @@
 //= vendor/bootstrap.file-input.js
 //= vendor/starrr.js
 //= vendor/owl.carousel.min.js
-
+//= vendor/markerclusterer.js
