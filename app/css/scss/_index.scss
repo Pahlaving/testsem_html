@@ -11,16 +11,37 @@ section#search{
 		width: 100%;
 		bottom: 0;
 		background: rgba(0,0,0,.1);
+		@media screen and (max-width: 767px) {
+			background:#DEDEDE;
+		}
 		#searchv{
 			overflow: hidden;
 			margin-top: 62px;
+			@media screen and (max-width: 767px) {
+				margin-top: 10px;
+			}
 		}
 		.input1, .input2, .input3{
+			@media screen and (max-width: 992px) {
+				padding-right: 6px;
+			}
+			@media screen and (max-width: 767px) {
+				margin-top: 5px;
+				width: 50%;
+			}
 			width: 25%;
 			float: left;
 			padding-right: 16px;
 			box-sizing: border-box;
 			input{
+				@media screen and (max-width: 992px) {
+					padding: 10px 10px;
+				}
+				@media screen and (max-width: 767px) {
+					height: 25px;
+					width: 100%;
+					padding: 4px 10px;
+				}
 				width: 100%;
 				font-family: 'MyriadPro', sans-serif;
 				padding: 10px 25px;
@@ -31,33 +52,57 @@ section#search{
 		}
 		.input2{
 			width: 10%;
-			float: left;
-			padding-right: 16px;
-			box-sizing: border-box;
 		}
 		.input3{
 			width: 15%;
-			float: left;
-			padding-right: 16px;
-			box-sizing: border-box;
-			position: relative;
 			i{
 				color: #fff;
 				position: absolute;
 				top: 50%;
 				left: 23%;
 				transform: translateY(-50%);
+				@media screen and (max-width: 1200px) {
+					left: 10%;
+				}
 			}
 			.searchbut{
 				background: #cf2800;
 				color: #fff;
-				padding: 7px 0 !important;
+				padding: 10px 0;
+				@media screen and (max-width: 767px) {
+					padding: 4px 25px;
+				}
 			}
 		}
 		.search2 {
+			@media screen and (max-width: 767px) {
+				margin-top: 5px;
+			}
 			overflow: hidden;
 			margin-top: 30px;
 			.knopka{
+				@media screen and (max-width: 767px) {
+					height: 28px;
+					width: 50%;
+					margin-top: 5px;
+					padding: 0px;
+					&:nth-child(2n){
+						margin-right: -5px;
+					}
+					&:nth-child(2n+1){
+						margin-right: 5px;
+					}
+					a{
+						font-size: 10px;
+						line-height: 28px;
+					}
+				}
+				@media screen and (max-width: 767px) {
+					a{
+						font-size: 9px;
+						line-height: 28px;
+					}
+				}
 				float: left;
 				width: 25%;
 				height: 36px;
@@ -76,6 +121,15 @@ section#search{
 				}
 			}
 			.knopka2{
+				@media screen and (max-width: 767px) {
+					height: 28px;
+					width: 50%;
+					margin-top: 5px;
+					a{
+						font-size: 10px;
+						line-height: 28px;
+					}
+				}
 				float: right;
 				width: 25%;
 				height: 36px;
@@ -101,6 +155,9 @@ section#browse{
 	padding-top: 15px;
 	padding-bottom: 100px;
 	.olp {
+		@media screen and (max-width: 767px) {
+			font-size: 29px;
+		}
 		font-family: 'MyriadPro', sans-serif;
 		text-align: center;
 		font-weight: 700;
@@ -131,7 +188,6 @@ section#directory{
 	background: #F5F5F5;
 	padding-bottom: 100px;
 	.sect__caption{
-		//margin-left: 6px;
 		padding-left: 20px;
 		border-left: 6px solid #D80628;
 	}
@@ -148,6 +204,9 @@ section#directory{
 		font-weight: 100;
 		color: #222222;
 		margin-top: 20px;
+		@media screen and (max-width: 375px) {
+			font-size: 40px;
+		}
 		.by{
 			font-weight: 700;
 			line-height: 1.5em;
@@ -156,10 +215,13 @@ section#directory{
 			color: #cd2a00;
 		}
 	}
-
 	.nav-tabs{
 		margin-top: 110px;
 		border-bottom: none;
+		@media screen and (max-width: 992px) {
+			margin-top: 50px;
+			text-align: center;
+		}
 		a{
 			text-align: center;
 			display: inline-block;
@@ -174,6 +236,10 @@ section#directory{
 			border-bottom: 1px solid #cad2d9;
 			border-right: none;
 			border-radius: 5px 0px	0px 5px;
+			@media screen and (max-width: 480px) {
+				width: 45%;
+				font-size: 14px;
+			}
 			&:nth-child(2){
 				border-radius: 0px 5px	5px 0px;
 				border-right: 1px solid #cad2d9;
@@ -191,10 +257,16 @@ section#directory{
 	.tab-content{
 		margin-top: 60px;
 		.location__paddig__right{
+			@media screen and (max-width: 767px) {
+				padding-right: 0;
+			}
 			padding-left: 0;
 			padding-right: 3px;
 		}
 		.location__left{
+			@media screen and (max-width: 767px) {
+				height: 250px;
+			}
 			position: relative;
 			height: 452px;
 			background: url(../images/a9a1d433-bcde-4601-88a0-5f16871b8548.jpg) center center;
@@ -220,32 +292,52 @@ section#directory{
 			color: #fff;
 		}
 		.location__paddig__left{
+			@media screen and (max-width: 767px) {
+				padding-left: 0;
+				padding-right: 0;
+			}
 			padding-left: 3px;
 			.location{
 				margin-top: 0;
 				&.half__left{
+					@media screen and (max-width: 767px) {
+						height: 250px;
+						margin-top: 6px;
+					}
 					background: url(../images/1494ed7e-9e3a-474b-9db6-bc150874fec7.jpg) center 0;
 					background-size: cover;
 				}
 				&.half__right{
+					@media screen and (max-width: 767px) {
+						height: 250px;
+						margin-top: 6px;
+					}
 					background: url(../images/1494ed7e-9e3a-474b-9db6-bc150874fec7.jpg) center 0;
 					background-size: cover;
 				}
 			}
 			.location__right{
 				margin-top: 6px;
+				@media screen and (max-width: 767px) {
+					height: 250px;
+				}
 			}
-
 		}
 		.location{
 			margin-top: 6px;
 			padding: 40px;
 			height: 214px;
 			&.half__left{
+				@media screen and (max-width: 767px) {
+					height: 250px;
+				}
 				background: url(../images/456e1325-74b4-4ec6-a1e5-ecf48c2ef507.jpg) center 0;
 				background-size: cover;
 			}
 			&.half__right{
+				@media screen and (max-width: 767px) {
+					height: 250px;
+				}
 				background: url(../images/195e8dda-b8c3-4950-8a19-595dac4fdba1.jpg) center 0;
 				background-size: cover;
 			}
@@ -255,6 +347,7 @@ section#directory{
 			height: 214px;
 			background: url(../images/456e1325-74b4-4ec6-a1e5-ecf48c2ef507.jpg) center center;
 			background-size: 100%;
+			
 		}
 		.score{
 			font-family: 'MyriadPro', sans-serif;
@@ -271,10 +364,16 @@ section#directory{
 			left: 0;
 		}
 		.half__paddin__right{
-			padding-right: 3px; 
+			padding-right: 3px;
+			@media screen and (max-width: 767px) {
+				padding-right: 0;
+			}
 		}
 		.half__paddin__left{
-			padding-left: 3px; 
+			padding-left: 3px;
+			@media screen and (max-width: 767px) {
+				padding-right: 0;
+			}
 		}
 	}
 }
@@ -285,11 +384,18 @@ section#reviews {
    .owls {
    	position: relative;
 	   .item{
+	   	@media screen and (max-width: 767px) {
+	   		text-align: center;
+	   	}
 	   	.sectimg {
 				width: 100px;
 				height: 100px;
 				float: left;
 				margin-right: 20px;
+				@media screen and (max-width: 767px) {
+					float: none;
+					display: inline-block;
+				}
 				div{
 					border-radius: 50%;
 					background: url(../images/otzyvy.jpg) 10% 40%;
@@ -299,9 +405,21 @@ section#reviews {
 				}
 			}
 			.secttext {
-				width: 89%;
+				width: 70%;
 				float: left;
+				@media screen and (max-width: 767px) {
+					float: none;
+					margin-top: 20px;
+					width: 100%;
+				}
 				p{
+					@media screen and (max-width: 1030px) {
+						font-size: 15px;
+					}
+					@media screen and (max-width: 767px) {
+						text-align: center;
+					}
+					word-wrap: break-word;
 					color: #fff;
 					font-family: 'Poppins', sans-serif;
 					font-size: 21px;
@@ -311,7 +429,16 @@ section#reviews {
 					margin-top: 30px;	
 					font-family: 'Poppins', sans-serif;
 					position: relative;
+					@media screen and (max-width: 767px) {
+						text-align: center;
+					}
 					&:before{
+						// @media screen and (max-width: 767px) {
+						// 	display: inline-block;
+						// 	top: 0px;
+						// 	left: 50%;
+						// 	transform: translateX(-50%)
+						// }
 						content: '';
 						position: absolute;
 						left: 0;
@@ -557,7 +684,6 @@ section#recent__carusel{
 				}
 				.ret{
 					overflow: hidden;
-    				margin-bottom: 22px;
 					.ratting {
 						width: 50%;
 					   float: left;
