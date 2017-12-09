@@ -429,16 +429,10 @@ section#reviews {
 					margin-top: 30px;	
 					font-family: 'Poppins', sans-serif;
 					position: relative;
-					@media screen and (max-width: 767px) {
-						text-align: center;
-					}
 					&:before{
-						// @media screen and (max-width: 767px) {
-						// 	display: inline-block;
-						// 	top: 0px;
-						// 	left: 50%;
-						// 	transform: translateX(-50%)
-						// }
+						@media screen and (max-width: 767px) {
+							display: none;
+						}
 						content: '';
 						position: absolute;
 						left: 0;
@@ -451,8 +445,16 @@ section#reviews {
 						font-size: 18px;
 						padding-left: 52px;
 						margin-bottom: 8px;
+						@media screen and (max-width: 767px) {
+							padding-left: 0;
+							font-size: 12px;
+						}
 					}
 					span{
+						@media screen and (max-width: 767px) {
+							padding-left: 0;
+							font-size: 12px;
+						}
 						font-size: 14px;
 						padding-left: 52px;
 						color: #8f8f8f;
@@ -464,6 +466,12 @@ section#reviews {
    		position: absolute;
    		right: 0;
    		bottom: 0;
+   		@media screen and (max-width: 767px) {
+   			bottom: -50px;
+   			right: auto;
+   			left: 50%;
+   			transform: translatex(-50%);
+   		}
       }
       .owl-dot {
       	display: inline-block;
@@ -493,16 +501,35 @@ section#recent {
 		border-left: 6px solid #d90429;
 		padding-left: 28px;
 		overflow: hidden;
+		@media screen and (max-width: 767px) {
+			padding-left: 0;
+			border-left: none;
+		}
 		.sectleft {
-			width: 55%;
+			@media screen and (max-width: 1200px) {
+				width: 45%;
+			}
+			@media screen and (max-width: 767px) {
+				float: none;
+				width: 100%;
+				text-align: center;
+			}
+			width: 35%;
 		  	float: left;
+		  	//display: inline-block;
 		  	.pop {
+		  		@media screen and (max-width: 375px) {
+		  			
+		  		}
 		  		font-family: 'Poppins', sans-serif;
 		  		font-size: 16px;
 		  	   color: #727272;
 		  		margin-top: 100px;
 		  	}
 		  	.dire {
+		  		@media screen and (max-width: 375px) {
+		  			font-size: 38px;
+		  		}
 		  		margin-top: 10px;	
 		  	 	font-family: 'Poppins', sans-serif;
 		  	 	font-size: 42px;
@@ -520,15 +547,24 @@ section#recent {
 		}
 		.sectright {
 			width: 45%;
-		   float: left;
+			float: right;
 		   text-align: right;
 		   height: 69px;
 		   line-height: 68px;
 		   margin-top: 129px;
+		   @media screen and (max-width: 767px) {
+		   	margin-top: 30px;
+		   	width: 100%;
+		   }
 		}
 		.sel{
 			height: auto;
 			div{
+				@media screen and (max-width: 767px) {
+					float: none;
+					width: 100%;
+					margin-left: 0px;
+				}
 				overflow: hidden;
 				position: relative;
 				box-shadow: none !important;
@@ -544,6 +580,9 @@ section#recent {
 				line-height: 35px;
 				display: inline-block;
 				margin-left: 40px;
+				@media screen and (max-width: 1200px) {
+					margin-left: 20px;
+				}
 				&:after{
 					content: '+';
 					position: absolute;
@@ -602,7 +641,6 @@ section#recent__carusel{
 	   	line-height: 50px;
 	   	color: #8d99ae;
 	   	border-right: 1px solid #fff;
-	   	//position: relative;
 			.thu{
 				img{
 					position: absolute;
@@ -625,7 +663,6 @@ section#recent__carusel{
 					font-family: 'Poppins', sans-serif;
 					font-weight: 900;
 					color: #fff;
-					//z-index: 999999;
 				}
 				.thuright{
 					margin-top: 11px;
@@ -635,7 +672,6 @@ section#recent__carusel{
 					font-family: 'Poppins', sans-serif;
 					font-weight: 900;
 					text-align: right;
-					//box-sizing: border-box;
 					padding-left: 36px;
 					.the {
 						text-align: center;
@@ -699,7 +735,6 @@ section#recent__carusel{
 				}
 			}
 			.btn-group {
-				//display: block;
 			   width: 100%;
 			   display: flex;
 			   justify-content: space-between;
@@ -714,6 +749,9 @@ section#recent__carusel{
 					border: 1px solid #fff;
 					&:nth-child(1){
 						flex:2 1 125px;
+						@media screen and (max-width: 992px) {
+							flex:1 1 62px;
+						}
 					}
 			   }
 			   .green {
@@ -735,9 +773,15 @@ section#recent__carusel{
 		}
 		.owl-prev {
 			left: 25px;
+			@media screen and (max-width: 992px) {
+				display: none;
+			}
 		}
 		.owl-next {
 			right: 25px;
+			@media screen and (max-width: 992px) {
+				display: none;
+			}
 		}
 		.owl-nav{
 			div {
@@ -764,6 +808,9 @@ section#find{
 	background-color: #012C40;
 	padding: 100px 0;
 	.fyt{
+		@media screen and (max-width: 576px) {
+			line-height: 1.5em;
+		}
 		text-align: center;
 		color: #fff;
 		font-family: 'MyriadPro', sans-serif;
@@ -775,6 +822,9 @@ section#find{
 		}
 	}
 	.fyt2{
+		@media screen and (max-width: 375px) {
+			font-size: 19px;
+		}
 		text-align: center;
 		color: #bababa;
 		font-family: 'MyriadPro', sans-serif;
@@ -787,8 +837,11 @@ section#find{
 		align-items: center;	
 		overflow: hidden;
 		margin-top: 54px;
+		@media screen and (max-width: 576px) {
+			flex-direction: column;
+		}
 		.mobleft, .mobright{
-			display: inline-block;	
+			display: inline-block;
 			.bef{
 				position: relative;
 				height: 68px;
@@ -831,6 +884,10 @@ section#find{
 			}
 		}
 		.mobright{
+			@media screen and (max-width: 576px) {
+				margin-left: 0;
+				margin-top: 10px;
+			}
 			margin-left: 20px;
 			.bef{
 				&:after{
@@ -851,7 +908,11 @@ section#find{
 section#mail{
 	padding: 60px 0;
 	background: url(../images/20.png);
+	background-size: cover;
 	.fyt{
+		@media screen and (max-width: 767px) {
+			line-height: 1.5em;
+		}
 		color: #000;
 		text-align: center;
 		font-family: 'MyriadPro', sans-serif;
@@ -897,10 +958,25 @@ section#partners{
 		padding-top: 70px;
 		padding-bottom: 150px; 
 		display: flex;
-		justify-content: space-around;
+		justify-content: space-between;
 		align-items: center;
+		@media screen and (max-width: 767px) {
+			flex-direction: column;
+			padding-bottom: 70px;
+		}
 		.ite{
 			display: inline-block;
+			a{
+				img{
+					@media screen and (max-width: 992px) {
+						width: 80%;
+					}
+					@media screen and (max-width: 767px) {
+						width: 100%;
+						margin-top: 20px;
+					}
+				}
+			}
 		}
 	}
 }
