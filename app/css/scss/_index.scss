@@ -623,3 +623,46 @@ section#find{
 
 }
 
+section#mail{
+	padding: 60px 0;
+	background: url(../images/20.png);
+	.fyt{
+		color: #000;
+		text-align: center;
+		font-family: 'MyriadPro', sans-serif;
+		font-size: 32px;
+		.hos {
+			color: #b12b10;
+			font-weight: 900;
+			font-size: 32px;
+		}
+	}
+	#fors{
+		position: relative;
+		padding-top: 50px;
+		input{
+			width: 65%;
+			display: block;
+			margin: auto;
+			padding: 14px 0;
+			background: none;
+			outline: none;
+			border-top: none;
+			border-left: none;
+			border-right: none;
+			border-bottom: 1px solid #c0c0c0;
+		}
+		.sub{
+			position: absolute;
+			padding: 0 !important;
+			width: 17px !important;
+			height: 17px;
+			border: none !important;
+			position: absolute;
+			right: 18%;
+			top: 65px;
+			outline: none;
+			background: url(../images/21.png) !important;
+		}
+	}	 
+}
