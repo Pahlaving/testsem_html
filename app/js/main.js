@@ -94,10 +94,10 @@ $(document).ready(function(){
      $(this).addClass('actives');
   });
 
-  function inboxTableTool(taretTable) {
+  function inboxTableTool(taretTable, resolution) {
     var inboxTable = $(taretTable);
     var titledCells = $(inboxTable).find('[data-title]');
-    if ($(window).width() < 768) {
+    if ($(window).outerWidth() < resolution) {
       titledCells.each(function () {
         if (!$(this).hasClass('added-title')) {
           $(this).prepend('<div class="title">' + $(this).data('title') + '</div>');
@@ -113,9 +113,9 @@ $(document).ready(function(){
     }
   }
 
-  inboxTableTool('.inbox-table');
+  inboxTableTool('.inbox-table', 768);
   $(window).resize(function () {
-    inboxTableTool('.inbox-table');
+    inboxTableTool('.inbox-table', 768);
   });
 
 });
