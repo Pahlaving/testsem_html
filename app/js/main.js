@@ -1,13 +1,13 @@
 $(document).ready(function(){
 
-	$('.registr').click(function (e) {
-    e.preventDefault();
-    $("#myModalBox").modal('show');
-  });
-  $('.login').click(function (e) {
-    e.preventDefault();
-    $("#myModal").modal('show');
-  });
+	// $('.registr').click(function (e) {
+ //    e.preventDefault();
+ //    $("#myModalBox").modal('show');
+ //  });
+ //  $('.login').click(function (e) {
+ //    e.preventDefault();
+ //    $("#myModal").modal('show');
+ //  });
 
 	$('.slider').click(function() {
 	  $(this).toggleClass('slider__toggle');
