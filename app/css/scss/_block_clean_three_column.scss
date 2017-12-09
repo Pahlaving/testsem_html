@@ -1,1 +1,32 @@
-
+.block-clean-three-column {
+  background-color: #fff;
+  text-align: center;
+  &.contact {
+    padding: 50px 0;
+    .ico-wrapper {
+      max-width: 300px;
+      display: inline-block;
+    }
+    .ico-container {
+      width: 82px;
+      height: 82px;
+      margin: 0 auto 25px;
+      border-radius: 50%;
+      border: 2px solid #cf2700;
+      color: #cf2700;
+      font-size: 28px;
+      line-height: 82px;
+    }
+    .ico-title {
+      color: #222222;
+      font-size: 18px;
+      font-family: 'Poppins', sans-serif;
+      margin: 0 auto 25px
+    }
+    .ico-description {
+      font-family: 'Poppins', sans-serif;
+      font-size: 12px;
+      color: #696868;
+    }
+  }
+}
