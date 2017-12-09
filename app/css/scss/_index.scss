@@ -1,7 +1,98 @@
 section#search{
+	position: relative;
 	.map-wrapper{
 		#map.contact{
 			height: 730px;
+		}
+	}
+	.sear{
+		height: 184px;
+		position: absolute;
+		width: 100%;
+		bottom: 0;
+		background: rgba(0,0,0,.1);
+		#searchv{
+			overflow: hidden;
+			margin-top: 62px;
+		}
+		.input1, .input2, .input3{
+			width: 25%;
+			float: left;
+			padding-right: 16px;
+			box-sizing: border-box;
+			input{
+				width: 100%;
+				font-family: 'MyriadPro', sans-serif;
+				padding: 10px 25px;
+				box-sizing: border-box;
+				border-radius: 4px;
+				border: none;
+			}
+		}
+		.input2{
+			width: 10%;
+			float: left;
+			padding-right: 16px;
+			box-sizing: border-box;
+		}
+		.input3{
+			width: 15%;
+			float: left;
+			padding-right: 16px;
+			box-sizing: border-box;
+			position: relative;
+			i{
+				color: #fff;
+				position: absolute;
+				top: 50%;
+				left: 23%;
+				transform: translateY(-50%);
+			}
+			.searchbut{
+				background: #cf2800;
+				color: #fff;
+				padding: 7px 0 !important;
+			}
+		}
+		.search2 {
+			overflow: hidden;
+			margin-top: 30px;
+			.knopka{
+				float: left;
+				width: 25%;
+				height: 36px;
+				line-height: 36px;
+				text-align: center;
+				padding: 0 10px;
+				box-sizing: border-box;
+				a{
+					font-family: 'MyriadPro', sans-serif;
+					font-weight: 300;
+					font-size: 16px;
+					display: block;
+					background: #1d3544;
+					color: #fff;
+					border-radius: 4px;
+				}
+			}
+			.knopka2{
+				float: right;
+				width: 25%;
+				height: 36px;
+				line-height: 36px;
+				text-align: center;
+				padding: 0 10px;
+				box-sizing: border-box;
+				a{
+					font-family: 'MyriadPro', sans-serif;
+					font-weight: 300;
+					font-size: 16px;
+					display: block;
+					background: #1d3544;
+					color: #fff;
+					border-radius: 4px;
+				}
+			}
 		}
 	}
 }

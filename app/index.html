@@ -15,6 +15,48 @@
 	<div class="map-wrapper">
 	  <div id="map" class="contact"></div>
 	</div>
+	<div class="sear">
+		<div class="container">
+			<div id="searchv">
+				<form>
+					<div class="input1">
+						<input type="text" name="where" placeholder="Where do">
+					</div>
+					<div class="input1">
+						<input type="text" name="hostel" placeholder="Type of hostel">
+					</div>
+					<div class="input2">
+						<input id="date" type="text" placeholder="Date">
+					</div>
+					<div class="input2">
+						<input id="time" type="text" placeholder="Time">
+					</div>
+					<div class="input3">
+						<input class="in3" type="number" name="number" placeholder="1 hour from me/5km">
+					</div>
+					<div class="input3 ins">
+						<i class="fa fa-search" aria-hidden="true"></i>
+						<input class="searchbut" type="submit" value="Search">
+					</div>
+				</form>
+			</div>
+			<div class="search2">
+				<div class="row">
+					<div class="col-md-6">
+						<div class="knopka"><a href="#">Roadmap</a></div>
+						<div class="knopka"><a href="#">Terrain</a></div>
+						<div class="knopka"><a href="#" >Satellite</a></div>
+						<div class="knopka"><a href="#">Current Position</a></div>
+					</div>
+					<div class="col-md-6">
+						<div class="knopka2"><a href="#">Zoom In</a></div>
+						<div class="knopka2"><a href="#">Zoom Out</a></div>
+					</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
 </section>
 
 <section id="browse">
@@ -560,8 +602,20 @@
 
 //= template/footer.html
 
+<!-- <link rel="stylesheet" type="text/css" href="js/vendor/jquery.datetimepicker.css" > -->
+
+<!-- <script>
+$(document).ready(function(){
+    $('#date').datetimepicker();
+    $('#time').datetimepicker({
+       datepicker:false,
+       format:'H:i'
+    });
+});
+</script> -->
+
+
 <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD4jEnlkhgCfMMd02GXY3Pl_GIRo5OM7mg&callback=initMap"></script>
-<script>
 
 <script>
 	function initMap() {

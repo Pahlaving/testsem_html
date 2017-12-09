@@ -1,6 +1,6 @@
 $(document).ready(function(){
 
-	// $('.registr').click(function (e) {
+ 	// $('.registr').click(function (e) {
  //    e.preventDefault();
  //    $("#myModalBox").modal('show');
  //  });
@@ -118,12 +118,52 @@ $(document).ready(function(){
     inboxTableTool('.inbox-table', 768);
   });
 
-  $(document).ready(function(){
-      $('#date').datetimepicker();
-      $('#time').datetimepicker({
-         datepicker:false,
-         format:'H:i'
-      });
+  $('#date').datetimepicker();
+  $('#time').datetimepicker({
+    datepicker:false,
+    format:'H:i'
+  });
+  
+  $('.sectright a').click(function(e){
+    e.preventDefault();
+    $('.sectright a').removeClass('actives');
+     $(this).addClass('actives');
+  });
+  if ($(window).width() < 768) {
+    $('.drop').click(function(){
+      $('.lang').toggle();
+   });
+    $('.dropdown').click(function(e){
+      e.preventDefault();
+      $(this).find('.ul').toggle();
+   });
+  }
+  $('.sel select').each(function(){
+    $(this).siblings('p').text( $(this).children('option:selected').text() );
+  });
+  $('.sel select').change(function(){
+    $(this).siblings('p').text( $(this).children('option:selected').text() );
+  });
+  $('.sel div:after').click(function(){
+    $(this).parent().find('select').click();
+  });
+
+  tinymce.init({
+    selector: 'textarea',
+    height: 500,
+    theme: 'modern',
+    plugins: 'print preview fullpage powerpaste searchreplace autolink directionality advcode visualblocks visualchars fullscreen image link media template codesample table charmap hr pagebreak nonbreaking anchor toc insertdatetime advlist lists textcolor wordcount tinymcespellchecker a11ychecker imagetools mediaembed  linkchecker contextmenu colorpicker textpattern help',
+    toolbar1: 'formatselect | bold italic strikethrough forecolor backcolor | link | alignleft aligncenter alignright alignjustify  | numlist bullist outdent indent  | removeformat',
+    image_advtab: true,
+    templates: [
+    { title: 'Test template 1', content: 'Test 1' },
+    { title: 'Test template 2', content: 'Test 2' }
+    ],
+    content_css: [
+    '//fonts.googleapis.com/css?family=Lato:300,300i,400,400i',
+    '//www.tinymce.com/css/codepen.min.css'
+    ]
   });
 
 });
+

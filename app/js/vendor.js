@@ -8,3 +8,4 @@
 //= vendor/starrr.js
 //= vendor/owl.carousel.min.js
 //= vendor/markerclusterer.js
+//= vendor/jquery.datetimepicker.full.min.js
