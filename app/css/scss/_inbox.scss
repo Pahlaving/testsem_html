@@ -1,0 +1,64 @@
+.inbox-wrapper {
+  &.block-content {
+    padding-top: 0;
+    .block-row {
+      .inner {
+        padding: 0 0 16px;
+      }
+    }
+  }
+}
+.inbox-table {
+  display: table;
+  width: 100%;
+  .inbox-table-head {
+    display: table-header-group;
+  }
+  .inbox-table-body {
+    display: table-row-group;
+  }
+  .inbox-table-h-sep {
+    height: 17px;
+  }
+  .inbox-table-head-tr,
+  .inbox-table-body-tr {
+    display: table-row;
+  }
+  .inbox-table-head-tr {
+    background: #f5f5f5 url(../images/inbox_table_bg.png) repeat-x 50% 100%;
+  }
+  .inbox-table-head-th {
+    text-transform: uppercase;
+    font-weight: 600;
+  }
+  .inbox-table-head-th,
+  .inbox-table-body-td {
+    display: table-cell;
+    vertical-align: middle;
+    &.inbox-from {
+      width: 170px;
+    }
+    &.inbox-title{
+      width: 470px;
+    }
+    &.inbox-messages {
+      width: 120px;
+      text-align: center;
+    }
+    &.inbox-last {
+      width: 130px;
+      text-align: center;
+    }
+  }
+  .inbox-table-head-th {
+    padding: 15px 25px 25px;
+  }
+  .inbox-table-body-td {
+    padding: 15px 25px;
+    &.inbox-last {
+      font-size: 12px;
+      text-transform: uppercase;
+    }
+  }
+
+}

@@ -18,10 +18,12 @@
 /*================Base Layout==================*/
 @import "sidebar_notific";
 
+/*================Pages Styles==================*/
 @import "notification";
 @import "section_block";
 @import "forms";
 @import "reviews_list";
+@import "inbox";
 
 /*================Popups Layout==================*/
 @import "popups";
@@ -33,9 +35,7 @@
 @import "shipping_address_form";
 
 /*==================Footer styles================*/
-
 @import "footer";
 
 /*==================Index styles================*/
-
 @import "index";
