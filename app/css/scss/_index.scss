@@ -666,3 +666,16 @@ section#mail{
 		}
 	}	 
 }
+
+section#partners{
+	.partners__wrapper{
+		padding-top: 70px;
+		padding-bottom: 150px; 
+		display: flex;
+		justify-content: space-around;
+		align-items: center;
+		.ite{
+			display: inline-block;
+		}
+	}
+}
