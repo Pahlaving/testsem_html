@@ -502,11 +502,20 @@ section#recent__carusel{
 		.owl-prev {
 			left: 25px;
 		}
+		.owl-next {
+			right: 25px;
+		}
 		.owl-nav{
 			div {
 				position: absolute;
 				top: 26%;
 			}
+		}
+		.owl-prev:hover {
+			display: block !important;
+			background: url(../images/14.png);
+			width: 60px;
+			height: 60px;	
 		}
 		.owl-next:hover {
 			display: block !important;
@@ -536,6 +545,24 @@ section#find{
 		color: #bababa;
 		font-family: 'MyriadPro', sans-serif;
 		font-size: 21px;
+		margin-top: 27px;
 	}
+	.mob{
+		overflow: hidden;
+		margin-top: 54px;
+		.mobleft{
+			.bef{
+				position: relative;
+				height: 68px;
+				width: 260px;
+				cursor: pointer;
+				box-sizing: border-box;
+				padding-left: 78px;
+				border-radius: 4px;
+				background: #4d6c7b;
+			}
+		}
+	}
+
 }
 
