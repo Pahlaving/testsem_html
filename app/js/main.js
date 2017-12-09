@@ -118,4 +118,12 @@ $(document).ready(function(){
     inboxTableTool('.inbox-table', 768);
   });
 
+  $(document).ready(function(){
+      $('#date').datetimepicker();
+      $('#time').datetimepicker({
+         datepicker:false,
+         format:'H:i'
+      });
+  });
+
 });
