@@ -59,10 +59,30 @@ $(document).ready(function(){
   });
 
   $('.owls').owlCarousel({
+    loop:true,
     items : 1, 
     autoplay: 3000,
     nav:false,
     pagination: true,
+  });
+
+  $('.tov').owlCarousel({
+    loop:true,
+    autoplay: 3000,
+    nav:true,
+    navText : ["<img src='images/15.png' class='navlef' />","<img src='images/16.png' class='navrig hi' />"],
+    pagination: false,
+    responsive:{
+        0:{
+            items:1
+        },
+        600:{
+            items:3
+        },
+        1000:{
+            items:5
+        }
+    }
   });
 
   $('.nav-tabs a').click(function(e){
