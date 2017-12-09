@@ -7,7 +7,7 @@
 </head>
 <body>
 
-//= template/header_login.html
+//= template/header_home.html
 
 //= template/breadcrumbs.html
 
@@ -25,21 +25,79 @@
   <div id="map" class="contact"></div>
 </div>
 
-<div class="contact-info-wrapper">
+<div class="block-clean-three-column contact">
   <div class="container">
     <div class="row">
-      <div class="col-sm-12 page-content">
-
+      <div class="col-sm-4">
+        <div class="ico-wrapper">
+          <div class="ico-container">
+            <i class="fa fa-map-marker"></i>
+          </div>
+          <div class="ico-title">Head Office</div>
+          <div class="ico-description">
+            <p>Lorem ipsum dolor sit, consectet adipisi elit, sed do eiusmod tempor for enim adesg ens minim
+              veniamin</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-4">
+        <div class="ico-wrapper">
+          <div class="ico-container">
+            <i class="fa fa-phone"></i>
+          </div>
+          <div class="ico-title">Phone Numbers</div>
+          <div class="ico-description">
+            <p>Lorem ipsum dolor sit, consectet adipisi elit, sed do eiusmod tempor for enim adesg ens minim
+              veniamin</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-sm-4">
+        <div class="ico-wrapper">
+          <div class="ico-container">
+            <i class="fa fa-envelope"></i>
+          </div>
+          <div class="ico-title">E-mail Address</div>
+          <div class="ico-description">
+            <p>Lorem ipsum dolor sit, consectet adipisi elit, sed do eiusmod tempor for enim adesg ens minim
+              veniamin</p>
+          </div>
+        </div>
       </div>
     </div>
   </div>
 </div>
 
-<div class="page-wrapper">
+<div class="contact-form-wrapper gray-bg padded">
   <div class="container">
     <div class="row">
-      <div class="col-sm-12 page-content">
-
+      <div class="col-sm-12">
+        <div class="block-subtitle centered">Get in Touch</div>
+        <div class="block-title with-subtitle centered short-red-centered-dash">SEND
+          AN <span class="accent">MESSAGE</span><span class="dot">.</span>
+        </div>
+        <div class="contact-form">
+          <form id="contact">
+            <div class="row">
+              <div class="col-sm-4 form-group">
+                <input class="form-control" type="text" name="name" placeholder="Full name">
+              </div>
+              <div class="col-sm-4 form-group">
+                <input class="form-control" type="email" name="mail" placeholder="Email address">
+              </div>
+              <div class="col-sm-4 form-group">
+                <input class="form-control" type="text" name="subject" placeholder="Subject">
+              </div>
+              <div class="col-sm-12 form-group">
+                <!--<input class="form-control" type="text" name="text" placeholder="Comment">-->
+                <textarea class="form-control" name="comment" id="comment" rows="5" placeholder="Comment"></textarea>
+              </div>
+              <div class="col-sm-12 tac">
+                <input  class="btn" type="submit" value="Send message">
+              </div>
+            </div>
+          </form>
+        </div>
       </div>
     </div>
   </div>
@@ -60,7 +118,7 @@
       center: {lat: -28.024, lng: 140.887}
     });
     var labels = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
-    var markers = locations.map(function(location, i) {
+    var markers = locations.map(function (location, i) {
       return new google.maps.Marker({
         position: location,
         label: labels[i % labels.length]
@@ -69,6 +127,7 @@
     var markerCluster = new MarkerClusterer(map, markers,
       {imagePath: 'https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/m'});
   }
+
   var locations = [
     {lat: -31.563910, lng: 147.154312},
     {lat: -33.718234, lng: 150.363181},
