@@ -91,4 +91,28 @@ $(document).ready(function(){
      $(this).addClass('actives');
   });
 
+  function inboxTableTool(taretTable) {
+    var inboxTable = $(taretTable);
+    var titledCells = $(inboxTable).find('[data-title]');
+    if ($(window).width() < 768) {
+      titledCells.each(function () {
+        if (!$(this).hasClass('added-title')) {
+          $(this).prepend('<div class="title">' + $(this).data('title') + '</div>');
+        }
+        $(this).addClass('added-title');
+      });
+    }
+    else {
+      titledCells.each(function () {
+        $(this).find('.title').remove();
+        $(this).removeClass('added-title');
+      });
+    }
+  }
+
+  inboxTableTool('.inbox-table');
+  $(window).resize(function () {
+    inboxTableTool('.inbox-table');
+  });
+
 });
