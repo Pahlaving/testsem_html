@@ -1,7 +1,8 @@
 section#search__section{
+	z-index:1;
 	.map{
 		width:50%;
-		z-index: 1;
+		z-index: 9;
 		padding-right: 0;
 		position: fixed;
 		top: 0;
@@ -10,23 +11,34 @@ section#search__section{
 		bottom: 0;
 		.map-wrapper{
 			position: relative;
-			width: 98%;
+			width: 100%;
 			#map.contact{
 				height: 730px;
 				@media screen and (max-width: 992px) {
-					height: 360px;
-					//z-index: 1;
 				}
 			}
 		}
 		@media screen and (max-width: 992px) {
 			width: 100%;
-			left: auto;
+			left: 0px;
 			top: 0;
 			right: 0;
-			//z-index: -1;
 			height: 360px;
+			padding: 0;
+			margin: 0px;
 		}
+	}
+	.section__wrapper__left{
+		width: 50%;
+		z-index: 1;
+		@media screen and (max-width: 992px) {
+			width: 100%;
+		}
+	}
+	.section__left{
+		float: left;
+		width: 100%;
+		padding: 15px;
 	}
 	#search {
 		overflow: hidden;
@@ -242,7 +254,6 @@ section#search__section{
 			}
 		}
 		.products__wrapper{
-			//margin-top: 300px;
 			padding-top: 80px;
 			.items{
 				margin-bottom: 18px;
