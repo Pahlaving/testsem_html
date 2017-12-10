@@ -1,0 +1,27 @@
+.payment-complete {
+  text-align: center;
+  &-title {
+    margin-bottom: 20px;
+    color: #022d41;
+    font-family: 'mpb', sans-serif;
+    font-size: 40px;
+    line-height: 1;
+  }
+  &-text {
+    margin-bottom: 20px;
+    color: #022d41;
+    font-family: 'ossb', sans-serif;
+    font-size: 16px;
+    .colored-gray {
+      background: #6e6e6e;
+      display: inline-block;
+      vertical-align: middle;
+      padding: 5px 15px;
+      margin-left: 6px;
+      border-radius: 4px;
+      color: #fff;
+    }
+  }
+  &-button {
+  }
+}
