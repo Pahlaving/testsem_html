@@ -311,6 +311,14 @@ h4 {
 .tac {
   text-align: center;
 }
+.tar {
+  text-align: right;
+}
 .modal-open .modal {
   margin-right: -17px;
+}
+.modal-dialog {
+  @media(max-width: 768px){
+    margin: 0 15px 0 0;
+  }
 }
