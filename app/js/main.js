@@ -79,6 +79,23 @@ $(document).ready(function(){
     }
   });
 
+  var detail_head_carouser = $(".detail-head-carouser");
+  detail_head_carouser.find('.item').each(function () {
+    var bg_image = $(this).find('.bg-image');
+    $(this).css('background-image', 'url('+bg_image.attr('src')+')');
+    bg_image.hide();
+  });
+
+  detail_head_carouser.owlCarousel({
+    loop: true,
+    items : 1,
+    // autoplay: 3000,
+    nav: true,
+    dots: false,
+    pagination: false,
+    navContainer: '#detail-head-carouser-nav'
+  });
+
   $('.nav-tabs a').click(function(e){
        e.preventDefault();
        $('.nav-tabs a').removeClass('actives');
