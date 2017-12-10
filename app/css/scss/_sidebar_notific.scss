@@ -25,3 +25,19 @@
     }
   }
 }
+
+.notific-hamburger {
+  position: absolute;
+  right: 30px;
+  top: 25px;
+  width: 36px;
+  height: 36px;
+  background: url("../images/hamburger.png") no-repeat 50%;
+  overflow: hidden;
+  text-indent: -999px;
+  cursor: pointer;
+  display: none;
+  @media(max-width: 768px){
+    display: block;
+  }
+}
