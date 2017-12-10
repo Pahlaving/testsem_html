@@ -99,6 +99,19 @@ section#media{
 	.p_over {
 		overflow: hidden;
 		padding: 0 10px;
+		.usd, .term, .term2, .term3, .term4, .term5 {
+			p{
+				@media screen and (max-width: 1200px) {
+					font-size: 15px;
+				}
+				margin: 0;
+				padding: 18px 34px;
+				background: #f0eeef;
+				font-size: 20px;
+				color: #6f6f6f;
+				font-family: 'MyriadPro', sans-serif;
+			}
+		}
 		.lab {
 			font-family: 'MyriadPro', sans-serif;
 			font-weight: 600;
@@ -107,22 +120,26 @@ section#media{
 			margin-top: 45px;
 			margin-bottom: 20px;
 		}
-		.usd{
-			select{
-				width: 100%;
-				height: 60px;
-			}
-		}
 		.usd, .npr, .npr2, .term, .term2, .term3, .term4, .term5, .term6 {
 			position: relative;
 			width: 33%;
 			float: left;
 			margin-right: 36px;
 			height: 60px;
-			select{
+			background: #f0eeef;
+			@media screen and (max-width: 767px) {
 				width: 100%;
-				//height: 60px;
+			}
+			select{
+				cursor: pointer;
+				top: 0;
+				position: absolute;
+				border: none;
+				background: #f0eeef;
+				width: 100%;
 				padding: 18px 25px;
+				outline: none;
+				opacity: 0;
 			}
 			input{
 				height: 60px;
@@ -136,10 +153,44 @@ section#media{
 				font-family: 'MyriadPro', sans-serif;
 				font-size: 20px;
 				color: #6f6f6f;
+				@media screen and (max-width: 1200px) {
+					font-size: 15px;
+					padding: 18px 15px;
+				}
+			}
+		}
+		.npr{
+			@media screen and (max-width: 767px) {
+				margin-top: 20px;
 			}
 		}
 		.npl{
 			margin-top: 36px;
+			@media screen and (max-width: 767px) {
+				margin-top: 50px;
+			}
+		}
+		.pp_a, .pp_end{
+			@media screen and (max-width: 767px) {
+				float: none;
+				width: 100%;
+			}
+			a{
+				@media screen and (max-width: 767px) {
+					margin-left: 0;
+					margin-right: 0;
+				}
+			}
+		}
+		.pp_a{
+			@media screen and (max-width: 767px) {
+				margin-top: 160px;
+			}
+			a{
+				@media screen and (max-width: 767px) {
+					margin-top: 30px;
+				}
+			}
 		}
 		.npr, .npr3{
 			position: relative;
@@ -150,7 +201,7 @@ section#media{
 				right: 0;
 				background: #222c38;
 				width: 60px;
-				height: 100%;
+				height: 60px;
 			}
 			&:after{
 				content: 'USD';
@@ -197,6 +248,10 @@ section#media{
 				font-family: 'MyriadPro', sans-serif;
 				font-size: 20px;
 				color: #6f6f6f;
+				@media screen and (max-width: 1200px) {
+					font-size: 13px;
+					padding: 18px 15px;
+				}
 			}
 		}
 		.pp_end{
@@ -211,22 +266,173 @@ section#media{
 				font-family: 'MyriadPro', sans-serif;
 				font-size: 20px;
 				color: #6f6f6f;
+				@media screen and (max-width: 1200px) {
+					font-size: 13px;
+					padding: 18px 15px;
+				}
 			}
 		}
+		.npr2{
+			margin-top: 6px;
+			width: 24%;
+			margin-right: 12px;
+		}
 		.p_sel, .p_sel2, .p_sel3, .p_sel4, .npr3 {
+			background: #f0eeef;
 			position: relative;
 			width: 14%;
 			float: left;
 			margin-top: 6px;
+			height: 60px;
+			overflow: hidden;
+			p{
+				@media screen and (max-width: 1200px) {
+					font-size: 13px;
+					padding: 18px 15px;
+				}
+				margin: 0;
+				padding: 18px 20px;
+				background: #f0eeef;
+				font-family: 'MyriadPro', sans-serif;
+				font-size: 20px;
+				color: #6f6f6f;
+			}
 			select{
+				display: inline-block;
+				position: absolute !important;
+				border: none;
+				outline: none;
 				position: absolute;
 				top: 0;
 				background: #f0eeef;
 				cursor: pointer;
-				width: 100%;
+				width: 100% !important;
 				padding: 20px 0;
-				//opacity: 0;
+				opacity: 0;
 			}
+		}
+		.npr2{
+			@media screen and (max-width: 767px) {
+				margin-bottom: 6px;
+			}
+		}
+		.p_sel, .p_sel2{
+			margin-right: 6px;
+			@media screen and (max-width: 767px) {
+				float: none;
+				width: 100%;
+			}
+		}
+		.p_sel3, .p_sel4{
+			margin-right: 6px;
+			@media screen and (max-width: 767px) {
+				float: none;
+				width: 100%;
+			}
+		}
+		.npr3 {
+			@media screen and (max-width: 767px) {
+				float: none;
+				width: 100%;
+			}
+			input{
+				height: 100%;
+				margin: 0;
+				border: none;
+				width: 100%;
+				box-sizing: border-box;
+				padding: 18px 34px;
+				background: #f0eeef;
+				font-family: 'MyriadPro', sans-serif;
+				font-size: 20px;
+				color: #6f6f6f;
+				@media screen and (max-width: 1200px) {
+					font-size: 13px;
+					padding: 18px 15px;
+				}
+			}
+		}
+		.v_con {
+			float: left;
+			padding: 20px 54px;
+			background: #4c4c4c;
+			color: #fff;
+			margin-top: 44px;
+			.v_pl {
+				text-align: center;
+				position: relative;
+				top: 4px;
+				left: -6px;
+				text-align: center;
+				line-height: 18px;
+				width: 20px;
+				height: 20px;
+				float: left;
+				font-size: 19px;
+				border-radius: 50%;
+				border: 1px solid #fff;
+			}
+			a {
+				color: #fff;
+				font-family: 'MyriadPro', sans-serif;
+				font-size: 24px;
+			}
+		}
+		.term{
+			@media screen and (max-width: 767px) {
+				margin-bottom: 6px;
+			}
+			&3,&4,&5,&6{
+				margin-top: 36px;
+			}
+			&6{
+				height: 136px;
+				input{
+					margin: 0;
+					width: 100%;
+					height: 136px;
+					box-sizing: border-box;
+					padding: 0 34px;
+					background: #f0eeef;
+					font-family: mpb;
+					font-size: 20px;
+					color: #6f6f6f;
+					border: none;
+				}
+			}
+		}
+	}
+	.p_ove2{
+		margin-bottom: 100px;
+		@media screen and (max-width: 767px) {
+			margin-bottom: 140px;
+		}
+		.term{
+			&7{
+				position: relative;
+				padding: 0 10px;
+				.v_lef {
+					@media screen and (max-width: 767px) {
+						width: 50%;
+						top: 20px;
+					}
+					position: absolute;
+					top: -48px;
+					float: left;
+					background: #eebf00;
+					color: #fff;
+					width: 15%;
+					height: 50px;
+					line-height: 50px;
+					text-align: center;
+					a {
+						color: #fff;
+						text-transform: uppercase;
+						font-family: 'MyriadPro', sans-serif;
+						font-weight: 600;
+					}
+				}
+			} 
 		}
 	}
 }
