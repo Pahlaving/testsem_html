@@ -15,18 +15,19 @@ section#search__section{
 			#map.contact{
 				height: 730px;
 				@media screen and (max-width: 992px) {
+
 				}
 			}
 		}
-		@media screen and (max-width: 992px) {
-			width: 100%;
-			left: 0px;
-			top: 0;
-			right: 0;
-			height: 360px;
-			padding: 0;
-			margin: 0px;
-		}
+		// @media screen and (max-width: 992px) {
+		// 	width: 50%;
+		// 	left: 51px;
+		// 	top: 0;
+		// 	right: 0;
+		// 	height: 360px;
+		// 	padding: 0;
+		// 	margin: 0px;
+		// }
 	}
 	.section__wrapper__left{
 		width: 50%;
