@@ -39,7 +39,7 @@ section#media{
 		text-align: center;
 		.m_you{
 			font-size: 18px;
-			font-family: mpb;
+			font-family: 'MyriadPro', sans-serif;
 			color: #6f6f6f;
 			padding: 34px 36px;
 		}
@@ -64,7 +64,7 @@ section#media{
 			color: yellow;
 			color: yellow;
 			font-size: 20px;
-			font-family: mpb;
+			font-family: 'MyriadPro', sans-serif;
 			font-weight: 900;
 		}
 	}
@@ -93,4 +93,141 @@ section#media{
 		text-transform: uppercase;
 		border-radius: 4px;
 	}
+
+	// pricing.html
+
+	.p_over {
+		overflow: hidden;
+		padding: 0 10px;
+		.lab {
+			font-family: 'MyriadPro', sans-serif;
+			font-weight: 600;
+			font-size: 22px;
+			color: #222a37;
+			margin-top: 45px;
+			margin-bottom: 20px;
+		}
+		.usd{
+			select{
+				width: 100%;
+				height: 60px;
+			}
+		}
+		.usd, .npr, .npr2, .term, .term2, .term3, .term4, .term5, .term6 {
+			position: relative;
+			width: 33%;
+			float: left;
+			margin-right: 36px;
+			height: 60px;
+			select{
+				width: 100%;
+				//height: 60px;
+				padding: 18px 25px;
+			}
+			input{
+				height: 60px;
+				width: 100%;
+				margin: 0;
+				border: none;
+				width: 100%;
+				box-sizing: border-box;
+				padding: 18px 34px;
+				background: #f0eeef;
+				font-family: 'MyriadPro', sans-serif;
+				font-size: 20px;
+				color: #6f6f6f;
+			}
+		}
+		.npl{
+			margin-top: 36px;
+		}
+		.npr, .npr3{
+			position: relative;
+			&:before{
+				content: '';
+				position: absolute;
+				top: 0;
+				right: 0;
+				background: #222c38;
+				width: 60px;
+				height: 100%;
+			}
+			&:after{
+				content: 'USD';
+				position: absolute;
+				top: 18px;
+				right: 12px;
+				font-size: 21px;
+				font-family: 'MyriadPro', sans-serif;
+				font-size: 20px;
+				color: #ffffff;
+			}
+		}
+		.usd:before, .p_sel:before, .p_sel2:before, .p_sel3:before, .p_sel4:before, .term:before, .term2:before, .term3:before, .term4:before, .term5:before {
+			content: '';
+			position: absolute;
+			top: 0;
+			right: 0;
+			background: #eebf00;
+			width: 60px;
+			height: 100%;
+		}
+		.usd:after, .p_sel:after, .p_sel2:after, .p_sel3:after, .p_sel4:after, .term:after, .term2:after, .term3:after, .term4:after, .term5:after {
+			content: '';
+			position: absolute;
+			top: 27px;
+			right: 26px;
+			background: url(../images/4.png);
+			width: 9px;
+			font-size: 21px;
+			height: 5px;
+		}
+		.pp_a, .pp_end {
+			width: 16.5%;
+			float: left;
+		}
+		.pp_a{
+			a{
+				margin-right: 10px;
+				border: none;
+				display: block;
+				box-sizing: border-box;
+				padding: 20px 25px;
+				background: #f0eeef;
+				font-family: 'MyriadPro', sans-serif;
+				font-size: 20px;
+				color: #6f6f6f;
+			}
+		}
+		.pp_end{
+			a{
+				color: #fff !important;
+				margin-left: 10px;
+				border: none;
+				display: block;
+				box-sizing: border-box;
+				padding: 20px 25px;
+				background: #eebf00;
+				font-family: 'MyriadPro', sans-serif;
+				font-size: 20px;
+				color: #6f6f6f;
+			}
+		}
+		.p_sel, .p_sel2, .p_sel3, .p_sel4, .npr3 {
+			position: relative;
+			width: 14%;
+			float: left;
+			margin-top: 6px;
+			select{
+				position: absolute;
+				top: 0;
+				background: #f0eeef;
+				cursor: pointer;
+				width: 100%;
+				padding: 20px 0;
+				//opacity: 0;
+			}
+		}
+	}
 }
+
