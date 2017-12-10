@@ -317,3 +317,8 @@ h4 {
 .modal-open .modal {
   margin-right: -17px;
 }
+.modal-dialog {
+  @media(max-width: 768px){
+    margin: 0 15px 0 0;
+  }
+}
