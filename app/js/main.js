@@ -104,8 +104,30 @@ $(document).ready(function(){
     }
   }
 
+  function notificMenuProcessor() {
+
+    if ($(window).outerWidth() < 768) {
+      $('.nav-notific ul').hide();
+      $('.page-content')
+        .prepend($('.nav-notific')).not(':has(.notific-hamburger)')
+        .prepend('<div class="notific-hamburger">Hamburger</div>');
+    }else{
+      $('.sidebar').prepend($('.nav-notific'));
+      $('.nav-notific ul').show();
+    }
+  }
+
+  $('.page-content').prepend('<div class="notific-hamburger">Hamburger</div>');
+
+  $('.notific-hamburger').on('click', function () {
+    $('.nav-notific ul').slideToggle();
+  });
+
+  notificMenuProcessor();
   inboxTableTool('.inbox-table', 768);
+
   $(window).resize(function () {
+    notificMenuProcessor();
     inboxTableTool('.inbox-table', 768);
   });
 
