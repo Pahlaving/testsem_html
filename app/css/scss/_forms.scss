@@ -71,3 +71,10 @@ select {
 #add-phone-form {
   display: none;
 }
+
+.form-submit-right {
+  padding-top: 15px;
+  input {
+    margin-right: 0;
+  }
+}
