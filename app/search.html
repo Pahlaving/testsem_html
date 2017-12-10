@@ -10,9 +10,343 @@
 //= template/font-awesome.html
 //= template/header_home.html
 
+<section id="search__section">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-6">
+				<form id="search">
+					<div class="c_fl">
+						<input type="text" name="locations" placeholder="Locations">
+					</div>
+
+					<div class="selection select-leng">
+						<div class="select-side">
+							<i class="fa fa-angle-down" aria-hidden="true"></i>
+						</div>
+						<select name="language" id="leng-select">
+							<option>Ru</option>
+							<option>En</option>
+						</select>
+					</div>
+
+					
+					<div class="c_fl hostel">
+						<i class="fa fa-angle-down s_t"></i>
+						<p>Reservations Type</p>
+						<select name="reservation">
+							<option value="">Reservations Type</option>
+							<option value="">Reservations Type</option>
+							<option value="">Reservations Type</option>
+							<option value="">Reservations Type</option>
+						</select>
+					</div>
+					<div class="c_fl hostel">
+						<i class="fa fa-angle-down s_t"></i>
+						<p></p>
+						<select name="hostel">
+							<option value="">Hostel Type</option>
+							<option value="">Hostel Type</option>
+							<option value="">Hostel Type</option>
+							<option value="">Hostel Type</option>
+						</select>
+					</div>
+					<div class="c_fl" style="height:40px"></div>
+					<div class="c_fl">
+						<div class="s_i s_i1">
+							<input id="start" type="text" name="startdate" placeholder="Start Date">
+						</div>
+						<div class="s_i s_i2">
+							<input id="end" type="text" name="enddate" placeholder="End Date">
+						</div>
+					</div>
+					<div class="c_fl">
+						<div class="s_i s_i1">
+							<input id="tstart" type="text" name="starttime" placeholder="Start Time">
+						</div>
+						<div class="s_i s_i2">
+							<input id="tend" type="text" name="endtime" placeholder="End Time">
+						</div>
+					</div>
+					<div class="s_d">
+						<div class="s_l">
+							<div class="s_ic"><div></div></div>
+							Price: 500 $
+						</div>
+						<div class="s_r">
+							<div id="slider"></div>
+						</div>
+					</div>
+					<p class="s_p">Filter by tag:</p>
+					<div class="c_fl hostel">
+						<i class="fa fa-angle-down s_t"></i>
+						<p></p>
+						<select name="inventory">
+							<option value="">Inventory</option>
+							<option value="">Inventory</option>
+							<option value="">Inventory</option>
+							<option value="">Inventory</option>
+						</select>
+					</div>
+					<div class="c_fl hostel">
+						<i class="fa fa-angle-down s_t"></i>
+						<p></p>
+						<select name="accommodation">
+							<option value="">Accommodation</option>
+							<option value="">Accommodation</option>
+							<option value="">Accommodation</option>
+							<option value="">Accommodation</option>
+						</select>
+					</div>
+					<div class="c_fl hostel">
+						<i class="fa fa-angle-down s_t"></i>
+						<p></p>
+						<select name="special">
+							<option value="">Special</option>
+							<option value="">Special</option>
+							<option value="">Special</option>
+							<option value="">Special</option>
+						</select>
+					</div>
+					<div class="s_d">
+						<div class="s_dl">
+							<input type="checkbox" id="any">
+							<label for="any">Any</label>
+						</div>
+						<div class="s_dl">
+							<input type="checkbox" id="any2">
+							<label for="any2">Coupons</label>
+						</div>
+					</div>
+					<div class="s_d">
+						<div class="s_o">
+							<input class="s_subs" type="submit" value="Advanced Search Close">
+							<input class="s_res" type="reset" value="Reset">
+						</div>
+					</div>
+				</form>
+				<!-- <div id="products">
+					<div class="s_ok">Found <span>19</span> matching records</div>
+					<div class="s_okr hostel">
+						<i class="fa fa-angle-down s_t"></i>
+						<p></p>
+						<select name="view">
+							<option value="">View All</option>
+							<option value="">View All</option>
+							<option value="">View All</option>
+							<option value="">View All</option>
+						</select>    
+					</div>
+					<div class="s_okt">
+						<a class="s_tn" href="#"></a>
+						<a class="s_th" href="#"></a>
+					</div>
+					<div id="product_1">
+						<div class="items">
+							<div class="thu">
+								<img src="/images/a9a1d433-bcde-4601-88a0-5f16871b8548.jpg" />
+								<div class="thuleft">
+									<i class="fa fa-picture-o"></i>4 PHOTO
+								</div>
+								<div class="thuright">
+									<div class="the">FEATURED</div>
+								</div>
+								<div class="thucenter">
+									<i class="fa fa-map-marker"></i>PARIS
+								</div>
+							</div>
+							<div class="caption">
+								<div class="h3">Hostel France</div>
+								<div class="ret">
+									<div class="ratting">
+										<i class="fa fa-star"></i>
+										<i class="fa fa-star"></i>
+										<i class="fa fa-star"></i>
+										<i class="fa fa-star"></i>
+										<i class="fa fa-star-half-o"></i>
+									</div>
+									<div class="check">
+										<label class="checkb">Student host</label>
+									</div>
+								</div>
+								<div><p class="s_desc">Quisque vel sem ac enim facilisis euros froms ultrices euors Vivamus neque sapiene youga.</p></div>
+							</div>
+							<div class="btn-group">
+								<a href="#" class="btn green"><span>OPEN NOW</span></a>
+								<a href="#" class="btn"><i class="fa fa-map-marker"></i></a>
+								<a href="#" class="btn">HOST</a>
+								<a href="#" class="btn"><i class="fa fa-heart"></i></a>
+							</div>
+						</div>
+						<div class="items">
+							<div class="thu">
+								<img src="/images/a9a1d433-bcde-4601-88a0-5f16871b8548.jpg" />
+								<div class="thuleft">
+									<i class="fa fa-picture-o"></i>4 PHOTO
+								</div>
+								<div class="thuright">
+									<div class="the"></div>
+								</div>
+								<div class="thucenter">
+									<i class="fa fa-map-marker"></i>PARIS
+								</div>
+							</div>
+							<div class="caption">
+								<div class="h3">Hostel France</div>
+								<div class="ret">
+									<div class="ratting">
+										<i class="fa fa-star"></i>
+										<i class="fa fa-star"></i>
+										<i class="fa fa-star"></i>
+										<i class="fa fa-star"></i>
+										<i class="fa fa-star-half-o"></i>
+									</div>
+									<div class="check">
+										<label class="checkb">Student host</label>
+									</div>
+								</div>
+								<div><p class="s_desc">Quisque vel sem ac enim facilisis euros froms ultrices euors Vivamus neque sapiene youga.</p></div>
+							</div>
+							<div class="btn-group">
+								<a href="#" class="btn red"><span>CLOSED</span></a>
+								<a href="#" class="btn"><i class="fa fa-map-marker"></i></a>
+								<a href="#" class="btn">HOST</a>
+								<a href="#" class="btn"><i class="fa fa-heart"></i></a>
+							</div>
+						</div>
+						<div class="items">
+							<div class="thu">
+								<img src="/images/a9a1d433-bcde-4601-88a0-5f16871b8548.jpg" />
+								<div class="thuleft">
+									<i class="fa fa-picture-o"></i>4 PHOTO
+								</div>
+								<div class="thuright">
+									<div class="the">FEATURED</div>
+								</div>
+								<div class="thucenter">
+									<i class="fa fa-map-marker"></i>PARIS
+								</div>
+							</div>
+							<div class="caption">
+								<div class="h3">Hostel France</div>
+								<div class="ret">
+									<div class="ratting">
+										<i class="fa fa-star"></i>
+										<i class="fa fa-star"></i>
+										<i class="fa fa-star"></i>
+										<i class="fa fa-star"></i>
+										<i class="fa fa-star-half-o"></i>
+									</div>
+									<div class="check">
+										<label class="checkb">Student host</label>
+									</div>
+								</div>
+								<div><p class="s_desc">Quisque vel sem ac enim facilisis euros froms ultrices euors Vivamus neque sapiene youga.</p></div>
+							</div>
+							<div class="btn-group">
+								<a href="#" class="btn green"><span>OPEN NOW</span></a>
+								<a href="#" class="btn"><i class="fa fa-map-marker"></i></a>
+								<a href="#" class="btn">HOST</a>
+								<a href="#" class="btn"><i class="fa fa-heart"></i></a>
+							</div>
+						</div>
+						<div class="items">
+							<div class="thu">
+								<img src="/images/a9a1d433-bcde-4601-88a0-5f16871b8548.jpg" />
+								<div class="thuleft">
+									<i class="fa fa-picture-o"></i>4 PHOTO
+								</div>
+								<div class="thuright">
+									<div class="sale">SALE</div>
+								</div>
+								<div class="thucenter">
+									<i class="fa fa-map-marker"></i>PARIS
+								</div>
+							</div>
+							<div class="caption">
+								<div class="h3">Hostel France</div>
+								<div class="ret">
+									<div class="ratting">
+										<i class="fa fa-star"></i>
+										<i class="fa fa-star"></i>
+										<i class="fa fa-star"></i>
+										<i class="fa fa-star"></i>
+										<i class="fa fa-star-half-o"></i>
+									</div>
+									<div class="check">
+										<label class="checkb">Student host</label>
+									</div>
+								</div>
+								<div><p class="s_desc">Quisque vel sem ac enim facilisis euros froms ultrices euors Vivamus neque sapiene youga.</p></div>
+							</div>
+							<div class="btn-group">
+								<a href="#" class="btn green"><span>OPEN NOW</span></a>
+								<a href="#" class="btn"><i class="fa fa-map-marker"></i></a>
+								<a href="#" class="btn">HOST</a>
+								<a href="#" class="btn"><i class="fa fa-heart"></i></a>
+							</div>
+						</div>
+					</div>
+				</div> -->
+				<div class="s_ceny">
+					<div><a href="#">LOAD MORE</a></div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="map">
+		<div class="map-wrapper">
+			<div id="map" class="contact"></div>
+		</div>
+	</div>
+</section>
 
 
 //= template/footer.html
+
+<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD4jEnlkhgCfMMd02GXY3Pl_GIRo5OM7mg&callback=initMap"></script>
+
+<script>
+	function initMap() {
+	    var map = new google.maps.Map(document.getElementById('map'), {
+	      zoom: 5,
+	      center: {lat: -28.024, lng: 140.887}
+	    });
+	    var labels = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
+	    var markers = locations.map(function(location, i) {
+	      return new google.maps.Marker({
+	        position: location,
+	        label: labels[i % labels.length]
+	      });
+	    });
+	    var markerCluster = new MarkerClusterer(map, markers,
+	        {imagePath: 'https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/m'});
+	  }
+	  var locations = [
+	    {lat: -31.563910, lng: 147.154312},
+	    {lat: -33.718234, lng: 150.363181},
+	    {lat: -33.727111, lng: 150.371124},
+	    {lat: -33.848588, lng: 151.209834},
+	    {lat: -33.851702, lng: 151.216968},
+	    {lat: -34.671264, lng: 150.863657},
+	    {lat: -35.304724, lng: 148.662905},
+	    {lat: -36.817685, lng: 175.699196},
+	    {lat: -36.828611, lng: 175.790222},
+	    {lat: -37.750000, lng: 145.116667},
+	    {lat: -37.759859, lng: 145.128708},
+	    {lat: -37.765015, lng: 145.133858},
+	    {lat: -37.770104, lng: 145.143299},
+	    {lat: -37.773700, lng: 145.145187},
+	    {lat: -37.774785, lng: 145.137978},
+	    {lat: -37.819616, lng: 144.968119},
+	    {lat: -38.330766, lng: 144.695692},
+	    {lat: -39.927193, lng: 175.053218},
+	    {lat: -41.330162, lng: 174.865694},
+	    {lat: -42.734358, lng: 147.439506},
+	    {lat: -42.734358, lng: 147.501315},
+	    {lat: -42.735258, lng: 147.438000},
+	    {lat: -43.999792, lng: 170.463352}
+	  ];
+</script>
 
 <script src="js/vendor.js"></script>
 <script src="js/main.js"></script>
