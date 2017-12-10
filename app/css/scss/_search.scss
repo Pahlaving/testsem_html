@@ -15,11 +15,12 @@ section#search__section{
 			#map.contact{
 				height: 730px;
 				@media screen and (max-width: 767px) {
-					height: 360px;
+					height: 300px;
 				}
 			}
 		}
 		@media screen and (max-width: 767px) {
+			height: 300px;
 			width: 100%;
 			left: 0;
 			top: 0;
@@ -43,6 +44,9 @@ section#search__section{
 	#search {
 		overflow: hidden;
 		margin-top: 20px;
+		@media screen and (max-width: 767px) {
+			padding-top: 180px;
+		}
 	}
 	.c_fl {
 		width: 33.33333%;
@@ -51,6 +55,10 @@ section#search__section{
 		box-sizing: border-box;
 		@media screen and (max-width: 992px) {
 			padding: 0 5px;
+		}
+		@media screen and (max-width: 767px) {
+			width: 100%;
+			margin-top: 6px;
 		}
 		input{
 			width: 100%;
@@ -62,6 +70,9 @@ section#search__section{
 			padding: 10px 7px;
 			@media screen and (max-width: 1200px) {
 				font-size: 9px;
+			}
+			@media screen and (max-width: 767px) {
+				font-size: 12px;
 			}
 		}
 		.s_t {
@@ -86,13 +97,15 @@ section#search__section{
 			@media screen and (max-width: 992px) {
 				width: 100%;
 				float: none;
+			}
+			@media screen and (max-width: 767px) {
+				margin-top: 5px;
 			}	
 		}
 		.s_i1 {
 			padding-right: 10px;
 			@media screen and (max-width: 992px) {
 				width: 100%;
-				//float: none;
 				padding-right: 0px;
 			}
 		}
@@ -115,6 +128,9 @@ section#search__section{
 			@media screen and (max-width: 1200px) {
 				font-size: 9px;
 				padding: 10px;
+			}
+			@media screen and (max-width: 767px) {
+				font-size: 12px;
 			}
 		}
 		position: relative;
@@ -187,7 +203,7 @@ section#search__section{
 			float: left;
 			margin-top: 38px;
 			@media screen and (max-width: 1200px) {
-				width: 30%;
+				width: 35%;
 			}
 			input{
 				width: 15px;
@@ -229,6 +245,9 @@ section#search__section{
 			padding: 11px 22px !important;
 			border-radius: 4px !important;
 			margin-top: 26px;
+			@media screen and (max-width: 375px) {
+				margin-right: 0px;
+			}
 		}
 		.s_res{
 			font-family: 'MyriadPro', sans-serif;
@@ -258,6 +277,9 @@ section#search__section{
 			}
 			@media screen and (max-width: 992px) {
 				font-size: 15px;
+			}
+			@media screen and (max-width: 375px) {
+				font-size: 12.5px;
 			}
 			span {
 				color: #cf2800;
@@ -437,6 +459,12 @@ section#search__section{
 			width: 16%;
 			margin: 8px auto;
 			display: inline-block;
+			@media screen and (max-width: 992px) {
+				width: 30%;
+			}
+			// @media screen and (max-width: 485px) {
+			// 	width: 30%;
+			// }
 			a{
 				display: block;
 				padding: 16px;
