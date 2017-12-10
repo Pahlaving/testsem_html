@@ -1,27 +1,172 @@
-.payment-complete {
-  text-align: center;
-  &-title {
-    margin-bottom: 20px;
-    color: #022d41;
-    font-family: 'mpb', sans-serif;
-    font-size: 40px;
-    line-height: 1;
+.payment {
+  font-family: 'MyriadPro', sans-serif;
+  font-size: 16px;
+
+  label {
+    font-weight: 400;
+    padding: 5px 10px;
   }
-  &-text {
-    margin-bottom: 20px;
-    color: #022d41;
-    font-family: 'ossb', sans-serif;
-    font-size: 16px;
-    .colored-gray {
-      background: #6e6e6e;
-      display: inline-block;
-      vertical-align: middle;
-      padding: 5px 15px;
-      margin-left: 6px;
-      border-radius: 4px;
-      color: #fff;
+
+  select {
+    font-size: 13px;
+    padding: 8px;
+    height: auto;
+  }
+
+  .payment-title {
+    font-family: 'MyriadPro', sans-serif;
+    font-size: 48px;
+    font-weight: 400;
+    margin-bottom: 50px;
+  }
+
+  .payment-complete {
+    text-align: center;
+    &-title {
+      margin-bottom: 20px;
+      color: #022d41;
+      font-family: 'mpb', sans-serif;
+      font-size: 40px;
+      line-height: 1;
+    }
+    &-text {
+      margin-bottom: 20px;
+      color: #022d41;
+      font-family: 'ossb', sans-serif;
+      font-size: 16px;
+      .colored-gray {
+        background: #6e6e6e;
+        display: inline-block;
+        vertical-align: middle;
+        padding: 5px 15px;
+        margin-left: 6px;
+        border-radius: 4px;
+        color: #fff;
+      }
+    }
+    &-button {
     }
   }
-  &-button {
+  .message-textarea-wrapper {
+    padding-top: 20px;
+    .textarea-wrapper {
+      position: relative;
+      padding-left: 80px;
+      .user-avatar {
+        position: absolute;
+        top: 0;
+        left: 0;
+        background: url(../images/33.png) no-repeat 30px 100%;
+        padding-bottom: 25px;
+        img {
+          border-radius: 50%;
+          width: 67px;
+          height: 67px;
+        }
+      }
+      textarea {
+        resize: vertical;
+        background-color: #fff;
+      }
+    }
+  }
+  .form-submit-right {
+    text-align: right;
+    padding: 30px 15px 0;
+    .btn {
+      margin-right: 0;
+    }
+  }
+  &-sidebar {
+    margin-top: 45px;
+    font-family: 'OpenSans', sans-serif;
+    color: #022d41;
+    .block-title {
+      color: #022d41;
+      font-size: 20px;
+      font-weight: 600;
+      margin-bottom: 15px;
+    }
+    .block-content {
+      background-color: $bg_payment_sidebar;
+      border-radius: 4px;
+      padding: 0 20px 30px;
+      .label {
+        font-size: 16px;
+        color: #022d41;
+        font-weight: 400;
+        padding: 0 0 5px;
+        display: inline-block;
+      }
+      .value {
+        font-size: 13px;
+      }
+      .value-row,
+      .coast {
+        padding: 20px 0;
+        background: url("../images/border-dotted.png") repeat-x 0 100%;
+        &.night {
+          .label,
+          .value {
+            display: inline-block;
+          }
+          .value {
+            background-color: #c0253d;
+            color: #fff;
+            display: inline-block;
+            vertical-align: baseline;
+            border-radius: 4px;
+            padding: 0 10px;
+            margin-left: 10px;
+            font-weight: 600;
+          }
+        }
+        &.documents {
+          a {
+            text-decoration: none;
+            &:hover {
+              text-decoration: underline;
+              color: #a1152c;
+            }
+          }
+          
+          .document {
+            padding-bottom: 5px;
+            &:last-child {
+              padding-bottom: 0;
+            }
+          }
+        }
+        &.direction {
+          img {
+            display: inline-block;
+            vertical-align: baseline;
+            margin: 0 5px;
+          }
+        }
+        .coast-row {
+          padding-bottom: 10px;
+          &:last-child {
+            padding-bottom: 0;
+          }
+          .price {
+            float: right;
+          }
+          &.total {
+            .price {
+              font-weight: 600;
+              color: #c0253d;
+              font-size: 15px;
+            }
+          }
+        }
+      }
+      .block-footer {
+        padding: 20px 0 0;
+        font-size: 13px;
+        line-height: 1.4;
+      }
+    }
   }
 }
+
