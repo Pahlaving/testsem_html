@@ -190,13 +190,11 @@ $(document).ready(function(){
     }
   });
 
-  $('.tool-switcher').on('click', function (e) {
+  $('.tool-switcher-slider').on('click', function (e) {
     e.preventDefault();
-    var $switcherSlidew = $(this).find('.tool-switcher-slider');
+    var $switcherSlider = $(this);
 
-
-    $(this).find('.tool-switcher-slider').toggleClass('checked');
-
+    $switcherSlider.toggleClass('checked');
     console.log('Check! Place here your ajax.');
 
   });
