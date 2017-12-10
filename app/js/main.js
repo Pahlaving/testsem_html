@@ -161,5 +161,17 @@ $(document).ready(function(){
     $(this).parent().find('select').click();
   });
 
+  $('#slider').slider({
+    values: [ 500 ]
+  });
+
+  $( "#slider" ).slider({
+    change: function( event, ui ) {
+      var options = $( "#slider" ).slider( "value" );
+      console.log(options);
+      $("section#search__section #search .s_d .s_l .s_ic .price").html(options);
+    }
+  });
+
 });
 

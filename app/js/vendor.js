@@ -9,3 +9,4 @@
 //= vendor/owl.carousel.min.js
 //= vendor/markerclusterer.js
 //= vendor/jquery.datetimepicker.full.min.js
+//= vendor/jquery-ui.min.js

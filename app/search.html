@@ -19,17 +19,6 @@
 						<input type="text" name="locations" placeholder="Locations">
 					</div>
 
-					<div class="selection select-leng">
-						<div class="select-side">
-							<i class="fa fa-angle-down" aria-hidden="true"></i>
-						</div>
-						<select name="language" id="leng-select">
-							<option>Ru</option>
-							<option>En</option>
-						</select>
-					</div>
-
-					
 					<div class="c_fl hostel">
 						<i class="fa fa-angle-down s_t"></i>
 						<p>Reservations Type</p>
@@ -42,7 +31,7 @@
 					</div>
 					<div class="c_fl hostel">
 						<i class="fa fa-angle-down s_t"></i>
-						<p></p>
+						<p>Hostel Type</p>
 						<select name="hostel">
 							<option value="">Hostel Type</option>
 							<option value="">Hostel Type</option>
@@ -69,8 +58,10 @@
 					</div>
 					<div class="s_d">
 						<div class="s_l">
-							<div class="s_ic"><div></div></div>
-							Price: 500 $
+							<div class="s_ic">
+								<div></div>
+							</div>
+							Price: <span class="price">500</span> $
 						</div>
 						<div class="s_r">
 							<div id="slider"></div>
@@ -79,7 +70,7 @@
 					<p class="s_p">Filter by tag:</p>
 					<div class="c_fl hostel">
 						<i class="fa fa-angle-down s_t"></i>
-						<p></p>
+						<p>Inventory</p>
 						<select name="inventory">
 							<option value="">Inventory</option>
 							<option value="">Inventory</option>
@@ -89,7 +80,7 @@
 					</div>
 					<div class="c_fl hostel">
 						<i class="fa fa-angle-down s_t"></i>
-						<p></p>
+						<p>Accommodation</p>
 						<select name="accommodation">
 							<option value="">Accommodation</option>
 							<option value="">Accommodation</option>
@@ -99,7 +90,7 @@
 					</div>
 					<div class="c_fl hostel">
 						<i class="fa fa-angle-down s_t"></i>
-						<p></p>
+						<p>Special</p>
 						<select name="special">
 							<option value="">Special</option>
 							<option value="">Special</option>
@@ -124,11 +115,11 @@
 						</div>
 					</div>
 				</form>
-				<!-- <div id="products">
+				<div id="products">
 					<div class="s_ok">Found <span>19</span> matching records</div>
 					<div class="s_okr hostel">
 						<i class="fa fa-angle-down s_t"></i>
-						<p></p>
+						<p>View All</p>
 						<select name="view">
 							<option value="">View All</option>
 							<option value="">View All</option>
@@ -140,10 +131,10 @@
 						<a class="s_tn" href="#"></a>
 						<a class="s_th" href="#"></a>
 					</div>
-					<div id="product_1">
+					<div class="products__wrapper">
 						<div class="items">
 							<div class="thu">
-								<img src="/images/a9a1d433-bcde-4601-88a0-5f16871b8548.jpg" />
+								<img class="img-responsive" src="/images/a9a1d433-bcde-4601-88a0-5f16871b8548.jpg" />
 								<div class="thuleft">
 									<i class="fa fa-picture-o"></i>4 PHOTO
 								</div>
@@ -171,10 +162,10 @@
 								<div><p class="s_desc">Quisque vel sem ac enim facilisis euros froms ultrices euors Vivamus neque sapiene youga.</p></div>
 							</div>
 							<div class="btn-group">
-								<a href="#" class="btn green"><span>OPEN NOW</span></a>
-								<a href="#" class="btn"><i class="fa fa-map-marker"></i></a>
-								<a href="#" class="btn">HOST</a>
-								<a href="#" class="btn"><i class="fa fa-heart"></i></a>
+								<a href="#" class="btn__link green"><span>OPEN NOW</span></a>
+								<a href="#" class="btn__link"><i class="fa fa-map-marker"></i></a>
+								<a href="#" class="btn__link">HOST</a>
+								<a href="#" class="btn__link"><i class="fa fa-heart"></i></a>
 							</div>
 						</div>
 						<div class="items">
@@ -207,10 +198,10 @@
 								<div><p class="s_desc">Quisque vel sem ac enim facilisis euros froms ultrices euors Vivamus neque sapiene youga.</p></div>
 							</div>
 							<div class="btn-group">
-								<a href="#" class="btn red"><span>CLOSED</span></a>
-								<a href="#" class="btn"><i class="fa fa-map-marker"></i></a>
-								<a href="#" class="btn">HOST</a>
-								<a href="#" class="btn"><i class="fa fa-heart"></i></a>
+								<a href="#" class="btn__link red"><span>CLOSED</span></a>
+								<a href="#" class="btn__link"><i class="fa fa-map-marker"></i></a>
+								<a href="#" class="btn__link">HOST</a>
+								<a href="#" class="btn__link"><i class="fa fa-heart"></i></a>
 							</div>
 						</div>
 						<div class="items">
@@ -243,10 +234,10 @@
 								<div><p class="s_desc">Quisque vel sem ac enim facilisis euros froms ultrices euors Vivamus neque sapiene youga.</p></div>
 							</div>
 							<div class="btn-group">
-								<a href="#" class="btn green"><span>OPEN NOW</span></a>
-								<a href="#" class="btn"><i class="fa fa-map-marker"></i></a>
-								<a href="#" class="btn">HOST</a>
-								<a href="#" class="btn"><i class="fa fa-heart"></i></a>
+								<a href="#" class="btn__link green"><span>OPEN NOW</span></a>
+								<a href="#" class="btn__link"><i class="fa fa-map-marker"></i></a>
+								<a href="#" class="btn__link">HOST</a>
+								<a href="#" class="btn__link"><i class="fa fa-heart"></i></a>
 							</div>
 						</div>
 						<div class="items">
@@ -279,16 +270,18 @@
 								<div><p class="s_desc">Quisque vel sem ac enim facilisis euros froms ultrices euors Vivamus neque sapiene youga.</p></div>
 							</div>
 							<div class="btn-group">
-								<a href="#" class="btn green"><span>OPEN NOW</span></a>
-								<a href="#" class="btn"><i class="fa fa-map-marker"></i></a>
-								<a href="#" class="btn">HOST</a>
-								<a href="#" class="btn"><i class="fa fa-heart"></i></a>
+								<a href="#" class="btn__link green"><span>OPEN NOW</span></a>
+								<a href="#" class="btn__link"><i class="fa fa-map-marker"></i></a>
+								<a href="#" class="btn__link">HOST</a>
+								<a href="#" class="btn__link"><i class="fa fa-heart"></i></a>
 							</div>
 						</div>
 					</div>
-				</div> -->
+				</div>
 				<div class="s_ceny">
-					<div><a href="#">LOAD MORE</a></div>
+					<div>
+						<a href="#">LOAD<br>MORE</a>
+					</div>
 				</div>
 			</div>
 		</div>
