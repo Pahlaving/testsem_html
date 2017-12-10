@@ -14,20 +14,19 @@ section#search__section{
 			width: 100%;
 			#map.contact{
 				height: 730px;
-				@media screen and (max-width: 992px) {
-
+				@media screen and (max-width: 767px) {
+					height: 360px;
 				}
 			}
 		}
-		// @media screen and (max-width: 992px) {
-		// 	width: 50%;
-		// 	left: 51px;
-		// 	top: 0;
-		// 	right: 0;
-		// 	height: 360px;
-		// 	padding: 0;
-		// 	margin: 0px;
-		// }
+		@media screen and (max-width: 767px) {
+			width: 100%;
+			left: 0;
+			top: 0;
+			right: 0;
+			padding: 0;
+			margin: 0px;
+		}
 	}
 	.section__wrapper__left{
 		width: 50%;
@@ -50,6 +49,9 @@ section#search__section{
 		float: left;
 		padding: 0 16px;
 		box-sizing: border-box;
+		@media screen and (max-width: 992px) {
+			padding: 0 5px;
+		}
 		input{
 			width: 100%;
 			box-sizing: border-box;
@@ -58,11 +60,17 @@ section#search__section{
 			background-color: #fff;
 			font-size: 10.5px;
 			padding: 10px 7px;
+			@media screen and (max-width: 1200px) {
+				font-size: 9px;
+			}
 		}
 		.s_t {
 			position: absolute;
 			right: 25px;
 			top: 14px;
+			@media screen and (max-width: 992px) {
+				right: 12px;
+			}
 
 		}
 		.fa-angle-down{
@@ -75,12 +83,26 @@ section#search__section{
 			margin-top: 25px;
 			float: left;
 			box-sizing: border-box;
+			@media screen and (max-width: 992px) {
+				width: 100%;
+				float: none;
+			}	
 		}
 		.s_i1 {
 			padding-right: 10px;
+			@media screen and (max-width: 992px) {
+				width: 100%;
+				//float: none;
+				padding-right: 0px;
+			}
 		}
 		.s_i2 {
 			padding-left: 10px;
+			@media screen and (max-width: 992px) {
+				width: 100%;
+				float: none;
+				padding-left: 0;
+			}
 		}
 	}
 	.hostel {
@@ -91,7 +113,7 @@ section#search__section{
 			border-radius: 4px;
 			color:  #757579;
 			@media screen and (max-width: 1200px) {
-				font-size: 10px;
+				font-size: 9px;
 				padding: 10px;
 			}
 		}
@@ -104,6 +126,7 @@ section#search__section{
 			min-width: auto;
 			padding: 11px 0;
 			opacity: 0;
+			min-width: auto;
 		}
 	}
 	.s_d{
@@ -163,6 +186,9 @@ section#search__section{
 			width: 18%;
 			float: left;
 			margin-top: 38px;
+			@media screen and (max-width: 1200px) {
+				width: 30%;
+			}
 			input{
 				width: 15px;
 				height: 15px;
@@ -226,6 +252,13 @@ section#search__section{
 			box-sizing: border-box;
 			font-size: 20px;
 			font-family: 'Poppins', sans-serif;
+			@media screen and (max-width: 1200px) {
+				width: 59%;
+				font-size: 17px;
+			}
+			@media screen and (max-width: 992px) {
+				font-size: 15px;
+			}
 			span {
 				color: #cf2800;
 			}
