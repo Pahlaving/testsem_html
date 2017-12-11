@@ -1,5 +1,5 @@
 .reservations {
-  padding-bottom: 15px;
+  padding-bottom: 30px;
   max-width: 290px;
   margin-top: 60px;
   @media(max-width: 768px) {
@@ -79,44 +79,7 @@
       }
     }
   }
-  .values-rows {
-    padding: 0 0 15px;
-    margin-bottom: 10px;
-    .value-row {
-      display: flex;
-      flex-direction: row;
-      flex-wrap: nowrap;
-      justify-content: space-between;
-      border-top: 1px #dedede solid;
-      padding: 5px 15px;
-      &:last-child {
-        border-bottom: 1px #dedede solid;
 
-      }
-      span.name {}
-      span.value {
-        &.total {
-          font-weight: 600;
-        }
-      }
-    }
-    abbr {
-      font-family: 'Georgia', serif;
-      line-height: 16px;
-      font-weight: 600;
-      font-size: 10px;
-      width: 16px;
-      height: 16px;
-      display: inline-block;
-      vertical-align: middle;
-      background-color: #8d99ae;
-      border-radius: 50%;
-      text-align: center;
-      color: #fff;
-      font-style: italic;
-      border: 0 none;
-    }
-  }
   .add-service {
     padding: 0 15px 25px;
     text-align: center;
@@ -136,4 +99,110 @@
     }
   }
 }
+.photo-gallery-wrapper {
+  max-width: 290px;
+  margin-bottom: 50px;
+  .photo-gallery-title {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 26px;
+    padding-bottom: 30px;
+  }
+  .sidebar-gallery {
+    font-size: 0;
+    text-align: center;
+    .image-thumb {
+      display: inline-block;
+      margin: 5px;
+      overflow: hidden;
+      border-radius: 5px;
+    }
+  }
+  .all-photos {
+    text-align: center;
+    font-size: 12px;
+    color: #8d99ae;
+    display: inline-block;
+    width: 100%;
+  }
+}
+.neabry-listing-wrapper {
+  .neabry-listing-title {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 26px;
+    padding-bottom: 30px;
+  }
+  .values-rows {
+    color: #8d99ae;
+    .value-row {
+      padding: 10px 0;
+      &:first-child {
+        border-top: 0 none;
+      }
+      &:last-child {
+        border-bottom: 0 none;
 
+      }
+    }
+  }
+}
+
+.values-rows {
+  padding: 0 0 15px;
+  margin-bottom: 10px;
+  .value-row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    border-top: 1px #dedede solid;
+    padding: 5px 15px;
+    &:first-child {
+      border-top: 0 none;
+    }
+    span.name {}
+    span.value {
+      &.total {
+        font-weight: 600;
+      }
+    }
+  }
+  abbr {
+    font-family: 'Georgia', serif;
+    line-height: 16px;
+    font-weight: 600;
+    font-size: 10px;
+    width: 16px;
+    height: 16px;
+    display: inline-block;
+    vertical-align: middle;
+    background-color: #8d99ae;
+    border-radius: 50%;
+    text-align: center;
+    color: #fff;
+    font-style: italic;
+    border: 0 none;
+  }
+}
+
+.tags-cloud-wrapper {
+  .tags-cloud-title {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 26px;
+    padding-bottom: 30px;
+  }
+  .tags-cloud-list {
+    li {
+      display: inline-block;
+      a {
+        display: inline-block;
+        color: #8d99ae;
+        border: 1px solid #8d99ae;
+        border-radius: 4px;
+        white-space: nowrap;
+        padding: 5px 10px;
+        margin: 0 10px 10px 0;
+      }
+
+    }
+  }
+}
