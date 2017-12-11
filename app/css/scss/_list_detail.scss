@@ -137,7 +137,7 @@
         height: 16px;
         border-radius: 10px;
         background: #db042b;
-        box-shadow: 0 2px 5px rgba(0,0,0,.3);
+        box-shadow: 0 2px 5px rgba(0, 0, 0, .3);
         transition: all .2s;
       }
       &.checked {
@@ -189,9 +189,8 @@
     }
   }
 }
-
 #anchors-menu {
-  padding: 32px 10px 20px;
+  padding: 32px 10px 0;
   ul {
     &, li {
       padding: 0;
@@ -225,4 +224,155 @@
       }
     }
   }
+}
+#list-detail {
+  font-family: 'Roboto', sans-serif;
+  font-size: 15px;
+  .detail-title {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 26px;
+    padding-bottom: 30px;
+  }
+  .detail-section {
+    padding-bottom: 40px;
+  }
+  .description-text {
+    p {
+      margin-bottom: 20px;
+      color: #8d99ae;
+    }
+  }
+  .description-amenities-title {
+    color: #00171f;
+    font-weight: 500;
+    padding-top: 10px;
+  }
+  .description-amenities-list {
+    padding: 15px 0 0;
+    li {
+      display: inline-block;
+      background: url("../images/redok.png") no-repeat 0 50%;
+      padding: 3px 10px 3px 25px;
+      margin-bottom: 5px;
+      white-space: nowrap;
+    }
+  }
+  .additional-pricing-list {
+    max-width: 590px;
+    li {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: nowrap;
+      justify-content: space-between;
+      align-items: flex-end;
+      padding-bottom: 15px;
+      span {
+        &.name {
+        }
+        &.price {
+          color: #d90429;
+          font-weight: 600;
+        }
+        &:nth-child(2) {
+          flex-grow: 2;
+          margin: 0 5px;
+          background: url("../images/border-dotted-small.png") repeat-x 0 100%;
+          overflow: hidden;
+          text-indent: -99px;
+        }
+      }
+    }
+  }
+  .listing-time {
+    .listing-time-list {
+      max-width: 800px;
+      width: 100%;
+      .title {
+        padding-bottom: 10px;
+      }
+      ul {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        //justify-content: space-between;
+        width: 100%;
+        li {
+          line-height: 1.8;
+          padding: 0 30px 20px 0;
+          display: inline-block;
+          ul {
+            flex-grow: 1;
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            li {
+              display: block;
+              color: #8d99ae;
+              padding: 0;
+              &:after {
+                content: "-";
+                display: block;
+                line-height: 1;
+              }
+              &:last-child {
+                &:after {
+                  display: none;
+                }
+              }
+            }
+          }
+        }
+      }
+      .current,
+      .current ul li {
+        color: #d90429;
+      }
+    }
+  }
+  .location-block {
+    padding-bottom: 3px;
+    .location-block-tools {
+      .btn {
+        margin-right: 0;
+        margin-bottom: 5px;
+        &.map {
+          background-image: url("../images/ico-marker.png");
+        }
+        &.street-view {
+          background-image: url("../images/ico-street-view.png");
+        }
+      }
+    }
+    .left {
+      float: left;
+      .btn {
+        font-weight: 400;
+        background-repeat: no-repeat;
+        background-position: 20px 50%;
+        min-width: auto;
+        padding: 15px 30px 15px 60px;
+      }
+    }
+    .right {
+      float: right;
+      .btn {
+        min-width: 175px;
+        padding: 15px;
+      }
+    }
+    .left,
+    .right {
+      @media(max-width: 740px) {
+        float: none;
+        text-align: left;
+      }
+    }
+  }
+  .location-block-map {
+    height: 345px;
+    border-radius: 4px;
+  }
+}
+#similar-list .tov .owl-nav div {
+  top: 22% !important;
 }

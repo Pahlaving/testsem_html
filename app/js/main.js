@@ -57,25 +57,47 @@ $(document).ready(function(){
     pagination: true
   });
 
-  $('.tov').owlCarousel({
+  $('#recent__carusel .tov').owlCarousel({
     loop:true,
     autoplay: 3000,
     nav:true,
     navText : ["<img src='images/15.png' class='navlef' />","<img src='images/16.png' class='navrig hi' />"],
     pagination: false,
     responsive:{
-        0:{
-            items:1
-        },
-        600:{
-            items:2
-        },
-        767:{
-          items:3
-        },
-        1000:{
-            items:5
-        }
+      0:{
+        items:1
+      },
+      600:{
+        items:2
+      },
+      767:{
+        items:3
+      },
+      1000:{
+        items:5
+      }
+    }
+  });
+
+  $('#similar-list .tov').owlCarousel({
+    loop:true,
+    autoplay: 3000,
+    nav:true,
+    navText : ["<img src='images/15.png' class='navlef' />","<img src='images/16.png' class='navrig hi' />"],
+    pagination: false,
+    responsive:{
+      0:{
+        items:1
+      },
+      600:{
+        items:2
+      },
+      767:{
+        items:2
+      },
+      1000:{
+        items:3
+      }
     }
   });
 
