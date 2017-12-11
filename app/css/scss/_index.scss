@@ -955,29 +955,15 @@ section#mail{
 }
 
 section#partners{
-	.partners__wrapper{
-		padding-top: 70px;
-		padding-bottom: 150px; 
-		display: flex;
-		justify-content: space-between;
-		align-items: center;
-		@media screen and (max-width: 767px) {
-			flex-direction: column;
-			padding-bottom: 70px;
-		}
-		.ite{
+	padding-top: 70px;
+	padding-bottom: 150px;
+	@media screen and (max-width: 767px) {
+		padding-bottom: 70px;
+	}
+	.partners{
+		text-align: center;
+		.partner__item{
 			display: inline-block;
-			a{
-				img{
-					@media screen and (max-width: 992px) {
-						width: 80%;
-					}
-					@media screen and (max-width: 767px) {
-						width: 100%;
-						margin-top: 20px;
-					}
-				}
-			}
 		}
 	}
 }

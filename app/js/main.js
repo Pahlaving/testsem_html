@@ -57,6 +57,29 @@ $(document).ready(function(){
     pagination: true
   });
 
+  $('.partners').owlCarousel({
+    loop:true,
+    items : 4, 
+    autoplay: 3000,
+    nav:false,
+    //pagination: true,
+    pagination: false,
+    responsive:{
+      0:{
+        items:1
+      },
+      600:{
+        items:2
+      },
+      767:{
+        items:3
+      },
+      1000:{
+        items:4
+      }
+    }
+  });
+
   $('#recent__carusel .tov').owlCarousel({
     loop:true,
     autoplay: 3000,
