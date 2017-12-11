@@ -14,7 +14,6 @@
     background-size: cover;
   }
 }
-
 #detail-head-carouser-nav {
   position: absolute;
   top: 50%;
@@ -33,19 +32,18 @@
   }
   .owl-prev {
     left: 50px;
-    @media(max-width: 768px){
+    @media(max-width: 768px) {
       left: 15px;
     }
   }
   .owl-next {
     right: 50px;
     background-position: 100% 0;
-    @media(max-width: 768px){
+    @media(max-width: 768px) {
       right: 15px;
     }
   }
 }
-
 .detail-header-tools {
   position: absolute;
   bottom: 0;
@@ -60,7 +58,7 @@
     display: block;
     padding: 20px;
     width: 210px;
-    margin: 0 auto;
+    margin: 0 auto 30px;
     font-size: 16px;
     text-align: center;
     a {
@@ -81,6 +79,87 @@
     }
     .review-count {
       display: inline-block;
+    }
+  }
+}
+.tool {
+  background-color: rgba(0, 0, 0, 0.7);
+  display: inline-block;
+  border-radius: 3px;
+  margin: 10px 10px 0 0;
+  padding: 15px 15px 15px 50px;
+  &.tool-print {
+    background: rgba(0, 0, 0, 0.7) url("../images/ico-print-small.png") no-repeat 15px 50%;
+  }
+  &.tool-add-to-favorite {
+    background: rgba(0, 0, 0, 0.7) url("../images/ico-heart-small.png") no-repeat 15px 50%;
+  }
+  &.tool-share {
+    background: rgba(0, 0, 0, 0.7) url("../images/ico-share-small.png") no-repeat 15px 50%;
+  }
+  .tool-switcher {
+    display: inline-block;
+    &:after {
+      box-shadow: 1px 1px 1px 1px #454e59;
+    }
+  }
+  &.tool-switcher {
+    padding: 15px;
+    .tool-switcher-slider {
+      display: inline-block;
+      position: relative;
+      width: 34px;
+      height: 14px;
+      background: url(../images/switch_base.png) center center no-repeat;
+      vertical-align: middle;
+      margin: 0 15px;
+      &:after {
+        content: '';
+        position: absolute;
+        top: -2px;
+        left: 0;
+        width: 16px;
+        height: 16px;
+        border-radius: 10px;
+        background: #db042b;
+        box-shadow: 0 2px 5px rgba(0,0,0,.3);
+        transition: all .2s;
+      }
+      &.checked {
+        &:after {
+          animation-name: slideInLeft;
+          left: 20px;
+          //right: -2px;
+        }
+      }
+    }
+    //background-covlor: #242930;
+    .toggle-slider {
+      .toggle-switch {
+        width: 41px;
+        height: 21px;
+      }
+      .toggle-button {
+        transition: all .4s;
+        cursor: pointer;
+        top: 5px;
+        left: -5px;
+        position: absolute;
+        width: 14px;
+        height: 15px;
+        //background: url(../images/switch_button.png) center center no-repeat;
+        border-radius: 50%;
+        background-color: red;
+        transform: translateY(-50%)
+      }
+      &.toggle-toggle {
+        .toggle-button {
+          transition: all .4s;
+          //top: -20%;
+          transform: translateX(80%)
+        }
+      }
+
     }
   }
 }
