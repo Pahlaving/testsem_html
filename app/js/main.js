@@ -57,25 +57,47 @@ $(document).ready(function(){
     pagination: true
   });
 
-  $('.tov').owlCarousel({
+  $('#recent__carusel .tov').owlCarousel({
     loop:true,
     autoplay: 3000,
     nav:true,
     navText : ["<img src='images/15.png' class='navlef' />","<img src='images/16.png' class='navrig hi' />"],
     pagination: false,
     responsive:{
-        0:{
-            items:1
-        },
-        600:{
-            items:2
-        },
-        767:{
-          items:3
-        },
-        1000:{
-            items:5
-        }
+      0:{
+        items:1
+      },
+      600:{
+        items:2
+      },
+      767:{
+        items:3
+      },
+      1000:{
+        items:5
+      }
+    }
+  });
+
+  $('#similar-list .tov').owlCarousel({
+    loop:true,
+    autoplay: 3000,
+    nav:true,
+    navText : ["<img src='images/15.png' class='navlef' />","<img src='images/16.png' class='navrig hi' />"],
+    pagination: false,
+    responsive:{
+      0:{
+        items:1
+      },
+      600:{
+        items:2
+      },
+      767:{
+        items:2
+      },
+      1000:{
+        items:3
+      }
     }
   });
 
@@ -148,8 +170,10 @@ $(document).ready(function(){
     inboxTableTool('.inbox-table', 768);
   });
 
-  $('#date').datetimepicker();
-  $('#time').datetimepicker({
+  $('#date, #check_in_date, #check_out_date').datetimepicker({
+    timepicker: false
+  });
+  $('#time, #check_in_time, #check_out_time').datetimepicker({
     datepicker:false,
     format:'H:i'
   });
@@ -190,21 +214,42 @@ $(document).ready(function(){
     }
   });
 
-  $('.tool-switcher').on('click', function (e) {
+  $('.tool-switcher-slider').on('click', function (e) {
     e.preventDefault();
-    var $switcherSlidew = $(this).find('.tool-switcher-slider');
+    var $switcherSlider = $(this);
 
-
-    $(this).find('.tool-switcher-slider').toggleClass('checked');
-
+    $switcherSlider.toggleClass('checked');
     console.log('Check! Place here your ajax.');
 
   });
 
+<<<<<<< HEAD
 
     $( function() {
       $( "#checkbox-1, #private_room" ).checkboxradio();
     } );
+=======
+  $('.sidebar-gallery .image-link')
+    .magnificPopup(
+      {
+        type:'image',
+        disableOn: "400",
+        key: 'some-key',
+        gallery: {
+          enabled: true,
+          preload: [0,2],
+          navigateByImgClick: true,
+          arrowMarkup: '<button title="%title%" type="button" class="mfp-arrow mfp-arrow-%dir%"></button>',
+          tPrev: 'Previous (Left arrow key)',
+          tNext: 'Next (Right arrow key)',
+          tCounter: '<span class="mfp-counter">%curr% of %total%</span>'
+        },
+        image: {
+          titleSrc: 'title'
+        }
+      }
+    );
+>>>>>>> 31b7db71a020be2c861e0c33e543b18b7b0d4175
 
 });
 

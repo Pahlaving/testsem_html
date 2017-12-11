@@ -1,0 +1,210 @@
+.reservations {
+  padding-bottom: 30px;
+  max-width: 290px;
+  margin-top: 60px;
+  @media(max-width: 768px) {
+    margin-top: 0;
+  }
+  .reservation-title {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 26px;
+    padding-bottom: 30px;
+  }
+  .reservation-form {
+    font-family: 'Roboto', sans-serif;
+    font-size: 13px;
+    .per-night {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: nowrap;
+      justify-content: space-between;
+      background-color: #022d41;
+      color: #fff;
+      & > div {
+        padding: 13px 15px;
+      }
+    }
+    form {
+      background-color: #ececec;
+    }
+    label {
+      font-weight: 400;
+      font-size: 11px;
+      padding: 0;
+      line-height: 1;
+    }
+    input,
+    select {
+      text-align: center;
+      padding: 0 5px;
+      line-height: 1;
+      font-size: 12px;
+      height: 25px;
+      max-width: 80px;
+      min-width: 80px;
+      margin: 0 2px 15px;
+      display: inline-block;
+      border-radius: 3px;
+      background-color: #fff;
+    }
+  }
+  hr {
+    display: block;
+    width: 100%;
+    border-top: 1px #dedede solid;
+    margin: 0;
+  }
+  .form-group {
+    margin-bottom: 0;
+  }
+  .flex-row, .flex-col {
+    display: flex;
+    flex-wrap: wrap;
+    //justify-content: space-between;
+    //justify-content: center;
+    align-items: flex-start;
+    flex-direction: row;
+  }
+  .flex-row {
+    padding: 15px 15px 5px;
+
+  }
+  .flex-col {
+    flex-grow: 1;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    @media(max-width: 992px) {
+      &:nth-child(3) {
+
+      }
+    }
+  }
+
+  .add-service {
+    padding: 0 15px 25px;
+    text-align: center;
+    @media(max-width: 768px) {
+      text-align: left;
+    }
+    .btn {
+      margin-right: 0;
+      background: url(../images/ico-add.png) no-repeat 10px 50%;
+      color: #022d41;
+      border: 2px #022d41 solid;
+      padding: 10px 20px 10px 40px;
+      white-space: normal;
+      line-height: 1.2;
+      min-width: 190px;
+      font-size: 13px;
+    }
+  }
+}
+.photo-gallery-wrapper {
+  max-width: 290px;
+  margin-bottom: 50px;
+  .photo-gallery-title {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 26px;
+    padding-bottom: 30px;
+  }
+  .sidebar-gallery {
+    font-size: 0;
+    text-align: center;
+    .image-thumb {
+      display: inline-block;
+      margin: 5px 10px 0;
+      overflow: hidden;
+      border-radius: 5px;
+    }
+  }
+  .all-photos {
+    text-align: center;
+    font-size: 12px;
+    color: #8d99ae;
+    display: inline-block;
+    width: 100%;
+    margin-top: 10px;
+  }
+}
+.neabry-listing-wrapper {
+  padding-bottom: 20px;
+  .neabry-listing-title {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 26px;
+    padding-bottom: 30px;
+  }
+  .values-rows {
+    color: #8d99ae;
+    .value-row {
+      padding: 10px 0;
+      &:first-child {
+        border-top: 0 none;
+      }
+      &:last-child {
+        border-bottom: 0 none;
+
+      }
+    }
+  }
+}
+
+.values-rows {
+  padding: 0 0 15px;
+  margin-bottom: 10px;
+  .value-row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    border-top: 1px #dedede solid;
+    padding: 5px 15px;
+    &:first-child {
+      border-top: 0 none;
+    }
+    span.name {}
+    span.value {
+      &.total {
+        font-weight: 600;
+      }
+    }
+  }
+  abbr {
+    font-family: 'Georgia', serif;
+    line-height: 16px;
+    font-weight: 600;
+    font-size: 10px;
+    width: 16px;
+    height: 16px;
+    display: inline-block;
+    vertical-align: middle;
+    background-color: #8d99ae;
+    border-radius: 50%;
+    text-align: center;
+    color: #fff;
+    font-style: italic;
+    border: 0 none;
+  }
+}
+
+.tags-cloud-wrapper {
+  .tags-cloud-title {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 26px;
+    padding-bottom: 30px;
+  }
+  .tags-cloud-list {
+    li {
+      display: inline-block;
+      a {
+        display: inline-block;
+        color: #8d99ae;
+        border: 1px solid #8d99ae;
+        border-radius: 4px;
+        white-space: nowrap;
+        padding: 5px 10px;
+        margin: 0 10px 10px 0;
+      }
+
+    }
+  }
+}

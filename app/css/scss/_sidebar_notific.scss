@@ -1,4 +1,4 @@
-.nav-notific{
+.nav-notific {
   font-family: 'OpenSans', sans-serif;
   font-size: 15px;
   font-weight: bold;
@@ -7,20 +7,20 @@
     margin: 20px 0 50px;
   }
   ul {
-    li{
+    li {
       margin: 10px 0;
       color: #022d41;
-      .item-nav-notif{
+      .item-nav-notif {
         line-height: 20px;
         padding: 10px;
         color: #022d41;
         border: 2px transparent solid;
         display: inline-block;
-        &:hover{
+        &:hover {
           border: 2px #022d41 solid;
           color: #022d41;
         }
-        &.active{
+        &.active {
           color: #ff2020;
           border: 2px #ff2020 solid;
         }
@@ -28,7 +28,6 @@
     }
   }
 }
-
 .notific-hamburger {
   position: absolute;
   right: 30px;
@@ -40,7 +39,8 @@
   text-indent: -999px;
   cursor: pointer;
   display: none;
-  @media(max-width: 768px){
+  @media(max-width: 768px) {
     display: block;
   }
 }
+
