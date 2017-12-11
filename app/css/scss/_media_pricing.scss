@@ -524,7 +524,6 @@ section#media{
 				}
 
 			}
-			
 		}
 		#v_cent2, #v_cent3{
 			label{
@@ -540,7 +539,47 @@ section#media{
 			  }
 			}
 		}
-
+		#drop_zone {
+			margin-top: 140px;
+			position: relative;
+			border: 5px solid blue;
+			border: none;
+			img{
+				height: 100%;
+				position: relative;
+				top: 0;
+				bottom: 0;
+				left: 0;
+				right: 0;
+			}
+			.drop__zone__caption{
+				@media screen and (max-width: 425px) {
+					font-size: 17px;
+				}
+				line-height: 1.5em;
+				font-family: 'MyriadPro', sans-serif;
+				font-size: 24px;
+				font-weight: 400;
+				color: #fff;
+				background-color: transparent;
+				position: absolute;
+				top: 20px;
+				left: 20px;
+				span{
+					color: #EDBE14;
+				}
+				i{
+					margin-right: 15px;
+				}
+				p{
+					@media screen and (max-width: 425px) {
+						font-size: 12px;
+					}
+					font-size: 18px;
+					font-weight: 300;
+				}
+			}
+		}
 	}
 }
 
