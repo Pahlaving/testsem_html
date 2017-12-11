@@ -7,11 +7,15 @@
 </head>
 <body>
 
+<span class="no-print">
 //= template/header_login.html
+</span>
 
+<span class="no-print">
 //= template/breadcrumbs.html
+</span>
 
-<div class="detail-header-wrapper">
+<div class="detail-header-wrapper no-print">
 
   <div class="detail-header-container">
     <div class="owl-carousel detail-head-carouser">
@@ -43,7 +47,7 @@
             Video
           </div>
 
-          <div class="tool tool-print">Print</div>
+          <div class="tool tool-print" onclick="print()">Print</div>
 
           <div class="tool tool-share">Share</div>
 
@@ -68,7 +72,7 @@
 
 </div>
 
-<div id="anchors-menu" class="navigation">
+<div id="anchors-menu" class="navigation no-print">
   <div class="container">
     <div class="row">
       <div class="col-sm-12">
@@ -92,7 +96,7 @@
 
       <div id="list-detail" class="col-sm-8 page-content">
 
-        <div id="description" class="detail-section">
+        <div id="description" class="description detail-section">
 
           <div class="detail-title">The Hoslet in France (Name)</div>
 
@@ -222,7 +226,7 @@
 
           <div class="detail-title">Location</div>
 
-          <div class="location-block-tools clearfix">
+          <div class="location-block-tools no-print clearfix">
 
             <div class="left">
               <a href="#" role="tab" class="btn btn-gray map">Map</a>
@@ -240,7 +244,7 @@
         </div>
         <!-- /#location-block -->
 
-        <div id="similar-list" class="detail-section similar-list clearfix">
+        <div id="similar-list" class="detail-section no-print similar-list clearfix">
 
           <div class="detail-title">Similar Listing</div>
 
@@ -400,7 +404,7 @@
         </div>
         <!-- /#similar-list -->
 
-        <div id="about-host" class="detail-section clearfix">
+        <div id="about-host" class="detail-section no-print clearfix">
 
           <div class="detail-title">About the Host Owner</div>
 
@@ -412,8 +416,7 @@
 
         </div>
 
-
-        <div id="reviews" class="detail-section clearfix">
+        <div id="reviews" class="detail-section no-print clearfix">
 
           <div class="detail-title">Revıew</div>
 
@@ -446,7 +449,7 @@
         </div>
         <!-- /#reviews -->
 
-        <div id="write-review" class="detail-section clearfix">
+        <div id="write-review" class="detail-section no-print clearfix">
 
           <div class="detail-title">Rate & Wrıte a Revıew</div>
 
@@ -476,7 +479,6 @@
         <!-- /#write-review -->
 
       </div>
-
       <div class="col-sm-4 sidebar">
 
         //= template/sidebar_list_detail.html
@@ -489,7 +491,9 @@
 
 <div class="clearfix"></div>
 
+<span class="no-print">
 //= template/footer.html
+</span>
 
 <script src="js/vendor.js"></script>
 <script src="js/main.js"></script>
@@ -519,6 +523,18 @@
     // , {lat: -33.718234, lng: 150.363181}
   ];
 </script>
+
+<style media="print">
+  .no-print {
+    display: none;
+    height: 0px;
+    visibility: hidden;
+  }
+  .description .detail-title {
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+</style>
 
 </body>
 </html>
