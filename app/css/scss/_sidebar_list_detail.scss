@@ -1,6 +1,10 @@
 .reservations {
+  padding-bottom: 15px;
+  max-width: 290px;
   margin-top: 60px;
-
+  @media(max-width: 768px) {
+    margin-top: 0;
+  }
   .reservation-title {
     font-family: 'Open Sans', sans-serif;
     font-size: 26px;
@@ -76,19 +80,60 @@
     }
   }
   .values-rows {
-    padding: 0 15px;
+    padding: 0 0 15px;
     margin-bottom: 10px;
     .value-row {
       display: flex;
       flex-direction: row;
       flex-wrap: nowrap;
       justify-content: space-between;
+      border-top: 1px #dedede solid;
+      padding: 5px 15px;
+      &:last-child {
+        border-bottom: 1px #dedede solid;
+
+      }
       span.name {}
-      span.value {}
+      span.value {
+        &.total {
+          font-weight: 600;
+        }
+      }
+    }
+    abbr {
+      font-family: 'Georgia', serif;
+      line-height: 16px;
+      font-weight: 600;
+      font-size: 10px;
+      width: 16px;
+      height: 16px;
+      display: inline-block;
+      vertical-align: middle;
+      background-color: #8d99ae;
+      border-radius: 50%;
+      text-align: center;
+      color: #fff;
+      font-style: italic;
+      border: 0 none;
     }
   }
   .add-service {
-    padding: 15px;
+    padding: 0 15px 25px;
+    text-align: center;
+    @media(max-width: 768px) {
+      text-align: left;
+    }
+    .btn {
+      margin-right: 0;
+      background: url(../images/ico-add.png) no-repeat 10px 50%;
+      color: #022d41;
+      border: 2px #022d41 solid;
+      padding: 10px 20px 10px 40px;
+      white-space: normal;
+      line-height: 1.2;
+      min-width: 190px;
+      font-size: 13px;
+    }
   }
 }
 
