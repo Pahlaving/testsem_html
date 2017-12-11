@@ -27,7 +27,7 @@ section#media{
 	.tab-content{
 		.tab-pane{
 			&.active {
-				background: #222a37;
+				//background: #222a37;
 			}
 		}
 	}
@@ -49,6 +49,9 @@ section#media{
 		display: block;
 		padding: 40px 0;
 	}
+	.tab__caption__wrapper{
+		background: #222a37;
+	}
 	.m_h4 {
 		font-size: 20px;
 		font-family: 'MyriadPro', sans-serif;
@@ -57,6 +60,7 @@ section#media{
 		color: #fff;
 		padding-top: 40px;
 		margin-bottom: 15px;
+		background: #222a37;
 		i{
 			color: yellow;
 		}
@@ -69,6 +73,7 @@ section#media{
 		}
 	}
 	.m_div {
+		background: #222a37;
 		font-size: 19px;
 		font-family: 'MyriadPro', sans-serif;
 		color: #fff;
@@ -148,7 +153,7 @@ section#media{
 				border: none;
 				width: 100%;
 				box-sizing: border-box;
-				padding: 18px 34px;
+				padding: 18px 17px;
 				background: #f0eeef;
 				font-family: 'MyriadPro', sans-serif;
 				font-size: 20px;
@@ -434,6 +439,60 @@ section#media{
 				}
 			} 
 		}
+	}
+
+	/* ======= tab location ======= */
+
+	.tab-content{
+		.tab__caption{
+			font-family: 'MyriadPro', sans-serif;
+			font-weight: 600;
+			font-size: 22px;
+			color: #222a37;
+			margin-top: 45px;
+			margin-bottom: 20px;
+			.caption__commit{
+				font-family: 'MyriadPro', sans-serif;
+				font-size: 18px;
+				font-weight: 300;
+				margin-top: 30px;
+				line-height: 1.8em;
+				span{
+					color: #eebf00;
+				}
+			}
+		}
+		.map-wrapper{
+			margin-top: -135px;
+			#map.contact{
+				height: 490px;
+			}
+		}
+		.select_mt{
+			margin-top: 35px;
+		}
+		#directions_optional{
+			height: 178px !important;
+			width: 100%;
+		}
+		.map__address{
+			i{
+				color: #EDBE14;
+				margin-right: 15px;
+			}
+			text-align: center;
+			font-family: 'MyriadPro', sans-serif;
+			font-size: 18px;
+			font-weight: 300;
+			color: #fff;
+			height: 100px;
+			width: 100%;
+			background: #222A37;
+			opacity: 0.9;
+			line-height: 1.5em;
+			padding: 20px;
+		}
+		
 	}
 }
 

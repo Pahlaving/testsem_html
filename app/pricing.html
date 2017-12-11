@@ -17,13 +17,13 @@
 	<div class="container">
 		<p class="m_add">Add your listing</p>
 		<div class="m_sectright nav nav-tabs">
-			<a href="#v_cent" data-toggle="tab">
+			<a href="#v_cent" class="actives" data-toggle="tab">
 				<i class="fa fa-map-marker hidden-md hidden-lg hidden-sm"></i><span class="hidden-xs">Location</span>
 			</a>
 			<a href="#v_cent1" data-toggle="tab">
 				<i class="fa fa-map-marker hidden-md hidden-lg hidden-sm"></i><span class="hidden-xs">Basics</span>
 			</a>
-			<a href="#v_cent2" class="actives" data-toggle="tab"><i class="fa fa-map-marker hidden-md hidden-lg hidden-sm"></i><span class="hidden-xs">Descriptions</span></a>
+			<a href="#v_cent2" data-toggle="tab"><i class="fa fa-map-marker hidden-md hidden-lg hidden-sm"></i><span class="hidden-xs">Descriptions</span></a>
 			<a href="#v_cent3" data-toggle="tab">
 				<i class="fa fa-map-marker hidden-md hidden-lg hidden-sm"></i><span class="hidden-xs">Amenities</span>
 			</a>
@@ -31,57 +31,305 @@
 				<i class="fa fa-map-marker hidden-md hidden-lg hidden-sm"></i><span class="hidden-xs">Pricing</span>
 			</a>
 			<a href="#v_cent5" data-toggle="tab">
-				<i class="fa fa-map-marker hidden-md hidden-lg hidden-sm"></i><span class="hidden-xs">Foto</span>
+				<i class="fa fa-map-marker hidden-md hidden-lg hidden-sm"></i><span class="hidden-xs">Media</span>
 			</a>
 		</div>
 		<div class="tab-content">
-			<div class="tab-pane" id="v_cent">
-				<p class="m_h4">
-					<i class="fa fa-map-marker m_col"></i> add your location
-				</p>
-				<div class="m_div">
-					Provide an exact address so that guests can find your place.<span class="m_i">&#10004; <span class="comp">13% complete</span></span>
+			<div class="tab-pane active" id="v_cent">
+				<div class="tab__caption__wrapper">
+					<p class="m_h4">
+						<i class="fa fa-map-marker m_col"></i> add your location
+					</p>
+					<div class="m_div">
+						Provide an exact address so that guests can find your place.<span class="m_i">&#10004; <span class="comp">13% complete</span></span>
+					</div>
+				</div>
+
+				<div class="tab__caption">address
+					<p class="caption__commit">
+						We will only share your precise location and directions with guests after a<br><span>confirmed reservation.</span>
+					</p>
+				</div>
+				
+				<div class="row">
+					<div class="col-md-8">
+						<form>
+							<div class="row">
+								<div class="col-md-6">
+									<div class="selection">
+										<p>Country</p>
+										<div class="select-side">
+											<i class="fa fa-angle-down" aria-hidden="true"></i>
+										</div>
+										<select name="city" id="city-select">
+											<option>Country</option>
+											<option>Country</option>
+											<option>Country</option>
+											<option>Country</option>
+											<option>Country</option>
+										</select>
+									</div>
+								</div>
+								<div class="col-md-6">
+									<div class="selection">
+										<input name="street_name" type="text" id="street_name" placeholder="Street name">
+									</div>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-md-6">
+									<div class="selection select_mt">
+										<input name="unit_building" type="text" id="unit_building" placeholder="Street name">
+									</div>
+								</div>
+								<div class="col-md-6">
+									<div class="selection select_mt">
+										<input name="unit_building" type="text" id="unit_building" placeholder="Unit, Building, etc.">
+									</div>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-md-6">
+									<div class="selection select_mt">
+										<input name="city" type="text" id="city" placeholder="City">
+									</div>
+								</div>
+								<div class="col-md-6">
+									<div class="selection select_mt">
+										<input name="postal_code" type="text" id="postal_code" placeholder="Postal Code">
+									</div>
+								</div>
+							</div>
+
+							<div class="selection select_mt">
+								<input name="directions_optional" type="text" id="directions_optional" placeholder="Directions (optional)">
+							</div>
+
+						</form>	
+					</div>
+					<div class="col-md-4">
+						<div class="map-wrapper">
+						  <div id="map" class="contact"></div>
+						</div>
+						<div class="map__address">
+							<i class="fa fa-map-marker" aria-hidden="true"></i>
+							Mall Road, Shimla, Himachal Pradesh,
+							176077
+						</div>
+					</div>
+
+
 				</div>
 			</div>
 			<div class="tab-pane" id="v_cent1">
-				<p class="m_h4">
-					<i class="fa fa-map-marker m_col"></i> list your basics
-				</p>
-				<div class="m_div">
-					Please ensure that you provide accurate information for your place.<span class="m_i">&#10004; <span class="comp">13% complete</span></span>
+				<div class="tab__caption__wrapper">
+					<p class="m_h4">
+						<i class="fa fa-map-marker m_col"></i> list your basics
+					</p>
+					<div class="m_div">
+						Please ensure that you provide accurate information for your place.<span class="m_i">&#10004; <span class="comp">13% complete</span></span>
+					</div>
 				</div>
 			</div>
-			<div class="tab-pane active" id="v_cent2">
-				<p class="m_h4">
-					<i class="fa fa-map-marker m_col"></i> add a description
-				</p>
-				<div class="m_div">
-					Tell guests more about your place.<span class="m_i">&#10004; <span class="comp">13% complete</span></span>
+			<div class="tab-pane" id="v_cent2">
+				<div class="tab__caption__wrapper">
+					<p class="m_h4">
+						<i class="fa fa-map-marker m_col"></i> add a description
+					</p>
+					<div class="m_div">
+						Tell guests more about your place.<span class="m_i">&#10004; <span class="comp">13% complete</span></span>
+					</div>
 				</div>
 			</div>
 			<div class="tab-pane" id="v_cent3">
-				<p class="m_h4">
-					<i class="fa fa-map-marker m_col"></i> select your amenities
-				</p>
-				<div class="m_div">
-					Tell your guests what’s available in your place. Select at least one amenity.<span class="m_i">&#10004; <span class="comp">13% complete</span></span>
+				<div class="tab__caption__wrapper">
+					<p class="m_h4">
+						<i class="fa fa-map-marker m_col"></i> select your amenities
+					</p>
+					<div class="m_div">
+						Tell your guests what’s available in your place. Select at least one amenity.<span class="m_i">&#10004; <span class="comp">13% complete</span></span>
+					</div>
 				</div>
 			</div>
 			<div class="tab-pane" id="v_cent4">
-				<p class="m_h4">
-					<i class="fa fa-map-marker m_col"></i> set your pricing and terms
-				</p>
-				<div class="m_div">
-					We’ll apply the relevant pricing depending on your guests’ travel dates.<span class="m_i">&#10004; <span class="comp">13% complete</span></span>
-			</div>
+				<div class="tab__caption__wrapper">
+					<p class="m_h4">
+						<i class="fa fa-map-marker m_col"></i> set your pricing and terms
+					</p>
+					<div class="m_div">
+						We’ll apply the relevant pricing depending on your guests’ travel dates.<span class="m_i">&#10004; <span class="comp">13% complete</span></span>
+					</div>
+				</div>
+
+				<form>
+					<div class="p_over">
+						<div class="lab">basic pricing</div>
+						<div class="usd">
+							<p>USD - Us Dollar</p>
+							<select name="usd">
+								<option value="usd">USD - Us Dollar</option>
+								<option value="usd">USD - Us Dollar</option>
+								<option value="usd">USD - Us Dollar</option>
+								<option value="usd">USD - Us Dollar</option>
+							</select>
+						</div>
+						<div class="npr">
+							<input name="v_inp1" id="npr" type="text" placeholder="Nightly pricing">
+						</div>
+						<div class="pp_med"></div>
+					</div>
+					<div class="p_over">
+						<div class="npr npl">
+							<input name="v_inp" id="wek" type="text" placeholder="Weekend pricing (optional)">
+						</div>
+						<!-- <div class="pp_a npl">
+							<a href="#">start calendar</a>
+						</div> -->
+						<!-- <div class="pp_end npl">
+							<a href="#">end calendar</a>
+						</div> -->
+						<div class="pp_med"></div>
+					</div>
+					<div class="p_over">
+						<div class="lab">additional pricing options</div>
+						<div class="npr2">
+							<input name="inp" id="guest" type="text" placeholder="NighAdditional guest">
+						</div>
+						<div class="p_sel">
+							<p>2:00 PM</p>
+							<select name="sel">
+								<option value="2:00 PM">2:00 PM</option>           
+								<option value="2:00 PM">2:00 PM</option>
+								<option value="2:00 PM">2:00 PM</option>
+								<option value="2:00 PM">2:00 PM</option>
+							</select>
+						</div>
+						<div class="p_sel2">
+							<p>2:00 PM</p>
+							<select name="sel2">
+								<option value="2:00 PM">2:00 PM</option>           
+								<option value="2:00 PM">2:00 PM</option>
+								<option value="2:00 PM">2:00 PM</option>
+								<option value="2:00 PM">2:00 PM</option>
+							</select>
+						</div>
+						<div class="npr3">
+							<input name="inp1" type="text" placeholder="10">
+						</div>
+						<div class="pp_med"></div>
+					</div>
+					<div class="p_over">
+						<div class="npr2">
+							<input name="inp2" type="text" placeholder="Enter your additional pricing name">
+						</div>
+						<div class="p_sel3">
+							<p>-</p>
+							<select name="sel3">
+								<option value="-">-</option>           
+								<option value="-">-</option>
+								<option value="-">-</option>           
+								<option value="-">-</option>
+							</select>
+						</div>
+						<div class="p_sel4">
+							<p>-</p>
+							<select name="sel4">
+								<option value="-">-</option>           
+								<option value="-">-</option>
+								<option value="-">-</option>           
+								<option value="-">-</option>
+							</select>
+						</div>
+						<div class="npr3">
+							<input name="inp3" type="text" placeholder="0">
+						</div>
+						<div class="pp_med"></div>
+					</div>
+					<div class="p_over">
+						<div class="v_con">
+							<div class="v_pl">+</div>
+							<a href="#">Add new</a>
+						</div>
+						<div class="pp_med"></div>
+					</div>
+					<div class="p_over">
+						<div class="lab" style="margin-top: 80px">terms</div>
+						<div class="term">
+							<p>2:00 PM</p>
+							<select name="term">
+								<option value="usd">2:00 PM</option>
+								<option value="usd">2:00 PM</option>
+								<option value="usd">2:00 PM</option>
+								<option value="usd">2:00 PM</option>
+							</select>
+						</div>
+						<div class="term2">
+							<p>12:00 PM noon</p>
+							<select name="term2">
+								<option value="usd">12:00 PM noon</option>
+								<option value="usd">12:00 PM noon</option>
+								<option value="usd">12:00 PM noon</option>
+								<option value="usd">12:00 PM noon</option>
+							</select>
+						</div>
+						<div class="pp_med"></div>
+					</div>
+					<div class="p_over">
+						<div class="term3">
+							<p>1 Night</p>
+							<select name="term3">
+								<option value="1 Night">1 Night</option>
+								<option value="1 Night">1 Night</option>
+								<option value="1 Night">1 Night</option>
+								<option value="1 Night">1 Night</option>
+							</select>
+						</div>
+						<div class="term4">
+							<p>90 Night</p>
+							<select name="term4">
+								<option value="90 Night">90 Night</option>
+								<option value="90 Night">90 Night</option>
+								<option value="90 Night">90 Night</option>
+								<option value="90 Night">90 Night</option>
+							</select>
+						</div>
+						<div class="pp_med"></div>
+					</div>
+					<div class="p_over">
+						<div class="term5">
+							<p>Concelation policy</p>
+							<select name="term5">
+								<option value="Concelation policy">Concelation policy</option>
+								<option value="Concelation policy">Concelation policy</option>
+								<option value="Concelation policy">Concelation policy</option>
+								<option value="Concelation policy">Concelation policy</option>
+							</select>
+						</div>
+						<div class="term6">
+							<input name="inp5" type="text" placeholder="House Rules (optional)">
+						</div>
+						<div class="pp_med"></div>
+					</div>
+					<div class="p_ove2">
+						<div class="term7">
+							<div class="v_lef">
+								<a href="#">Continue</a>
+							</div>
+						</div>
+						<div class="pp_med2"></div>
+					</div>
+				</form>
+
 			</div>
 			<div class="tab-pane" id="v_cent5">
-				<p class="m_h4">
-					<i class="fa fa-map-marker m_col"></i> add your photos
-				</p>
-				<div class="m_div">
-					Add at least 6 photos that showcase the various areas of your place. Upload high quality .jpg or
-					png photos which are at least 640 × 480 pixels.<span class="m_i">&#10004; <span class="comp">99% complete</span></span>
+				<div class="tab__caption__wrapper">
+					<p class="m_h4">
+						<i class="fa fa-map-marker m_col"></i> add your photos
+					</p>
+					<div class="m_div">
+						Add at least 6 photos that showcase the various areas of your place. Upload high quality .jpg or
+						png photos which are at least 640 × 480 pixels.<span class="m_i">&#10004; <span class="comp">99% complete</span></span>
+					</div>
 				</div>
 			</div>
 			<div class="tab-pane" id="v_cent6">
@@ -91,170 +339,55 @@
 
 			</div>
 		</div>
-
-		<form>
-			<div class="p_over">
-				<div class="lab">basic pricing</div>
-				<div class="usd">
-					<p>USD - Us Dollar</p>
-					<select name="usd">
-						<option value="usd">USD - Us Dollar</option>
-						<option value="usd">USD - Us Dollar</option>
-						<option value="usd">USD - Us Dollar</option>
-						<option value="usd">USD - Us Dollar</option>
-					</select>
-				</div>
-				<div class="npr">
-					<input name="v_inp1" id="npr" type="text" placeholder="Nightly pricing">
-				</div>
-				<div class="pp_med"></div>
-			</div>
-			<div class="p_over">
-				<div class="npr npl">
-					<input name="v_inp" id="wek" type="text" placeholder="Weekend pricing (optional)">
-				</div>
-				<!-- <div class="pp_a npl">
-					<a href="#">start calendar</a>
-				</div> -->
-				<!-- <div class="pp_end npl">
-					<a href="#">end calendar</a>
-				</div> -->
-				<div class="pp_med"></div>
-			</div>
-			<div class="p_over">
-				<div class="lab">additional pricing options</div>
-				<div class="npr2">
-					<input name="inp" id="guest" type="text" placeholder="NighAdditional guest">
-				</div>
-				<div class="p_sel">
-					<p>2:00 PM</p>
-					<select name="sel">
-						<option value="2:00 PM">2:00 PM</option>           
-						<option value="2:00 PM">2:00 PM</option>
-						<option value="2:00 PM">2:00 PM</option>
-						<option value="2:00 PM">2:00 PM</option>
-					</select>
-				</div>
-				<div class="p_sel2">
-					<p>2:00 PM</p>
-					<select name="sel2">
-						<option value="2:00 PM">2:00 PM</option>           
-						<option value="2:00 PM">2:00 PM</option>
-						<option value="2:00 PM">2:00 PM</option>
-						<option value="2:00 PM">2:00 PM</option>
-					</select>
-				</div>
-				<div class="npr3">
-					<input name="inp1" type="text" placeholder="10">
-				</div>
-				<div class="pp_med"></div>
-			</div>
-			<div class="p_over">
-				<div class="npr2">
-					<input name="inp2" type="text" placeholder="Enter your additional pricing name">
-				</div>
-				<div class="p_sel3">
-					<p>-</p>
-					<select name="sel3">
-						<option value="-">-</option>           
-						<option value="-">-</option>
-						<option value="-">-</option>           
-						<option value="-">-</option>
-					</select>
-				</div>
-				<div class="p_sel4">
-					<p>-</p>
-					<select name="sel4">
-						<option value="-">-</option>           
-						<option value="-">-</option>
-						<option value="-">-</option>           
-						<option value="-">-</option>
-					</select>
-				</div>
-				<div class="npr3">
-					<input name="inp3" type="text" placeholder="0">
-				</div>
-				<div class="pp_med"></div>
-			</div>
-			<div class="p_over">
-				<div class="v_con">
-					<div class="v_pl">+</div>
-					<a href="#">Add new</a>
-				</div>
-				<div class="pp_med"></div>
-			</div>
-			<div class="p_over">
-				<div class="lab" style="margin-top: 80px">terms</div>
-				<div class="term">
-					<p>2:00 PM</p>
-					<select name="term">
-						<option value="usd">2:00 PM</option>
-						<option value="usd">2:00 PM</option>
-						<option value="usd">2:00 PM</option>
-						<option value="usd">2:00 PM</option>
-					</select>
-				</div>
-				<div class="term2">
-					<p>12:00 PM noon</p>
-					<select name="term2">
-						<option value="usd">12:00 PM noon</option>
-						<option value="usd">12:00 PM noon</option>
-						<option value="usd">12:00 PM noon</option>
-						<option value="usd">12:00 PM noon</option>
-					</select>
-				</div>
-				<div class="pp_med"></div>
-			</div>
-			<div class="p_over">
-				<div class="term3">
-					<p>1 Night</p>
-					<select name="term3">
-						<option value="1 Night">1 Night</option>
-						<option value="1 Night">1 Night</option>
-						<option value="1 Night">1 Night</option>
-						<option value="1 Night">1 Night</option>
-					</select>
-				</div>
-				<div class="term4">
-					<p>90 Night</p>
-					<select name="term4">
-						<option value="90 Night">90 Night</option>
-						<option value="90 Night">90 Night</option>
-						<option value="90 Night">90 Night</option>
-						<option value="90 Night">90 Night</option>
-					</select>
-				</div>
-				<div class="pp_med"></div>
-			</div>
-			<div class="p_over">
-				<div class="term5">
-					<p>Concelation policy</p>
-					<select name="term5">
-						<option value="Concelation policy">Concelation policy</option>
-						<option value="Concelation policy">Concelation policy</option>
-						<option value="Concelation policy">Concelation policy</option>
-						<option value="Concelation policy">Concelation policy</option>
-					</select>
-				</div>
-				<div class="term6">
-					<input name="inp5" type="text" placeholder="House Rules (optional)">
-				</div>
-				<div class="pp_med"></div>
-			</div>
-			<div class="p_ove2">
-				<div class="term7">
-					<div class="v_lef">
-						<a href="#">Continue</a>
-					</div>
-				</div>
-				<div class="pp_med2"></div>
-			</div>
-		</form>
-		
 	</div>
 </section>
 
 //= template/footer.html
+
+<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD4jEnlkhgCfMMd02GXY3Pl_GIRo5OM7mg&callback=initMap"></script>
+
+<script>
+	function initMap() {
+	    var map = new google.maps.Map(document.getElementById('map'), {
+	      zoom: 5,
+	      center: {lat: -28.024, lng: 140.887}
+	    });
+	    var labels = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
+	    var markers = locations.map(function(location, i) {
+	      return new google.maps.Marker({
+	        position: location,
+	        label: labels[i % labels.length]
+	      });
+	    });
+	    var markerCluster = new MarkerClusterer(map, markers,
+	        {imagePath: 'https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/m'});
+	  }
+	  var locations = [
+	    {lat: -31.563910, lng: 147.154312},
+	    {lat: -33.718234, lng: 150.363181},
+	    {lat: -33.727111, lng: 150.371124},
+	    {lat: -33.848588, lng: 151.209834},
+	    {lat: -33.851702, lng: 151.216968},
+	    {lat: -34.671264, lng: 150.863657},
+	    {lat: -35.304724, lng: 148.662905},
+	    {lat: -36.817685, lng: 175.699196},
+	    {lat: -36.828611, lng: 175.790222},
+	    {lat: -37.750000, lng: 145.116667},
+	    {lat: -37.759859, lng: 145.128708},
+	    {lat: -37.765015, lng: 145.133858},
+	    {lat: -37.770104, lng: 145.143299},
+	    {lat: -37.773700, lng: 145.145187},
+	    {lat: -37.774785, lng: 145.137978},
+	    {lat: -37.819616, lng: 144.968119},
+	    {lat: -38.330766, lng: 144.695692},
+	    {lat: -39.927193, lng: 175.053218},
+	    {lat: -41.330162, lng: 174.865694},
+	    {lat: -42.734358, lng: 147.439506},
+	    {lat: -42.734358, lng: 147.501315},
+	    {lat: -42.735258, lng: 147.438000},
+	    {lat: -43.999792, lng: 170.463352}
+	  ];
+</script>
 
 <script src="js/vendor.js"></script>
 <script src="js/main.js"></script>
