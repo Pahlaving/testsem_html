@@ -526,6 +526,20 @@ section#media{
 			}
 			
 		}
+		#v_cent2{
+			label{
+			  outline: none;
+			  position: relative;
+			  font-size: 17px;
+			  i{
+			  	font-size: 12px;
+			    position: absolute;
+			    top: 50%;
+			    transform: translateY(-50%);
+			    right: 7%;
+			  }
+			}
+		}
 
 	}
 }

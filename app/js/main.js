@@ -224,7 +224,9 @@ $(document).ready(function(){
   });
 
   $( function() {
-    $( "#checkbox-1, #private_room" ).checkboxradio();
+    $( "#check_home, #private_room" ).checkboxradio();
+    $("#v_cent2 input").checkboxradio();
+
   });
 
 
