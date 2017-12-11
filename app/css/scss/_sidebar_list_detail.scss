@@ -112,7 +112,7 @@
     text-align: center;
     .image-thumb {
       display: inline-block;
-      margin: 5px;
+      margin: 5px 10px 0;
       overflow: hidden;
       border-radius: 5px;
     }
@@ -123,9 +123,11 @@
     color: #8d99ae;
     display: inline-block;
     width: 100%;
+    margin-top: 10px;
   }
 }
 .neabry-listing-wrapper {
+  padding-bottom: 20px;
   .neabry-listing-title {
     font-family: 'Open Sans', sans-serif;
     font-size: 26px;
