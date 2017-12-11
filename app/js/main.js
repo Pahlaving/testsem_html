@@ -226,6 +226,7 @@ $(document).ready(function(){
   $( function() {
     $( "#check_home, #private_room" ).checkboxradio();
     $("#v_cent2 input").checkboxradio();
+    $("#v_cent3 input").checkboxradio();
 
   });
 

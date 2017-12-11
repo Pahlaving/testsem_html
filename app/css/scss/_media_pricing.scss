@@ -1,5 +1,5 @@
 section#media{
-	min-height: 1000px;
+	//min-height: 1000px;
 	.m_add {
 		font-size: 22px;
 		font-family: 'MyriadPro', sans-serif;
@@ -18,19 +18,20 @@ section#media{
 			text-align: center;
 			color: #fff;
 			border-right: 1px solid #ccc;
+			border-bottom: none;
 			&.actives{
 				background: #222a37 !important;
 				box-shadow: none;
 			}
 		}
 	}
-	.tab-content{
-		.tab-pane{
-			&.active {
-				//background: #222a37;
-			}
-		}
-	}
+	// .tab-content{
+	// 	.tab-pane{
+	// 		&.active {
+	// 			//background: #222a37;
+	// 		}
+	// 	}
+	// }
 	.youtube {
 		margin-bottom: 20px;
 		background: #f0eeef;
@@ -45,7 +46,7 @@ section#media{
 		}
 	}
 	.tabs {
-		background: #403c3e;
+		background: #222A37;
 		display: block;
 		padding: 40px 0;
 	}
@@ -479,7 +480,6 @@ section#media{
 		}
 		.select__mt{
 			margin-top: 35px;
-			
 		}
 		.h__a{
 			height: auto;
@@ -526,7 +526,7 @@ section#media{
 			}
 			
 		}
-		#v_cent2{
+		#v_cent2, #v_cent3{
 			label{
 			  outline: none;
 			  position: relative;
