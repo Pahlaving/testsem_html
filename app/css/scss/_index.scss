@@ -14,8 +14,7 @@ section#search{
 		@media screen and (max-width: 767px) {
 			background:#DEDEDE;
 			display: none;
-			position: relative;
-			bottom: 0px;
+			margin-bottom: 60px;
 		}
 		#searchv{
 			overflow: hidden;
@@ -152,10 +151,6 @@ section#search{
 			}
 		}
 	}
-	.gamburger__menu{
-		//display: none;
-	}
-
 	.hambur{
 		background:#DEDEDE;
 		text-align: center;
