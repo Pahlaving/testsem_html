@@ -444,6 +444,7 @@ section#media{
 	/* ======= tab location ======= */
 
 	.tab-content{
+		min-height: 1800px;
 		.tab__caption{
 			font-family: 'MyriadPro', sans-serif;
 			font-weight: 600;
@@ -462,14 +463,26 @@ section#media{
 				}
 			}
 		}
+		.select__street{
+			@media screen and (max-width: 992px) {
+				margin-top: 40px;
+			}
+		}
 		.map-wrapper{
 			margin-top: -135px;
+			@media screen and (max-width: 767px) {
+				margin-top: 40px;
+			}
 			#map.contact{
 				height: 490px;
 			}
 		}
-		.select_mt{
+		.select__mt{
 			margin-top: 35px;
+			
+		}
+		.h__a{
+			height: auto;
 		}
 		#directions_optional{
 			height: 178px !important;
@@ -492,7 +505,27 @@ section#media{
 			line-height: 1.5em;
 			padding: 20px;
 		}
-		
+
+		/* ======= tab basics ======= */
+
+		.specials{
+			label{
+				i{
+					margin-right: 3px;
+				}
+				@media screen and (max-width: 1200px) {
+					text-align: center;
+					width: 100%;
+					font-size: 15px;
+				}
+				@media screen and (max-width: 375px) {
+					font-size: 15px;
+				}
+
+			}
+			
+		}
+
 	}
 }
 

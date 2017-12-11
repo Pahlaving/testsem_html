@@ -17,10 +17,10 @@
 	<div class="container">
 		<p class="m_add">Add your listing</p>
 		<div class="m_sectright nav nav-tabs">
-			<a href="#v_cent" class="actives" data-toggle="tab">
+			<a href="#v_cent" data-toggle="tab">
 				<i class="fa fa-map-marker hidden-md hidden-lg hidden-sm"></i><span class="hidden-xs">Location</span>
 			</a>
-			<a href="#v_cent1" data-toggle="tab">
+			<a href="#v_cent1" class="actives" data-toggle="tab">
 				<i class="fa fa-map-marker hidden-md hidden-lg hidden-sm"></i><span class="hidden-xs">Basics</span>
 			</a>
 			<a href="#v_cent2" data-toggle="tab"><i class="fa fa-map-marker hidden-md hidden-lg hidden-sm"></i><span class="hidden-xs">Descriptions</span></a>
@@ -35,7 +35,7 @@
 			</a>
 		</div>
 		<div class="tab-content">
-			<div class="tab-pane active" id="v_cent">
+			<div class="tab-pane" id="v_cent">
 				<div class="tab__caption__wrapper">
 					<p class="m_h4">
 						<i class="fa fa-map-marker m_col"></i> add your location
@@ -52,7 +52,8 @@
 				</div>
 				
 				<div class="row">
-					<div class="col-md-8">
+					<div class="col-md-8 col-sm-8">
+
 						<form>
 							<div class="row">
 								<div class="col-md-6">
@@ -71,43 +72,46 @@
 									</div>
 								</div>
 								<div class="col-md-6">
-									<div class="selection">
+									<div class="selection select__street">
 										<input name="street_name" type="text" id="street_name" placeholder="Street name">
 									</div>
 								</div>
 							</div>
 							<div class="row">
 								<div class="col-md-6">
-									<div class="selection select_mt">
+									<div class="selection select__mt">
 										<input name="unit_building" type="text" id="unit_building" placeholder="Street name">
 									</div>
 								</div>
 								<div class="col-md-6">
-									<div class="selection select_mt">
+									<div class="selection select__mt">
 										<input name="unit_building" type="text" id="unit_building" placeholder="Unit, Building, etc.">
 									</div>
 								</div>
 							</div>
 							<div class="row">
 								<div class="col-md-6">
-									<div class="selection select_mt">
+									<div class="selection select__mt">
 										<input name="city" type="text" id="city" placeholder="City">
 									</div>
 								</div>
 								<div class="col-md-6">
-									<div class="selection select_mt">
+									<div class="selection select__mt">
 										<input name="postal_code" type="text" id="postal_code" placeholder="Postal Code">
 									</div>
 								</div>
 							</div>
 
-							<div class="selection select_mt">
+							<div class="selection select__mt h__a">
 								<input name="directions_optional" type="text" id="directions_optional" placeholder="Directions (optional)">
 							</div>
 
+							<div class="btn__submit select__mt" data-submit>CONTINUE</div>
+
 						</form>	
 					</div>
-					<div class="col-md-4">
+
+					<div class="col-md-4 col-sm-4">
 						<div class="map-wrapper">
 						  <div id="map" class="contact"></div>
 						</div>
@@ -118,10 +122,9 @@
 						</div>
 					</div>
 
-
 				</div>
 			</div>
-			<div class="tab-pane" id="v_cent1">
+			<div class="tab-pane  active" id="v_cent1">
 				<div class="tab__caption__wrapper">
 					<p class="m_h4">
 						<i class="fa fa-map-marker m_col"></i> list your basics
@@ -130,6 +133,136 @@
 						Please ensure that you provide accurate information for your place.<span class="m_i">&#10004; <span class="comp">13% complete</span></span>
 					</div>
 				</div>
+								
+				<div class="row">
+					<div class="col-md-8 col-sm-8">
+
+						<div class="tab__caption">property details</div>
+
+						<form>
+							<div class="row">
+								<div class="col-md-6">
+									<div class="selection">
+										<p>Hostel Type</p>
+										<div class="select-side">
+											<i class="fa fa-angle-down" aria-hidden="true"></i>
+										</div>
+										<select name="hostel_type" id="hostel_type">
+											<option>Hostel Type</option>
+											<option>Hostel Type</option>
+											<option>Hostel Type</option>
+											<option>Hostel Type</option>
+											<option>Hostel Type</option>
+										</select>
+									</div>
+								</div>
+								<div class="col-md-6">
+									<div class="selection select__street">
+										<p>Guests</p>
+										<div class="select-side">
+											<i class="fa fa-angle-down" aria-hidden="true"></i>
+										</div>
+										<select name="guests" id="guests">
+											<option>Guests</option>
+											<option>Guests</option>
+											<option>Guests</option>
+											<option>Guests</option>
+										</select>
+									</div>
+								</div>
+							</div>
+							<div class="row">
+
+								<div class="col-sm-12">
+									<div class="tab__caption">Specials</div>
+								</div>
+								
+								<div class="col-md-6">
+									<div class="selection select__mt">
+										<p>Any</p>
+										<div class="select-side">
+											<i class="fa fa-angle-down" aria-hidden="true"></i>
+										</div>
+										<select name="Any" id="Any">
+											<option>Any</option>
+											<option>Any</option>
+											<option>Any</option>
+											<option>Any</option>
+										</select>
+									</div>
+								</div>
+								<div class="col-md-6">
+									<div class="selection select__mt">
+										<p>Any</p>
+										<div class="select-side">
+											<i class="fa fa-angle-down" aria-hidden="true"></i>
+										</div>
+										<select name="Any" id="Any">
+											<option>Any</option>
+											<option>Any</option>
+											<option>Any</option>
+											<option>Any</option>
+										</select>
+									</div>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-md-6">
+									<div class="selection select__mt">
+										<p>Bed Type</p>
+										<div class="select-side">
+											<i class="fa fa-angle-down" aria-hidden="true"></i>
+										</div>
+										<select name="bed_type" id="bed_type">
+											<option>Bed Type</option>
+											<option>Bed Type</option>
+											<option>Bed Type</option>
+											<option>Bed Type</option>
+										</select>
+									</div>
+								</div>
+								<div class="col-md-6">
+									<div class="selection select__mt">
+										<p>Any</p>
+										<div class="select-side">
+											<i class="fa fa-angle-down" aria-hidden="true"></i>
+										</div>
+										<select name="any" id="any">
+											<option>Any</option>
+											<option>Any</option>
+											<option>Any</option>
+											<option>Any</option>
+										</select>
+									</div>
+								</div>
+							</div>
+
+							<div class="btn__submit select__mt" data-submit>CONTINUE</div>
+
+						</form>	
+					</div>
+
+					<div class="col-md-4 col-sm-4">
+					
+						<div class="tab__caption">Specials</div>
+
+						<div class="row specials">
+							<fieldset>
+							<div class="col-xs-6">
+								<label for="checkbox-1"><i class="fa fa-home" aria-hidden="true"></i>Entire Home</label>
+								<input type="checkbox" name="checkbox-1" id="checkbox-1">
+							</div>
+							<div class="col-xs-6">
+								<label for="private_room"><i class="fa fa-file-text-o" aria-hidden="true"></i>Private Room</label>
+								<input type="checkbox" name="checkbox-1" id="private_room">
+							</div>
+							</fieldset>
+						</div>
+
+					</div>
+
+				</div>
+
 			</div>
 			<div class="tab-pane" id="v_cent2">
 				<div class="tab__caption__wrapper">
@@ -140,6 +273,86 @@
 						Tell guests more about your place.<span class="m_i">&#10004; <span class="comp">13% complete</span></span>
 					</div>
 				</div>
+
+				<div class="tab__caption">address
+					<p class="caption__commit">
+						We will only share your precise location and directions with guests after a<br><span>confirmed reservation.</span>
+					</p>
+				</div>
+				
+				<div class="row">
+					<div class="col-md-8 col-sm-8">
+
+						<form>
+							<div class="row">
+								<div class="col-md-6">
+									<div class="selection">
+										<p>Country</p>
+										<div class="select-side">
+											<i class="fa fa-angle-down" aria-hidden="true"></i>
+										</div>
+										<select name="city" id="city-select">
+											<option>Country</option>
+											<option>Country</option>
+											<option>Country</option>
+											<option>Country</option>
+											<option>Country</option>
+										</select>
+									</div>
+								</div>
+								<div class="col-md-6">
+									<div class="selection select__street">
+										<input name="street_name" type="text" id="street_name" placeholder="Street name">
+									</div>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-md-6">
+									<div class="selection select__mt">
+										<input name="unit_building" type="text" id="unit_building" placeholder="Street name">
+									</div>
+								</div>
+								<div class="col-md-6">
+									<div class="selection select__mt">
+										<input name="unit_building" type="text" id="unit_building" placeholder="Unit, Building, etc.">
+									</div>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col-md-6">
+									<div class="selection select__mt">
+										<input name="city" type="text" id="city" placeholder="City">
+									</div>
+								</div>
+								<div class="col-md-6">
+									<div class="selection select__mt">
+										<input name="postal_code" type="text" id="postal_code" placeholder="Postal Code">
+									</div>
+								</div>
+							</div>
+
+							<div class="selection select__mt">
+								<input name="directions_optional" type="text" id="directions_optional" placeholder="Directions (optional)">
+							</div>
+
+							<div class="btn__submit select__mt" data-submit>CONTINUE</div>
+
+						</form>	
+					</div>
+
+					<div class="col-md-4 col-sm-4">
+						<div class="map-wrapper">
+						  <div id="map" class="contact"></div>
+						</div>
+						<div class="map__address">
+							<i class="fa fa-map-marker" aria-hidden="true"></i>
+							Mall Road, Shimla, Himachal Pradesh,
+							176077
+						</div>
+					</div>
+
+				</div>
+
 			</div>
 			<div class="tab-pane" id="v_cent3">
 				<div class="tab__caption__wrapper">
@@ -313,7 +526,7 @@
 					<div class="p_ove2">
 						<div class="term7">
 							<div class="v_lef">
-								<a href="#">Continue</a>
+								<a href="#" data-submit>Continue</a>
 							</div>
 						</div>
 						<div class="pp_med2"></div>

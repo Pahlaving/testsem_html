@@ -201,5 +201,10 @@ $(document).ready(function(){
 
   });
 
+
+    $( function() {
+      $( "#checkbox-1, #private_room" ).checkboxradio();
+    } );
+
 });
 
