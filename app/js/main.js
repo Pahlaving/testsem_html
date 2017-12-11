@@ -331,7 +331,7 @@ var forEach=function(t,o,r){if("[object Object]"===Object.prototype.toString.cal
   }
 
 $(".hamburger").click(function(){
-  $("nav").slideToggle(300);
+  $("section#search .sear").slideToggle(300);
 });
 
 });

@@ -13,6 +13,9 @@ section#search{
 		background: rgba(0,0,0,.1);
 		@media screen and (max-width: 767px) {
 			background:#DEDEDE;
+			display: none;
+			position: relative;
+			bottom: 0px;
 		}
 		#searchv{
 			overflow: hidden;
@@ -149,6 +152,19 @@ section#search{
 			}
 		}
 	}
+	.gamburger__menu{
+		//display: none;
+	}
+
+	.hambur{
+		background:#DEDEDE;
+		text-align: center;
+		position: relative;
+		top: 0px;
+		.hamburger{
+			display: inline-block;
+		}
+	}
 }
 
 section#browse{
@@ -157,6 +173,7 @@ section#browse{
 	.olp {
 		@media screen and (max-width: 767px) {
 			font-size: 29px;
+			margin-top: 20px;
 		}
 		font-family: 'MyriadPro', sans-serif;
 		text-align: center;
@@ -903,7 +920,6 @@ section#find{
 			}
 		}
 	}
-
 }
 
 section#mail{
@@ -967,3 +983,8 @@ section#partners{
 		}
 	}
 }
+
+
+
+
+
