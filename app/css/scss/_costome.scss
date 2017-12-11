@@ -428,96 +428,25 @@ h4 {
   text-align: center;
 }
 
-// .ui-button:focus, .ui-button:hover, .ui-state-focus, .ui-state-hover, .ui-widget-content .ui-state-focus, .ui-widget-content .ui-state-hover, .ui-widget-header .ui-state-focus, .ui-widget-header .ui-state-hover {
-//     border: 1px solid #ccc;
-//     background:#222A37;
-//     font-weight: 400;
-//     color: #fff;
-//     font-family: 'MyriadPro', sans-serif;
-//     font-weight: 400;
-//     font-size: 19px;
-//     outline: none;
-//     border: none;
-//     box-shadow: none;
-// }
 
-// .ui-button.ui-state-active:hover, .ui-button:active, .ui-state-active, .ui-widget-content .ui-state-active, .ui-widget-header .ui-state-active, a.ui-button:active {
-//     background:  #EDBE14;
-//     font-weight: 400;
-//     color: #fff;
-//     font-family: 'MyriadPro', sans-serif;
-//     font-weight: 400;
-//     font-size: 19px;
-//     outline: none;
-//     border: none;
-//     box-shadow: none;
-// }
-
-// .ui-button, .ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default, html .ui-button.ui-state-disabled:active, html .ui-button.ui-state-disabled:hover {
-//     background: #222A37;
-//     font-weight: 400;
-//     color: #fff;
-//     font-family: 'MyriadPro', sans-serif;
-//     font-weight: 400;
-//     font-size: 19px;
-//     outline: none;
-//     border: none;
-//     box-shadow: none;
-// }
-
-// button:active, .ui-state-active, .ui-widget-content .ui-state-active, .ui-widget-header .ui-state-active, a.ui-button:active {
-//     background: #222A37;
-//     font-weight: 400;
-//     color: #fff;
-//     border: none;
-//     box-shadow: none;
-
-// }
+/* ======= Checkbex styles for tabs ======= */
 
 .ui-icon {
     display: none;
 }
 
-// .ui-checkboxradio-label .ui-corner-all .ui-button .ui-widget .ui-checkboxradio-checked .ui-state-active{
-//    border: none;
-//     background:#EDBE14;
-//     font-weight: 400;
-//     color: #fff;
-//     font-family: 'MyriadPro', sans-serif;
-//     font-weight: 400;
-//     font-size: 20px;
-//     outline: none;
-// }
-
-// .ui-checkboxradio-label .ui-corner-all .ui-button .ui-widget{
-//   border: none;
-//   background: #222A37;
-//   font-weight: 400;
-//   color: #fff;
-//   font-family: 'MyriadPro', sans-serif;
-//   font-weight: 400;
-//   font-size: 20px;
-//   outline: none;
-//   outline: none;
-//   border: none;
-//   box-shadow: none;
-// }
-
-
-
-// .ui-checkboxradio-label .ui-corner-all .ui-button .ui-widget .ui-checkboxradio-checked .ui-state-active{
-//   border: none;
-//   background:#EDBE14 !important;
-//   font-weight: 400;
-//   color: #fff;
-//   font-family: 'MyriadPro', sans-serif;
-//   font-weight: 400;
-//   font-size: 20px;
-//   outline: none;
-//   outline: none;
-//   border: none;
-//   box-shadow: none;
-// }
+.ui-checkboxradio-checked{
+   border: none;
+    background:#EDBE14 !important;
+    font-weight: 400;
+    color: #fff;
+    font-family: 'MyriadPro', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    outline: none;
+    border: none;
+    box-shadow: none;
+}
 
 .ui-button{
   height: 57px;
@@ -525,12 +454,12 @@ h4 {
 
 
   border: none;
-  // background: #222A37;
-  // font-weight: 400;
-  // color: #fff;
-  // font-family: 'MyriadPro', sans-serif;
-  // font-weight: 400;
-  // font-size: 20px;
+  background: #222A37;
+  font-weight: 400;
+  color: #fff;
+  font-family: 'MyriadPro', sans-serif;
+  font-weight: 400;
+  font-size: 18px;
   outline: none;
   border: none;
   box-shadow: none;

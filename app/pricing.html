@@ -20,10 +20,11 @@
 			<a href="#v_cent" data-toggle="tab">
 				<i class="fa fa-map-marker hidden-md hidden-lg hidden-sm"></i><span class="hidden-xs">Location</span>
 			</a>
-			<a href="#v_cent1" class="actives" data-toggle="tab">
+			<a href="#v_cent1" data-toggle="tab">
 				<i class="fa fa-map-marker hidden-md hidden-lg hidden-sm"></i><span class="hidden-xs">Basics</span>
 			</a>
-			<a href="#v_cent2" data-toggle="tab"><i class="fa fa-map-marker hidden-md hidden-lg hidden-sm"></i><span class="hidden-xs">Descriptions</span></a>
+			<a href="#v_cent2" class="actives" data-toggle="tab">
+				<i class="fa fa-map-marker hidden-md hidden-lg hidden-sm"></i><span class="hidden-xs">Descriptions</span></a>
 			<a href="#v_cent3" data-toggle="tab">
 				<i class="fa fa-map-marker hidden-md hidden-lg hidden-sm"></i><span class="hidden-xs">Amenities</span>
 			</a>
@@ -124,7 +125,7 @@
 
 				</div>
 			</div>
-			<div class="tab-pane  active" id="v_cent1">
+			<div class="tab-pane" id="v_cent1">
 				<div class="tab__caption__wrapper">
 					<p class="m_h4">
 						<i class="fa fa-map-marker m_col"></i> list your basics
@@ -264,7 +265,7 @@
 				</div>
 
 			</div>
-			<div class="tab-pane" id="v_cent2">
+			<div class="tab-pane active" id="v_cent2">
 				<div class="tab__caption__wrapper">
 					<p class="m_h4">
 						<i class="fa fa-map-marker m_col"></i> add a description
@@ -274,65 +275,150 @@
 					</div>
 				</div>
 
-				<div class="tab__caption">address
-					<p class="caption__commit">
-						We will only share your precise location and directions with guests after a<br><span>confirmed reservation.</span>
-					</p>
-				</div>
-				
 				<div class="row">
 					<div class="col-md-8 col-sm-8">
 
 						<form>
 							<div class="row">
-								<div class="col-md-6">
-									<div class="selection">
-										<p>Country</p>
-										<div class="select-side">
-											<i class="fa fa-angle-down" aria-hidden="true"></i>
-										</div>
-										<select name="city" id="city-select">
-											<option>Country</option>
-											<option>Country</option>
-											<option>Country</option>
-											<option>Country</option>
-											<option>Country</option>
-										</select>
-									</div>
+
+								<div class="col-sm-12">
+									<div class="tab__caption">popular amenities</div>
 								</div>
-								<div class="col-md-6">
-									<div class="selection select__street">
-										<input name="street_name" type="text" id="street_name" placeholder="Street name">
-									</div>
+
+								<div class="col-md-3">
+									<!-- <fieldset> -->
+									<label for="checkbox-1">Entire Home<i class="fa fa-check" aria-hidden="true"></i></label>
+									<input type="checkbox" name="checkbox-1" id="checkbox-1">
 								</div>
+								<div class="col-md-3">
+									<label for="checkbox-1">Entire Home<i class="fa fa-check" aria-hidden="true"></i></label>
+									<input type="checkbox" name="checkbox-1" id="checkbox-1">
+								</div>
+								<div class="col-md-3">
+									<label for="checkbox-1">Entire Home<i class="fa fa-check" aria-hidden="true"></i></label>
+									<input type="checkbox" name="checkbox-1" id="checkbox-1">
+								</div>
+								<div class="col-md-3">
+									<label for="checkbox-1">Entire Home<i class="fa fa-check" aria-hidden="true"></i></label>
+									<input type="checkbox" name="checkbox-1" id="checkbox-1">
+									<!-- </fieldset> -->
+								</div>
+								
 							</div>
 							<div class="row">
-								<div class="col-md-6">
-									<div class="selection select__mt">
-										<input name="unit_building" type="text" id="unit_building" placeholder="Street name">
-									</div>
+								<div class="col-sm-12">
+									<div class="tab__caption">additional amenities</div>
 								</div>
-								<div class="col-md-6">
-									<div class="selection select__mt">
-										<input name="unit_building" type="text" id="unit_building" placeholder="Unit, Building, etc.">
-									</div>
+
+								<div class="col-md-3">
+									<!-- <fieldset> -->
+									<label for="checkbox-1">Entire Home<i class="fa fa-check" aria-hidden="true"></i></label>
+									<input type="checkbox" name="checkbox-1" id="checkbox-1">
 								</div>
-							</div>
-							<div class="row">
-								<div class="col-md-6">
-									<div class="selection select__mt">
-										<input name="city" type="text" id="city" placeholder="City">
-									</div>
+								<div class="col-md-3">
+									<label for="checkbox-1">Entire Home<i class="fa fa-check" aria-hidden="true"></i></label>
+									<input type="checkbox" name="checkbox-1" id="checkbox-1">
 								</div>
-								<div class="col-md-6">
-									<div class="selection select__mt">
-										<input name="postal_code" type="text" id="postal_code" placeholder="Postal Code">
-									</div>
+								<div class="col-md-3">
+									<label for="checkbox-1">Entire Home<i class="fa fa-check" aria-hidden="true"></i></label>
+									<input type="checkbox" name="checkbox-1" id="checkbox-1">
+								</div>
+								<div class="col-md-3">
+									<label for="checkbox-1">Entire Home<i class="fa fa-check" aria-hidden="true"></i></label>
+									<input type="checkbox" name="checkbox-1" id="checkbox-1">
+									<!-- </fieldset> -->
 								</div>
 							</div>
 
-							<div class="selection select__mt">
-								<input name="directions_optional" type="text" id="directions_optional" placeholder="Directions (optional)">
+							<div class="row">
+								<div class="col-md-3">
+								<!-- 	<fieldset> -->
+									<label for="checkbox-1">Entire Home<i class="fa fa-check" aria-hidden="true"></i></label>
+									<input type="checkbox" name="checkbox-1" id="checkbox-1">
+								</div>
+								<div class="col-md-3">
+									<label for="checkbox-1">Entire Home<i class="fa fa-check" aria-hidden="true"></i></label>
+									<input type="checkbox" name="checkbox-1" id="checkbox-1">
+								</div>
+								<div class="col-md-3">
+									<label for="checkbox-1">Entire Home<i class="fa fa-check" aria-hidden="true"></i></label>
+									<input type="checkbox" name="checkbox-1" id="checkbox-1">
+								</div>
+								<div class="col-md-3">
+									<label for="checkbox-1">Entire Home<i class="fa fa-check" aria-hidden="true"></i></label>
+									<input type="checkbox" name="checkbox-1" id="checkbox-1">
+									<!-- </fieldset> -->
+								</div>
+							</div>
+
+							<div class="row">
+								<div class="col-md-3">
+								<!-- 	<fieldset> -->
+									<label for="checkbox-1">Entire Home<i class="fa fa-check" aria-hidden="true"></i></label>
+									<input type="checkbox" name="checkbox-1" id="checkbox-1">
+								</div>
+								<div class="col-md-3">
+									<label for="checkbox-1">Entire Home<i class="fa fa-check" aria-hidden="true"></i></label>
+									<input type="checkbox" name="checkbox-1" id="checkbox-1">
+								</div>
+							</div>
+
+							<div class="row">
+								<div class="col-sm-12">
+									<div class="tab__caption">special amenities</div>
+								</div>
+
+								<div class="col-md-3">
+									<!-- <fieldset> -->
+									<label for="checkbox-1">Entire Home<i class="fa fa-check" aria-hidden="true"></i></label>
+									<input type="checkbox" name="checkbox-1" id="checkbox-1">
+								</div>
+								<div class="col-md-3">
+									<label for="checkbox-1">Entire Home<i class="fa fa-check" aria-hidden="true"></i></label>
+									<input type="checkbox" name="checkbox-1" id="checkbox-1">
+								</div>
+								<div class="col-md-3">
+									<label for="checkbox-1">Entire Home<i class="fa fa-check" aria-hidden="true"></i></label>
+									<input type="checkbox" name="checkbox-1" id="checkbox-1">
+								</div>
+								<div class="col-md-3">
+									<label for="checkbox-1">Entire Home<i class="fa fa-check" aria-hidden="true"></i></label>
+									<input type="checkbox" name="checkbox-1" id="checkbox-1">
+									<!-- </fieldset> -->
+								</div>
+							</div>
+
+							<div class="row">
+								<div class="col-md-3">
+								<!-- 	<fieldset> -->
+									<label for="checkbox-1">Entire Home<i class="fa fa-check" aria-hidden="true"></i></label>
+									<input type="checkbox" name="checkbox-1" id="checkbox-1">
+								</div>
+								<div class="col-md-3">
+									<label for="checkbox-1">Entire Home<i class="fa fa-check" aria-hidden="true"></i></label>
+									<input type="checkbox" name="checkbox-1" id="checkbox-1">
+								</div>
+								<div class="col-md-3">
+									<label for="checkbox-1">Entire Home<i class="fa fa-check" aria-hidden="true"></i></label>
+									<input type="checkbox" name="checkbox-1" id="checkbox-1">
+								</div>
+								<div class="col-md-3">
+									<label for="checkbox-1">Entire Home<i class="fa fa-check" aria-hidden="true"></i></label>
+									<input type="checkbox" name="checkbox-1" id="checkbox-1">
+									<!-- </fieldset> -->
+								</div>
+							</div>
+
+							<div class="row">
+								<div class="col-md-3">
+								<!-- 	<fieldset> -->
+									<label for="checkbox-1">Entire Home<i class="fa fa-check" aria-hidden="true"></i></label>
+									<input type="checkbox" name="checkbox-1" id="checkbox-1">
+								</div>
+								<div class="col-md-3">
+									<label for="checkbox-1">Entire Home<i class="fa fa-check" aria-hidden="true"></i></label>
+									<input type="checkbox" name="checkbox-1" id="checkbox-1">
+								</div>
 							</div>
 
 							<div class="btn__submit select__mt" data-submit>CONTINUE</div>
@@ -340,18 +426,8 @@
 						</form>	
 					</div>
 
-					<div class="col-md-4 col-sm-4">
-						<div class="map-wrapper">
-						  <div id="map" class="contact"></div>
-						</div>
-						<div class="map__address">
-							<i class="fa fa-map-marker" aria-hidden="true"></i>
-							Mall Road, Shimla, Himachal Pradesh,
-							176077
-						</div>
-					</div>
-
 				</div>
+			</div>
 
 			</div>
 			<div class="tab-pane" id="v_cent3">

@@ -223,33 +223,31 @@ $(document).ready(function(){
 
   });
 
-<<<<<<< HEAD
+  $( function() {
+    $( "#checkbox-1, #private_room" ).checkboxradio();
+  });
 
-    $( function() {
-      $( "#checkbox-1, #private_room" ).checkboxradio();
-    } );
-=======
+
   $('.sidebar-gallery .image-link')
-    .magnificPopup(
-      {
-        type:'image',
-        disableOn: "400",
-        key: 'some-key',
-        gallery: {
-          enabled: true,
-          preload: [0,2],
-          navigateByImgClick: true,
-          arrowMarkup: '<button title="%title%" type="button" class="mfp-arrow mfp-arrow-%dir%"></button>',
-          tPrev: 'Previous (Left arrow key)',
-          tNext: 'Next (Right arrow key)',
-          tCounter: '<span class="mfp-counter">%curr% of %total%</span>'
-        },
-        image: {
-          titleSrc: 'title'
-        }
-      }
-    );
->>>>>>> 31b7db71a020be2c861e0c33e543b18b7b0d4175
+  .magnificPopup(
+  {
+    type:'image',
+    disableOn: "400",
+    key: 'some-key',
+    gallery: {
+      enabled: true,
+      preload: [0,2],
+      navigateByImgClick: true,
+      arrowMarkup: '<button title="%title%" type="button" class="mfp-arrow mfp-arrow-%dir%"></button>',
+      tPrev: 'Previous (Left arrow key)',
+      tNext: 'Next (Right arrow key)',
+      tCounter: '<span class="mfp-counter">%curr% of %total%</span>'
+    },
+    image: {
+      titleSrc: 'title'
+    }
+  }
+  );
 
 });
 
