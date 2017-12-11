@@ -1,0 +1,94 @@
+.reservations {
+  margin-top: 60px;
+
+  .reservation-title {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 26px;
+    padding-bottom: 30px;
+  }
+  .reservation-form {
+    font-family: 'Roboto', sans-serif;
+    font-size: 13px;
+    .per-night {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: nowrap;
+      justify-content: space-between;
+      background-color: #022d41;
+      color: #fff;
+      & > div {
+        padding: 13px 15px;
+      }
+    }
+    form {
+      background-color: #ececec;
+    }
+    label {
+      font-weight: 400;
+      font-size: 11px;
+      padding: 0;
+      line-height: 1;
+    }
+    input,
+    select {
+      text-align: center;
+      padding: 0 5px;
+      line-height: 1;
+      font-size: 12px;
+      height: 25px;
+      max-width: 80px;
+      min-width: 80px;
+      margin: 0 2px 15px;
+      display: inline-block;
+      border-radius: 3px;
+      background-color: #fff;
+    }
+  }
+  hr {
+    display: block;
+    width: 100%;
+    border-top: 1px #dedede solid;
+    margin: 0;
+  }
+  .form-group {
+    margin-bottom: 0;
+  }
+  .flex-row, .flex-col {
+    display: flex;
+    flex-wrap: wrap;
+    //justify-content: space-between;
+    //justify-content: center;
+    align-items: flex-start;
+    flex-direction: row;
+  }
+  .flex-row {
+    padding: 15px 15px 5px;
+
+  }
+  .flex-col {
+    flex-grow: 1;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    @media(max-width: 992px) {
+      &:nth-child(3) {
+
+      }
+    }
+  }
+  .values-rows {
+    padding: 0 15px;
+    margin-bottom: 10px;
+    .value-row {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: nowrap;
+      justify-content: space-between;
+      span.name {}
+      span.value {}
+    }
+  }
+  .add-service {
+    padding: 15px;
+  }
+}
+

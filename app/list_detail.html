@@ -78,9 +78,8 @@
           <li><a href="#listing-time">Host <span>time</span></a></li>
           <li><a href="#location-block">Location</a></li>
           <li><a href="#">Host</a></li>
-          <li><a href="#">Review</a></li>
-          <li><a href="#">View</a></li>
-          <li><a href="#">Calendar</a></li>
+          <li><a href="#reviews">Review</a></li>
+          <li><a href="#">View Calendar</a></li>
         </ul>
       </div>
     </div>
@@ -240,14 +239,11 @@
           <div id="location-block-map" class="location-block-map"></div>
 
         </div>
-        <!-- /#-->
+        <!-- /#location-block -->
 
+        <div id="similar-list" class="detail-section similar-list clearfix">
 
-
-
-
-
-        <div id="similar-list" class="similar-list clearfix">
+          <div class="detail-title">Similar Listing</div>
 
           <section id="similar__carusel">
             <div id="similar-list-carousel" class="owl-carousel tov">
@@ -403,14 +399,88 @@
           </section>
 
         </div>
+        <!-- /#similar-list -->
+
+        <div id="about-host" class="detail-section clearfix">
+
+          <div class="detail-title">About the Host Owner</div>
+
+          <div class="about-host-content">
+            <div class="author-avatar"><img src="images/black_avatar.png" alt=""></div>
+            <div class="author-name">Brian Krogsgard</div>
+            <a href="#" role="tab" class="btn btn-default">Directions</a>
+          </div>
+
+        </div>
 
 
+        <div id="reviews" class="detail-section clearfix">
+
+          <div class="detail-title">Revıew</div>
+
+          <div class="reviews-list">
+
+            <div class="review-item">
+              <div class="starrr" data-rating='4'></div>
+              <div class="author-avatar"><img src="images/black_avatar.png" alt=""></div>
+              <div class="author-name">Jamies Giroux</div>
+              <div class="summary">1 months ago</div>
+              <div class="review-text">
+                <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of
+                  classical Latin literature from 45 BC, making it over 2000 years old.</p>
+              </div>
+            </div>
+
+            <div class="review-item">
+              <div class="starrr" data-rating='4'></div>
+              <div class="author-avatar"><img src="images/black_avatar.png" alt=""></div>
+              <div class="author-name">Brian Krogsgard</div>
+              <div class="summary">3 months ago</div>
+              <div class="review-text">
+                <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of
+                  classical Latin literature from 45 BC, making it over 2000 years old.</p>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+        <!-- /#reviews -->
+
+        <div id="write-review" class="detail-section clearfix">
+
+          <div class="detail-title">Rate & Wrıte a Revıew</div>
+
+          <div class="reviews-list">
+            <div class="starrr" data-rating='4'></div>
+            <form id="contact">
+              <div class="row">
+                <div class="col-sm-12 form-group">
+                  <input class="form-control" type="text" name="name" placeholder="Name*" required="true">
+                </div>
+                <div class="col-sm-12 form-group">
+                  <input class="form-control" type="email" name="mail" placeholder="Email*" required="true">
+                </div>
+                <div class="col-sm-12 form-group">
+                  <input class="form-control" type="text" name="web" placeholder="Website" required="true">
+                </div>
+                <div class="col-sm-12 form-group">
+                  <textarea class="form-control" name="comment" id="comment" rows="5" placeholder="Comment*" required="true"></textarea>
+                </div>
+                <div class="col-sm-12 tar form-action">
+                  <input class="btn" type="submit" value="Submit Your Review">
+                </div>
+              </div>
+            </form>
+          </div>
+        </div>
+        <!-- /#write-review -->
 
       </div>
 
       <div class="col-sm-4 sidebar">
 
-        //= template/sidebar_notific.html
+        //= template/sidebar_list_detail.html
 
       </div>
 

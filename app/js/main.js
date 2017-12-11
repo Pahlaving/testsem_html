@@ -170,8 +170,10 @@ $(document).ready(function(){
     inboxTableTool('.inbox-table', 768);
   });
 
-  $('#date').datetimepicker();
-  $('#time').datetimepicker({
+  $('#date, #check_in_date, #check_out_date').datetimepicker({
+    timepicker: false
+  });
+  $('#time, #check_in_time, #check_out_time').datetimepicker({
     datepicker:false,
     format:'H:i'
   });
