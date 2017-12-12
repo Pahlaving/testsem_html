@@ -4,7 +4,8 @@
 	}
  	.modal-body{
  		border-radius: 7px;
- 		padding: 40px;
+ 		padding: 15px;
+ 		padding-right: 40px;
  		position: relative;
  	}
  	.modal-header{
@@ -58,4 +59,18 @@
 			margin-top: 0px;
 		}
 	}
+	.modal-footer{
+		text-align: right;
+		.btn-default{
+			min-width: 120px;
+			font-size: 16px;
+			color: #616B6F;
+			font-weight: 500;
+			background-color: #fff;
+		}
+		.btn-primary{
+			min-width: 120px;
+		}
+	}
+	
  }
