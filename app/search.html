@@ -72,70 +72,362 @@
 						</div>
 					</div>
 					<p class="s_p">Filter by tag:</p>
-					<div class="c_fl hostel">
-						<i class="fa fa-angle-down s_t"></i>
-						<p>Inventory</p>
-						<select name="inventory">
-							<option value="">Inventory</option>
-							<option value="">Inventory</option>
-							<option value="">Inventory</option>
-							<option value="">Inventory</option>
-						</select>
-					</div>
-					<div class="c_fl hostel">
-						<i class="fa fa-angle-down s_t"></i>
-						<p>Accommodation</p>
-						<select name="accommodation">
-							<option value="">Accommodation</option>
-							<option value="">Accommodation</option>
-							<option value="">Accommodation</option>
-							<option value="">Accommodation</option>
-						</select>
-					</div>
-					<div class="c_fl hostel">
-						<i class="fa fa-angle-down s_t"></i>
-						<p>Special</p>
-						<select name="special">
-							<option value="">Special</option>
-							<option value="">Special</option>
-							<option value="">Special</option>
-							<option value="">Special</option>
-						</select>
-					</div>
-					<div class="s_d">
-						<div class="s_dl">
-							<input type="checkbox" id="any">
-							<label for="any">Any</label>
+					<div class="row">
+						<div class="col-md-4">
+							<div class="selection__transparent">
+								<p>Inventory</p>
+								<i class="fa fa-angle-down" aria-hidden="true"></i>
+								<select name="city" id="city-select">
+									<option>Inventory</option>
+									<option>Inventory</option>
+									<option>Inventory</option>
+									<option>Inventory</option>
+									<option>Inventory</option>
+								</select>
+
+								<div class="s_d">
+									<div class="s_dl">
+										<input type="checkbox" id="inventory_1">
+										<label for="inventory_1">Any</label>
+									</div>
+									<div class="s_dl">
+										<input type="checkbox" id="inventory_2">
+										<label for="inventory_2">Coupons</label>
+									</div>
+								</div>
+							</div>
 						</div>
-						<div class="s_dl">
-							<input type="checkbox" id="any2">
-							<label for="any2">Coupons</label>
+						<div class="col-md-4">
+							<div class="selection__transparent">
+								<p>Accommodation</p>
+								<i class="fa fa-angle-down" aria-hidden="true"></i>
+								<select name="city" id="city-select">
+									<option>Accommodation</option>
+									<option>Accommodation</option>
+									<option>Accommodation</option>
+									<option>Accommodation</option>
+									<option>Accommodation</option>
+								</select>
+								
+								<div class="s_d">
+									<div class="s_dl">
+										<input type="checkbox" id="accommodation_1">
+										<label for="accommodation_1">Any</label>
+									</div>
+									<div class="s_dl">
+										<input type="checkbox" id="accommodation_2">
+										<label for="accommodation_2">Coupons</label>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-4">
+							<div class="selection__transparent">
+								<p>Special</p>
+								<i class="fa fa-angle-down" aria-hidden="true"></i>
+								<select name="city" id="city-select">
+									<option>Special</option>
+									<option>Special</option>
+									<option>Special</option>
+									<option>Special</option>
+									<option>Special</option>
+								</select>
+								
+								<div class="s_d">
+									<div class="s_dl">
+										<input type="checkbox" id="special_1">
+										<label for="special_1">Any</label>
+									</div>
+									<div class="s_dl">
+										<input type="checkbox" id="special_2">
+										<label for="special_2">Coupons</label>
+									</div>
+								</div>
+							</div>
 						</div>
 					</div>
-					<div class="s_d">
-						<div class="s_o">
-							<input class="s_subs" type="submit" value="Advanced Search Close">
-							<input class="s_res" type="reset" value="Reset">
+					
+					<div class="row">
+						<div class="col-sm-12">
+							<div class="s_d form__buttons">
+								<div class="s_o">
+									<input class="s_subs" type="submit" value="Advanced Search Close">
+									<input class="s_res" type="reset" value="Reset">
+								</div>
+							</div>
 						</div>
 					</div>
+					
 				</form>
+
 				<div id="products">
-					<div class="s_ok">Found <span>19</span> matching records</div>
-					<div class="s_okr hostel">
-						<i class="fa fa-angle-down s_t"></i>
-						<p>View All</p>
-						<select name="view">
-							<option value="">View All</option>
-							<option value="">View All</option>
-							<option value="">View All</option>
-							<option value="">View All</option>
-						</select>    
+					<div class="row">
+						<div class="col-sm-12">
+							<div class="row">
+								<div class="col-sm-10">
+									<div class="s_ok">Found <span>19</span> matching records</div>
+									<div class="s_okr hostel">
+										<i class="fa fa-angle-down s_t"></i>
+										<p>View All</p>
+										<select name="view">
+											<option value="">View All</option>
+											<option value="">View All</option>
+											<option value="">View All</option>
+											<option value="">View All</option>
+										</select> 
+									</div>
+								</div>
+								<div class="col-sm-2">
+									<div class="list__style">
+										<div class="list_style__list" href="#"></div>
+										<div class="list_style__plits" href="#"></div>
+									</div>
+								</div>
+							</div>
+						</div>
 					</div>
-					<div class="s_okt">
-						<a class="s_tn" href="#"></a>
-						<a class="s_th" href="#"></a>
+
+					<div class="products__wrapper products__plits">
+						<div class="row">
+							<div class="col-sm-4 pl">
+								<div class="items">
+									<div class="thu">
+										<img class="img-responsive" src="/images/a9a1d433-bcde-4601-88a0-5f16871b8548.jpg" />
+										<div class="thuleft">
+											<i class="fa fa-picture-o"></i>4 PHOTO
+										</div>
+										<div class="thuright">
+											<div class="the">FEATURED</div>
+										</div>
+										<div class="thucenter">
+											<i class="fa fa-map-marker"></i>PARIS
+										</div>
+									</div>
+									<div class="caption">
+										<div class="h3">Hostel France</div>
+										<div class="ret">
+											<div class="ratting">
+												<i class="fa fa-star"></i>
+												<i class="fa fa-star"></i>
+												<i class="fa fa-star"></i>
+												<i class="fa fa-star"></i>
+												<i class="fa fa-star-half-o"></i>
+											</div>
+											<div class="check">
+												<label class="checkb">Student host</label>
+											</div>
+										</div>
+										<div><p class="s_desc">Quisque vel sem ac enim facilisis euros froms ultrices euors Vivamus neque sapiene youga.</p></div>
+									</div>
+									<div class="btn-group">
+										<a href="#" class="btn__link green"><span>OPEN NOW</span></a>
+										<a href="#" class="btn__link"><i class="fa fa-map-marker"></i></a>
+										<a href="#" class="btn__link">HOST</a>
+										<a href="#" class="btn__link"><i class="fa fa-heart"></i></a>
+									</div>
+								</div>
+							</div>
+							<div class="col-sm-4 pl">
+								<div class="items">
+									<div class="thu">
+										<img src="/images/a9a1d433-bcde-4601-88a0-5f16871b8548.jpg" />
+										<div class="thuleft">
+											<i class="fa fa-picture-o"></i>4 PHOTO
+										</div>
+										<div class="thuright">
+											<div class="the"></div>
+										</div>
+										<div class="thucenter">
+											<i class="fa fa-map-marker"></i>PARIS
+										</div>
+									</div>
+									<div class="caption">
+										<div class="h3">Hostel France</div>
+										<div class="ret">
+											<div class="ratting">
+												<i class="fa fa-star"></i>
+												<i class="fa fa-star"></i>
+												<i class="fa fa-star"></i>
+												<i class="fa fa-star"></i>
+												<i class="fa fa-star-half-o"></i>
+											</div>
+											<div class="check">
+												<label class="checkb">Student host</label>
+											</div>
+										</div>
+										<div><p class="s_desc">Quisque vel sem ac enim facilisis euros froms ultrices euors Vivamus neque sapiene youga.</p></div>
+									</div>
+									<div class="btn-group">
+										<a href="#" class="btn__link red"><span>CLOSED</span></a>
+										<a href="#" class="btn__link"><i class="fa fa-map-marker"></i></a>
+										<a href="#" class="btn__link">HOST</a>
+										<a href="#" class="btn__link"><i class="fa fa-heart"></i></a>
+									</div>
+								</div>
+							</div>
+							<div class="col-sm-4 pl">
+								<div class="items">
+									<div class="thu">
+										<img src="/images/a9a1d433-bcde-4601-88a0-5f16871b8548.jpg" />
+										<div class="thuleft">
+											<i class="fa fa-picture-o"></i>4 PHOTO
+										</div>
+										<div class="thuright">
+											<div class="the">FEATURED</div>
+										</div>
+										<div class="thucenter">
+											<i class="fa fa-map-marker"></i>PARIS
+										</div>
+									</div>
+									<div class="caption">
+										<div class="h3">Hostel France</div>
+										<div class="ret">
+											<div class="ratting">
+												<i class="fa fa-star"></i>
+												<i class="fa fa-star"></i>
+												<i class="fa fa-star"></i>
+												<i class="fa fa-star"></i>
+												<i class="fa fa-star-half-o"></i>
+											</div>
+											<div class="check">
+												<label class="checkb">Student host</label>
+											</div>
+										</div>
+										<div><p class="s_desc">Quisque vel sem ac enim facilisis euros froms ultrices euors Vivamus neque sapiene youga.</p></div>
+									</div>
+									<div class="btn-group">
+										<a href="#" class="btn__link green"><span>OPEN NOW</span></a>
+										<a href="#" class="btn__link"><i class="fa fa-map-marker"></i></a>
+										<a href="#" class="btn__link">HOST</a>
+										<a href="#" class="btn__link"><i class="fa fa-heart"></i></a>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-sm-4 pl">
+								<div class="items">
+									<div class="thu">
+										<img src="/images/a9a1d433-bcde-4601-88a0-5f16871b8548.jpg" />
+										<div class="thuleft">
+											<i class="fa fa-picture-o"></i>4 PHOTO
+										</div>
+										<div class="thuright">
+											<div class="sale">SALE</div>
+										</div>
+										<div class="thucenter">
+											<i class="fa fa-map-marker"></i>PARIS
+										</div>
+									</div>
+									<div class="caption">
+										<div class="h3">Hostel France</div>
+										<div class="ret">
+											<div class="ratting">
+												<i class="fa fa-star"></i>
+												<i class="fa fa-star"></i>
+												<i class="fa fa-star"></i>
+												<i class="fa fa-star"></i>
+												<i class="fa fa-star-half-o"></i>
+											</div>
+											<div class="check">
+												<label class="checkb">Student host</label>
+											</div>
+										</div>
+										<div><p class="s_desc">Quisque vel sem ac enim facilisis euros froms ultrices euors Vivamus neque sapiene youga.</p></div>
+									</div>
+									<div class="btn-group">
+										<a href="#" class="btn__link green"><span>OPEN NOW</span></a>
+										<a href="#" class="btn__link"><i class="fa fa-map-marker"></i></a>
+										<a href="#" class="btn__link">HOST</a>
+										<a href="#" class="btn__link"><i class="fa fa-heart"></i></a>
+									</div>
+								</div>
+							</div>
+							<div class="col-sm-4 pl">
+								<div class="items">
+									<div class="thu">
+										<img src="/images/a9a1d433-bcde-4601-88a0-5f16871b8548.jpg" />
+										<div class="thuleft">
+											<i class="fa fa-picture-o"></i>4 PHOTO
+										</div>
+										<div class="thuright">
+											<div class="sale">SALE</div>
+										</div>
+										<div class="thucenter">
+											<i class="fa fa-map-marker"></i>PARIS
+										</div>
+									</div>
+									<div class="caption">
+										<div class="h3">Hostel France</div>
+										<div class="ret">
+											<div class="ratting">
+												<i class="fa fa-star"></i>
+												<i class="fa fa-star"></i>
+												<i class="fa fa-star"></i>
+												<i class="fa fa-star"></i>
+												<i class="fa fa-star-half-o"></i>
+											</div>
+											<div class="check">
+												<label class="checkb">Student host</label>
+											</div>
+										</div>
+										<div><p class="s_desc">Quisque vel sem ac enim facilisis euros froms ultrices euors Vivamus neque sapiene youga.</p></div>
+									</div>
+									<div class="btn-group">
+										<a href="#" class="btn__link green"><span>OPEN NOW</span></a>
+										<a href="#" class="btn__link"><i class="fa fa-map-marker"></i></a>
+										<a href="#" class="btn__link">HOST</a>
+										<a href="#" class="btn__link"><i class="fa fa-heart"></i></a>
+									</div>
+								</div>
+							</div>
+							<div class="col-sm-4 pl">
+								<div class="items">
+									<div class="thu">
+										<img src="/images/a9a1d433-bcde-4601-88a0-5f16871b8548.jpg" />
+										<div class="thuleft">
+											<i class="fa fa-picture-o"></i>4 PHOTO
+										</div>
+										<div class="thuright">
+											<div class="sale">SALE</div>
+										</div>
+										<div class="thucenter">
+											<i class="fa fa-map-marker"></i>PARIS
+										</div>
+									</div>
+									<div class="caption">
+										<div class="h3">Hostel France</div>
+										<div class="ret">
+											<div class="ratting">
+												<i class="fa fa-star"></i>
+												<i class="fa fa-star"></i>
+												<i class="fa fa-star"></i>
+												<i class="fa fa-star"></i>
+												<i class="fa fa-star-half-o"></i>
+											</div>
+											<div class="check">
+												<label class="checkb">Student host</label>
+											</div>
+										</div>
+										<div><p class="s_desc">Quisque vel sem ac enim facilisis euros froms ultrices euors Vivamus neque sapiene youga.</p></div>
+									</div>
+									<div class="btn-group">
+										<a href="#" class="btn__link green"><span>OPEN NOW</span></a>
+										<a href="#" class="btn__link"><i class="fa fa-map-marker"></i></a>
+										<a href="#" class="btn__link">HOST</a>
+										<a href="#" class="btn__link"><i class="fa fa-heart"></i></a>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="s_ceny">
+							<div>
+								<a href="#">LOAD MORE</a>
+							</div>
+						</div>
 					</div>
-					<div class="products__wrapper">
+				
+					<div class="products__wrapper products__lits actives__products">
 						<div class="items">
 							<div class="thu">
 								<img class="img-responsive" src="/images/a9a1d433-bcde-4601-88a0-5f16871b8548.jpg" />
@@ -280,14 +572,15 @@
 								<a href="#" class="btn__link"><i class="fa fa-heart"></i></a>
 							</div>
 						</div>
+
+						<div class="s_ceny">
+							<div>
+								<a href="#">LOAD<br>MORE</a>
+							</div>
+						</div>
 					</div>
 				</div>
-				<div class="s_ceny">
-					<div>
-						<a href="#">LOAD<br>MORE</a>
-					</div>
-				</div>
-			</div>
+`			</div>
 		</div>
 	</div>
 

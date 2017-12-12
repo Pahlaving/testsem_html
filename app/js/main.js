@@ -147,6 +147,20 @@ $(document).ready(function(){
      $(this).addClass('actives');
   });
 
+  $('.list_style__list').click(function(e){
+    e.preventDefault();
+    $('.products__plits').removeClass('actives__products');
+    $('.products__lits').removeClass('actives__products');
+    $('.products__lits').addClass('actives__products');
+  });
+
+  $('.list_style__plits').click(function(e){
+    e.preventDefault();
+    $('.products__plits').removeClass('actives__products');
+    $('.products__lits').removeClass('actives__products');
+    $('.products__plits').addClass('actives__products');
+  });
+
   function inboxTableTool(taretTable, resolution) {
     var inboxTable = $(taretTable);
     var titledCells = $(inboxTable).find('[data-title]');
