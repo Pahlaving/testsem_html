@@ -15,11 +15,12 @@
       -webkit-font-smoothing: antialiased;
       text-decoration: none;
       margin-right: 2px;
+      display: inline-block;
       .big-star & {
         font-size: 24px;
       }
       .small-star & {
-        font-size: 12px;
+        font-size: 14px;
       }
       &:after {
         content: '\f006';
