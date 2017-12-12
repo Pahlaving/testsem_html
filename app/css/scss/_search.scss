@@ -1,5 +1,8 @@
 section#search__section{
 	z-index:1;
+	.container{
+		width: 100%;
+	}
 	.map{
 		width:42%;
 		z-index: 9;
@@ -17,7 +20,7 @@ section#search__section{
 			position: relative;
 			width: 100%;
 			#map.contact{
-				height: 730px;
+				height: 900px;
 				@media screen and (max-width: 767px) {
 					height: 300px;
 				}
@@ -46,6 +49,9 @@ section#search__section{
 		padding: 15px;
 	}
 	#search {
+		@media screen and (max-width: 767px) {
+			margin-top: 0px;
+		}
 		overflow: hidden;
 		margin-top: 20px;
 		@media screen and (max-width: 767px) {
