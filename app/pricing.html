@@ -26,10 +26,10 @@
 			<a href="#v_cent3" data-toggle="tab">
 				<i class="fa fa-map-marker hidden-md hidden-lg hidden-sm"></i><span class="hidden-xs">Amenities</span>
 			</a>
-			<a href="#v_cent4" data-toggle="tab">
+			<a href="#v_cent4" class="actives" data-toggle="tab">
 				<i class="fa fa-map-marker hidden-md hidden-lg hidden-sm"></i><span class="hidden-xs">Pricing</span>
 			</a>
-			<a href="#v_cent5" class="actives" data-toggle="tab">
+			<a href="#v_cent5" data-toggle="tab">
 				<i class="fa fa-map-marker hidden-md hidden-lg hidden-sm"></i><span class="hidden-xs">Media</span>
 			</a>
 		</div>
@@ -559,7 +559,7 @@
 					</div>
 				</div>
 			</div>
-			<div class="tab-pane" id="v_cent4">
+			<div class="tab-pane active" id="v_cent4">
 				<div class="tab__caption__wrapper">
 					<p class="m_h4">
 						<i class="fa fa-map-marker m_col"></i> set your pricing and terms
@@ -598,7 +598,7 @@
 						<div class="pp_med"></div>
 					</div>
 					<div class="p_over">
-						<div class="lab">additional pricing options</div>
+						<div class="lab">addititional pricing options</div>
 						<div class="npr2">
 							<input name="inp" id="guest" type="text" placeholder="NighAdditional guest">
 						</div>
@@ -627,7 +627,7 @@
 					</div>
 					<div class="p_over">
 						<div class="npr2">
-							<input name="inp2" type="text" placeholder="Enter your additional pricing name">
+							<input name="inp2" type="text" placeholder="Enter your addititional pricing name">
 						</div>
 						<div class="p_sel3">
 							<p>-</p>
@@ -655,7 +655,7 @@
 					<div class="p_over">
 						<div class="v_con">
 							<div class="v_pl">+</div>
-							<a href="#">Add new</a>
+							<a href="#" data-toggle="modal" data-target="#add_pricing_options">Add new</a>
 						</div>
 						<div class="pp_med"></div>
 					</div>
@@ -727,7 +727,7 @@
 					</div>
 				</form>
 			</div>
-			<div class="tab-pane active" id="v_cent5">
+			<div class="tab-pane" id="v_cent5">
 				<div class="tab__caption__wrapper">
 					<p class="m_h4">
 						<i class="fa fa-map-marker m_col"></i> add your photos
@@ -819,6 +819,8 @@
 //= template/popups/popup_login.html
 
 //= template/popups/popup_registration.html
+
+//= template/popups/add_pricing_options.html
 
 </body>
 </html>
