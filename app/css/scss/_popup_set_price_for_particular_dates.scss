@@ -1,0 +1,61 @@
+#set_price_for_particular_dates{
+	.modal-content{
+		border-radius: 5px;
+	}
+ 	.modal-body{
+ 		border-radius: 7px;
+ 		padding: 40px;
+ 		position: relative;
+ 	}
+ 	.modal-header{
+ 		border-bottom: 2px solid #F2F2F2;
+ 	}
+	p.h4{
+		margin-bottom: 20px;
+		font-family: 'BebasNeue';
+		font-weight: 400;
+		font-size: 35px;
+		text-align: center;
+	}
+	label{
+		margin-top: 30px;
+		line-height: 38px;
+		font-size: 16px;
+		color: #616B6F;
+		font-weight: 500;
+		span{
+			color: #FF2128;
+		}
+		&[for="op_start_date"]{
+			margin-top: 0;
+		}
+	}
+	input{
+		margin-top: 30px;
+		padding: 10px;
+		width: 100%;
+		border: none;
+		border: 1px solid #CBCBCB;
+		background: #fff;
+		color: #00171f;
+		font-size: 16px;
+		font-weight: 300;
+		&#op_start_date{
+			margin-top: 0;
+		}
+	}
+	select{
+		outline: none;
+		margin-top: 30px;
+		min-width: auto;
+		padding: 9px;
+		background: #fff;
+		border: 1px solid #CBCBCB;
+		color: #00171f;
+		font-size: 16px;
+		font-weight: 300;
+		&#op_sl_start_date{
+			margin-top: 0px;
+		}
+	}
+ }

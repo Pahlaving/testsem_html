@@ -242,7 +242,6 @@ section#search__section{
 				width: 40%;
 			}
 			.s_ic{
-
 				width: 17px;
 				position: absolute;
 				left: 0;
@@ -670,6 +669,19 @@ section#search__section{
 				color: #fff;
 				letter-spacing: 0.1em;
 			}
+		}
+	}
+
+	// Kalendar tab
+	
+	#datepicker{
+		text-align: center;
+		width: 100%;
+		height: 100%;
+		.ui-widget{
+			display: inline-block;
+			font-size: 3em;
+			font-family: 'Poppins', sans-serif;
 		}
 	}
 }

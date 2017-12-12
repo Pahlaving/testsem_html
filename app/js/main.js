@@ -207,7 +207,7 @@ $(document).ready(function(){
     inboxTableTool('.inbox-table', 768);
   });
 
-  $('#date, #check_in_date, #check_out_date, #start, #end').datetimepicker({
+  $('#date, #check_in_date, #check_out_date, #start, #end, #op_start_date, #op_end_date').datetimepicker({
     timepicker: false
   });
   $('#time, #check_in_time, #check_out_time, #tstart, #tend').datetimepicker({
@@ -247,10 +247,15 @@ $(document).ready(function(){
     min: 0,
     max: 1000,
     values: [ 100, 500 ],
+    step: 50,
     slide: function( event, ui ) {
       $( "section#search__section .price" ).text( "$" + ui.values[ 0 ] + " - $" + ui.values[ 1 ] );
     }
   });
+
+  // Kalendar
+
+  $( "#datepicker" ).datepicker();
 
   $('.tool-switcher-slider').on('click', function (e) {
     e.preventDefault();
@@ -262,9 +267,15 @@ $(document).ready(function(){
   });
 
   $( function() {
-    $( "#check_home, #private_room" ).checkboxradio();
-    $("#v_cent2 input").checkboxradio();
-    $("#v_cent3 input").checkboxradio();
+    $( "#check_home, #private_room" ).checkboxradio({
+      icon: false
+    });
+    $("#v_cent2 input").checkboxradio({
+      icon: false
+    });
+    $("#v_cent3 input").checkboxradio({
+      icon: false
+    });
 
   });
 

@@ -656,5 +656,33 @@ section#media{
 			
 		}
 	}
+	/* ======= Tab Kalendar ======= */
+
+	.tab-content{
+		.kalendar__wrapper{
+			margin-top: 50px;
+			text-align: center;
+			#datepicker{
+				display: inline-block;
+				text-align: center;
+				width: 100%;
+				height: 100%;
+				.ui-widget{
+					display: inline-block !important;
+					font-size: 3em;
+					font-family: 'Poppins', sans-serif;
+				}
+				.ui-datepicker{
+					td{
+						a{
+							padding: 0.4em;
+							text-align: center;
+						}
+					}
+				}
+			}
+		}
+		
+	}
 }
 
