@@ -368,5 +368,15 @@ var forEach=function(t,o,r){if("[object Object]"===Object.prototype.toString.cal
     showSelectedRating: true
   });
 
+  $('.modal-footer__btn input').click(function(){
+    var value_chek = $('#add_pricing_options input:checked').length;
+    console.log(value_chek);
+    var addblock = '<div class="p_over"><div class="npr2"><input name="inp2" type="text" placeholder="Enter your addititional pricing name"></div><div class="p_sel3"><p>-</p><select name="sel3"><option value="-">-</option><option value="-">-</option><option value="-">-</option><option value="-">-</option></select></div><div class="p_sel4"><p>-</p><select name="sel4"><option value="-">-</option><option value="-">-</option><option value="-">-</option><option value="-">-</option></select></div><div class="npr3"><input name="inp3" type="text" placeholder="0"></div><div class="pp_med"></div></div>';
+    for(var i = 1; i < value_chek; i++){
+      addblock = addblock + addblock;
+    }
+    document.getElementById("insert__block").innerHTML = addblock;
+  });
+
 });
 
