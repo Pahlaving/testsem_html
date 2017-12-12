@@ -5,10 +5,15 @@
 //= vendor/slick.js
 //= vendor/wow.min.js
 //= vendor/bootstrap.file-input.js
-//= vendor/starrr.js
 //= vendor/owl.carousel.min.js
 //= vendor/markerclusterer.js
 //= vendor/jquery.datetimepicker.full.min.js
 //= vendor/jquery-ui.min.js
 //= vendor/jquery.magnific-popup.min.js
 //= vendor/dropzone.js
+
+/* Star widget */
+// New
+//= vendor/jquery.barrating.min.js
+// Old
+//= vendor/starrr.js

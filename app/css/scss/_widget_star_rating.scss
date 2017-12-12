@@ -1,0 +1,60 @@
+/*
+ Widget templates
+ https://github.com/antennaio/jquery-bar-rating
+ */
+.star-widget-wrapper {
+  display: inline-block;
+}
+.br-theme-bootstrap-stars {
+  .br-widget {
+    height: 28px;
+    white-space: nowrap;
+    a {
+      font: normal normal normal 18px/1 'FontAwesome';
+      text-rendering: auto;
+      -webkit-font-smoothing: antialiased;
+      text-decoration: none;
+      margin-right: 2px;
+      .big-star & {
+        font-size: 24px;
+      }
+      .small-star & {
+        font-size: 12px;
+      }
+      &:after {
+        content: '\f006';
+        color: #002d42;
+        .red-star & {
+          color: #d02800;
+        }
+        .black-star {
+          color: black;
+        }
+        @media print {
+          color: #000;
+        }
+      }
+
+      &.br-active:after,
+      &.br-selected:after {
+        content: '\f005';
+        color: #002d42;
+        .red-star & {
+          color: #d02800;
+        }
+        .black-star {
+          color: black;
+        }
+        @media print {
+          color: #000;
+        }
+      }
+    }
+    .br-current-rating {
+      display: none;
+    }
+  }
+  .br-readonly a {
+    cursor: default;
+  }
+}
