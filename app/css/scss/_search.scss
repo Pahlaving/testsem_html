@@ -1,7 +1,11 @@
 section#search__section{
 	z-index:1;
 	.container{
-		width: 1300px;
+		width: 100%;
+		padding-left: 30px;
+		@media screen and (max-width: 767px) {
+			padding-left: 15px;
+		}
 	}
 	.map{
 		width:40%;
@@ -14,11 +18,14 @@ section#search__section{
 		}
 		top: 0px;
 		left: 60%;
-		right: 0;
+		//right: 0;
 		bottom: 0;
+		@media screen and (max-width: 1200px) {
+			right: 0;
+		}
 		.map-wrapper{
 			position: relative;
-			width: 100%;
+			//width: 100%;
 			#map.contact{
 				height: 100vh;
 				@media screen and (max-width: 767px) {
@@ -101,6 +108,12 @@ section#search__section{
 		top: -35px;
 	}
 	.c_fl {
+		&:nth-child(1){
+			padding-left: 0;
+			@media screen and (max-width: 767px) {
+				padding-left: 5px;
+			}
+		}
 		width: 33.33333%;
 		float: left;
 		padding: 0 16px;
@@ -199,11 +212,15 @@ section#search__section{
 	}
 	.s_d{
 		padding: 0 18px;
+		@media screen and (max-width: 1200px) {
+			padding-right: 5px;
+		}
+		padding-left: 0;
 		overflow: hidden;
 		.s_l{
 			position: relative;
 			margin-top: 20px;
-			width: 24%;
+			width: 26%;
 			line-height: 22px;
 			padding-left: 28px;
 			box-sizing: border-box;
@@ -211,6 +228,19 @@ section#search__section{
 			font-family: 'MyriadPro', sans-serif;
 			font-size: 14px;
 			color: #5a5a5a;
+			@media screen and (max-width: 1200px) {
+				font-size: 12px;
+				width: 30%;
+			}
+			@media screen and (max-width: 820px) {
+				font-size: 10px;
+			}
+			@media screen and (max-width: 425px) {
+				width: 35%
+			}
+			@media screen and (max-width: 375px) {
+				width: 40%;
+			}
 			.s_ic{
 
 				width: 17px;
@@ -231,7 +261,16 @@ section#search__section{
 		}
 		.s_r{
 			margin-top: 26px;
-			width: 76%;
+			width: 74%;
+			@media screen and (max-width: 1200px) {
+				width: 65%;
+			}
+			@media screen and (max-width: 425px) {
+				width: 60%;
+			}
+			@media screen and (max-width: 375px) {
+				width: 55%;
+			}
 			float: right;;
 			margin-bottom: 7px;
 			.ui-slider .ui-slider-handle {
@@ -252,7 +291,7 @@ section#search__section{
 		}
 	}
 	.s_p{
-		padding: 0 22px;
+		//padding: 0 22px;
 		margin-top: 20px;
 		margin-bottom: 15px;
 		font-family: 'MyriadPro', sans-serif;
@@ -416,6 +455,7 @@ section#search__section{
 			}
 		}
 		.list__style{
+			display: inline-block;
 			@media screen and (max-width: 1200px) {
 				margin-left: -10px;
 				margin-right: -10px;
@@ -428,6 +468,7 @@ section#search__section{
 			cursor: pointer;
 			margin-top: 5px;
 			display: inline-block;
+			text-align: right;
 			.list_style__list{
 				@media screen and (max-width: 992px) {
 					width: 25px;

@@ -207,10 +207,10 @@ $(document).ready(function(){
     inboxTableTool('.inbox-table', 768);
   });
 
-  $('#date, #check_in_date, #check_out_date').datetimepicker({
+  $('#date, #check_in_date, #check_out_date, #start, #end').datetimepicker({
     timepicker: false
   });
-  $('#time, #check_in_time, #check_out_time').datetimepicker({
+  $('#time, #check_in_time, #check_out_time, #tstart, #tend').datetimepicker({
     datepicker:false,
     format:'H:i'
   });
@@ -239,15 +239,16 @@ $(document).ready(function(){
     $(this).parent().find('select').click();
   });
 
-  $('#slider').slider({
-    values: [ 500 ]
-  });
 
-  $( "#slider" ).slider({
-    change: function( event, ui ) {
-      var options = $( "#slider" ).slider( "value" );
-      console.log(options);
-      $("section#search__section #search .s_d .s_l .s_ic .price").html(options);
+  // Slider
+
+  $('#slider').slider({
+    range: true,
+    min: 0,
+    max: 1000,
+    values: [ 100, 500 ],
+    slide: function( event, ui ) {
+      $( "section#search__section .price" ).text( "$" + ui.values[ 0 ] + " - $" + ui.values[ 1 ] );
     }
   });
 
