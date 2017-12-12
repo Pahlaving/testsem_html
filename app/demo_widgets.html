@@ -26,7 +26,9 @@
             <h4 class="tal">Default Widget</h4>
             //= template/widget_star_default.html
 
-
+            <!--
+              @todo: place star_widget on search.html
+            //-->
 
             <h4 class="tal">Big Red</h4>
             <div class="star-widget-wrapper red-star big-star">
@@ -87,30 +89,6 @@
 
 <script src="js/vendor.js"></script>
 <script src="js/main.js"></script>
-
-<script>
-  $(function() {
-    $('select.star-select').barrating({
-      theme: 'bootstrap-stars',
-      initialRating: null,
-      onSelect: function(value, text, event) {
-        if (typeof(event) !== 'undefined') {
-          // rating was selected by a user
-          console.log(event.target);
-        } else {
-          // rating was selected programmatically
-          // by calling `set` method
-        }
-      }
-    });
-    $('select.star-readonly').barrating({
-      theme: 'bootstrap-stars',
-      readonly: true,
-      initialRating: null,
-      showSelectedRating: true
-    });
-  });
-</script>
 
 </body>
 </html>
