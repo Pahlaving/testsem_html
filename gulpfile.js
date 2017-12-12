@@ -55,7 +55,7 @@ var path = {
         css: 'app/css/*.css',
         img: 'app/images/**/*.*', //Синтаксис images/**/*.* означает - взять все файлы всех расширений из папки и из вложенных каталогов
         fonts: 'app/fonts/**/*.*',
-        template: 'app/template/**/*.html'
+        template: 'app/template/*.html'
     },
     watch: { //Тут мы укажем, за изменением каких файлов мы хотим наблюдать
         php: 'app/**/*.php',
