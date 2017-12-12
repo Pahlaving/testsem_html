@@ -1,18 +1,16 @@
 section#search__section{
-	.container{
-		// width: 1250px;
-	}
 	z-index:1;
 	.map{
-		width:50%;
+		width:42%;
 		z-index: 9;
 		padding-right: 0;
 		position: absolute;
+		position: fixed;
 		@media screen and (max-width: 767px) {
 			position: fixed;
 		}
-		top: 105px;
-		left: 50%;
+		top: 0px;
+		left: 58%;
 		right: 0;
 		bottom: 0;
 		.map-wrapper{
@@ -342,7 +340,7 @@ section#search__section{
 			.s_ceny {
 				div{
 					display: inline-block;
-					width: 30%;
+					width: 16%;
 				}
 			}
 			
