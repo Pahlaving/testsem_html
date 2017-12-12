@@ -1,10 +1,10 @@
 section#search__section{
 	z-index:1;
 	.container{
-		width: 100%;
+		width: 1300px;
 	}
 	.map{
-		width:42%;
+		width:40%;
 		z-index: 9;
 		padding-right: 0;
 		position: absolute;
@@ -13,14 +13,14 @@ section#search__section{
 			position: fixed;
 		}
 		top: 0px;
-		left: 58%;
+		left: 60%;
 		right: 0;
 		bottom: 0;
 		.map-wrapper{
 			position: relative;
 			width: 100%;
 			#map.contact{
-				height: 1020px;
+				height: 100vh;
 				@media screen and (max-width: 767px) {
 					height: 300px;
 				}
