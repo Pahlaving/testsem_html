@@ -1,0 +1,116 @@
+<!doctype html>
+<html lang="en">
+<head>
+
+  //= template/head.html
+
+</head>
+<body>
+
+//= template/header_login.html
+
+//= template/breadcrumbs.html
+
+<div class="page-wrapper">
+  <div class="container">
+    <div class="row">
+
+      <div class="col-sm-8 col-sm-push-4 col-md-9 col-md-push-3 page-content">
+
+        <div class="row">
+
+          <div class="col-12">
+
+            <h2>Star Rating Widget</h2>
+
+            <h4 class="tal">Default Widget</h4>
+            //= template/widget_star_default.html
+
+
+
+            <h4 class="tal">Big Red</h4>
+            <div class="star-widget-wrapper red-star big-star">
+              <select class="star-select">
+                <option value=""></option>
+                <option value="1" data-html="1">1</option>
+                <option value="2" data-html="1">2</option>
+                <option value="3" data-html="1" selected>3</option>
+                <option value="4" data-html="1">4</option>
+                <option value="5" data-html="1">5</option>
+              </select>
+            </div>
+
+            <h4 class="tal">Small Black</h4>
+            <div class="star-widget-wrapper black-star small-star">
+              <select class="star-select">
+                <option value=""></option>
+                <option value="1" data-html="1">1</option>
+                <option value="2" data-html="1">2</option>
+                <option value="3" data-html="1" selected>3</option>
+                <option value="4" data-html="1">4</option>
+                <option value="5" data-html="1">5</option>
+              </select>
+            </div>
+
+            <h4 class="tal">Disable change Widget</h4>
+            <div class="star-widget-wrapper">
+              <select class="star-readonly">
+                <option value=""></option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4" selected>4</option>
+                <option value="5">5</option>
+              </select>
+            </div>
+
+          </div>
+
+        </div>
+
+
+      </div>
+
+      <div class="col-sm-4 col-sm-pull-8 col-md-3 col-md-pull-9 sidebar">
+
+        //= template/sidebar_notific.html
+
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<div class="clearfix"></div>
+
+//= template/footer.html
+
+<script src="js/vendor.js"></script>
+<script src="js/main.js"></script>
+
+<script>
+  $(function() {
+    $('select.star-select').barrating({
+      theme: 'bootstrap-stars',
+      initialRating: null,
+      onSelect: function(value, text, event) {
+        if (typeof(event) !== 'undefined') {
+          // rating was selected by a user
+          console.log(event.target);
+        } else {
+          // rating was selected programmatically
+          // by calling `set` method
+        }
+      }
+    });
+    $('select.star-readonly').barrating({
+      theme: 'bootstrap-stars',
+      readonly: true,
+      initialRating: null,
+      showSelectedRating: true
+    });
+  });
+</script>
+
+</body>
+</html>
