@@ -14,6 +14,6 @@
 
 /* Star widget */
 // New
-//= vendor/jquery.barrating.min.js
+//= Vendor/jquery.barrating.min.js
 // Old
 //= vendor/starrr.js

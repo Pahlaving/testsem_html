@@ -344,9 +344,29 @@ var forEach=function(t,o,r){if("[object Object]"===Object.prototype.toString.cal
     });
   }
 
-$(".hamburger").click(function(){
-  $("section#search .sear").slideToggle(300);
-});
+  $(".hamburger").click(function(){
+    $("section#search .sear").slideToggle(300);
+  });
+
+  $('select.star-select').barrating({
+    theme: 'bootstrap-stars',
+    initialRating: null,
+    onSelect: function(value, text, event) {
+      if (typeof(event) !== 'undefined') {
+        // rating was selected by a user
+        console.log(event.target);
+      } else {
+        // rating was selected programmatically
+        // by calling `set` method
+      }
+    }
+  });
+  $('select.star-readonly').barrating({
+    theme: 'bootstrap-stars',
+    readonly: true,
+    initialRating: null,
+    showSelectedRating: true
+  });
 
 });
 
