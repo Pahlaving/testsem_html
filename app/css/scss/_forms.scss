@@ -14,6 +14,10 @@ select {
   min-width: 182px;
 }
 
+.label-inline {
+  display: inline-block;
+}
+
 .form-inline {
   margin-bottom: 25px;
   .form-group {
