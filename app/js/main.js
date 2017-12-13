@@ -150,14 +150,14 @@ $(document).ready(function(){
   $('.list_style__list').click(function(e){
     e.preventDefault();
     $('.products__plits').removeClass('actives__products');
-    $('.products__lits').removeClass('actives__products');
-    $('.products__lits').addClass('actives__products');
+    $('.products__lists').removeClass('actives__products');
+    $('.products__lists').addClass('actives__products');
   });
 
   $('.list_style__plits').click(function(e){
     e.preventDefault();
     $('.products__plits').removeClass('actives__products');
-    $('.products__lits').removeClass('actives__products');
+    $('.products__lists').removeClass('actives__products');
     $('.products__plits').addClass('actives__products');
   });
 
@@ -213,17 +213,31 @@ $(document).ready(function(){
     timepicker: false
   });
 
+  $( function() {
+    $( "#check_home, #private_room" ).checkboxradio({
+      icon: false
+    });
+    $("#v_cent2 input").checkboxradio({
+      icon: false
+    });
+    $("#v_cent3 input").checkboxradio({
+      icon: false
+    });
+  });
+
   $('#time, #check_in_time, #check_out_time, #tstart, #tend').datetimepicker({
     datepicker:false,
     format:'H:i'
   });
 
-// Kalendar
-
   $('.sectright a').click(function(e){
     $('.sectright a').removeClass('actives');
     $(this).addClass('actives');
   });
+
+  // Kalendar
+
+  $( "#datepicker" ).datepicker();
 
 
   $('.sectright a').click(function(e){
@@ -264,9 +278,7 @@ $(document).ready(function(){
     }
   });
 
-  // Kalendar
 
-  $( "#datepicker" ).datepicker();
 
   $('.tool-switcher-slider').on('click', function (e) {
     e.preventDefault();
@@ -277,19 +289,24 @@ $(document).ready(function(){
 
   });
 
-  $( function() {
-    $( "#check_home, #private_room" ).checkboxradio({
-      icon: false
-    });
-    $("#v_cent2 input").checkboxradio({
-      icon: false
-    });
-    $("#v_cent3 input").checkboxradio({
-      icon: false
-    });
+ 
 
+  // Search button LOAD MORE
+
+  $('.products__wrapper .load__more').click(function(){
+    var count = 0;
+    $('.products__wrapper .items').each(function(e){
+      var th = $(this);
+        if (!th.hasClass('active__item')){
+          th.addClass('active__item');
+          count++;
+        }
+        if (count === 6){
+          return false;
+        }
+    });
+    
   });
-
 
   $('.sidebar-gallery .image-link')
   .magnificPopup(
