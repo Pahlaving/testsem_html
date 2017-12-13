@@ -9,12 +9,7 @@
 //= vendor/markerclusterer.js
 //= vendor/jquery.datetimepicker.full.min.js
 //= vendor/jquery-ui.min.js
-//= vendor/jquery.magnific-popup.min.js
+// = vendor/jquery.magnific-popup.min.js
 //= vendor/dropzone.js
-//= vendor/lightbox.min.js
-
-/* Star widget */
-// New
 //= Vendor/jquery.barrating.min.js
-// Old
-//= vendor/starrr.js
+//= vendor/lightbox.min.js
