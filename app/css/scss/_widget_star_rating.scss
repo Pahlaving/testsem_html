@@ -4,6 +4,9 @@
  */
 .star-widget-wrapper {
   display: inline-block;
+  select {
+    display: none;
+  }
 }
 .br-theme-bootstrap-stars {
   .br-widget {
