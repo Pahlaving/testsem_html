@@ -50,8 +50,57 @@
         }
       }
       .inner {
-        padding: 16px;
+        padding: 0 16px;
+        //padding: 16px;
+        @media(max-width: 992px){
+          padding: 0;
+        }
+        &.settings-description {
+          padding-bottom: 0;
+        }
+        &.settings-form {
+          input[type=checkbox], input[type=radio] {
+            margin-left: 10px;
+            margin-right: 5px;
+          }
+          select {
+            min-width: auto;
+            max-width: 100%;
+            text-align: center;
+          }
+          .label-inline {
+            vertical-align: top;
+            font-weight: 400;
+            input[type=checkbox],
+            input[type=radio] {
+              margin-right: 10px;
+            }
+          }
+          .form-group {
+            margin-bottom: 5px;
+            &:last-child {
+              margin-bottom: 0;
+            }
+          }
+        }
+        &.settings-footer {}
 
+        &.settings-form,
+        &.settings-footer {
+          padding-bottom: 0;
+          &:first-child {
+            &:before {
+              display: none;
+            }
+          }
+          &:before {
+            content: '';
+            border-top: 1px #ccc solid;
+            width: 100%;
+            display: inline-block;
+            margin: 15px 0;
+          }
+        }
       }
     }
   }
