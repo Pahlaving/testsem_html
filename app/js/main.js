@@ -207,17 +207,28 @@ $(document).ready(function(){
     inboxTableTool('.inbox-table', 768);
   });
 
+// Pricing checkbox
+
   $('#date, #check_in_date, #check_out_date, #start, #end, #op_start_date, #op_end_date').datetimepicker({
     timepicker: false
   });
+
   $('#time, #check_in_time, #check_out_time, #tstart, #tend').datetimepicker({
     datepicker:false,
     format:'H:i'
   });
-  
+
+// Kalendar
+
+  $('.sectright a').click(function(e){
+    $('.sectright a').removeClass('actives');
+    $(this).addClass('actives');
+  });
+
+
   $('.sectright a').click(function(e){
     e.preventDefault();
-    $('.sectright a').removeClass('actives');
+    $('#set_price_for_particular_dates').css('display', 'block !important');
      $(this).addClass('actives');
   });
   if ($(window).width() < 768) {
