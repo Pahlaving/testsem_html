@@ -134,7 +134,7 @@ $(document).ready(function(){
   detail_head_carouser.owlCarousel({
     loop: true,
     items : 1,
-    // autoplay: 3000,
+    //autoplay: 3000,
     nav: true,
     dots: false,
     pagination: false,
@@ -142,9 +142,9 @@ $(document).ready(function(){
   });
 
   $('.nav-tabs a').click(function(e){
-       e.preventDefault();
-       $('.nav-tabs a').removeClass('actives');
-     $(this).addClass('actives');
+      e.preventDefault();
+      $('.nav-tabs a').removeClass('actives');
+    $(this).addClass('actives');
   });
 
   $('.list_style__list').click(function(e){
@@ -305,7 +305,6 @@ $(document).ready(function(){
           return false;
         }
     });
-    
   });
 
   $('.sidebar-gallery .image-link')
