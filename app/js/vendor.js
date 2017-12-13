@@ -11,6 +11,7 @@
 //= vendor/jquery-ui.min.js
 //= vendor/jquery.magnific-popup.min.js
 //= vendor/dropzone.js
+//= vendor/lightbox.min.js
 
 /* Star widget */
 // New
