@@ -305,27 +305,6 @@ $(document).ready(function(){
     });
   });
 
-  $('.sidebar-gallery .image-link')
-  .magnificPopup(
-  {
-    type:'image',
-    disableOn: "400",
-    key: 'some-key',
-    gallery: {
-      enabled: true,
-      preload: [0,2],
-      navigateByImgClick: true,
-      arrowMarkup: '<button title="%title%" type="button" class="mfp-arrow mfp-arrow-%dir%"></button>',
-      tPrev: 'Previous (Left arrow key)',
-      tNext: 'Next (Right arrow key)',
-      tCounter: '<span class="mfp-counter">%curr% of %total%</span>'
-    },
-    image: {
-      titleSrc: 'title'
-    }
-  }
-  );
-
   function drop_handler(ev) {
     console.log("Drop");
     ev.preventDefault();
@@ -339,6 +318,7 @@ $(document).ready(function(){
           console.log("... file[" + i + "].name = " + f.name);
         }
       }
+
     } else {
       // Use DataTransfer interface to access the file(s)
       for (var i=0; i < dt.files.length; i++) {
