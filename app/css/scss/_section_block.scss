@@ -59,6 +59,15 @@
           padding-bottom: 0;
         }
         &.settings-form {
+          input[type=checkbox], input[type=radio] {
+            margin-left: 10px;
+            margin-right: 5px;
+          }
+          select {
+            min-width: auto;
+            max-width: 100%;
+            text-align: center;
+          }
           .label-inline {
             vertical-align: top;
             font-weight: 400;

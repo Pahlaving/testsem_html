@@ -61,17 +61,43 @@
                 <!-- /.section-block -->
               </div>
               <!-- /.col-sm-6 -->
+
               <div class="col-sm-6">
                 <div class="section-block">
-                  <div class="block-title">Contact Information</div>
+                  <div class="block-title">Regional Policy</div>
                   <div class="block-content">
                     <div class="block-row">
                       <div class="inner settings-description">
-                        <p>This information can be edited from your profile page. <a href="#">Edit Profile</a></p>
+                        <p>Receive reports on the rules of renting and information about our efforts to create fair
+                          standards for responsible reception of guests in your area.</p>
                       </div>
-                      <div class="inner settings-footer">
-                        Email snetcher@gmail.com<br>
-                        Phone number +380 ** *** ** 34
+                      <div class="inner settings-form">
+                        <div class="form-group">
+                          <label>
+                            <input checked="checked" id="regional:email" name="tips:email" type="checkbox" value="1">
+                            <div class="label-inline">E-mails</div>
+                          </label>
+                        </div>
+                        <div class="form-group">
+                          <label>
+                            <input checked="checked" id="regional:push" name="tips:push" type="checkbox" value="1">
+                            <div class="label-inline">
+                              Push-message<br><span class="text-muted">On the mobile device</span>
+                            </div>
+                          </label>
+                        </div>
+                        <div class="form-group">
+                          <label>
+                            <input checked="checked" id="regional:sms" name="tips:sms" type="checkbox" value="1">
+                            <div class="label-inline">SMS-message</div>
+                          </label>
+                        </div>
+                        <div class="form-group">
+                          <label>
+                            <input checked="checked" id="regional:calls" name="tips:calls" type="checkbox" value="1">
+                            <div class="label-inline">Phone Calls</div>
+                          </label>
+                        </div>
                       </div>
                     </div>
                   </div>
@@ -79,6 +105,7 @@
                 <!-- /.section-block -->
               </div>
               <!-- /.col-sm-6 -->
+
             </div>
             <!-- /.row -->
 
@@ -121,14 +148,18 @@
               </div>
               <!-- /.col-sm-6 -->
 
+
               <div class="col-sm-6">
                 <div class="section-block">
-                  <div class="block-title">Text Messages</div>
+                  <div class="block-title">Contact Information</div>
                   <div class="block-content">
                     <div class="block-row">
-                      <div class="inner settings-form"></div>
+                      <div class="inner settings-description">
+                        <p>This information can be edited from your profile page. <a href="#">Edit Profile</a></p>
+                      </div>
                       <div class="inner settings-footer">
-                        <p><strong>Note:</strong> For more information, text HELP to 247262. To cancel mobile notifications, reply STOP to 247262. Message and Data rates may apply.</p>
+                        Email snetcher@gmail.com<br>
+                        Phone number +380 ** *** ** 34
                       </div>
                     </div>
                   </div>
@@ -148,7 +179,8 @@
                   <div class="block-content">
                     <div class="block-row">
                       <div class="inner settings-description">
-                        <p>Receive coupons, promotional materials, product updates and inspiration from Airbnb and its partners.</p>
+                        <p>Receive coupons, promotional materials, product updates and inspiration from Airbnb and its
+                          partners.</p>
                       </div>
                       <div class="inner settings-form">
                         <div class="form-group">
@@ -185,10 +217,82 @@
               </div>
               <!-- /.col-sm-6 -->
 
-              <div class="col-sm-6"></div>
+              <div class="col-sm-6">
+                <div class="section-block">
+                  <div class="block-title">Text Messages</div>
+                  <div class="block-content">
+                    <div class="block-row">
+                      <div class="inner settings-form">
+                        <div class="row">
+                          <div class="col-md-5 col-sm-12">
+                            Receive SMS notifications to:
+                          </div>
+                          <div class="col-md-7 col-sm-12">
+                            <div class="form-group">
+                              <select class="form-control" id="time_zone">
+                                <option>+380 ** *** ** 34</option>
+                              </select>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="inner settings-footer">
+                        <p><strong>Note:</strong> For more information, text HELP to 247262. To cancel mobile
+                          notifications, reply STOP to 247262. Message and Data rates may apply.</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- /.section-block -->
+              </div>
               <!-- /.col-sm-6 -->
 
-            </div> 
+            </div>
+
+            <div class="row">
+
+              <div class="col-sm-6">
+                <div class="section-block">
+                  <div class="block-title">Account Support</div>
+                  <div class="block-content">
+                    <div class="block-row">
+                      <div class="inner settings-description">
+                        <p>Иногда нам нужно обращаться к вам по вопросам, связанным с вашим аккаунтом, поездками,
+                          юридическими особенностями, безопасностью и конфиденциальностью, а также отвечать на ваши
+                          запросы о помощи. Ради вашей безопасности отключить уведомления на электронную почту нельзя.
+                          Кроме того, при необходимости мы можем связаться с вами по телефону или иным способом.</p>
+                      </div>
+                      <div class="inner settings-form">
+                        <div class="form-group">
+                          <label>
+                            <input checked="checked" id="support:email" name="support:email" type="checkbox" value="1">
+                            <div class="label-inline">E-mails</div>
+                          </label>
+                        </div>
+                        <div class="form-group">
+                          <label>
+                            <input checked="checked" id="support:push" name="support:push" type="checkbox" value="1">
+                            <div class="label-inline">
+                              Push-message<br><span class="text-muted">On the mobile device</span>
+                            </div>
+                          </label>
+                        </div>
+                        <div class="form-group">
+                          <label>
+                            <input checked="checked" id="support:sms" name="support:sms" type="checkbox" value="1">
+                            <div class="label-inline">SMS-message</div>
+                          </label>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- /.section-block -->
+              </div>
+              <!-- /.col-sm-6 -->
+
+            </div>
+
 
             <!-- .row>.col-sm-6*2 -->
             <!-- /.col-sm-6 -->
