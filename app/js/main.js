@@ -348,6 +348,22 @@ $(document).ready(function(){
 //   }
 // }
 
+  var notifications = $('.site-notifications .notification');
+  notifications.each(function () {
+    $this = $(this);
+    console.log($this);
+    $this.find('.br-close')
+      .on('click', function (e) {
+        e.preventDefault();
+        console.log($('.site-notifications').has('.notification').length);
+        $this.remove();
+        // if($('.site-notifications').has('.notification').length == 0) {
+        //   console.log($('.site-notifications').has('.notification').length);
+        //   $('.site-notifications').remove();
+        // }
+      });
+  });
+
 //Гамбургер меню
 
 var forEach=function(t,o,r){if("[object Object]"===Object.prototype.toString.call(t))for(var c in t)Object.prototype.hasOwnProperty.call(t,c)&&o.call(r,t[c],c,t);else for(var e=0,l=t.length;l>e;e++)o.call(r,t[e],e,t)};
