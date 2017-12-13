@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="en">
+<head>
+
+  //= template/head.html
+
+</head>
+<body>
+
+//= template/header_login.html
+
+//= template/breadcrumbs.html
+
+<div class="page-wrapper">
+  <div class="container">
+    <div class="row">
+
+      <div class="col-sm-8 col-sm-push-4 col-md-9 col-md-push-3 page-content">
+
+        <div class="form-page-wrapper">
+          <form action="">
+
+            <div class="row">
+
+              <div class="col-sm-12">
+                <div class="section-block">
+                  <div class="block-title">Social Connections</div>
+                  <div class="block-content">
+                    <form action="">
+                      <div class="block-row">
+                        <div class="inner settings-description">
+                          <p>Social Connections highlights your Airbnb activity, which may include your username, Facebook
+                            profile photo, and recent locations you visited to your Facebook friends who are also on
+                            Airbnb.</p>
+
+                          <p>If you turn off this feature, you will still be connected to Facebook, but your Airbnb
+                            activity will not be shared to other Facebook friends on Airbnb. Your public Airbnb activity
+                            (such as wish lists and public reviews) on the platform will still be shown to other Airbnb
+                            users.</p>
+
+                          <p>If you want to disconnect your Facebook account from Airbnb, go to Trust and Verifications to
+                            learn more.</p>
+                        </div>
+                        <div class="inner settings-form without-border">
+                          <div class="form-group">
+                            <label>
+                              <input checked="checked" id="notific:email" name="notific:email" type="checkbox" value="1">
+                              <div class="label-inline">Share my activity with my Facebook friends that are also on Airbnb (recommended)</div>
+                            </label>
+                          </div>
+                        </div>
+                        <div class="inner settings-footer">
+                          <div class="tar form-footer">
+                            <input type="submit" class="btn" value="Save Social Connections" />
+                          </div>
+                        </div>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+                <!-- /.section-block -->
+              </div>
+              <!-- /.col-sm-12 -->
+
+              <div class="col-sm-12">
+                <div class="section-block">
+                  <div class="block-title">Your Listings and Profile in Search Engines</div>
+                  <div class="block-content">
+                    <form action="">
+                      <div class="block-row">
+                        <div class="inner settings-description">
+                          <p>Search engines attract lots of traffic to your listing and generate interest and bookings for our hosts.</p>
+                          <p>Perhaps you want to be listed on Airbnb but have concerns about your listings and profile being advertised more widely. You can turn off search indexing, preventing search engines such as Google and Bing from displaying your pages in their search results.</p>
+                          <p>Note: This may reduce your bookings and will take a few days to take effect.</p>
+                        </div>
+                        <div class="inner settings-form without-border">
+                          <div class="form-group">
+                            <label>
+                              <input checked="checked" id="srch:email" name="srch:email" type="checkbox" value="1">
+                              <div class="label-inline">Include my profile and listing in search engines like Google and Bing (recommended)</div>
+                            </label>
+                          </div>
+                        </div>
+                        <div class="inner settings-footer">
+                          <div class="tar form-footer">
+                            <input type="submit" class="btn" value="Save Findability" />
+                          </div>
+                        </div>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+                <!-- /.section-block -->
+              </div>
+              <!-- /.col-sm-12 -->
+
+            </div>
+
+            <!-- .row>.col-sm-6*2 -->
+            <!-- /.col-sm-6 -->
+            <!--.section-block>.block-title+.block-content>.block-row>.inner.settings-description+.inner.settings-form+.inner.settings-footer-->
+            <!-- /.section-block -->
+
+          </form>
+
+        </div>
+        <!-- /.form-page-wrapper -->
+
+      </div>
+
+      <div class="col-sm-4 col-sm-pull-8 col-md-3 col-md-pull-9 sidebar">
+
+        //= template/sidebar_notific.html
+
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<div class="clearfix"></div>
+
+//= template/footer.html
+
+<script src="js/vendor.js"></script>
+<script src="js/main.js"></script>
+
+</body>
+</html>

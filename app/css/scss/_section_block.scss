@@ -59,6 +59,11 @@
           padding-bottom: 0;
         }
         &.settings-form {
+          &.without-border {
+            &:before {
+              border-top: 0 none !important;
+            }
+          }
           input[type=checkbox], input[type=radio] {
             margin-left: 10px;
             margin-right: 5px;
