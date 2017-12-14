@@ -18,10 +18,7 @@
       <div class="col-sm-12 site-notifications">
 
         <div class="notification clearfix">
-          <a class="br-close" href="">
-            <i class="fa fa-times" aria-hidden="true"></i>
-            <!--<img src="./images/close.png">-->
-          </a>
+          <a class="br-close" href="#"><i class="fa fa-times" aria-hidden="true"></i></a>
           <div class="brick-img">
             <div class="brick-ico">
               <i class="fa fa-dollar" aria-hidden="true"></i>
@@ -32,31 +29,33 @@
           <a class="btn">Invite Friends</a>
           <a class="btn btn-dark" href="#" role="button">Later</a>
         </div>
-
-        <div class="notification clearfix">
-          <a class="br-close" href="">
-            <i class="fa fa-times" aria-hidden="true"></i>
-            <!--<img src="./images/close.png">-->
-          </a>
-          <div class="brick-img">
-            <div class="brick-ico">
-              <i class="fa fa-dollar" aria-hidden="true"></i>
-            </div>
-          </div>
-          <div class="brick-title">Eam <span class="br-price">3.25</span> $ trevel credit</div>
-          <div class="brick-text">Give you friends you friends you friends you friends</div>
-          <a class="btn">Invite Friends</a>
-          <a class="btn btn-dark" href="#" role="button">Later</a>
-        </div>
+        <!-- /.notification -->
 
       </div>
-      <div class="col-sm-8 col-sm-push-4 col-md-9 col-md-push-3 page-content">
+      <div class="col-sm-8 col-sm-push-4 col-md-9 col-md-push-3 page-content user-profile">
 
         <div class="section-block">
-          <div class="block-title">Cancel Account</div>
+          <div class="block-title">Messages (0 new)</div>
           <div class="block-content">
             <div class="block-row">
-              <div class="inner"><a class="btn">Cancel My Account</a></div>
+              <div class="inner">
+                <ul>
+                  <li>Connect with Facebook to complete your profile and make it easy to log in.</li>
+                  <li>NEW: Get a 1771₽ credit. Add your work email to get a 1771₽ credit after taking your first business trip.</li>
+                  <li>Invite a friend, earn 542₽.</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="section-block">
+          <div class="block-title">Messages (0 new)</div>
+          <div class="block-content">
+            <div class="block-row">
+              <div class="inner">
+                <p>When you message hosts or send reservation requests, you’ll see their responses here.</p>
+              </div>
             </div>
           </div>
         </div>
@@ -65,7 +64,40 @@
 
       <div class="col-sm-4 col-sm-pull-8 col-md-3 col-md-pull-9 sidebar">
 
-        //= template/sidebar_notific.html
+        <!--// = template/sidebar_notific.html-->
+
+        <div class="section-block user-info-avatar">
+          <div class="block-content">
+            <div class="block-row">
+              <div class="inner">
+                <a class="avatar-image"><img src="./images/black_avatar.png" alt=""></a>
+                <div class="user-name">User Name</div>
+                <div class="user-links">
+                  <ul class="menu-vertical-list">
+                    <li><a href="#">View Profile</a></li>
+                    <li><a href="./edit_profile.html">Edit Profile</a></li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="section-block">
+          <div class="block-title">Verified info</div>
+          <div class="block-content">
+            <div class="block-row">
+              <div class="inner">
+                <ul class="menu-vertical-list">
+                  <li>Email address	<span class="screen-reader-only">Verified</span> <i class="fa fa-check flr" aria-hidden="true"></i></li>
+                  <li>Phone number	<span class="screen-reader-only">Verified</span> <i class="fa fa-check flr" aria-hidden="true"></i></li>
+                  <li>Verify more info</li>
+                </ul>
+                <a class="btn">Cancel My Account</a>
+              </div>
+            </div>
+          </div>
+        </div>
 
       </div>
 

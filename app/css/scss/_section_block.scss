@@ -109,4 +109,29 @@
       }
     }
   }
+  &.user-info-avatar {
+    .block-content {
+      padding-top: 0;
+      text-align: center;
+      .btn {
+        min-width: auto;
+        max-width: 100%;
+      }
+      .block-row {
+        .inner {
+          padding: 0;
+          .avatar-image {
+            img {
+              width: 100%;
+            }
+          }
+          .user-name {
+            font-size: 24px;
+            font-weight: 400;
+            padding: 25px 15px 15px;
+          }
+        }
+      }
+    }
+  }
 }
