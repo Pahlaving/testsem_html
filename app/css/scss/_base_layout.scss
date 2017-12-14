@@ -3,11 +3,14 @@
   .page-content {
     padding-top: 60px;
     &.user-profile {
-      padding-top: 0;
+      //padding-top: 0;
     }
   }
   .site-notifications {
-    padding: 50px 0 0;
+    padding: 0;
+  }
+  .sidebar {
+    padding-top: 50px;
   }
 }
 

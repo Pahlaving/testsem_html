@@ -262,6 +262,11 @@ $(document).ready(function(){
     $(this).parent().find('select').click();
   });
 
+  $('.close-notification').on('click', function (e) {
+    e.preventDefault();
+    $(this).parent().remove();
+  });
+
 
   // Slider
 
