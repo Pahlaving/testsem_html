@@ -205,7 +205,7 @@ $(document).ready(function(){
     inboxTableTool('.inbox-table', 768);
   });
 
-// Pricing checkbox
+  // Pricing checkbox
 
   $('#date, #check_in_date, #check_out_date, #start, #end, #op_start_date, #op_end_date').datetimepicker({
     timepicker: false
@@ -235,7 +235,7 @@ $(document).ready(function(){
 
   // Kalendar
 
-  $( "#datepicker" ).datepicker();
+  //$( "#datepicker" ).datepicker();
 
 
   $('.sectright a').click(function(e){
@@ -305,48 +305,48 @@ $(document).ready(function(){
     });
   });
 
-  function drop_handler(ev) {
-    console.log("Drop");
-    ev.preventDefault();
-    // If dropped items aren't files, reject them
-    var dt = ev.dataTransfer;
-    if (dt.items) {
-      // Use DataTransferItemList interface to access the file(s)
-      for (var i=0; i < dt.items.length; i++) {
-        if (dt.items[i].kind == "file") {
-          var f = dt.items[i].getAsFile();
-          console.log("... file[" + i + "].name = " + f.name);
-        }
-      }
+//   function drop_handler(ev) {
+//     console.log("Drop");
+//     ev.preventDefault();
+//     // If dropped items aren't files, reject them
+//     var dt = ev.dataTransfer;
+//     if (dt.items) {
+//       // Use DataTransferItemList interface to access the file(s)
+//       for (var i=0; i < dt.items.length; i++) {
+//         if (dt.items[i].kind == "file") {
+//           var f = dt.items[i].getAsFile();
+//           console.log("... file[" + i + "].name = " + f.name);
+//         }
+//       }
 
-    } else {
-      // Use DataTransfer interface to access the file(s)
-      for (var i=0; i < dt.files.length; i++) {
-        console.log("... file[" + i + "].name = " + dt.files[i].name);
-      }  
-    }
-  }
+//     } else {
+//       // Use DataTransfer interface to access the file(s)
+//       for (var i=0; i < dt.files.length; i++) {
+//         console.log("... file[" + i + "].name = " + dt.files[i].name);
+//       }  
+//     }
+//   }
 
-  function dragover_handler(ev) {
-    console.log("dragOver");
-    // Prevent default select and drag behavior
-    ev.preventDefault();
-  }
+//   function dragover_handler(ev) {
+//     console.log("dragOver");
+//     // Prevent default select and drag behavior
+//     ev.preventDefault();
+//   }
 
-  function dragend_handler(ev) {
-    console.log("dragEnd");
-  // Remove all of the drag data
-  var dt = ev.dataTransfer;
-  if (dt.items) {
-    // Use DataTransferItemList interface to remove the drag data
-    for (var i = 0; i < dt.items.length; i++) {
-      dt.items.remove(i);
-    }
-  } else {
-    // Use DataTransfer interface to remove the drag data
-    ev.dataTransfer.clearData();
-  }
-}
+//   function dragend_handler(ev) {
+//     console.log("dragEnd");
+//   // Remove all of the drag data
+//   var dt = ev.dataTransfer;
+//   if (dt.items) {
+//     // Use DataTransferItemList interface to remove the drag data
+//     for (var i = 0; i < dt.items.length; i++) {
+//       dt.items.remove(i);
+//     }
+//   } else {
+//     // Use DataTransfer interface to remove the drag data
+//     ev.dataTransfer.clearData();
+//   }
+// }
 
   var notifications = $('.site-notifications .notification');
   notifications.each(function () {
@@ -367,7 +367,6 @@ $(document).ready(function(){
 //Гамбургер меню
 
 var forEach=function(t,o,r){if("[object Object]"===Object.prototype.toString.call(t))for(var c in t)Object.prototype.hasOwnProperty.call(t,c)&&o.call(r,t[c],c,t);else for(var e=0,l=t.length;l>e;e++)o.call(r,t[e],e,t)};
-
   var hamburgers = document.querySelectorAll(".hamburger");
   if (hamburgers.length > 0) {
     forEach(hamburgers, function(hamburger) {
@@ -409,6 +408,32 @@ var forEach=function(t,o,r){if("[object Object]"===Object.prototype.toString.cal
       ar = ar + addblock;
     }
     document.getElementById("insert__block").innerHTML = ar;
+  });
+
+  // Calendar 
+  
+  $('.calender_box').click(function(){
+    var calendar__day = $(this).attr('data-day');
+    var calendar__month = $(this).attr('data-month');
+    var calendar__year = $(this).attr('data-year');
+    var price = $(this).attr('data-price');
+    $('#op_start_date').attr('value', calendar__year + '/' + calendar__month + '/' + calendar__day); 
+    $('#op_end_date').attr('value', calendar__year + '/' + calendar__month + '/' + calendar__day);
+    $('#op_price').attr('value', price);
+  });
+
+  $('.month-nav-previous').click(function(){
+    $('.current-month-selection').removeClass('calendar__active__month');
+    $('.current-month-selection-prev ').addClass('calendar__active__month');
+    $('.calenBox').removeClass('calendar__active');
+    $('#prev__manth').addClass('calendar__active')
+  });
+
+  $('.month-nav-next').click(function(){
+    $('.current-month-selection').removeClass('calendar__active__month');
+    $('.current-month-selection-next').addClass('calendar__active__month');
+    $('.calenBox').removeClass('calendar__active');
+    $('#next__manth').addClass('calendar__active')
   });
 
 });

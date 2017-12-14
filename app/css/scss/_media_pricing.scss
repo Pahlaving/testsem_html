@@ -684,8 +684,128 @@ section#media{
 			position: relative;
 			.calendar-month{
 				width: 100%;
+				.month-nav{
+					color: #565a5c;
+					border: 1px solid #ddd;
+					width: 46px;
+					height: 42px;
+					display: inline-block;
+					line-height: 42px;
+				}
+				.calenBox{
+					display: none;
+				}
+				.calendar__active{
+					display: block !important;
+				}
+				.calendar__active__month{
+					display: inline-block !important;
+				}
+				.current-month-selection{
+					display: none;
+					position: relative;
+					cursor: pointer;
+					h2{
+						position: relative;
+						top: 5px;
+						margin-top: 20px;
+						margin-left: 20px;
+						cursor: pointer;	
+						padding-top: 4px;
+						font-size: 32px;
+					}
+					#calendar_dropdown {
+					    width: 100%;
+					    margin-top: 10px;
+					}
+					select{
+						position: absolute;
+						top: 0;
+						left: 0;
+						right: 0;
+						bottom: 0;
+						opacity: 0;
+					}
+				}
+				.spinner-next-to-month-nav{
+					cursor: pointer;	
+					position: absolute;
+					top: 18px;
+					left: 100%;
+					width: 35px;
+					margin-left: 13px;
+					font-size: 0;
+					color: transparent;
+				}
+			}
+			.margin-top10 {
+			   margin-top: 10px;
+			}
+			.wkText {
+				@media screen and (max-width: 767px) {
+					font-size: 12px;
+				}
+				@media screen and (max-width: 550px) {
+					font-size: 10px;
+				}
+				font-size: 14px;
+				color: #414141;
+				margin-left: 2px;
+			}
+
+		}
+		.btn-large.btn-primary{
+			@media screen and (max-width: 485px) {
+				min-width: 140px !important;
+			}
+			@media screen and (max-width: 374px) {
+				margin-left: -10px;
 			}
 		}
+		.col-md-02{
+			width: 14.333%;
+			float: left;
+			position: relative;
+			min-height: 1px;
+			padding-right: 0;
+			padding-left: 0;
+			margin-left: -1px;
+		}
+		.dt-not-available {
+			background-color: #dce0e0;
+			cursor: not-allowed;
+			pointer-events: none;
+		}
+		.dTfont {
+			margin-top: 48%;
+			position: absolute;
+		}
+		.calender_box {
+			border: 1px solid #d4d4d4;
+			padding: 2px 5px;
+			height: 110px;
+			margin: 1px;
+			//border-bottom: 0;
+		}
+		.dt-today .final_day {
+		   font-weight: bold;
+		}
+		.padding-top20{
+			.col-md-6.col-sm-6.col-xs-6{
+				@media screen and (max-width: 767px) {
+					text-align: center !important;
+				}
+			}
+		}
+
 	}
+	
+
+
 }
+
+
+
+
+
 

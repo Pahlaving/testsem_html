@@ -30,7 +30,7 @@
 				<i class="fa fa-map-marker hidden-md hidden-lg hidden-sm"></i><span class="hidden-xs">Pricing</span>
 			</a>
 			<a href="#v_cent5" class="actives" data-toggle="tab">
-				<i class="fa fa-map-marker hidden-md hidden-lg hidden-sm"></i><span class="hidden-xs">Kalendar</span>
+				<i class="fa fa-map-marker hidden-md hidden-lg hidden-sm"></i><span class="hidden-xs">Сalendar</span>
 			</a><a href="#v_cent6" data-toggle="tab">
 				<i class="fa fa-map-marker hidden-md hidden-lg hidden-sm"></i><span class="hidden-xs">Media</span>
 			</a>
@@ -732,24 +732,23 @@
 			</div>
 			<div class="tab-pane active" id="v_cent5">
 
-				<div class="col-md-9">
+				<div class="col-md-9 col-md-offset-1 col-sm-12">
 					<div id="calender-dv">
 						<div class="host-calendar-container">
 							<div class="calendar-month">
 								<div class="row-space-2 deselect-on-click">
-									<a href="http://testsem.ru/manage-listing/18/calendar" class="month-nav month-nav-previous panel text-center" data-year="2017" data-month="12"><i class="fa fa-chevron-left fa-lg calendar-icon-style"></i>
+									<a href="#" class="month-nav month-nav-previous panel text-center" data-year="2017" data-month="11"> <i class="fa fa-chevron-left fa-lg calendar-icon-style"></i>
 									</a> 
-									<a href="http://testsem.ru/manage-listing/18/calendar" class="month-nav month-nav-next panel text-center" data-year="2018" data-month="02"> <i class="fa fa-chevron-right fa-lg calendar-icon-style"></i>
+									<a href="#" class="month-nav month-nav-next panel text-center" data-year="2018" data-month="01"> <i class="fa fa-chevron-right fa-lg calendar-icon-style"></i>
 									</a> 
-									<div class="current-month-selection">
-										<h2>
-											<span>January 2018</span><span> &nbsp;</span><span class="current-month-arrow">▾</span>
+									<div class="current-month-selection current-month-selection-prev calendar__active__month">
+										<h2><span>December 2017</span><span> &nbsp;</span> <span class="current-month-arrow">▾</span>
 										</h2>
 										<select name="year_month" id="calendar_dropdown">
 											<option value="2017-10">October 2017</option>
 											<option value="2017-11">November 2017</option>
-											<option value="2017-12">December 2017</option>
-											<option value="2018-01" selected="">January 2018</option>
+											<option value="2017-12" selected="">December 2017</option>
+											<option value="2018-01">January 2018</option>
 											<option value="2018-02">February 2018</option>
 											<option value="2018-03">March 2018</option>
 											<option value="2018-04">April 2018</option>
@@ -779,11 +778,51 @@
 											<option value="2020-04">April 2020</option>
 											<option value="2020-05">May 2020</option>
 										</select>
-										<div class="spinner-next-to-month-nav">Just a moment...</div>
-									</div> 
+										<div class="spinner-next-to-month-nav">
+											Just a moment...
+										</div>
+									</div>
+									<div class="current-month-selection current-month-selection-next">
+									 <h2> <span>January 2018</span> <span> &nbsp;</span> <span class="current-month-arrow">▾</span>
+									 </h2>
+									 <select name="year_month" id="calendar_dropdown">
+									 	<option value="2017-10">October 2017</option>
+									 	<option value="2017-11">November 2017</option>
+									 	<option value="2017-12">December 2017</option>
+									 	<option value="2018-01" selected="">January 2018</option>
+									 	<option value="2018-02">February 2018</option>
+									 	<option value="2018-03">March 2018</option>
+									 	<option value="2018-04">April 2018</option>
+									 	<option value="2018-05">May 2018</option>
+									 	<option value="2018-06">June 2018</option>
+									 	<option value="2018-07">July 2018</option>
+									 	<option value="2018-08">August 2018</option>
+									 	<option value="2018-09">September 2018</option>
+									 	<option value="2018-10">October 2018</option><option value="2018-11">November 2018</option>
+									 	<option value="2018-12">December 2018</option>
+									 	<option value="2019-01">January 2019</option>
+									 	<option value="2019-02">February 2019</option>
+									 	<option value="2019-03">March 2019</option>
+									 	<option value="2019-04">April 2019</option>
+									 	<option value="2019-05">May 2019</option>
+									 	<option value="2019-06">June 2019</option>
+									 	<option value="2019-07">July 2019</option>
+									 	<option value="2019-08">August 2019</option>
+									 	<option value="2019-09">September 2019</option>
+									 	<option value="2019-10">October 2019</option>
+									 	<option value="2019-11">November 2019</option>
+									 	<option value="2019-12">December 2019</option>
+									 	<option value="2020-01">January 2020</option>
+									 	<option value="2020-02">February 2020</option>
+									 	<option value="2020-03">March 2020</option>
+									 	<option value="2020-04">April 2020</option>
+									 	<option value="2020-05">May 2020</option>
+									 </select>
+									 <div class="spinner-next-to-month-nav">Just a moment...</div>
+									</div>
 								</div>
 								<div class="col-md-12 col-sm-12 col-xs-12">
-									<div class="calenBox">
+									<div class="calenBox calendar__active" id="prev__manth">
 										<div class="margin-top10">
 											<div class="col-md-02">
 												<div class="wkText">Mon</div>
@@ -808,211 +847,445 @@
 											</div>
 										</div>
 										<div class="col-md-02">
-											<div class="calender_box date-package-modal " id="2018-01-1" data-day="1" data-month="01" data-year="2018" data-price="0">
-												<div class="wkText final_day">1 </div>
-												<div class="dTfont wkText">$0</div>
-											</div>
-										</div>
-										<div class="col-md-02">
-											<div class="calender_box date-package-modal " id="2018-01-2" data-day="2" data-month="01" data-year="2018" data-price="0">
-												<div class="wkText final_day">2 </div>
-												<div class="dTfont wkText">$0</div>
-											</div>
-										</div>
-										<div class="col-md-02">
-											<div class="calender_box date-package-modal " id="2018-01-3" data-day="3" data-month="01" data-year="2018" data-price="0">
-												<div class="wkText final_day">3 </div>
-												<div class="dTfont wkText">$0</div>
-											</div>
-										</div>
-										<div class="col-md-02">
-											<div class="calender_box date-package-modal " id="2018-01-4" data-day="4" data-month="01" data-year="2018" data-price="0">
-												<div class="wkText final_day">4 </div>
-												<div class="dTfont wkText">$0</div>
-											</div>
-										</div>
-										<div class="col-md-02">
-											<div class="calender_box date-package-modal " id="2018-01-5" data-day="5" data-month="01" data-year="2018" data-price="0">
-												<div class="wkText final_day">5 </div>
-												<div class="dTfont wkText">$0</div>
-											</div>
-										</div>
-										<div class="col-md-02">
-											<div class="calender_box date-package-modal " id="2018-01-6" data-day="6" data-month="01" data-year="2018" data-price="0">
-												<div class="wkText final_day">6 </div>
-												<div class="dTfont wkText">$0</div>
-											</div>
-										</div>
-										<div class="col-md-02">
-											<div class="calender_box date-package-modal " id="2018-01-7" data-day="7" data-month="01" data-year="2018" data-price="0">
-												<div class="wkText final_day">7 </div>
-												<div class="dTfont wkText">$0</div>
-											</div>
-										</div>
-										<div class="col-md-02">
-											<div class="calender_box date-package-modal " id="2018-01-8" data-day="8" data-month="01" data-year="2018" data-price="0">
-												<div class="wkText final_day">8 </div>
-												<div class="dTfont wkText">$0</div>
-											</div>
-										</div>
-										<div class="col-md-02">
-											<div class="calender_box date-package-modal " id="2018-01-9" data-day="9" data-month="01" data-year="2018" data-price="0">
-												<div class="wkText final_day">9 </div>
-												<div class="dTfont wkText">$0</div>
-											</div>
-										</div>
-										<div class="col-md-02">
-											<div class="calender_box date-package-modal " id="2018-01-10" data-day="10" data-month="01" data-year="2018" data-price="0">
-												<div class="wkText final_day">10 </div>
-												<div class="dTfont wkText">$0</div>
-											</div>
-										</div>
-										<div class="col-md-02">
-											<div class="calender_box date-package-modal " id="2018-01-11" data-day="11" data-month="01" data-year="2018" data-price="0">
-												<div class="wkText final_day">11 </div>
-												<div class="dTfont wkText">$0</div>
-											</div>
-										</div>
-										<div class="col-md-02">
-											<div class="calender_box date-package-modal " id="2018-01-12" data-day="12" data-month="01" data-year="2018" data-price="0">
-												<div class="wkText final_day">12 </div>
-												<div class="dTfont wkText">$0</div>
-											</div>
-										</div>
-										<div class="col-md-02">
-											<div class="calender_box date-package-modal " id="2018-01-13" data-day="13" data-month="01" data-year="2018" data-price="0">
-												<div class="wkText final_day">13 </div>
-												<div class="dTfont wkText">$0</div>
-											</div>
-										</div>
-										<div class="col-md-02">
-											<div class="calender_box date-package-modal " id="2018-01-14" data-day="14" data-month="01" data-year="2018" data-price="0">
-												<div class="wkText final_day">14 </div>
-												<div class="dTfont wkText">$0</div>
-											</div>
-										</div>
-										<div class="col-md-02">
-											<div class="calender_box date-package-modal " id="2018-01-15" data-day="15" data-month="01" data-year="2018" data-price="0">
-												<div class="wkText final_day">15 </div>
-												<div class="dTfont wkText">$0</div>
-											</div>
-										</div>
-										<div class="col-md-02">
-											<div class="calender_box date-package-modal " id="2018-01-16" data-day="16" data-month="01" data-year="2018" data-price="0">
-												<div class="wkText final_day">16 </div>
-												<div class="dTfont wkText">$0</div>
-											</div>
-										</div>
-										<div class="col-md-02">
-											<div class="calender_box date-package-modal " id="2018-01-17" data-day="17" data-month="01" data-year="2018" data-price="0">
-												<div class="wkText final_day">17 </div>
-												<div class="dTfont wkText">$0</div>
-											</div>
-										</div>
-										<div class="col-md-02">
-											<div class="calender_box date-package-modal " id="2018-01-18" data-day="18" data-month="01" data-year="2018" data-price="0">
-												<div class="wkText final_day">18 </div>
-												<div class="dTfont wkText">$0</div>
-											</div>
-										</div>
-										<div class="col-md-02">
-											<div class="calender_box date-package-modal " id="2018-01-19" data-day="19" data-month="01" data-year="2018" data-price="0">
-												<div class="wkText final_day">19 </div>
-												<div class="dTfont wkText">$0</div>
-											</div>
-										</div>
-										<div class="col-md-02">
-											<div class="calender_box date-package-modal " id="2018-01-20" data-day="20" data-month="01" data-year="2018" data-price="0">
-												<div class="wkText final_day">20 </div>
-												<div class="dTfont wkText">$0</div>
-											</div>
-										</div>
-										<div class="col-md-02">
-											<div class="calender_box date-package-modal " id="2018-01-21" data-day="21" data-month="01" data-year="2018" data-price="0">
-												<div class="wkText final_day">21 </div>
-												<div class="dTfont wkText">$0</div>
-											</div>
-										</div>
-										<div class="col-md-02">
-											<div class="calender_box date-package-modal " id="2018-01-22" data-day="22" data-month="01" data-year="2018" data-price="0">
-												<div class="wkText final_day">22 </div>
-												<div class="dTfont wkText">$0</div>
-											</div>
-										</div>
-										<div class="col-md-02">
-											<div class="calender_box date-package-modal " id="2018-01-23" data-day="23" data-month="01" data-year="2018" data-price="0">
-												<div class="wkText final_day">23 </div>
-												<div class="dTfont wkText">$0</div>
-											</div>
-										</div>
-										<div class="col-md-02">
-											<div class="calender_box date-package-modal " id="2018-01-24" data-day="24" data-month="01" data-year="2018" data-price="0">
-												<div class="wkText final_day">24 </div>
-												<div class="dTfont wkText">$0</div>
-											</div>
-										</div>
-										<div class="col-md-02">
-											<div class="calender_box date-package-modal " id="2018-01-25" data-day="25" data-month="01" data-year="2018" data-price="0">
-												<div class="wkText final_day">25 </div>
-												<div class="dTfont wkText">$0</div>
-											</div>
-										</div>
-										<div class="col-md-02">
-											<div class="calender_box date-package-modal " id="2018-01-26" data-day="26" data-month="01" data-year="2018" data-price="0">
-												<div class="wkText final_day">26 </div>
-												<div class="dTfont wkText">$0</div>
-											</div>
-										</div>
-										<div class="col-md-02">
-											<div class="calender_box date-package-modal " id="2018-01-27" data-day="27" data-month="01" data-year="2018" data-price="0">
+											<div class="calender_box date-package-modal dt-not-available" id="2017-11-27" data-day="-3" data-month="12" data-year="2017" data-price="0">
 												<div class="wkText final_day">27 </div>
 												<div class="dTfont wkText">$0</div>
 											</div>
 										</div>
 										<div class="col-md-02">
-											<div class="calender_box date-package-modal " id="2018-01-28" data-day="28" data-month="01" data-year="2018" data-price="0">
+											<div class="calender_box date-package-modal dt-not-available" id="2017-11-28" data-day="-2" data-month="12" data-year="2017" data-price="0">
 												<div class="wkText final_day">28 </div>
 												<div class="dTfont wkText">$0</div>
 											</div>
 										</div>
 										<div class="col-md-02">
-											<div class="calender_box date-package-modal " id="2018-01-29" data-day="29" data-month="01" data-year="2018" data-price="0">
+											<div class="calender_box date-package-modal dt-not-available" id="2017-11-29" data-day="-1" data-month="12" data-year="2017" data-price="0">
 												<div class="wkText final_day">29 </div>
 												<div class="dTfont wkText">$0</div>
 											</div>
 										</div>
 										<div class="col-md-02">
-											<div class="calender_box date-package-modal " id="2018-01-30" data-day="30" data-month="01" data-year="2018" data-price="0">
+											<div class="calender_box date-package-modal dt-not-available" id="2017-11-30" data-day="0" data-month="12" data-year="2017" data-price="0">
 												<div class="wkText final_day">30 </div>
 												<div class="dTfont wkText">$0</div>
 											</div>
 										</div>
 										<div class="col-md-02">
-											<div class="calender_box date-package-modal " id="2018-01-31" data-day="31" data-month="01" data-year="2018" data-price="0">
-												<div class="wkText final_day">31 </div>
-												<div class="dTfont wkText">$0</div>
-											</div>
-										</div>
-										<div class="col-md-02">
-											<div class="calender_box date-package-modal " id="2018-02-1" data-day="32" data-month="01" data-year="2018" data-price="0">
+											<div class="calender_box date-package-modal dt-not-available" id="2017-12-1" data-day="1" data-month="12" data-year="2017" data-price="0">
 												<div class="wkText final_day">1 </div>
 												<div class="dTfont wkText">$0</div>
 											</div>
 										</div>
 										<div class="col-md-02">
-											<div class="calender_box date-package-modal " id="2018-02-2" data-day="33" data-month="01" data-year="2018" data-price="0">
+											<div class="calender_box date-package-modal dt-not-available" id="2017-12-2" data-day="2" data-month="12" data-year="2017" data-price="0">
 												<div class="wkText final_day">2 </div>
 												<div class="dTfont wkText">$0</div>
 											</div>
 										</div>
 										<div class="col-md-02">
-											<div class="calender_box date-package-modal " id="2018-02-3" data-day="34" data-month="01" data-year="2018" data-price="0">
+											<div class="calender_box date-package-modal dt-not-available" id="2017-12-3" data-day="3" data-month="12" data-year="2017" data-price="0">
 												<div class="wkText final_day">3 </div>
 												<div class="dTfont wkText">$0</div>
 											</div>
 										</div>
 										<div class="col-md-02">
-											<div class="calender_box date-package-modal " id="2018-02-4" data-day="35" data-month="01" data-year="2018" data-price="0">
+											<div class="calender_box date-package-modal dt-not-available" id="2017-12-4" data-day="4" data-month="12" data-year="2017" data-price="0">
+												<div class="wkText final_day">4 </div>
+												<div class="dTfont wkText">$0</div>
+											</div>
+										</div>
+										<div class="col-md-02">
+											<div class="calender_box date-package-modal dt-not-available" id="2017-12-5" data-day="5" data-month="12" data-year="2017" data-price="0">
+												<div class="wkText final_day">5 </div>
+												<div class="dTfont wkText">$0</div>
+											</div>
+										</div>
+										<div class="col-md-02">
+											<div class="calender_box date-package-modal dt-not-available" id="2017-12-6" data-day="6" data-month="12" data-year="2017" data-price="0">
+												<div class="wkText final_day">6 </div>
+												<div class="dTfont wkText">$0</div>
+											</div>
+										</div>
+										<div class="col-md-02">
+											<div class="calender_box date-package-modal dt-not-available" id="2017-12-7" data-day="7" data-month="12" data-year="2017" data-price="0">
+												<div class="wkText final_day">7 </div>
+												<div class="dTfont wkText">$0</div>
+											</div>
+										</div>
+										<div class="col-md-02">
+											<div class="calender_box date-package-modal dt-not-available" id="2017-12-8" data-day="8" data-month="12" data-year="2017" data-price="0">
+												<div class="wkText final_day">8 </div>
+												<div class="dTfont wkText">$0</div>
+											</div>
+										</div>
+										<div class="col-md-02">
+											<div class="calender_box date-package-modal dt-not-available" id="2017-12-9" data-day="9" data-month="12" data-year="2017" data-price="0">
+												<div class="wkText final_day">9 </div>
+												<div class="dTfont wkText">$0</div>
+											</div>
+										</div>
+										<div class="col-md-02">
+											<div class="calender_box date-package-modal dt-not-available" id="2017-12-10" data-day="10" data-month="12" data-year="2017" data-price="0">
+												<div class="wkText final_day">10 </div>
+												<div class="dTfont wkText">$0</div>
+											</div>
+										</div>
+										<div class="col-md-02">
+											<div class="calender_box date-package-modal dt-not-available" id="2017-12-11" data-day="11" data-month="12" data-year="2017" data-price="0">
+												<div class="wkText final_day">11 </div>
+												<div class="dTfont wkText">$0</div>
+											</div>
+										</div>
+										<div class="col-md-02">
+											<div class="calender_box date-package-modal dt-not-available" id="2017-12-12" data-day="12" data-month="12" data-year="2017" data-price="200">
+												<div class="wkText final_day">12 </div>
+												<div class="dTfont wkText">$200</div>
+											</div>
+										</div>
+										<div class="col-md-02">
+											<div class="calender_box date-package-modal dt-today" id="2017-12-13" data-day="13" data-month="12" data-year="2017" data-price="200" data-toggle="modal" data-target="#set_price_for_particular_dates">
+												<div class="wkText final_day">13 Today</div>
+												<div class="dTfont wkText">$200</div>
+											</div>
+										</div>
+										<div class="col-md-02">
+											<div class="calender_box date-package-modal " id="2017-12-14" data-day="14" data-month="12" data-year="2017" data-price="200" data-year="2017" data-price="200" data-toggle="modal" data-target="#set_price_for_particular_dates">
+												<div class="wkText final_day">14 </div>
+												<div class="dTfont wkText">$200</div>
+											</div>
+										</div>
+										<div class="col-md-02">
+											<div class="calender_box date-package-modal " id="2017-12-15" data-day="15" data-month="12" data-year="2017" data-price="300" data-year="2017" data-price="200" data-toggle="modal" data-target="#set_price_for_particular_dates">
+												<div class="wkText final_day">15 </div>
+												<div class="dTfont wkText">$300</div>
+											</div>
+										</div>
+										<div class="col-md-02">
+											<div class="calender_box date-package-modal " id="2017-12-16" data-day="16" data-month="12" data-year="2017" data-price="200" data-year="2017" data-price="200" data-toggle="modal" data-target="#set_price_for_particular_dates">
+												<div class="wkText final_day">16 </div>
+												<div class="dTfont wkText">$200</div>
+											</div>
+										</div>
+										<div class="col-md-02">
+											<div class="calender_box date-package-modal " id="2017-12-17" data-day="17" data-month="12" data-year="2017" data-price="200" data-year="2017" data-price="200" data-toggle="modal" data-target="#set_price_for_particular_dates">
+												<div class="wkText final_day">17 </div>
+												<div class="dTfont wkText">$200</div>
+											</div>
+										</div>
+										<div class="col-md-02">
+											<div class="calender_box date-package-modal " id="2017-12-18" data-day="18" data-month="12" data-year="2017" data-price="200" data-year="2017" data-price="200" data-toggle="modal" data-target="#set_price_for_particular_dates">
+												<div class="wkText final_day">18 </div>
+												<div class="dTfont wkText">$200</div>
+											</div>
+										</div>
+										<div class="col-md-02">
+											<div class="calender_box date-package-modal " id="2017-12-19" data-day="19" data-month="12" data-year="2017" data-price="200" data-year="2017" data-price="200" data-toggle="modal" data-target="#set_price_for_particular_dates">
+												<div class="wkText final_day">19 </div>
+												<div class="dTfont wkText">$200</div>
+											</div>
+										</div>
+										<div class="col-md-02">
+											<div class="calender_box date-package-modal " id="2017-12-20" data-day="20" data-month="12" data-year="2017" data-price="200" data-year="2017" data-price="200" data-toggle="modal" data-target="#set_price_for_particular_dates">
+												<div class="wkText final_day">20 </div>
+												<div class="dTfont wkText">$200</div>
+											</div>
+										</div>
+										<div class="col-md-02">
+											<div class="calender_box date-package-modal " id="2017-12-21" data-day="21" data-month="12" data-year="2017" data-price="200" data-year="2017" data-price="200" data-toggle="modal" data-target="#set_price_for_particular_dates">
+												<div class="wkText final_day">21 </div>
+												<div class="dTfont wkText">$200</div>
+											</div>
+										</div>
+										<div class="col-md-02">
+											<div class="calender_box date-package-modal " id="2017-12-22" data-day="22" data-month="12" data-year="2017" data-price="0" data-toggle="modal" data-target="#set_price_for_particular_dates">
+												<div class="wkText final_day" data-year="2017" data-price="200">22 </div>
+												<div class="dTfont wkText">$0</div>
+											</div>
+										</div>
+										<div class="col-md-02">
+											<div class="calender_box date-package-modal " id="2017-12-23" data-day="23" data-month="12" data-year="2017" data-price="0" data-toggle="modal" data-target="#set_price_for_particular_dates">
+												<div class="wkText final_day" data-year="2017" data-price="200" data-toggle="modal" data-target="#set_price_for_particular_dates">23 </div>
+												<div class="dTfont wkText">$0</div>
+											</div>
+										</div>
+										<div class="col-md-02">
+											<div class="calender_box date-package-modal " id="2017-12-24" data-day="24" data-month="12" data-year="2017" data-price="0" data-toggle="modal" data-target="#set_price_for_particular_dates">
+												<div class="wkText final_day" data-year="2017" data-price="200" data-toggle="modal" data-target="#set_price_for_particular_dates">24 </div>
+												<div class="dTfont wkText">$0</div>
+											</div>
+										</div><div class="col-md-02">
+											<div class="calender_box date-package-modal " id="2017-12-25" data-day="25" data-month="12" data-year="2017" data-price="0" data-toggle="modal" data-target="#set_price_for_particular_dates">
+												<div class="wkText final_day" data-year="2017" data-price="200" data-toggle="modal" data-target="#set_price_for_particular_dates">25 </div>
+												<div class="dTfont wkText">$0</div>
+											</div>
+										</div>
+										<div class="col-md-02">
+											<div class="calender_box date-package-modal " id="2017-12-26" data-day="26" data-month="12" data-year="2017" data-price="0" data-toggle="modal" data-target="#set_price_for_particular_dates">
+												<div class="wkText final_day" data-year="2017" data-price="200" data-toggle="modal" data-target="#set_price_for_particular_dates">26 </div>
+												<div class="dTfont wkText">$0</div>
+											</div>
+										</div>
+										<div class="col-md-02">
+											<div class="calender_box date-package-modal " id="2017-12-27" data-day="27" data-month="12" data-year="2017" data-price="0" data-toggle="modal" data-target="#set_price_for_particular_dates">
+												<div class="wkText final_day" data-year="2017" data-price="200" data-toggle="modal" data-target="#set_price_for_particular_dates">27 </div>
+												<div class="dTfont wkText">$0</div>
+											</div>
+										</div>
+										<div class="col-md-02">
+											<div class="calender_box date-package-modal " id="2017-12-28" data-day="28" data-month="12" data-year="2017" data-price="0" data-toggle="modal" data-target="#set_price_for_particular_dates">
+												<div class="wkText final_day" data-year="2017" data-price="200" data-toggle="modal" data-target="#set_price_for_particular_dates">28 </div>
+												<div class="dTfont wkText">$0</div>
+											</div>
+										</div>
+										<div class="col-md-02">
+											<div class="calender_box date-package-modal " id="2017-12-29" data-day="29" data-month="12" data-year="2017" data-price="0" data-toggle="modal" data-target="#set_price_for_particular_dates">
+												<div class="wkText final_day" data-year="2017" data-price="200" data-toggle="modal" data-target="#set_price_for_particular_dates">29 </div>
+												<div class="dTfont wkText">$0</div>
+											</div>
+										</div>
+										<div class="col-md-02">
+											<div class="calender_box date-package-modal " id="2017-12-30" data-day="30" data-month="12" data-year="2017" data-price="0" data-toggle="modal" data-target="#set_price_for_particular_dates">
+												<div class="wkText final_day" data-year="2017" data-price="200" data-toggle="modal" data-target="#set_price_for_particular_dates">30 </div>
+												<div class="dTfont wkText">$0</div>
+											</div>
+										</div>
+										<div class="col-md-02">
+											<div class="calender_box date-package-modal " id="2017-12-31" data-day="31" data-month="12" data-year="2017" data-price="0" data-toggle="modal" data-target="#set_price_for_particular_dates">
+												<div class="wkText final_day" data-year="2017" data-price="200" data-toggle="modal" data-target="#set_price_for_particular_dates">31 </div>
+												<div class="dTfont wkText">$0</div>
+											</div>
+										</div>
+									</div>
+									<div class="calenBox" id="next__manth">
+										<div class="margin-top10">
+											<div class="col-md-02">
+												<div class="wkText">Mon</div>
+											</div>
+											<div class="col-md-02">
+												<div class="wkText">Tue</div>
+											</div>
+											<div class="col-md-02">
+												<div class="wkText">Wed</div>
+											</div>
+											<div class="col-md-02">
+												<div class="wkText">Thu</div>
+											</div>
+											<div class="col-md-02">
+												<div class="wkText">Fri</div>
+											</div>
+											<div class="col-md-02">
+												<div class="wkText">Sat</div>
+											</div>
+											<div class="col-md-02">
+												<div class="wkText">Sun</div>
+											</div>
+										</div>
+										<div class="col-md-02">
+											<div class="calender_box date-package-modal " id="2018-01-1" data-day="1" data-month="01" data-year="2018" data-price="0" data-toggle="modal" data-target="#set_price_for_particular_dates">
+												<div class="wkText final_day">1 </div>
+												<div class="dTfont wkText">$0</div>
+											</div>
+										</div>
+										<div class="col-md-02">
+											<div class="calender_box date-package-modal " id="2018-01-2" data-day="2" data-month="01" data-year="2018" data-price="0" data-toggle="modal" data-target="#set_price_for_particular_dates">
+												<div class="wkText final_day">2 </div>
+												<div class="dTfont wkText">$0</div>
+											</div>
+										</div>
+										<div class="col-md-02">
+											<div class="calender_box date-package-modal " id="2018-01-3" data-day="3" data-month="01" data-year="2018" data-price="0" data-toggle="modal" data-target="#set_price_for_particular_dates">
+												<div class="wkText final_day">3 </div>
+												<div class="dTfont wkText">$0</div>
+											</div>
+										</div>
+										<div class="col-md-02">
+											<div class="calender_box date-package-modal " id="2018-01-4" data-day="4" data-month="01" data-year="2018" data-price="0" data-toggle="modal" data-target="#set_price_for_particular_dates">
+												<div class="wkText final_day">4 </div>
+												<div class="dTfont wkText">$0</div>
+											</div>
+										</div>
+										<div class="col-md-02">
+											<div class="calender_box date-package-modal " id="2018-01-5" data-day="5" data-month="01" data-year="2018" data-price="0" data-toggle="modal" data-target="#set_price_for_particular_dates">
+												<div class="wkText final_day">5 </div>
+												<div class="dTfont wkText">$0</div>
+											</div>
+										</div>
+										<div class="col-md-02">
+											<div class="calender_box date-package-modal " id="2018-01-6" data-day="6" data-month="01" data-year="2018" data-price="0" data-toggle="modal" data-target="#set_price_for_particular_dates">
+												<div class="wkText final_day">6 </div>
+												<div class="dTfont wkText">$0</div>
+											</div>
+										</div>
+										<div class="col-md-02">
+											<div class="calender_box date-package-modal " id="2018-01-7" data-day="7" data-month="01" data-year="2018" data-price="0" data-toggle="modal" data-target="#set_price_for_particular_dates">
+												<div class="wkText final_day">7 </div>
+												<div class="dTfont wkText">$0</div>
+											</div>
+										</div>
+										<div class="col-md-02">
+											<div class="calender_box date-package-modal " id="2018-01-8" data-day="8" data-month="01" data-year="2018" data-price="0" data-toggle="modal" data-target="#set_price_for_particular_dates">
+												<div class="wkText final_day">8 </div>
+												<div class="dTfont wkText">$0</div>
+											</div>
+										</div>
+										<div class="col-md-02">
+											<div class="calender_box date-package-modal " id="2018-01-9" data-day="9" data-month="01" data-year="2018" data-price="0" data-toggle="modal" data-target="#set_price_for_particular_dates">
+												<div class="wkText final_day">9 </div>
+												<div class="dTfont wkText">$0</div>
+											</div>
+										</div>
+										<div class="col-md-02">
+											<div class="calender_box date-package-modal " id="2018-01-10" data-day="10" data-month="01" data-year="2018" data-price="0" data-toggle="modal" data-target="#set_price_for_particular_dates">
+												<div class="wkText final_day">10 </div>
+												<div class="dTfont wkText">$0</div>
+											</div>
+										</div>
+										<div class="col-md-02">
+											<div class="calender_box date-package-modal " id="2018-01-11" data-day="11" data-month="01" data-year="2018" data-price="0" data-toggle="modal" data-target="#set_price_for_particular_dates">
+												<div class="wkText final_day">11 </div>
+												<div class="dTfont wkText">$0</div>
+											</div>
+										</div>
+										<div class="col-md-02">
+											<div class="calender_box date-package-modal " id="2018-01-12" data-day="12" data-month="01" data-year="2018" data-price="0" data-toggle="modal" data-target="#set_price_for_particular_dates">
+												<div class="wkText final_day">12 </div>
+												<div class="dTfont wkText">$0</div>
+											</div>
+										</div>
+										<div class="col-md-02">
+											<div class="calender_box date-package-modal " id="2018-01-13" data-day="13" data-month="01" data-year="2018" data-price="0" data-toggle="modal" data-target="#set_price_for_particular_dates">
+												<div class="wkText final_day">13 </div>
+												<div class="dTfont wkText">$0</div>
+											</div>
+										</div>
+										<div class="col-md-02">
+											<div class="calender_box date-package-modal " id="2018-01-14" data-day="14" data-month="01" data-year="2018" data-price="0" data-toggle="modal" data-target="#set_price_for_particular_dates">
+												<div class="wkText final_day">14 </div>
+												<div class="dTfont wkText">$0</div>
+											</div>
+										</div>
+										<div class="col-md-02">
+											<div class="calender_box date-package-modal " id="2018-01-15" data-day="15" data-month="01" data-year="2018" data-price="0" data-toggle="modal" data-target="#set_price_for_particular_dates">
+												<div class="wkText final_day">15 </div>
+												<div class="dTfont wkText">$0</div>
+											</div>
+										</div>
+										<div class="col-md-02">
+											<div class="calender_box date-package-modal " id="2018-01-16" data-day="16" data-month="01" data-year="2018" data-price="0" data-toggle="modal" data-target="#set_price_for_particular_dates">
+												<div class="wkText final_day">16 </div>
+												<div class="dTfont wkText">$0</div>
+											</div>
+										</div>
+										<div class="col-md-02">
+											<div class="calender_box date-package-modal " id="2018-01-17" data-day="17" data-month="01" data-year="2018" data-price="0" data-toggle="modal" data-target="#set_price_for_particular_dates">
+												<div class="wkText final_day">17 </div>
+												<div class="dTfont wkText">$0</div>
+											</div>
+										</div>
+										<div class="col-md-02">
+											<div class="calender_box date-package-modal " id="2018-01-18" data-day="18" data-month="01" data-year="2018" data-price="0" data-toggle="modal" data-target="#set_price_for_particular_dates">
+												<div class="wkText final_day">18 </div>
+												<div class="dTfont wkText">$0</div>
+											</div>
+										</div>
+										<div class="col-md-02">
+											<div class="calender_box date-package-modal " id="2018-01-19" data-day="19" data-month="01" data-year="2018" data-price="0" data-toggle="modal" data-target="#set_price_for_particular_dates">
+												<div class="wkText final_day">19 </div>
+												<div class="dTfont wkText">$0</div>
+											</div>
+										</div>
+										<div class="col-md-02">
+											<div class="calender_box date-package-modal " id="2018-01-20" data-day="20" data-month="01" data-year="2018" data-price="0" data-toggle="modal" data-target="#set_price_for_particular_dates">
+												<div class="wkText final_day">20 </div>
+												<div class="dTfont wkText">$0</div>
+											</div>
+										</div>
+										<div class="col-md-02">
+											<div class="calender_box date-package-modal " id="2018-01-21" data-day="21" data-month="01" data-year="2018" data-price="0" data-toggle="modal" data-target="#set_price_for_particular_dates">
+												<div class="wkText final_day">21 </div>
+												<div class="dTfont wkText">$0</div>
+											</div>
+										</div>
+										<div class="col-md-02">
+											<div class="calender_box date-package-modal " id="2018-01-22" data-day="22" data-month="01" data-year="2018" data-price="0" data-toggle="modal" data-target="#set_price_for_particular_dates">
+												<div class="wkText final_day">22 </div>
+												<div class="dTfont wkText">$0</div>
+											</div>
+										</div>
+										<div class="col-md-02">
+											<div class="calender_box date-package-modal " id="2018-01-23" data-day="23" data-month="01" data-year="2018" data-price="0" data-toggle="modal" data-target="#set_price_for_particular_dates">
+												<div class="wkText final_day">23 </div>
+												<div class="dTfont wkText">$0</div>
+											</div>
+										</div>
+										<div class="col-md-02">
+											<div class="calender_box date-package-modal " id="2018-01-24" data-day="24" data-month="01" data-year="2018" data-price="0" data-toggle="modal" data-target="#set_price_for_particular_dates">
+												<div class="wkText final_day">24 </div>
+												<div class="dTfont wkText">$0</div>
+											</div>
+										</div>
+										<div class="col-md-02">
+											<div class="calender_box date-package-modal " id="2018-01-25" data-day="25" data-month="01" data-year="2018" data-price="0" data-toggle="modal" data-target="#set_price_for_particular_dates">
+												<div class="wkText final_day">25 </div>
+												<div class="dTfont wkText">$0</div>
+											</div>
+										</div>
+										<div class="col-md-02">
+											<div class="calender_box date-package-modal " id="2018-01-26" data-day="26" data-month="01" data-year="2018" data-price="0" data-toggle="modal" data-target="#set_price_for_particular_dates">
+												<div class="wkText final_day">26 </div>
+												<div class="dTfont wkText">$0</div>
+											</div>
+										</div>
+										<div class="col-md-02">
+											<div class="calender_box date-package-modal " id="2018-01-27" data-day="27" data-month="01" data-year="2018" data-price="0" data-toggle="modal" data-target="#set_price_for_particular_dates">
+												<div class="wkText final_day">27 </div>
+												<div class="dTfont wkText">$0</div>
+											</div>
+										</div>
+										<div class="col-md-02">
+											<div class="calender_box date-package-modal " id="2018-01-28" data-day="28" data-month="01" data-year="2018" data-price="0" data-toggle="modal" data-target="#set_price_for_particular_dates">
+												<div class="wkText final_day">28 </div>
+												<div class="dTfont wkText">$0</div>
+											</div>
+										</div>
+										<div class="col-md-02">
+											<div class="calender_box date-package-modal " id="2018-01-29" data-day="29" data-month="01" data-year="2018" data-price="0" data-toggle="modal" data-target="#set_price_for_particular_dates">
+												<div class="wkText final_day">29 </div>
+												<div class="dTfont wkText">$0</div>
+											</div>
+										</div>
+										<div class="col-md-02">
+											<div class="calender_box date-package-modal " id="2018-01-30" data-day="30" data-month="01" data-year="2018" data-price="0" data-toggle="modal" data-target="#set_price_for_particular_dates">
+												<div class="wkText final_day">30 </div>
+												<div class="dTfont wkText">$0</div>
+											</div>
+										</div>
+										<div class="col-md-02">
+											<div class="calender_box date-package-modal " id="2018-01-31" data-day="31" data-month="01" data-year="2018" data-price="0" data-toggle="modal" data-target="#set_price_for_particular_dates">
+												<div class="wkText final_day">31 </div>
+												<div class="dTfont wkText">$0</div>
+											</div>
+										</div>
+										<div class="col-md-02">
+											<div class="calender_box date-package-modal " id="2018-02-1" data-day="32" data-month="01" data-year="2018" data-price="0" data-toggle="modal" data-target="#set_price_for_particular_dates">
+												<div class="wkText final_day">1 </div>
+												<div class="dTfont wkText">$0</div>
+											</div>
+										</div>
+										<div class="col-md-02">
+											<div class="calender_box date-package-modal " id="2018-02-2" data-day="33" data-month="01" data-year="2018" data-price="0" data-toggle="modal" data-target="#set_price_for_particular_dates">
+												<div class="wkText final_day">2 </div>
+												<div class="dTfont wkText">$0</div>
+											</div>
+										</div>
+										<div class="col-md-02">
+											<div class="calender_box date-package-modal " id="2018-02-3" data-day="34" data-month="01" data-year="2018" data-price="0" data-toggle="modal" data-target="#set_price_for_particular_dates">
+												<div class="wkText final_day">3 </div>
+												<div class="dTfont wkText">$0</div>
+											</div>
+										</div>
+										<div class="col-md-02">
+											<div class="calender_box date-package-modal " id="2018-02-4" data-day="35" data-month="01" data-year="2018" data-price="0" data-toggle="modal" data-target="#set_price_for_particular_dates">
 												<div class="wkText final_day">4 </div>
 												<div class="dTfont wkText">$0</div>
 											</div>
@@ -1022,17 +1295,14 @@
 							</div>
 						</div>
 					</div>
-					<div class="row padding-top20">
-						<div class="col-md-6 col-sm-6 col-xs-6 text-left" style="margin-top: 30px">
-							<a data-prevent-default="" href="http://testsem.ru/listing/18/booking" class="btn btn-large btn-primary">Back</a>
-						</div>
-						<div class="col-md-6 col-sm-6 col-xs-6 text-right" style="margin-top: 30px">
-							<a data-prevent-default="" href="http://testsem.ru/properties" class="btn btn-large btn-primary">Your Listings</a>
-						</div>
-					</div>
 				</div>
-				<!-- <div class="kalendar__wrapper">
-					<div id="datepicker" data-toggle="modal" data-target="#set_price_for_particular_dates"></div>
+				<!-- <div class="row padding-top20">
+					<div class="col-md-6 col-sm-6 col-xs-6 text-left" style="margin-top: 30px">
+						<a data-prevent-default="" href="http://testsem.ru/listing/18/booking" class="btn btn-large btn-primary">Back</a>
+					</div>
+					<div class="col-md-6 col-sm-6 col-xs-6 text-right" style="margin-top: 30px">
+						<a data-prevent-default="" href="http://testsem.ru/properties" class="btn btn-large btn-primary">Your Listings</a>
+					</div>
 				</div> -->
 			</div>
 			<div class="tab-pane" id="v_cent6">
@@ -1048,9 +1318,6 @@
 				
 				<div class="row">
 					<div class="col-md-8 col-sm-8">
-
-							<!-- <div type="submit" class="btn__submit select__mt" data-submit="">CONTINUE</div> -->
-
 						<form action="/file-upload" class="dropzone" id="my-awesome-dropzone">
 							<div class="drop__zone__caption">
 								<i class="fa fa-cloud-download" aria-hidden="true"></i>
@@ -1059,10 +1326,8 @@
 							</div>
 							
 							<div type="submit" class="btn__submit select__mt" data-submit="">CONTINUE</div>
-
 						</form>
 					</div>
-				
 				</div>
 			</div>
 		</div>
@@ -1118,9 +1383,6 @@
 
 <script src="js/vendor.js"></script>
 <script src="js/main.js"></script>
-<!-- <script src="jsjquery-ui.min.js"></script> -->
-
-<!-- <script src="js/dropzone.js"></script> -->
 
 //= template/popups/popup_login.html
 
