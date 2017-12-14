@@ -350,17 +350,17 @@ $(document).ready(function(){
 
   var notifications = $('.site-notifications .notification');
   notifications.each(function () {
-    $this = $(this);
-    console.log($this);
-    $this.find('.br-close')
+    // $this = $(this);
+    // console.log($this);
+    $(this).find('.br-close')
       .on('click', function (e) {
         e.preventDefault();
         console.log($('.site-notifications').has('.notification').length);
-        $this.remove();
-        // if($('.site-notifications').has('.notification').length == 0) {
-        //   console.log($('.site-notifications').has('.notification').length);
-        //   $('.site-notifications').remove();
-        // }
+        $(this).parent().remove();
+        if($('.site-notifications').has('.notification').length == 0) {
+          console.log($('.site-notifications').has('.notification').length);
+          $('.site-notifications').remove();
+        }
       });
   });
 
