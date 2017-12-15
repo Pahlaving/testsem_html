@@ -465,7 +465,7 @@ section#media{
 		.map-wrapper{
 			margin-top: -135px;
 			@media screen and (max-width: 767px) {
-				margin-top: 40px;
+				margin-top: 0px;
 			}
 			#map.contact{
 				height: 490px;
@@ -767,7 +767,7 @@ section#media{
 			float: left;
 			position: relative;
 			min-height: 1px;
-			padding-right: 0;
+			padding-right: 0; 
 			padding-left: 0;
 			margin-left: -1px;
 		}

@@ -1,0 +1,59 @@
+<!-- Modal -->
+<div class="modal fade" id="popup_calendar_list_deteil" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">Set price for particular dates</h4>
+      </div>
+      <div class="modal-body">
+        <div class="row">
+          <form>
+          <div class="col-sm-3 text-right">
+            <label for="op_start_date">Start Date <span>*</span></label>
+          </div>
+          <div class="col-sm-6">
+            <input type="text" id="op_start_date" name="op_start_date" value="14-12-2017">
+          </div>
+          <div class="col-sm-3">
+           <select id="op_sl_start_date">
+             <option value="0:00">0:00</option>
+             <option value="0:00">0:00</option>
+             <option value="0:00">0:00</option>
+           </select> 
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-3 text-right">
+            <label for="op_end_date">End Date<span>*</span></label>
+          </div>
+          <div class="col-sm-6">
+            <input type="text" id="op_end_date" name="op_end_date" value="14-12-2017">
+          </div>
+          <div class="col-sm-3">
+           <select id="op_sl_end_date">
+             <option value="24:00">24:00</option>
+             <option value="24:00">24:00</option>
+             <option value="24:00">24:00</option>
+           </select> 
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-sm-3 text-right">
+            <label for="op_price">Price<span>*</span></label>
+          </div>
+          <div class="col-sm-6">
+            <input type="text" id="op_price" name="op_price" value="200">
+          </div>
+          <div class="col-sm-3">
+          </div>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        <button type="submit" class="btn btn-primary">Submit</button>
+      </div>
+      </form>
+    </div>
+  </div>
+</div>

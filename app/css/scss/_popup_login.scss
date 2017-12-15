@@ -23,6 +23,10 @@
 		font-size: 25px;
 		font-weight: 300;
 		color: #fff;
+		@media screen and (max-width: 767px) {
+			top: 0;
+			right: 0;
+		}
  	}
 	p.h4{
 		margin-bottom: 20px;
@@ -31,7 +35,7 @@
 		font-size: 35px;
 		text-align: center;
 	}
-	#form{
+	#form__login{
 		label{
 			margin-top: 20px;
 			font-size: 16px;
@@ -89,8 +93,6 @@
 				top: 0;
 				left: 0px;
 				display: inline-block;
-				//position: absolute;
-				//margin-top: 20px;
 				height: 20px;
 				width: 20px;
 				outline: none;
@@ -104,10 +106,9 @@
 				font-size: 16px;
 				color: #8d99ae;
 				font-weight: 300;
-				//position: relative;
 			}
 		}
-		#button{
+		#button__login{
 			width: 100%;
 			padding: 20px;
 			background-color:#8C98AD;
@@ -130,7 +131,6 @@
 			line-height: 90px;	
 			display: inline-block;
 			width: 45%;
-			//height: 3px;
 		}
 		.or{
 			font-size: 16px;
