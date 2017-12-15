@@ -14,11 +14,11 @@
       display: flex;
       flex-direction: column;
       justify-content: flex-start;
-      align-items: stretch;
+      align-items: center;
       flex-wrap: wrap;
     }
     @media screen and (max-width: 767px) {
-      height: 182px;
+      height: auto;
       //display: flex;
       justify-content: center;
       align-items: center;
@@ -42,6 +42,8 @@
       display: -ms-flex;
       display: -o-flex;
       display: flex;
+      flex-wrap: wrap;
+      flex: 1 0.5;
       justify-content: center;
       align-items: center;
       font-family: 'MyriadPro', sans-serif;
@@ -49,6 +51,9 @@
       color: #fff;
       padding-left: 10px;
       text-align: center;
+      @media screen and (max-width: 1200px) {
+        font-size: 28px;
+      }
       @media screen and (max-width: 1030px) {
         float: none;
         line-height: normal;
@@ -60,8 +65,17 @@
           margin-bottom: 15px;
         }
       }
+      @media screen and (max-width: 767px) {
+        margin-bottom: 15px;
+        margin-top: 15px;
+      }
     }
     .header__search{
+      @media screen and (max-width: 767px) {
+        margin-bottom: 25px;
+        width: 100%;
+        text-align: center;
+      }
       width: 70%;
       form{
         margin: 0;
@@ -72,7 +86,7 @@
       input#header__search{
         display: inline-block;
         height: 43px;
-        width: 50%;
+        width: 40%;
         border: none;
         outline: none;
         line-height: 43px;
@@ -80,6 +94,8 @@
         margin-right: 15px;
       }
       .btn__submit{
+        position: relative;
+        top: -8px;
         font-family: 'Poppins';
         display: inline-block;
         border-radius: 5px;
@@ -89,17 +105,26 @@
         font-weight: 300;
         font-size: 14px;
         margin-bottom: 0;
+        @media screen and (max-width: 1200px) {
+          top: -5px;
+        }
+        @media screen and (max-width: 767px) {
+          top: -1px;
+        }
+        @media screen and (max-width: 475px) {
+          width: 100px;
+        }
         i{
           margin-right: 5px;
         }
       }
     }
-    
     flex-wrap: wrap;
     .nav {
       float: right;
       margin-right: 2%;
       max-height: 105px;
+      margin-bottom: 15px;
       @media screen and (max-width: 1030px) {
         float: none;
         text-align: center;
@@ -540,9 +565,12 @@
           }
         }
         .button__red{
+          @media screen and (max-width: 767px) {
+            margin-top: 15px;
+          }
           a{
             display: inline-block;
-            padding: 15px 20px; 
+            padding: 11px 20px; 
             background-color: #C82639;
             border-radius: 5px;
             @media screen and (max-width: 375px) {
