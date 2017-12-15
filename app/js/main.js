@@ -255,7 +255,7 @@ $(document).ready(function(){
   });
 
   $( function() {
-    $( "#check_home, #private_room" ).checkboxradio({
+    $( "#check_home, #private_room, #check_individual, #check_group" ).checkboxradio({
       icon: false
     });
     $("#v_cent2 input").checkboxradio({
