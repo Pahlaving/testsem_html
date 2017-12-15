@@ -217,10 +217,13 @@ $(document).ready(function(){
     $( "#check_home, #private_room, #check_individual, #check_group" ).checkboxradio({
       icon: false
     });
-    $("#v_cent2 input").checkboxradio({
+    $('#v_cent2 input[type="checkbox"]').checkboxradio({
       icon: false
     });
-    $("#v_cent3 input").checkboxradio({
+    $('#v_cent3 input[type="checkbox"]').checkboxradio({
+      icon: false
+    });
+    $('#v_cent4 input[type="checkbox"]').checkboxradio({
       icon: false
     });
   });

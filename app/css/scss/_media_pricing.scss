@@ -1,29 +1,83 @@
 section#media{
 	.active{
 		margin-top: -1px;
+		border: none;
+	}
+	.tabs__caption__wrapper{
+		background-color: #EFEEEE;
 	}
 	.m_add {
 		font-size: 22px;
 		font-family: 'MyriadPro', sans-serif;
 		font-weight: 900;
 		text-transform: uppercase;
-		margin-top: 40px;
-		margin-bottom: 15px;
+		//margin-top: 40px;
+		//margin-bottom: 15px;
+		padding-top: 125px;	
+		padding-bottom: 170px;
+		background-color: #4B4B4B;
+		color: #fff;
+		text-align: center;
+	}
+	.circle__tab{
+		position: relative;
+		top: 3px;
+		margin-right: 15px;	
+		display: inline-block;
+		width: 17px;
+		height: 17px;
+		border: 2px solid #222A37;
+		background-color:#EFEEEE;
+		border-radius: 50%;
+		@media screen and (max-width: 992px) {
+			margin-right: 5px;
+		}
+	}
+	.select__mt__xs{
+		@media screen and (max-width: 992px) {
+			margin-top: -2px !important;
+			//margin-bottom: -2px !important;
+		}
+		margin-top: 5px;
 	}
 	.m_sectright{
 		display: table;
 		width: 100%;
 		a{
+			span{
+				@media screen and (max-width: 992px) {
+					font-size: 12px;
+				}
+			}
+			.fa-check-circle-o{
+				display: none;	
+				position: relative;
+				top: 2px;	
+				font-size: 20px;
+				margin-right: 15px;
+				@media screen and (max-width: 992px) {
+					margin-right: 5px;
+				}	
+			}
+			letter-spacing: 0.1em;
+			text-transform: uppercase;	
 			display: table-cell;
-			background: #6f6f6f;
+			background: #EFEEEE;
 			padding: 16px 0;
 			text-align: center;
-			color: #fff;
-			border-right: 1px solid #ccc;
-			border-bottom: none;
+			color: #222A37;
+			border: none;
+			outline: none;
 			&.actives{
 				background: #222a37 !important;
 				box-shadow: none;
+				color: #fff;
+				.circle__tab{
+					display: none;	
+				}
+				.fa-check-circle-o{
+					display: inline-block	;
+				}
 			}
 		}
 	}
@@ -38,6 +92,38 @@ section#media{
 			font-family: 'MyriadPro', sans-serif;
 			color: #6f6f6f;
 			padding: 34px 36px;
+		}
+	}
+	#v_cent2{
+		#training_title{
+			height: 80px;
+			width: 100% ;
+			background-color: #EFEEEE;
+			border: none;
+			outline: none;
+			padding-left: 30px;
+			color:#232b38;
+		}
+		#training_description{
+			margin-top: 40px;
+			height: 177px;	
+			width: 100% ;
+			color:#232b38;
+			background-color: #EFEEEE;
+			border: none;
+			outline: none;
+			padding: 30px;	
+		}
+	}
+	#v_cent4{
+		#coach_rules{
+			height: 165px;	
+			width: 100% ;
+			color:#232b38;
+			background-color: #EFEEEE;
+			border: none;
+			outline: none;
+			padding: 30px;	
 		}
 	}
 	.tabs {
@@ -447,7 +533,12 @@ section#media{
 			font-size: 22px;
 			color: #222a37;
 			margin-top: 45px;
-			margin-bottom: 20px;
+			//margin-bottom: 20px;
+			line-height: 1.5em;	
+			span{
+				font-size: 17px;
+				font-weight: 300;		
+			}
 			.caption__commit{
 				font-family: 'MyriadPro', sans-serif;
 				font-size: 18px;
@@ -475,6 +566,9 @@ section#media{
 		}
 		.select__mt{
 			margin-top: 35px;
+			@media screen and (max-width: 992px) {
+				margin-top: 3px;	
+			}	
 		}
 		.h__a{
 			height: auto;
