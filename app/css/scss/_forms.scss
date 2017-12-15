@@ -82,3 +82,12 @@ select {
     margin-right: 0;
   }
 }
+
+#add_additional_services {
+  label {
+    display: block;
+  }
+  .modal-dialog {
+    max-width: 350px;
+  }
+}

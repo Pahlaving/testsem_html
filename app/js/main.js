@@ -122,24 +122,65 @@ $(document).ready(function(){
     }
   });
 
-  var detail_head_carouser = $(".detail-head-carouser");
-  detail_head_carouser.find('.item').each(function () {
-    var bg_image = $(this).find('.bg-image');
-    $(this).css('background-image', 'url('+bg_image.attr('src')+')');
-    bg_image.hide();
-  });
+  /* Detail Head Carouser */
 
-  detail_head_carouser.owlCarousel({
-    loop: true,
-    items : 1,
-    //autoplay: 3000,
-    video:true,
-    lazyLoad:true,
-    nav: true,
-    dots: false,
-    pagination: false,
-    navContainer: '#detail-head-carouser-nav'
-  });
+  // var detail_head_carouser = $(".detail-head-carouser");
+
+  detail_head_carouser(".detail-head-carouser");
+
+  function detail_head_carouser(detail_head_class){
+
+    var detail_head_carouser = $(detail_head_class);
+
+
+
+    detail_head_carouser.find('.item').each(function () {
+      var bg_image = $(this).find('.bg-image');
+      $(this).css('background-image', 'url('+bg_image.attr('src')+')');
+      bg_image.hide();
+    });
+
+    detail_head_carouser.owlCarousel({
+      loop: true,
+      items : 1,
+      //autoplay: 3000,
+      video:true,
+      lazyLoad:true,
+      nav: true,
+      dots: false,
+      pagination: false,
+      navContainer: '#detail-head-carouser-nav'
+    });
+
+    $('.tool-switcher-slider').on('click', function (e) {
+      e.preventDefault();
+      var $switcherSlider = $(this);
+      $switcherSlider.toggleClass('checked');
+
+      if($(this).hasClass( "checked" )){
+        console.log("Checked");
+        // $('.detail-head-carouser .item-image').appendTo('.hidden-carousel-elements .images');
+        // $('.hidden-carousel-elements .videos .item-video').appendTo('.detail-head-carouser');
+        detail_head_carouser.trigger('destroy.owl.carousel');
+        // detail_head_carouser(".detail-head-carouser");
+      }else{
+        console.log("unChecked");
+        // $('.detail-head-carouser .item-video').appendTo('.hidden-carousel-elements .videos');
+        // $('.hidden-carousel-elements .images .item-image').appendTo('.detail-head-carouser');
+        // detail_head_carouser.trigger('destroy.owl.carousel');
+        // detail_head_carouser(".detail-head-carouser");
+      }
+
+      // console.log('Check! Place here your ajax.');
+
+    });
+
+  }
+
+
+
+
+
 
   $('.nav-tabs a').click(function(e){
       e.preventDefault();
@@ -180,24 +221,35 @@ $(document).ready(function(){
     }
   }
 
+
+
   function notificMenuProcessor() {
 
-    if ($(window).outerWidth() < 768) {
-      $('.nav-notific ul').hide();
-      $('.page-content')
-        .prepend($('.nav-notific')).not(':has(.notific-hamburger)')
-        .prepend('<div class="notific-hamburger">Hamburger</div>');
-    }else{
-      $('.sidebar').prepend($('.nav-notific'));
-      $('.nav-notific ul').show();
+    if($('.sidebar').has('.sidebar-menu').length) {
+
+      console.log('Has sidebar menu');
+
+      $('.page-content').prepend('<div class="notific-hamburger">Hamburger</div>');
+
+      $('.notific-hamburger').on('click', function () {
+        $('.sidebar-menu ul').slideToggle();
+      });
+
+      if ($(window).outerWidth() < 768) {
+        $('.nav-notific ul').hide();
+        $('.page-content')
+          .prepend($('.nav-notific')).not(':has(.notific-hamburger)')
+          .prepend('<div class="notific-hamburger">Hamburger</div>');
+      }else{
+        $('.sidebar').prepend($('.nav-notific'));
+        $('.nav-notific ul').show();
+      }
+
     }
+
   }
 
-  $('.page-content').prepend('<div class="notific-hamburger">Hamburger</div>');
 
-  $('.notific-hamburger').on('click', function () {
-    $('.nav-notific ul').slideToggle();
-  });
 
   notificMenuProcessor();
   inboxTableTool('.inbox-table', 768);
@@ -288,18 +340,7 @@ $(document).ready(function(){
 
 
 
-  $('.tool-switcher-slider').on('click', function (e) {
-    e.preventDefault();
-    var $switcherSlider = $(this);
-    $switcherSlider.toggleClass('checked');
 
-    if($(this).hasClass( "checked" )){
-      
-    }
-
-    console.log('Check! Place here your ajax.');
-
-  });
 
  
 
