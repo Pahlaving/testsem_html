@@ -110,6 +110,9 @@
     }
   }
   &.user-info-avatar {
+    max-width: 200px;
+    display: block;
+    margin: 0 auto;
     .block-content {
       padding-top: 0;
       text-align: center;
