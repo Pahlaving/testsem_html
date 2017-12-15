@@ -133,6 +133,8 @@ $(document).ready(function(){
     loop: true,
     items : 1,
     //autoplay: 3000,
+    video:true,
+    lazyLoad:true,
     nav: true,
     dots: false,
     pagination: false,
@@ -286,8 +288,12 @@ $(document).ready(function(){
   $('.tool-switcher-slider').on('click', function (e) {
     e.preventDefault();
     var $switcherSlider = $(this);
-
     $switcherSlider.toggleClass('checked');
+
+    if($(this).hasClass( "checked" )){
+      
+    }
+
     console.log('Check! Place here your ajax.');
 
   });
