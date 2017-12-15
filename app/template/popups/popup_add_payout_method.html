@@ -1,0 +1,98 @@
+<!-- Modal - Add Payout Method -->
+
+<div class="modal fade" id="add_payout_method" tabindex="-1" role="dialog" aria-labelledby="addLanguageLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+        <h4 class="modal-title" id="myModalLabel">Add Payout Method</h4>
+      </div>
+      <div class="modal-body">
+
+        <form accept-charset="UTF-8" action="" class="form-horizontal" method="post">
+          <div class="panel-body">
+            <input type="hidden" name="user_id" value="161810790">
+
+            <div class="form-group">
+              <label class="control-label col-sm-4" for="country_code">Country</label>
+              <div class="col-sm-8">
+                <select name="country_code" class="form-control" id="country_code">
+                  <option value="" selected="selected"></option>
+                  <option value="AT" data-override="">Austria</option>
+                  <option value="BE" data-override="">Belgium</option>
+                  <option value="BG" data-override="">Bulgaria</option>
+                  <option value="HR" data-override="">Croatia</option>
+                  <option value="CY" data-override="">Cyprus</option>
+                  <option value="CZ" data-override="">Czech Republic</option>
+                  <option value="DK" data-override="">Denmark</option>
+                  <option value="EE" data-override="">Estonia</option>
+                  <option value="FI" data-override="">Finland</option>
+                  <option value="FR" data-override="">France</option>
+                  <option value="DE" data-override="">Germany</option>
+                  <option value="GR" data-override="EL">Greece</option>
+                  <option value="HU" data-override="">Hungary</option>
+                  <option value="IE" data-override="">Ireland</option>
+                  <option value="IT" data-override="">Italy</option>
+                  <option value="LV" data-override="">Latvia</option>
+                  <option value="LT" data-override="">Lithuania</option>
+                  <option value="LU" data-override="">Luxembourg</option>
+                  <option value="MT" data-override="">Malta</option>
+                  <option value="NL" data-override="">Netherlands</option>
+                  <option value="PL" data-override="">Poland</option>
+                  <option value="PT" data-override="">Portugal</option>
+                  <option value="RO" data-override="">Romania</option>
+                  <option value="SK" data-override="">Slovakia</option>
+                  <option value="SI" data-override="">Slovenia</option>
+                  <option value="ES" data-override="">Spain</option>
+                  <option value="SE" data-override="">Sweden</option>
+                  <option value="GB" data-override="">United Kingdom</option>
+                </select>
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label class="control-label col-sm-4" for="address1">Address Line 1</label>
+              <div class="col-sm-8">
+                <input type="text" class="form-control" name="address1" id="address1">
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label class="control-label col-sm-4" for="address1">Address Line 2</label>
+              <div class="col-sm-8">
+                <input type="text" class="form-control" name="address2" id="address2">
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label class="control-label col-sm-4" for="city">City</label>
+              <div class="col-sm-8">
+                <input type="text" class="form-control" name="city" id="city">
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label class="control-label col-sm-4" for="state">State / Province</label>
+              <div class="col-sm-8">
+                <input type="text" class="form-control" name="state" id="state">
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label class="control-label col-sm-4" for="zip">ZIP Code / Postal Code</label>
+              <div class="col-sm-8">
+                <input type="text" class="form-control" name="zip" id="zip">
+              </div>
+            </div>
+          </div>
+        </form>
+
+      </div>
+      <div class="modal-footer">
+        <input class="btn" type="submit" value="Add Payout Method">
+      </div>
+    </div>
+  </div>
+</div>
