@@ -1,6 +1,10 @@
+.modal-open{
+	padding-right: 0px !important;
+}
 #popup_calendar_list_deteil{
 	.modal-content{
 		border-radius: 5px;
+		padding-bottom: 40px;
 	}
  	.modal-body{
  		border-radius: 7px;
