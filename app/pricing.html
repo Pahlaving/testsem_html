@@ -35,7 +35,7 @@
 					<i class="fa fa-check-circle-o hidden-xs" aria-hidden="true"></i>
 					<span class="circle__tab hidden-xs"></span><span class="hidden-xs">Amenities</span>
 				</a>
-				<a href="#v_cent4" class="actives" data-toggle="tab">
+				<a href="#v_cent4" data-toggle="tab">
 					<i class="fa fa-map-marker hidden-md hidden-lg hidden-sm"></i>
 					<i class="fa fa-check-circle-o hidden-xs" aria-hidden="true"></i>
 					<span class="circle__tab hidden-xs"></span><span class="hidden-xs">Pricing</span>
@@ -44,7 +44,8 @@
 					<i class="fa fa-map-marker hidden-md hidden-lg hidden-sm"></i>
 					<i class="fa fa-check-circle-o hidden-xs" aria-hidden="true"></i>
 					<span class="circle__tab hidden-xs"></span><span class="hidden-xs">Сalendar</span>
-				</a><a href="#v_cent6" data-toggle="tab">
+				</a>
+				<a href="#v_cent6" class="actives" data-toggle="tab">
 					<i class="fa fa-map-marker hidden-md hidden-lg hidden-sm"></i>
 					<i class="fa fa-check-circle-o hidden-xs" aria-hidden="true"></i>
 					<span class="circle__tab hidden-xs"></span><span class="hidden-xs">Media</span>
@@ -500,7 +501,7 @@
 					</div>
 				</div>
 			</div>
-			<div class="tab-pane active" id="v_cent4">
+			<div class="tab-pane" id="v_cent4">
 				<div class="tab__caption__wrapper">
 					<p class="m_h4">
 						<i class="fa fa-map-marker m_col"></i> set your pricing and terms
@@ -681,14 +682,11 @@
 							</div>
 						</div>
 					</div>
-					<div type="submit" class="btn__submit select__mt" data-submit>CONTINUE</div>
-
+					<div type="submit" class="btn__submit select__mt" data-submit>CONTINUE
+					</div>
 				</form>
-
-
 			</div>
 			<div class="tab-pane" id="v_cent5">
-
 				<div class="col-md-9 col-md-offset-1 col-sm-12">
 					<div id="calender-dv">
 						<div class="host-calendar-container">
@@ -1253,16 +1251,8 @@
 						</div>
 					</div>
 				</div>
-				<!-- <div class="row padding-top20">
-					<div class="col-md-6 col-sm-6 col-xs-6 text-left" style="margin-top: 30px">
-						<a data-prevent-default="" href="http://testsem.ru/listing/18/booking" class="btn btn-large btn-primary">Back</a>
-					</div>
-					<div class="col-md-6 col-sm-6 col-xs-6 text-right" style="margin-top: 30px">
-						<a data-prevent-default="" href="http://testsem.ru/properties" class="btn btn-large btn-primary">Your Listings</a>
-					</div>
-				</div> -->
 			</div>
-			<div class="tab-pane" id="v_cent6">
+			<div class="tab-pane active" id="v_cent6">
 				<div class="tab__caption__wrapper">
 					<p class="m_h4">
 						<i class="fa fa-map-marker m_col"></i> add your photos
@@ -1276,6 +1266,15 @@
 				<div class="row">
 					<div class="col-md-8 col-sm-8">
 						<form action="/file-upload" class="dropzone" id="my-awesome-dropzone">
+							<div class="row">
+								<div class="col-md-12 add__link">
+									<div class="pricing__input__whith">
+										<input name="add__media__link" id="add__media__link" placeholder="Add media link"></input>
+										<div class="btn__submit" data-submit="">Add link</div>
+									</div>
+								</div>
+							</div>
+
 							<div class="drop__zone__caption">
 								<i class="fa fa-cloud-download" aria-hidden="true"></i>
 								Drop your photos here <span>browser</span>
