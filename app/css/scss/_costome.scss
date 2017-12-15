@@ -472,6 +472,40 @@ h4 {
   }
 }
 
+.pricing__input{
+  input{
+    width: 100%;
+    height: 57px;
+    display: inline-block;
+    outline: none;
+    border: none;
+    position: relative;
+    min-width: auto;
+    background: #F0EEEF!important;
+    padding: 11px 0 11px 11px;
+    color: #6f6f6f;
+    font-family: 'MyriadPro', sans-serif;
+    font-size: 20px;
+    color: #6f6f6f
+  }
+  &:after{
+    content:'USD';
+    color: #fff;
+    font-family: 'MyriadPro', sans-serif;
+    font-size: 20px;
+    text-align: center;  
+    line-height: 57px; 
+    width: 60px;
+    height: 57px;
+    display: block; 
+    position: absolute; 
+    z-index: 100;
+    top: 0;
+    right: 15px;
+    background-color: #222A37;
+  }
+}
+
 .btn__submit{
   cursor: pointer;
   color: #fff;
@@ -497,7 +531,7 @@ h4 {
    border: none;
     background: #A0152B !important;
     font-weight: 400;
-    color: #fff;
+    color: #fff!important;
     font-family: 'MyriadPro', sans-serif;
     font-size: 18px;
     outline: none;
@@ -507,20 +541,38 @@ h4 {
     }
 }
 
+.ui-state-active{
+  outline: none;
+  background-color: #A0152B;
+}
+
+.ui-button.ui-state-active:hover, .ui-button:active, .ui-state-active, .ui-widget-content .ui-state-active, .ui-widget-header .ui-state-active, a.ui-button:active {
+  border: none !important;
+  background-color: #A0152B;
+}
+
 .ui-button{
   width: 100%;
   height: 57px;
   line-height: 42px;
   border: none;
-  background: #222A37;
+  background: #EDEDED;
   font-weight: 400;
-  color: #fff;
+  color: #232b38;
   font-family: 'MyriadPro', sans-serif;
-  font-size: 18px;
+  font-size: 16px;
   outline: none;
   box-shadow: none;
+  position: relative;
   i {
-    color:  #222A37;
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #EDEDED;
+    @media screen and (max-width: 992px) {
+      right: 20px;
+    }
   }
 }
 
