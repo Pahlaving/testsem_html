@@ -466,6 +466,11 @@ var forEach=function(t,o,r){if("[object Object]"===Object.prototype.toString.cal
     document.getElementById("insert__block").innerHTML = ar;
   });
 
+  $('#my-awesome-dropzone .btn__submit').click(function(){
+    var addblock = '<input name="add__media__link" id="add__media__link" placeholder="Add media link"></input>';
+    $('#my-awesome-dropzone .pricing__input__whith').append(addblock);
+  });
+
   // Calendar 
   
   $('.calender_box').click(function(){

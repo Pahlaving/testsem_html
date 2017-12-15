@@ -527,13 +527,14 @@ h4 {
 }
 
 .btn__submit{
+  display: inline-block;
   cursor: pointer;
   color: #fff;
   text-transform: uppercase;
   font-family: 'MyriadPro', sans-serif;
   font-weight: 600;
   display: inline-block;
-  background: #A0152B;
+  background: #C82639;
   width: 155px;
   height: 50px;
   line-height: 50px;
