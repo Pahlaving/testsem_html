@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="en">
+<head>
+
+  //= template/head.html
+
+</head>
+<body>
+
+//= template/header_login.html
+
+//= template/breadcrumbs.html
+
+<div class="page-wrapper">
+  <div class="container">
+    <div class="row">
+
+      <div class="col-sm-8 col-sm-push-4 col-md-9 col-md-push-3 page-content">
+
+        <div class="section-block">
+          <div class="block-title">Add Payout Method</div>
+          <div class="block-content">
+            <div class="block-row">
+              <div class="inner">
+
+                <form accept-charset="UTF-8" action="add_payout_preference2.html" method="post">
+                  <div class="panel-body">
+                    <input type="hidden" name="user_id" value="161810790">
+
+                    <div class="form-group">
+                      <div class="radio">
+                        <label>
+                          <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked>
+                          <strong>Method: International Wire</strong><br>
+                          Processed In: 5–7 business days<br>
+                          Fees: Banking fees<br>
+                          Currency: USD<br>
+                          Details: Your bank will likely charge a fee. Business day processing only; weekends and
+                          banking holidays may cause delays.
+                          <a href="#">Learn more</a>
+                        </label>
+                      </div>
+                      <div class="radio">
+                        <label>
+                          <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
+                          <strong>Method: Payoneer Prepaid Debit MasterCard<br></strong>
+                          Processed In: 3–4 hours<br>
+                          Fees: ATM withdrawal fees<br>
+                          Currency: USD<br>
+                          Details: A physical card will be mailed to you after creating your Payoneer Prepaid Debit
+                          MasterCard account. Existing accounts may also be used.
+                        </label>
+                      </div>
+                      <div class="radio disabled">
+                        <label>
+                          <input type="radio" name="optionsRadios" id="optionsRadios3" value="option2">
+                          <strong>Method: Western Union</strong><br>
+                          Processed In: 1 business day<br>
+                          Fees: $10 USD per transaction<br>
+                          Currency: USD<br>
+                          Details: Requires valid government-issued photo ID for cash pickup at participating Quick Cash
+                          Western Union Agent locations.
+                        </label>
+                      </div>
+
+                    </div>
+
+                    <div class="form-action">
+                      <a href="add_payout_preference.html" class="btn btn-gray">Back</a>
+                      <input class="btn" type="submit" value="Next">
+                    </div>
+
+                  </div>
+                </form>
+
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+      <div class="col-sm-4 col-sm-pull-8 col-md-3 col-md-pull-9 sidebar">
+
+        //= template/sidebar_users.html
+
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<div class="clearfix"></div>
+
+//= template/footer.html
+
+<script src="js/vendor.js"></script>
+<script src="js/main.js"></script>
+
+</body>
+</html>

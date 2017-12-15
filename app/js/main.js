@@ -225,17 +225,21 @@ $(document).ready(function(){
 
   function notificMenuProcessor() {
 
-    if($('.sidebar').has('.sidebar-menu').length) {
 
-      console.log('Has sidebar menu');
-
-      $('.page-content').prepend('<div class="notific-hamburger">Hamburger</div>');
-
-      $('.notific-hamburger').on('click', function () {
-        $('.sidebar-menu ul').slideToggle();
-      });
 
       if ($(window).outerWidth() < 768) {
+
+        if($('.sidebar').has('.sidebar-menu').length) {
+
+          console.log('Has sidebar menu');
+
+          $('.page-content').prepend('<div class="notific-hamburger">Hamburger</div>');
+
+          $('.notific-hamburger').on('click', function () {
+            $('.sidebar-menu ul').slideToggle();
+          });
+
+        }
         $('.nav-notific ul').hide();
         $('.page-content')
           .prepend($('.nav-notific')).not(':has(.notific-hamburger)')
@@ -244,14 +248,11 @@ $(document).ready(function(){
         $('.sidebar').prepend($('.nav-notific'));
         $('.nav-notific ul').show();
       }
-
     }
-
-  }
-
 
 
   notificMenuProcessor();
+
   inboxTableTool('.inbox-table', 768);
 
   $(window).resize(function () {
