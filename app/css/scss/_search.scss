@@ -385,7 +385,7 @@ section#search__section{
 			.s_ceny {
 				div{
 					display: inline-block;
-					width: 16%;
+					width: 130px;
 				}
 			}
 			
@@ -660,13 +660,16 @@ section#search__section{
 		margin-top: 24px;
 		margin-bottom: 24px;
 		div{
-			width: 16%;
+			width: 130px;
 			margin: 8px auto;
 			display: inline-block;
 			@media screen and (max-width: 992px) {
 				width: 30%;
 			}
-			a{
+			@media screen and (max-width: 767px) {
+				width: 42%;
+			}
+			.load__more{
 				display: block;
 				padding: 16px;
 				border-radius: 4px;
