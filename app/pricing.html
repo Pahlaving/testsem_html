@@ -18,7 +18,7 @@
 			<a href="#v_cent" data-toggle="tab">
 				<i class="fa fa-map-marker hidden-md hidden-lg hidden-sm"></i><span class="hidden-xs">Location</span>
 			</a>
-			<a href="#v_cent1" data-toggle="tab">
+			<a href="#v_cent1" class="actives" data-toggle="tab">
 				<i class="fa fa-map-marker hidden-md hidden-lg hidden-sm"></i><span class="hidden-xs">Basics</span>
 			</a>
 			<a href="#v_cent2" data-toggle="tab">
@@ -29,7 +29,7 @@
 			<a href="#v_cent4" data-toggle="tab">
 				<i class="fa fa-map-marker hidden-md hidden-lg hidden-sm"></i><span class="hidden-xs">Pricing</span>
 			</a>
-			<a href="#v_cent5" class="actives" data-toggle="tab">
+			<a href="#v_cent5" data-toggle="tab">
 				<i class="fa fa-map-marker hidden-md hidden-lg hidden-sm"></i><span class="hidden-xs">Сalendar</span>
 			</a><a href="#v_cent6" data-toggle="tab">
 				<i class="fa fa-map-marker hidden-md hidden-lg hidden-sm"></i><span class="hidden-xs">Media</span>
@@ -125,7 +125,7 @@
 
 				</div>
 			</div>
-			<div class="tab-pane" id="v_cent1">
+			<div class="tab-pane active" id="v_cent1">
 				<div class="tab__caption__wrapper">
 					<p class="m_h4">
 						<i class="fa fa-map-marker m_col"></i> list your basics
@@ -136,59 +136,59 @@
 				</div>
 				<div class="row">
 					<div class="col-md-8 col-sm-8">
-						<div class="tab__caption">property details</div>
+						<div class="tab__caption">Training details</div>
 						<form>
 							<div class="row">
 								<div class="col-md-6">
 									<div class="selection">
-										<p>Hostel Type</p>
+										<p>Sport Type</p>
 										<div class="select-side">
 											<i class="fa fa-angle-down" aria-hidden="true"></i>
 										</div>
-										<select name="hostel_type" id="hostel_type">
-											<option>Hostel Type</option>
-											<option>Hostel Type</option>
-											<option>Hostel Type</option>
-											<option>Hostel Type</option>
-											<option>Hostel Type</option>
+										<select name="sport_type" id="sport_type">
+											<option>Sport Type</option>
+											<option>Sport Type</option>
+											<option>Sport Type</option>
+											<option>Sport Type</option>
+											<option>Sport Type</option>
 										</select>
 									</div>
 								</div>
 								<div class="col-md-6">
 									<div class="selection select__street">
-										<p>Guests</p>
+										<p>Fraiders</p>
 										<div class="select-side">
 											<i class="fa fa-angle-down" aria-hidden="true"></i>
 										</div>
-										<select name="guests" id="guests">
-											<option>Guests</option>
-											<option>Guests</option>
-											<option>Guests</option>
-											<option>Guests</option>
+										<select name="fraiders" id="fraiders">
+											<option>Fraiders</option>
+											<option>Fraiders</option>
+											<option>Fraiders</option>
+											<option>Fraiders</option>
 										</select>
 									</div>
 								</div>
 							</div>
 							<div class="row">
 								<div class="col-sm-12">
-									<div class="tab__caption">Specials</div>
+									<div class="tab__caption">Special</div>
 								</div>
 								<div class="col-md-6">
-									<div class="selection select__mt">
-										<p>Any</p>
+									<div class="selection">
+										<p>Inventory</p>
 										<div class="select-side">
 											<i class="fa fa-angle-down" aria-hidden="true"></i>
 										</div>
-										<select name="Any" id="Any1">
-											<option>Any</option>
-											<option>Any</option>
-											<option>Any</option>
-											<option>Any</option>
+										<select name="inventory" id="inventory1">
+											<option>Inventory</option>
+											<option>Inventory</option>
+											<option>Inventory</option>
+											<option>Inventory</option>
 										</select>
 									</div>
 								</div>
 								<div class="col-md-6">
-									<div class="selection select__mt">
+									<div class="selection">
 										<p>Any</p>
 										<div class="select-side">
 											<i class="fa fa-angle-down" aria-hidden="true"></i>
@@ -205,15 +205,15 @@
 							<div class="row">
 								<div class="col-md-6">
 									<div class="selection select__mt">
-										<p>Bed Type</p>
+										<p>Accomodate</p>
 										<div class="select-side">
 											<i class="fa fa-angle-down" aria-hidden="true"></i>
 										</div>
-										<select name="bed_type" id="bed_type">
-											<option>Bed Type</option>
-											<option>Bed Type</option>
-											<option>Bed Type</option>
-											<option>Bed Type</option>
+										<select name="accomodate" id="accomodate">
+											<option>Accomodate</option>
+											<option>Accomodate</option>
+											<option>Accomodate</option>
+											<option>Accomodate</option>
 										</select>
 									</div>
 								</div>
@@ -236,18 +236,16 @@
 						</form>	
 					</div>
 					<div class="col-md-4 col-sm-4">
-						<div class="tab__caption">Specials</div>
+						<div class="tab__caption">Training type</div>
 						<div class="row specials">
-							<!-- <fieldset> -->
 							<div class="col-xs-6">
-								<label for="check_home"><i class="fa fa-home" aria-hidden="true"></i>Entire Home</label>
-								<input type="checkbox" checked="checked" name="check_home" id="check_home">
+								<label for="check_individual"><i class="fa fa-home" aria-hidden="true"></i>Individual</label>
+								<input type="checkbox" checked="checked" name="check_individual" id="check_individual">
 							</div>
 							<div class="col-xs-6">
-								<label for="private_room"><i class="fa fa-file-text-o" aria-hidden="true"></i>Private Room</label>
-								<input type="checkbox" name="checkbox-1" id="private_room">
+								<label for="check_group"><i class="fa fa-file-text-o" aria-hidden="true"></i>Group</label>
+								<input type="checkbox" name="check_group" id="check_group">
 							</div>
-							<!-- </fieldset> -->
 						</div>
 					</div>
 				</div>
@@ -730,7 +728,7 @@
 					</div>
 				</form>
 			</div>
-			<div class="tab-pane active" id="v_cent5">
+			<div class="tab-pane" id="v_cent5">
 
 				<div class="col-md-9 col-md-offset-1 col-sm-12">
 					<div id="calender-dv">

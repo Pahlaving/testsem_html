@@ -1,5 +1,7 @@
 section#media{
-	//min-height: 1000px;
+	.active{
+		margin-top: -1px;
+	}
 	.m_add {
 		font-size: 22px;
 		font-family: 'MyriadPro', sans-serif;
@@ -453,7 +455,7 @@ section#media{
 				margin-top: 30px;
 				line-height: 1.8em;
 				span{
-					color: #eebf00;
+					color: #A0152B;
 				}
 			}
 		}
@@ -655,6 +657,9 @@ section#media{
 	}
 	.tab-content{
 		.host-calendar-container{
+			@media screen and (max-width: 550px) {
+				margin-top: 25px;
+			}
 			position: relative;
 			.calendar-month{
 				width: 100%;
@@ -680,6 +685,12 @@ section#media{
 					position: relative;
 					cursor: pointer;
 					h2{
+						@media screen and (max-width: 550px) {
+							font-size: 20px;
+						}
+						@media screen and (max-width: 420px) {
+							font-size: 13.5px;
+						}
 						position: relative;
 						top: 5px;
 						margin-top: 20px;
