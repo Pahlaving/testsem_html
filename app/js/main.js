@@ -239,11 +239,11 @@ $(document).ready(function(){
             $('.sidebar-menu ul').slideToggle();
           });
 
+          $('.page-content')
+            .prepend($('.nav-notific')).not(':has(.notific-hamburger)')
+            .prepend('<div class="notific-hamburger">Hamburger</div>');
         }
         $('.nav-notific ul').hide();
-        $('.page-content')
-          .prepend($('.nav-notific')).not(':has(.notific-hamburger)')
-          .prepend('<div class="notific-hamburger">Hamburger</div>');
       }else{
         $('.sidebar').prepend($('.nav-notific'));
         $('.nav-notific ul').show();
