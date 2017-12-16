@@ -143,6 +143,7 @@ $(document).ready(function(){
     detail_head_carouser.owlCarousel({
       loop: true,
       items : 1,
+      startPosition: 0,
       //autoplay: 3000,
       video:true,
       lazyLoad:true,
@@ -158,19 +159,44 @@ $(document).ready(function(){
       $switcherSlider.toggleClass('checked');
 
       if($(this).hasClass( "checked" )){
+        detail_head_carouser.trigger('destroy.owl.carousel');
         console.log("Checked");
+        $('.detail-head-carouser .item-image').hide();
+        $('.detail-head-carouser .item-video').show();
         // $('.detail-head-carouser .item-image').appendTo('.hidden-carousel-elements .images');
         // $('.hidden-carousel-elements .videos .item-video').appendTo('.detail-head-carouser');
-        detail_head_carouser.trigger('destroy.owl.carousel');
-        // detail_head_carouser(".detail-head-carouser");
+        detail_head_carouser.owlCarousel({
+          loop: true,
+          items : 1,
+          startPosition: 0,
+          //autoplay: 3000,
+          video:true,
+          lazyLoad:true,
+          nav: true,
+          dots: false,
+          pagination: false,
+          navContainer: '#detail-head-carouser-nav'
+        });
       }else{
         console.log("unChecked");
+        detail_head_carouser.trigger('destroy.owl.carousel');
+        $('.detail-head-carouser .item-image').show();
+        $('.detail-head-carouser .item-video').hide();
         // $('.detail-head-carouser .item-video').appendTo('.hidden-carousel-elements .videos');
         // $('.hidden-carousel-elements .images .item-image').appendTo('.detail-head-carouser');
-        // detail_head_carouser.trigger('destroy.owl.carousel');
-        // detail_head_carouser(".detail-head-carouser");
+        detail_head_carouser.owlCarousel({
+          loop: true,
+          items : 1,
+          startPosition: 0,
+          //autoplay: 3000,
+          video:true,
+          lazyLoad:true,
+          nav: true,
+          dots: false,
+          pagination: false,
+          navContainer: '#detail-head-carouser-nav'
+        });
       }
-
       // console.log('Check! Place here your ajax.');
 
     });
@@ -224,8 +250,6 @@ $(document).ready(function(){
 
 
   function notificMenuProcessor() {
-
-
 
       if ($(window).outerWidth() < 768) {
 
