@@ -621,3 +621,19 @@ label{
 .lb-data .lb-close {
   background: url(../images/close.png) top right no-repeat;
 }
+
+/* ======= Transactions table ======= */
+
+.tab-table{
+  table{
+    font-size: 18px;
+    margin-top: 20px;
+    width: 100%;
+    font-weight: 300;
+    .before_taxation{
+      padding-top: 20px;
+      font-size: 18px;
+      font-weight: 400;
+    }
+  }
+}
