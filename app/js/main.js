@@ -60,7 +60,7 @@ $(document).ready(function(){
     items : 4, 
     autoplay: 3000,
     nav:false,
-    //pagination: true,
+    pagination: true,
     pagination: false,
     responsive:{
       0:{
@@ -202,11 +202,6 @@ $(document).ready(function(){
     });
 
   }
-
-
-
-
-
 
   $('.nav-tabs a').click(function(e){
       e.preventDefault();
