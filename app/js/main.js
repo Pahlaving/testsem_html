@@ -177,11 +177,6 @@ $(document).ready(function(){
 
   }
 
-
-
-
-
-
   $('.nav-tabs a').click(function(e){
       e.preventDefault();
       $('.nav-tabs a').removeClass('actives');
