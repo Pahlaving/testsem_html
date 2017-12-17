@@ -46,3 +46,18 @@
     margin-bottom: 10px;
   }
 }
+
+.section-block.gray{
+  a.next, a.prev{
+    font-size: 20px;
+    color: #8A7575;
+    text-align: center;
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    line-height: 40px;
+    border: 1px solid #C3C3C3;
+    border-radius: 5px;
+    margin-right: 10px;
+  }
+}

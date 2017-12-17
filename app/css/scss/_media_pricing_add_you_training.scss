@@ -34,7 +34,6 @@ section#media{
 	.select__mt__xs{
 		@media screen and (max-width: 992px) {
 			margin-top: -2px !important;
-			//margin-bottom: -2px !important;
 		}
 		margin-top: 5px;
 	}
@@ -154,7 +153,6 @@ section#media{
 	}
 	.m_div {
 		background: #222a37;
-		font-size: 19px;
 		font-family: 'MyriadPro', sans-serif;
 		color: #fff;
 		padding: 0 36px 40px;
