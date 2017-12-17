@@ -282,7 +282,10 @@ $(document).ready(function(){
   // Pricing checkbox
 
   $('#date, #check_in_date, #check_out_date, #start, #end, #op_start_date, #op_end_date').datetimepicker({
-    timepicker: false
+    timepicker: false,
+    showOtherMonths: true,
+    selectOtherMonths: true,
+    format: 'm/d/20y'
   });
 
   $( function() {
