@@ -344,7 +344,6 @@ $(document).ready(function(){
     $(this).parent().remove();
   });
 
-
   // Slider
 
   $('#slider').slider({
@@ -357,12 +356,6 @@ $(document).ready(function(){
       $( "section#search__section .price" ).text( "$" + ui.values[ 0 ] + " - $" + ui.values[ 1 ] );
     }
   });
-
-
-
-
-
- 
 
   // Search button LOAD MORE
 
