@@ -36,6 +36,10 @@
     font-weight: 400;
     font-size: 16px;
     .logo {
+      a{
+        font-size: 36px;
+        color: #fff;
+      }
       display: -webkit-flex;
       display: -moz-flex;
       display: -ms-flex;
@@ -85,7 +89,7 @@
       display: inline-block;
       input{
         position: relative;
-        top: -4px;
+        top: -8px;
         display: inline-block;
         height: 43px;
         width: 40%;
@@ -100,14 +104,14 @@
           top: -8px;
         }
         @media screen and (max-width: 1200px) {
-          top: -5px;
+          top: -4px;
         }
         @media screen and (max-width: 1030px) {
           margin-left: 5px;
         }
         @media screen and (max-width: 767px) {
           margin-left: 0;
-          top: -2px;
+          top: -1px;
         }
       }
       .btn__submit{
