@@ -474,14 +474,14 @@ h4 {
 }
 
 .selection__white{
-  p{
-    padding: 9px;
-    border: 1px solid #eae8e8;
-    border-radius: 4px;
-    //color: #757579;
-    color: #6f6f6f;
-    background: #F4F4F4;
-  }
+  // p{
+  //   padding: 9px;
+  //   border: 1px solid #eae8e8;
+  //   border-radius: 4px;
+  //   //color: #757579;
+  //   color: #6f6f6f;
+  //   background: #F4F4F4;
+  // }
   i{
     position: absolute;
     right: 7%;
@@ -491,9 +491,8 @@ h4 {
   display: block;
   width: 100%;
   select{
-    background: #fff!important;
-    position: relative;
-    top: -42px;
+    //position: relative;
+    //top: -42px;
     min-width: auto;
     cursor: pointer;
     display: inline-block;
@@ -504,7 +503,10 @@ h4 {
     -moz-appearance: none;
     padding: 9px 0 9px 11px;
     color: #6f6f6f;
-    opacity:0;
+    opacity: 1;
+    background: #F4F4F4;
+    border: 1px solid #eae8e8;
+    border-radius: 4px;
     option{
       border: 1px solid transparent;
       outline: none;
