@@ -84,6 +84,8 @@
       }
       display: inline-block;
       input{
+        position: relative;
+        top: -4px;
         display: inline-block;
         height: 43px;
         width: 40%;
@@ -92,6 +94,21 @@
         line-height: 43px;
         border-radius: 5px;
         margin-right: 15px;
+        color: #000;
+        font-size: 14px;
+        @media screen and (max-width: 1500px) {
+          top: -8px;
+        }
+        @media screen and (max-width: 1200px) {
+          top: -6px;
+        }
+        @media screen and (max-width: 1030px) {
+          margin-left: 5px;
+        }
+        @media screen and (max-width: 767px) {
+          margin-left: 0;
+          top: -2px;
+        }
       }
       .btn__submit{
         position: relative;
