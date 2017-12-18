@@ -473,6 +473,61 @@ h4 {
   }
 }
 
+.selection__white{
+  p{
+    padding: 9px;
+    border: 1px solid #eae8e8;
+    border-radius: 4px;
+    //color: #757579;
+    color: #6f6f6f;
+    background: #F4F4F4;
+  }
+  i{
+    position: absolute;
+    right: 7%;
+    top: 14px;
+  }
+  position: relative;
+  display: block;
+  width: 100%;
+  select{
+    background: #fff!important;
+    position: relative;
+    top: -42px;
+    min-width: auto;
+    cursor: pointer;
+    display: inline-block;
+    width: 100%;
+    outline: none;
+    border: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    padding: 9px 0 9px 11px;
+    color: #6f6f6f;
+    opacity:0;
+    option{
+      border: 1px solid transparent;
+      outline: none;
+      border-radius: 5px;
+      color: #6f6f6f;
+      white-space:pre;
+    }
+  }
+  input{
+    height: 59px !important;
+    width: 100%;
+    margin: 0;
+    border: none;
+    box-sizing: border-box;
+    padding: 18px 17px;
+    background: #f0eeef;
+    font-family: 'MyriadPro', sans-serif;
+    font-size: 20px;
+    color: #6f6f6f;
+    outline: none;
+  }
+}
+
 .pricing__input{
   input{
     width: 100%;
