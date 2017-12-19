@@ -358,7 +358,8 @@ h4 {
     width: 60px;
     height: 56.5px;
     background: #A0152B;
-    line-height: 55px;      
+    line-height: 55px;
+    z-index: 1;    
     i{
       color: #fff;
       font-size: 14px;
@@ -370,8 +371,8 @@ h4 {
   select{
     background: #f0eeef !important;
     position: relative;
-    top: -37px;
-    margin-top: -57px;
+    //top: -37px;
+    //margin-top: -57px;
     cursor: pointer;
     display: inline-block;
     //padding-right: 0px;
@@ -384,7 +385,7 @@ h4 {
     font-size: 20px;
     color: #6f6f6f;
     font-family: 'MyriadPro', sans-serif;
-    opacity:0;
+    opacity:1;
     //background:  #F0EEEF;
     option{
       border: 1px solid transparent;
