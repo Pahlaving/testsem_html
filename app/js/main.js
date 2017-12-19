@@ -435,6 +435,49 @@ $(document).ready(function(){
       });
   });
 
+
+  $('#tab__continue_1').click(function(){
+    $('#v_cent').removeClass('active');
+    $('a[href="#v_cent"]').removeClass('actives');
+    $('#v_cent1').addClass('active');
+    $('a[href="#v_cent1"]').addClass('actives');
+  });
+
+  $('#tab__continue_2').click(function(){
+    $('#v_cent1').removeClass('active');
+    $('a[href="#v_cent1"]').removeClass('actives');
+    $('#v_cent2').addClass('active');
+    $('a[href="#v_cent2"]').addClass('actives');
+  });
+
+  $('#tab__continue_3').click(function(){
+    $('#v_cent2').removeClass('active');
+    $('a[href="#v_cent2"]').removeClass('actives');
+    $('#v_cent3').addClass('active');
+    $('a[href="#v_cent3"]').addClass('actives');
+  });
+
+  $('#tab__continue_4').click(function(){
+    $('#v_cent3').removeClass('active');
+    $('a[href="#v_cent3"]').removeClass('actives');
+    $('#v_cent4').addClass('active');
+    $('a[href="#v_cent4"]').addClass('actives');
+  });
+
+  $('#tab__continue_5').click(function(){
+    $('#v_cent4').removeClass('active');
+    $('a[href="#v_cent4"]').removeClass('actives');
+    $('#v_cent5').addClass('active');
+    $('a[href="#v_cent5"]').addClass('actives');
+  });
+
+  $('#tab__continue_6').click(function(){
+    $('#v_cent5').removeClass('active');
+    $('a[href="#v_cent5"]').removeClass('actives');
+    $('#v_cent6').addClass('active');
+    $('a[href="#v_cent6"]').addClass('actives');
+  });
+
 //Гамбургер меню
 
 var forEach=function(t,o,r){if("[object Object]"===Object.prototype.toString.call(t))for(var c in t)Object.prototype.hasOwnProperty.call(t,c)&&o.call(r,t[c],c,t);else for(var e=0,l=t.length;l>e;e++)o.call(r,t[e],e,t)};
