@@ -556,5 +556,24 @@ var forEach=function(t,o,r){if("[object Object]"===Object.prototype.toString.cal
     $('#next__manth').addClass('calendar__active')
   });
 
+  //add_payout_preference
+
+  $('#add_1').click(function(){
+    $('#form_1').delay(300).css('display', 'none');
+    $('#form_2').delay(300).css('display', 'block');
+  });
+  $('#add_2').click(function(){
+    $('#form_1').delay(300).css('display', 'block');
+    $('#form_2').delay(300).css('display', 'none');
+  });
+  $('#add_3').click(function(){
+    $('#inner_1').delay(300).css('display', 'none');
+    $('#inner_2').delay(300).css('display', 'block');
+  });
+  $('#add_4').click(function(){
+    $('#inner_1').delay(300).css('display', 'block');
+    $('#inner_2').delay(300).css('display', 'none');
+  });
+
 });
 

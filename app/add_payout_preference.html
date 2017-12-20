@@ -21,9 +21,9 @@
           <div class="block-title">Add Payout Method</div>
           <div class="block-content">
             <div class="block-row">
-              <div class="inner">
+              <div class="inner" id="inner_1">
 
-                <form accept-charset="UTF-8" action="add_payout_preference1.html" class="form-horizontal" method="post">
+                <form accept-charset="UTF-8" action="#" method="#" class="form-horizontal" id="form_1">
                   <div class="panel-body">
                     <input type="hidden" name="user_id" value="161810790">
 
@@ -100,13 +100,77 @@
                     </div>
 
                     <div class="form-action">
-                      <input class="btn" type="submit" value="Add Payout Method">
+                      <div class="btn" type="submit" id="add_1">Add Payout Method</div>
+                    </div>
+
+                  </div>
+                </form>
+
+                <form accept-charset="UTF-8" id="form_2">
+                  <div class="panel-body">
+                    <input type="hidden" name="user_id" value="161810790">
+
+                    <div class="form-group">
+                      <div class="radio">
+                        <label>
+                          <input type="radio" name="optionsRadios" id="optionsRadios1" value="option1" checked>
+                          <strong>Method: International Wire</strong><br>
+                          Processed In: 5–7 business days<br>
+                          Fees: Banking fees<br>
+                          Currency: USD<br>
+                          Details: Your bank will likely charge a fee. Business day processing only; weekends and
+                          banking holidays may cause delays.
+                          <a href="#">Learn more</a>
+                        </label>
+                      </div>
+                      <div class="radio">
+                        <label>
+                          <input type="radio" name="optionsRadios" id="optionsRadios2" value="option2">
+                          <strong>Method: Payoneer Prepaid Debit MasterCard<br></strong>
+                          Processed In: 3–4 hours<br>
+                          Fees: ATM withdrawal fees<br>
+                          Currency: USD<br>
+                          Details: A physical card will be mailed to you after creating your Payoneer Prepaid Debit
+                          MasterCard account. Existing accounts may also be used.
+                        </label>
+                      </div>
+                      <div class="radio disabled">
+                        <label>
+                          <input type="radio" name="optionsRadios" id="optionsRadios3" value="option2">
+                          <strong>Method: Western Union</strong><br>
+                          Processed In: 1 business day<br>
+                          Fees: $10 USD per transaction<br>
+                          Currency: USD<br>
+                          Details: Requires valid government-issued photo ID for cash pickup at participating Quick Cash
+                          Western Union Agent locations.
+                        </label>
+                      </div>
+
+                    </div>
+
+                    <div class="form-action">
+                      <div href="#" class="btn btn-gray" id="add_2">Back</div>
+                      <div class="btn" type="submit" id="add_3">Next</div>
                     </div>
 
                   </div>
                 </form>
 
               </div>
+
+              <div class="inner" id="inner_2">
+
+                <p>When you click next, you will be redirected to another website where you may securely enter your
+                  banking details. After completing the requested information you will be redirected back to FRAIDER.</p>
+
+                <div class="form-action">
+                  <div class="btn btn-gray" id="add_4">Back</div>
+                  <a href="#" class="btn">Next</a>
+                </div>
+
+              </div>
+
+
             </div>
           </div>
         </div>
