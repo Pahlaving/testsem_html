@@ -435,6 +435,7 @@ $(document).ready(function(){
       });
   });
 
+//Continue add_you_training.html
 
   $('#tab__continue_1').click(function(){
     $('#v_cent').removeClass('active');
